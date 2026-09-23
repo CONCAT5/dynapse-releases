@@ -150,7 +150,15 @@ if (platform === "macos") {
   const tgz = one("macos", ".app.tar.gz");
   updaterFile = `Dynapse_${v}_universal.app.tar.gz`;
   installerName = `Dynapse_${v}_universal.dmg`;
-  assets.push([tgz, updaterFile], [`${tgz}.sig`, `${updaterFile}.sig`], [one("dmg", ".dmg"), installerName]);
+  // Tauri는 .app만 공증한다 — 첫 설치용 .dmg도 공증·staple해야 Gatekeeper가 막지 않는다 (0.1.0에서 실측: Unnotarized Developer ID → rejected)
+  const dmg = one("dmg", ".dmg");
+  must("xcrun", ["notarytool", "submit", dmg, "--key", process.env.APPLE_API_KEY_PATH, "--key-id", process.env.APPLE_API_KEY,
+    "--issuer", process.env.APPLE_API_ISSUER, "--wait"], { inherit: true });
+  must("xcrun", ["stapler", "staple", dmg]);
+  must("xcrun", ["stapler", "validate", dmg]);
+  const dmgCheck = run("spctl", ["-a", "-t", "open", "--context", "context:primary-signature", "-vv", dmg]);
+  if (dmgCheck.code !== 0 || !/Notarized Developer ID/.test(dmgCheck.err + dmgCheck.out)) die(`dmg Gatekeeper 판정 실패:\n${dmgCheck.err || dmgCheck.out}`);
+  assets.push([tgz, updaterFile], [`${tgz}.sig`, `${updaterFile}.sig`], [dmg, installerName]);
 } else {
   const exe = one("nsis", "-setup.exe");
   must("signtool", ["verify", "/pa", exe], { shell: true });
