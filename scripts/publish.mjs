@@ -18,6 +18,22 @@ const dryRun = arg("dry-run", false) === true;
 const c = loadConfig();
 const slug = repoSlug(c);
 const src = resolve(arg("source", c.sourceDir ?? "") || die("--source <prototypes/desktop 경로> 필요"));
+// 소스 폴더의 release.env(서명·공증 식별자, 커밋됨)를 읽는다 — 셸에 이미 있는 값이 우선. 비밀값이 들어 있으면 거부
+{
+  const envFile = join(src, "release.env");
+  if (existsSync(envFile)) {
+    const text = readFileSync(envFile, "utf8");
+    if (/^\s*TAURI_SIGNING_PRIVATE_KEY/m.test(text) || /BEGIN [A-Z ]*PRIVATE KEY/.test(text))
+      die(`${envFile}에 비밀값(서명 키·비밀번호)이 있음 — 지우고 커밋 이력도 확인하라. 비밀번호는 배포 때 입력한다`);
+    for (const line of text.split("\n")) {
+      const m = line.match(/^\s*([A-Z_][A-Z0-9_]*)\s*=\s*(.*?)\s*$/);
+      if (!m || process.env[m[1]]) continue;
+      const home = process.env.HOME ?? process.env.USERPROFILE ?? "";
+      process.env[m[1]] = m[2].replace(/^["']|["']$/g, "").replace(/^~(?=\/|$)/, home);
+    }
+    console.log(`  · ${envFile} 읽음`);
+  }
+}
 const notes = arg("notes");
 if (!dryRun && (typeof notes !== "string" || !notes.trim())) die('--notes "변경 한 줄" 필요 (voice.md 언어)');
 const step = (n, t) => console.log(`\n[${n}] ${t}`);
