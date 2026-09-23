@@ -1,15 +1,15 @@
 {
-  "version": "0.1.0",
-  "notes": "첫 베타",
-  "pub_date": "2026-09-23T22:07:10Z",
+  "version": "0.1.1",
+  "notes": "처음 실행할 때 쓰는 AI를 고르고 바로 로그인해요",
+  "pub_date": "2026-09-23T22:24:09Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.0/Dynapse_0.1.0_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzhOVnhLeEtFeVFzaXV0MkJGYWdIOHlmbHZKUFlNcmxoNU9yUjYyK1VqdW5TMlZPa2djdGQxeDBGd20rR0RLaFBJZmRpT2ViZm5sb2Z2dGhEYldFTXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjAxMjE5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjAKTHlvR3RBMG9WOXNIUDhxQXJtZFVjekVZTUdkd0RRY3ppNHlaN2JJR29aL0c2WHVnZTBRelNwcmJIT1VQS250bEhORThvZzZIdlk4citlZldCWFV3REE9PQo="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.1/Dynapse_0.1.1_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3pBNnhLQmFLcEdGeGhwbmRwbEY3V2E4d08vM0I5M0lHVENCNkhTWGE2YjBmcWhseDZ0V1hDZFhvTU1nMnNHbUtPRUo3OTNjbVZIK0RiYkgvL3VNMFFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjAyMjEwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEKOXJ2LzNvRWlDTXQreGR2KzBrNzV5R1RXWFY5bWx0SE5XK0REK1RYYml2NlNxNkRJN1pXOVpKSWdwdmpnd09XMEk0b3h1Zmd0K3M1YzRnU2REOGFkREE9PQo="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.0/Dynapse_0.1.0_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzhOVnhLeEtFeVFzaXV0MkJGYWdIOHlmbHZKUFlNcmxoNU9yUjYyK1VqdW5TMlZPa2djdGQxeDBGd20rR0RLaFBJZmRpT2ViZm5sb2Z2dGhEYldFTXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjAxMjE5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjAKTHlvR3RBMG9WOXNIUDhxQXJtZFVjekVZTUdkd0RRY3ppNHlaN2JJR29aL0c2WHVnZTBRelNwcmJIT1VQS250bEhORThvZzZIdlk4citlZldCWFV3REE9PQo="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.1/Dynapse_0.1.1_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3pBNnhLQmFLcEdGeGhwbmRwbEY3V2E4d08vM0I5M0lHVENCNkhTWGE2YjBmcWhseDZ0V1hDZFhvTU1nMnNHbUtPRUo3OTNjbVZIK0RiYkgvL3VNMFFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjAyMjEwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEKOXJ2LzNvRWlDTXQreGR2KzBrNzV5R1RXWFY5bWx0SE5XK0REK1RYYml2NlNxNkRJN1pXOVpKSWdwdmpnd09XMEk0b3h1Zmd0K3M1YzRnU2REOGFkREE9PQo="
     }
   }
 }
