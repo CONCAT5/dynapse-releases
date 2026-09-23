@@ -15,6 +15,7 @@ const files = git(["ls-files"]).out.split("\n").filter(Boolean);
 const BIN = /\.(dmg|exe|zip|tar\.gz|msi|app|sig|p8|key|pem|p12)$/i;
 for (const f of files) {
   if (BIN.test(f)) bad(`바이너리/키 파일 커밋 금지: ${f} (Release asset에만)`);
+  else if (/(^|\/)\.env(\.|$)/.test(f)) bad(`환경값 파일 커밋 금지: ${f} — 공개 리포다`);
   else if (statSync(join(ROOT, f)).size > 1024 * 1024) bad(`1MB 초과 파일: ${f}`);
 }
 
