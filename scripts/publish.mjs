@@ -48,6 +48,19 @@ if (run("gh", ["release", "view", tag, "--repo", slug]).code === 0) die(`Release
 const stable = readJsonIfExists(join(ROOT, platform, "latest.json"));
 if (stable && cmpSemver(v, stable.version) <= 0) die(`새 버전 ${v} ≤ ${platform} stable ${stable.version}`);
 
+if (platform === "macos") {
+  // 서명·공증 env 이름은 Tauri v2 macOS 서명 문서 기준 — 첫 실배포 때 실측 확인
+  const need = ["APPLE_SIGNING_IDENTITY", "APPLE_API_ISSUER", "APPLE_API_KEY", "APPLE_API_KEY_PATH"].filter(k => !process.env[k]);
+  if (need.length) die(`macOS 서명·공증 env 없음: ${need.join(", ")}`);
+  if (!must("security", ["find-identity", "-v", "-p", "codesigning"]).includes(process.env.APPLE_SIGNING_IDENTITY))
+    die(`키체인에 서명 인증서 없음: ${process.env.APPLE_SIGNING_IDENTITY}`);
+  const t = must("rustup", ["target", "list", "--installed"]);
+  for (const x of ["aarch64-apple-darwin", "x86_64-apple-darwin"]) if (!t.includes(x)) die(`rustup target add ${x} 필요 (universal 빌드)`);
+} else {
+  if (!c.windowsSignCommand) die("release.config.json windowsSignCommand 미정 — Windows 서명 방식(YubiKey 로컬 / 클라우드) 결재 후 진행 (§5.3)");
+  if (run("where", ["signtool"], { shell: true }).code !== 0) die("signtool 없음 (Windows SDK)");
+}
+// 비밀번호는 마지막에 묻는다 — 그 전 검사에서 막히면 입력할 필요가 없게
 const signEnv = { ...process.env, ...(await signingEnv()) }; // 서명하는 자식 프로세스에만 전달
 {
   // 개인키로 더미 서명 → release.config.json의 pubkey로 검증 = 키쌍 일치 확인
@@ -60,18 +73,6 @@ const signEnv = { ...process.env, ...(await signingEnv()) }; // 서명하는 자
   catch (e) { die(`개인키와 release.config.json의 pubkey가 짝이 아님: ${e.message}`); }
   rmSync(d, { recursive: true, force: true });
   console.log("  ✓ updater 키쌍 일치");
-}
-if (platform === "macos") {
-  // 서명·공증 env 이름은 Tauri v2 macOS 서명 문서 기준 — 첫 실배포 때 실측 확인
-  const need = ["APPLE_SIGNING_IDENTITY", "APPLE_API_ISSUER", "APPLE_API_KEY", "APPLE_API_KEY_PATH"].filter(k => !process.env[k]);
-  if (need.length) die(`macOS 서명·공증 env 없음: ${need.join(", ")}`);
-  if (!must("security", ["find-identity", "-v", "-p", "codesigning"]).includes(process.env.APPLE_SIGNING_IDENTITY))
-    die(`키체인에 서명 인증서 없음: ${process.env.APPLE_SIGNING_IDENTITY}`);
-  const t = must("rustup", ["target", "list", "--installed"]);
-  for (const x of ["aarch64-apple-darwin", "x86_64-apple-darwin"]) if (!t.includes(x)) die(`rustup target add ${x} 필요 (universal 빌드)`);
-} else {
-  if (!c.windowsSignCommand) die("release.config.json windowsSignCommand 미정 — Windows 서명 방식(YubiKey 로컬 / 클라우드) 결재 후 진행 (§5.3)");
-  if (run("where", ["signtool"], { shell: true }).code !== 0) die("signtool 없음 (Windows SDK)");
 }
 console.log(`  ✓ ${platform} ${v} (태그 ${tag}) 배포 가능`);
 if (dryRun) { console.log("\n--dry-run: preflight만 수행하고 종료"); process.exit(0); }
