@@ -1,15 +1,15 @@
 {
-  "version": "0.1.3",
-  "notes": "Gemini(Antigravity) 연결 · AI 도구를 알아서 최신으로 맞춤 · 피드 표시 개선",
-  "pub_date": "2026-09-23T23:26:51Z",
+  "version": "0.1.4",
+  "notes": "협업 슬라이드 첫 화면 · 내 AI 한 줄 · 작업 목적지 미리보기",
+  "pub_date": "2026-09-23T23:55:06Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.3/Dynapse_0.1.3_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzNKcnpRcXVQZVRBUFkzQ1ZvYW9SN2lsVmlSS1pWbDMyT0hNZ0pnNlJZY095dmpPOE9aRk13WExQYjNhT2cxQnFzRXJkKzBtajNZeG9qcXpNa1h1ZHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjA1OTc0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMKbUgza21Jb01ETzlQTkdXcnNjOWlSaXNwSGJ5YTlZVmhyUHoycFNrckJtd3hXN25YU0Q4d0tMRm1mRWxmWGlPZWh6Z0pmR3praEo0d2RVVkNseGpSQ3c9PQo="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.4/Dynapse_0.1.4_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzIyOVJ4SmlrajI3QjI4SWM5TzZJaDlyNFhMbGFJRmY0ZnRLZXdlcEpOcXNBNkliQ2l3WTlkMmsrb05LalE2ZGcrMURGZFZ3TmR1a3kyUmVVZUNFbkFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjA3NjY2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQKTkhBN2RCbGZENkhXODFKV3oxU29YZ20rbUQ2YWJqeFEzck9yYy9yVzZxMkYyWlZneVlhVTdGZGg1ZjVjT3E1c0U2S3Y5eE5wTUdDNE5LM3FqSHcyQ1E9PQo="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.3/Dynapse_0.1.3_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzNKcnpRcXVQZVRBUFkzQ1ZvYW9SN2lsVmlSS1pWbDMyT0hNZ0pnNlJZY095dmpPOE9aRk13WExQYjNhT2cxQnFzRXJkKzBtajNZeG9qcXpNa1h1ZHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjA1OTc0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMKbUgza21Jb01ETzlQTkdXcnNjOWlSaXNwSGJ5YTlZVmhyUHoycFNrckJtd3hXN25YU0Q4d0tMRm1mRWxmWGlPZWh6Z0pmR3praEo0d2RVVkNseGpSQ3c9PQo="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.4/Dynapse_0.1.4_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzIyOVJ4SmlrajI3QjI4SWM5TzZJaDlyNFhMbGFJRmY0ZnRLZXdlcEpOcXNBNkliQ2l3WTlkMmsrb05LalE2ZGcrMURGZFZ3TmR1a3kyUmVVZUNFbkFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjA3NjY2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQKTkhBN2RCbGZENkhXODFKV3oxU29YZ20rbUQ2YWJqeFEzck9yYy9yVzZxMkYyWlZneVlhVTdGZGg1ZjVjT3E1c0U2S3Y5eE5wTUdDNE5LM3FqSHcyQ1E9PQo="
     }
   }
 }
