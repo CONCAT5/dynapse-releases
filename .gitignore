@@ -1,0 +1,14 @@
+# 바이너리·키는 이 리포에 절대 두지 않는다 (docs/11 §0-3, §5.1) — 설치 파일은 GitHub Release asset에만
+*.dmg
+*.exe
+*.msi
+*.zip
+*.tar.gz
+*.app
+*.sig
+*.key
+*.p8
+*.pem
+*.p12
+node_modules/
+.DS_Store

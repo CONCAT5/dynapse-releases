@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dynapse 내려받기</title>
+  <style>
+    /* hub 팔레트 값 (prototypes/hub/src/app/globals.css :root) — 이 페이지는 독립 정적 파일이라 값을 복사해 둔다 */
+    :root { --paper: #FFFFFF; --wash: #F5F6F4; --ink: #1F2933; --ink-soft: #3E4C59; --ink-faint: #7B8794;
+            --rule: #DDE2DE; --accent: #5F7466; --accent-deep: #4A5C50; --card: #FFFFFF; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--paper); color: var(--ink-soft); font: 15px/1.65 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; word-break: keep-all; }
+    main { max-width: 560px; margin: 0 auto; padding: 64px 16px; }
+    h1 { color: var(--ink); font-size: 26px; margin-bottom: 8px; }
+    p { color: var(--ink-faint); margin-bottom: 28px; }
+    .dl { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 20px; margin-bottom: 12px;
+          border: 1px solid var(--rule); border-radius: 14px; background: var(--card); }
+    .dl b { color: var(--ink); display: block; }
+    .dl small { color: var(--ink-faint); font-size: 12px; }
+    .dl a { background: var(--accent); color: var(--card); text-decoration: none; padding: 8px 18px; border-radius: 999px; font-weight: 650; font-size: 13.5px; white-space: nowrap; }
+    .dl a:hover { background: var(--accent-deep); }
+    .dl--mine { border-color: var(--accent); }
+    .none { background: var(--wash); color: var(--ink-faint); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Dynapse 내려받기</h1>
+    <p>내 AI 구독으로 템플릿 작업을 받아 이 기기에서 실행해요.</p>
+    <div id="list"></div>
+  </main>
+  <script>
+    // 각 플랫폼 download.json만 읽는다 — releases/latest 링크는 마지막에 올린 플랫폼을 가리키므로 쓰지 않는다 (docs/11 §1.1)
+    const P = [
+      { id: "macos", name: "macOS", note: "Apple 실리콘 · Intel 공용", mine: /Mac/i.test(navigator.userAgent) },
+      { id: "windows", name: "Windows", note: "64비트", mine: /Win/i.test(navigator.userAgent) },
+    ];
+    const mb = (n) => (n / 1048576).toFixed(1) + "MB";
+    const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+    Promise.all(P.map((p) => fetch(`${p.id}/download.json?t=${Date.now()}`).then((r) => (r.ok ? r.json() : null)).catch(() => null)))
+      .then((ds) => {
+        document.getElementById("list").innerHTML = P.map((p, i) => {
+          const d = ds[i];
+          return d
+            ? `<div class="dl ${p.mine ? "dl--mine" : ""}"><div><b>${p.name}</b><small>${esc(p.note)} · 버전 ${esc(d.version)} · ${mb(d.size)}</small></div><a href="${esc(d.url)}">내려받기</a></div>`
+            : `<div class="dl none"><div><b>${p.name}</b><small>준비 중이에요</small></div></div>`;
+        }).join("");
+      });
+  </script>
+</body>
+</html>
