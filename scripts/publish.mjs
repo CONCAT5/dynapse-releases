@@ -33,6 +33,19 @@ const src = resolve(arg("source", c.sourceDir ?? "") || die("--source <prototype
     }
     console.log(`  · ${envFile} 읽음`);
   }
+  // 로컬 비밀값 파일(.env, git 무시) — updater 키 비밀번호 등. 커밋될 수 있는 위치거나 권한이 열려 있으면 거부
+  const localEnv = join(src, ".env");
+  if (existsSync(localEnv)) {
+    if (run("git", ["check-ignore", "-q", localEnv], { cwd: src }).code !== 0)
+      die(`${localEnv}가 git에 무시되지 않음 — 비밀값이 커밋될 수 있다. .gitignore에 추가하라`);
+    if (process.platform !== "win32" && (statSync(localEnv).mode & 0o077)) die(`${localEnv} 권한이 너무 열려 있음 — chmod 600 ${localEnv}`);
+    for (const line of readFileSync(localEnv, "utf8").split("\n")) {
+      const m = line.match(/^\s*([A-Z_][A-Z0-9_]*)\s*=\s*(.*?)\s*$/);
+      if (!m || process.env[m[1]]) continue;
+      process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
+    }
+    console.log(`  · ${localEnv} 읽음 (git 무시·600 확인)`);
+  }
 }
 const notes = arg("notes");
 if (!dryRun && (typeof notes !== "string" || !notes.trim())) die('--notes "변경 한 줄" 필요 (voice.md 언어)');

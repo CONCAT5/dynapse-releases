@@ -154,7 +154,7 @@ export function assertCleanTree(cwd, label) {
 export async function sleep(ms) { await new Promise(r => setTimeout(r, ms)); }
 
 // ── updater 서명 키 (docs/11 §5.1, 2026-09-23 결정): 키 파일은 대표 Mac에, 비밀번호는 배포 때 대표가 직접 입력 ──
-// 비밀번호는 화면에 표시하지 않고, 환경변수·셸 히스토리·파일에 남기지 않는다. 서명하는 자식 프로세스(env)에만 넘긴다.
+// 비밀번호: 소스 폴더의 로컬 .env(git 무시·600)에 있으면 그 값, 없으면 가려서 입력받는다. 서명하는 자식 프로세스(env)에만 넘긴다.
 export const DEFAULT_KEY_PATH = join(process.env.HOME ?? process.env.USERPROFILE ?? "", ".tauri", "dynapse-updater.key");
 
 export async function askHidden(prompt) {
@@ -184,7 +184,7 @@ export async function signingEnv() {
   if (!existsSync(path)) die(`updater 개인키 없음: ${path} — pnpm tauri signer generate -w ${DEFAULT_KEY_PATH}`);
   if (process.platform !== "win32" && (statSync(path).mode & 0o077)) die(`개인키 권한이 너무 열려 있음 — chmod 600 ${path}`);
   const key = readFileSync(path, "utf8").trim();
-  const password = process.env.TAURI_SIGNING_PRIVATE_KEY_PASSWORD ?? await askHidden("updater 키 비밀번호: ");
+  const password = process.env.TAURI_SIGNING_PRIVATE_KEY_PASSWORD || await askHidden("updater 키 비밀번호: "); // 로컬 .env에 있으면 묻지 않는다
   if (!password) die("비밀번호가 비어 있음");
   return { TAURI_SIGNING_PRIVATE_KEY: key, TAURI_SIGNING_PRIVATE_KEY_PASSWORD: password };
 }
