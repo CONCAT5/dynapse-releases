@@ -1,5 +1,5 @@
 // 배포 스크립트 공용 — 규칙은 docs/11-desktop-release-policy.md. 외부 의존성 없음(Node 20+).
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, statSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { join, dirname } from "node:path";
@@ -152,3 +152,39 @@ export function assertCleanTree(cwd, label) {
 }
 
 export async function sleep(ms) { await new Promise(r => setTimeout(r, ms)); }
+
+// ── updater 서명 키 (docs/11 §5.1, 2026-09-23 결정): 키 파일은 대표 Mac에, 비밀번호는 배포 때 대표가 직접 입력 ──
+// 비밀번호는 화면에 표시하지 않고, 환경변수·셸 히스토리·파일에 남기지 않는다. 서명하는 자식 프로세스(env)에만 넘긴다.
+export const DEFAULT_KEY_PATH = join(process.env.HOME ?? process.env.USERPROFILE ?? "", ".tauri", "dynapse-updater.key");
+
+export async function askHidden(prompt) {
+  if (!process.stdin.isTTY) die("비밀번호는 터미널에서 직접 입력해야 한다 (stdin이 터미널이 아님)");
+  process.stdout.write(prompt);
+  const stdin = process.stdin;
+  stdin.setRawMode(true); stdin.resume(); stdin.setEncoding("utf8");
+  return new Promise((resolve) => {
+    let s = "";
+    const on = (chunk) => {
+      for (const c of chunk) {
+        if (c === "\r" || c === "\n") {
+          stdin.setRawMode(false); stdin.pause(); stdin.off("data", on); process.stdout.write("\n");
+          return resolve(s);
+        }
+        if (c === "\u0003") { process.stdout.write("\n"); process.exit(130); } // Ctrl+C
+        if (c === "\u007f" || c === "\b") { s = s.slice(0, -1); continue; }
+        s += c;
+      }
+    };
+    stdin.on("data", on);
+  });
+}
+
+export async function signingEnv() {
+  const path = process.env.TAURI_SIGNING_PRIVATE_KEY_PATH || DEFAULT_KEY_PATH;
+  if (!existsSync(path)) die(`updater 개인키 없음: ${path} — pnpm tauri signer generate -w ${DEFAULT_KEY_PATH}`);
+  if (process.platform !== "win32" && (statSync(path).mode & 0o077)) die(`개인키 권한이 너무 열려 있음 — chmod 600 ${path}`);
+  const key = readFileSync(path, "utf8").trim();
+  const password = process.env.TAURI_SIGNING_PRIVATE_KEY_PASSWORD ?? await askHidden("updater 키 비밀번호: ");
+  if (!password) die("비밀번호가 비어 있음");
+  return { TAURI_SIGNING_PRIVATE_KEY: key, TAURI_SIGNING_PRIVATE_KEY_PASSWORD: password };
+}

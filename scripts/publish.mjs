@@ -7,7 +7,7 @@ import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import {
   ROOT, PLATFORMS, arg, platformArg, die, run, must, loadConfig, readJson, readJsonIfExists, writeJson,
-  cmpSemver, isSemver, manifestErrors, sha256File, assetBase, repoSlug, gitCommitOnly, assertCleanTree, ledgerLine,
+  cmpSemver, isSemver, manifestErrors, sha256File, assetBase, repoSlug, gitCommitOnly, assertCleanTree, ledgerLine, signingEnv,
 } from "./lib/common.mjs";
 import { verifyArtifact } from "./lib/minisign.mjs";
 import { verifyServed } from "./lib/serve.mjs";
@@ -48,16 +48,16 @@ if (run("gh", ["release", "view", tag, "--repo", slug]).code === 0) die(`Release
 const stable = readJsonIfExists(join(ROOT, platform, "latest.json"));
 if (stable && cmpSemver(v, stable.version) <= 0) die(`새 버전 ${v} ≤ ${platform} stable ${stable.version}`);
 
-if (!process.env.TAURI_SIGNING_PRIVATE_KEY && !process.env.TAURI_SIGNING_PRIVATE_KEY_PATH)
-  die("TAURI_SIGNING_PRIVATE_KEY(또는 _PATH) env 없음 — 1Password에서 셸 env로만 주입 (§5.1). 파일·인자로 넘기지 않는다");
+const signEnv = { ...process.env, ...(await signingEnv()) }; // 서명하는 자식 프로세스에만 전달
 {
   // 개인키로 더미 서명 → release.config.json의 pubkey로 검증 = 키쌍 일치 확인
   const d = mkdtempSync(join(tmpdir(), "dynapse-pre-"));
   const f = join(d, "probe.bin");
   writeFileSync(f, `dynapse preflight ${Date.now()}`);
-  must("pnpm", ["tauri", "signer", "sign", "--app-version", v, f], { cwd: src });
+  const sg = run("pnpm", ["tauri", "signer", "sign", "--app-version", v, f], { cwd: src, env: signEnv });
+  if (sg.code !== 0) die(`더미 서명 실패 — 비밀번호가 틀렸거나 키 파일이 손상됨\n${sg.err.split("\n").slice(-3).join("\n")}`);
   try { verifyArtifact(readFileSync(f), readFileSync(`${f}.sig`, "utf8"), c.pubkey, v); }
-  catch (e) { die(`개인키와 pubkey가 짝이 아님: ${e.message}`); }
+  catch (e) { die(`개인키와 release.config.json의 pubkey가 짝이 아님: ${e.message}`); }
   rmSync(d, { recursive: true, force: true });
   console.log("  ✓ updater 키쌍 일치");
 }
@@ -95,7 +95,7 @@ const overlay = {
 const work = mkdtempSync(join(tmpdir(), `dynapse-${platform}-${v}-`));
 const overlayPath = join(work, "release.conf.json");
 writeJson(overlayPath, overlay);
-const b = run("pnpm", ["tauri", "build", "--config", overlayPath, ...(triple ? ["--target", triple] : [])], { cwd: src, inherit: true });
+const b = run("pnpm", ["tauri", "build", "--config", overlayPath, ...(triple ? ["--target", triple] : [])], { cwd: src, inherit: true, env: signEnv });
 if (b.code !== 0) die(`빌드 실패 (exit ${b.code})`);
 if (must("git", ["rev-parse", "HEAD"], { cwd: src }) !== srcHead) die("빌드 도중 소스 HEAD가 바뀜 — 산출물 폐기");
 assertCleanTree(src, "빌드 후 소스 리포");
