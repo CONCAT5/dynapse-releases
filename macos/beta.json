@@ -1,15 +1,15 @@
 {
-  "version": "0.1.15",
-  "notes": "고치기가 Claude Code처럼: 고치고, 직접 확인하고, 다시 고쳐요. 버전마다 전/후 사진",
-  "pub_date": "2026-09-24T12:27:08Z",
+  "version": "0.1.16",
+  "notes": "작업실이 대화 하나가 됩니다: 웹에서 문장으로 시키면 이 PC의 Claude Code가 이어서 처리해요",
+  "pub_date": "2026-09-24T13:29:51Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.15/Dynapse_0.1.15_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzIxeGxmamJOVE9DTWdFZVVhd0I4dDFTUVMzMlV2S25wcy82ZEs1WTRlb3UwUGRQOWFQOGgxQ3RIU2UrOFZaeW9NZ3ZkRmdJb003aTVvOEpuR0ZScXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjUyNzg4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjE1ClZQWTNYSnJYR200WjJrNm10bHk0MEtML2J2b2FsSUdCbXd2bXlYTCtiMnJCQS9MTjJ0UWJaRkZnZ2NZajVnWlNpUjV4ZUN5M0FyNXpzS1l2bFNSMUJRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.16/Dynapse_0.1.16_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy9rRmRFMHZtYWxSQ3NCYkw1WUxvSlJ3MkhvNjl6bEpGRC9EdVRpczI1TnhTRkE0Qmp2anZXZXZ1a3YveW1mbEtJaTVHeXpESW5RYTB4ano3R291Z0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjU2NTQ4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjE2CnBhUjlkdUpQQUhScEJ1VTgxcXFTcEhJRm1HZS93SlBQU2NtSGh5SDlEK2t6cUt4d0RzRHpaVHRJT1REeGV0N0dGa0VYS3VCOE9KU0kwM085MDIxUURnPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.15/Dynapse_0.1.15_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzIxeGxmamJOVE9DTWdFZVVhd0I4dDFTUVMzMlV2S25wcy82ZEs1WTRlb3UwUGRQOWFQOGgxQ3RIU2UrOFZaeW9NZ3ZkRmdJb003aTVvOEpuR0ZScXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjUyNzg4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjE1ClZQWTNYSnJYR200WjJrNm10bHk0MEtML2J2b2FsSUdCbXd2bXlYTCtiMnJCQS9MTjJ0UWJaRkZnZ2NZajVnWlNpUjV4ZUN5M0FyNXpzS1l2bFNSMUJRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.16/Dynapse_0.1.16_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy9rRmRFMHZtYWxSQ3NCYkw1WUxvSlJ3MkhvNjl6bEpGRC9EdVRpczI1TnhTRkE0Qmp2anZXZXZ1a3YveW1mbEtJaTVHeXpESW5RYTB4ano3R291Z0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjU2NTQ4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjE2CnBhUjlkdUpQQUhScEJ1VTgxcXFTcEhJRm1HZS93SlBQU2NtSGh5SDlEK2t6cUt4d0RzRHpaVHRJT1REeGV0N0dGa0VYS3VCOE9KU0kwM085MDIxUURnPT0K"
     }
   }
 }
