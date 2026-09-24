@@ -30,3 +30,4 @@
 | 2026-09-24T09:13:24.562Z | macos | beta | 0.1.12 | macos-v0.1.12 | beta-served-verified | 고치기가 대화가 됩니다: 웹에서 페이지별로 말하면 같은 AI 대화를 이어서 고쳐요. 버전 되돌리기·터미널 수정 기록 |
 | 2026-09-24T10:03:30.370Z | macos | beta | 0.1.13 | macos-v0.1.13 | beta-served-verified | 예전 작업도 웹에서 보이게: 시작할 때 썸네일·기록을 채워요 |
 | 2026-09-24T10:31:22.204Z | macos | beta | 0.1.14 | macos-v0.1.14 | beta-served-verified | 파트너 모드를 켜면 앱이 바로 알아요. 앱에서 다음 사진 작업을 바로 수락할 수 있어요 |
+| 2026-09-24T12:28:13.150Z | macos | beta | 0.1.15 | macos-v0.1.15 | beta-served-verified | 고치기가 Claude Code처럼: 고치고, 직접 확인하고, 다시 고쳐요. 버전마다 전/후 사진 |
