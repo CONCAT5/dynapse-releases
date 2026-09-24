@@ -25,3 +25,4 @@
 | 2026-09-24T01:27:46.448Z | macos | beta | 0.1.9 | macos-v0.1.9 | beta-served-verified | 사진 두 장 비교 · 조립 그림 · 팀 칩 |
 | 2026-09-24T01:28:56.892Z | macos | stable | 0.1.9 | macos-v0.1.9 | stable-served-verified |  |
 | 2026-09-24T01:47:02.557Z | macos | beta | 0.1.10 | macos-v0.1.10 | beta-served-verified | Gemini도 디자인 · 품질/가성비 선택 |
+| 2026-09-24T01:48:43.131Z | macos | stable | 0.1.10 | macos-v0.1.10 | stable-served-verified |  |
