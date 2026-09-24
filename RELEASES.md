@@ -27,3 +27,4 @@
 | 2026-09-24T01:47:02.557Z | macos | beta | 0.1.10 | macos-v0.1.10 | beta-served-verified | Gemini도 디자인 · 품질/가성비 선택 |
 | 2026-09-24T01:48:43.131Z | macos | stable | 0.1.10 | macos-v0.1.10 | stable-served-verified |  |
 | 2026-09-24T08:19:33.636Z | macos | beta | 0.1.11 | macos-v0.1.11 | beta-served-verified | 웹이 결과 화면 하나가 됩니다: 앱은 두 줄 상태 창, 결과·고치기·공개는 Dynapse 창(웹 /works). 로컬 브릿지·기기 등록·동기화(선택) |
+| 2026-09-24T09:13:24.562Z | macos | beta | 0.1.12 | macos-v0.1.12 | beta-served-verified | 고치기가 대화가 됩니다: 웹에서 페이지별로 말하면 같은 AI 대화를 이어서 고쳐요. 버전 되돌리기·터미널 수정 기록 |
