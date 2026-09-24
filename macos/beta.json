@@ -1,15 +1,15 @@
 {
-  "version": "0.1.6",
-  "notes": "Gemini 맡기기 · 연결 창 간소화",
-  "pub_date": "2026-09-24T00:31:48Z",
+  "version": "0.1.7",
+  "notes": "Gemini 사진을 앱이 직접 만들어요",
+  "pub_date": "2026-09-24T00:53:04Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.6/Dynapse_0.1.6_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzRLMHRyREMrelF2SGRkcFdtQTNmZzB0d1NJNnVaMTdSdjNJQTIyWGxGeUhrcVo1R2R6L1FtU2JJQ1JTOGVydG1GR3QzemluYVc5c3V0MHhBOWpLeHc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjA5ODY5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjYKVG5VSDZhalVubGNEaytXc1ArcWFGY2ZBTnRUREErOUxoU3lvcWQrL3hzK1llc2NuR0M2dkpWTXZhSzZacTFUamlGWGtWTzE3ZlBRTFNJRjRoamxKQVE9PQo="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.7/Dynapse_0.1.7_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3pWdXZrU3lOcDFGZCtQUkNGeE5lNU1zSWhBdFZrdnQ1ZnU4ZExicE1ET1VqaFR2MVRpUGFyV2ZnOTRJQXBNdHFadVlNZ3dyZFZwYzIvWXh3eTRzOWcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjExMTQ0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjcKNk5GakRoZXpGVGhBSXNNUjRJdzlTMzRhdURjRXVSK2xRZnZ1MnMzQlY0Qlh6NWhHUm1UWGp4WFU2Q0hiNnlSelo5U1VsbVBrdmhMRnhBSWNEZG1FQ3c9PQo="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.6/Dynapse_0.1.6_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzRLMHRyREMrelF2SGRkcFdtQTNmZzB0d1NJNnVaMTdSdjNJQTIyWGxGeUhrcVo1R2R6L1FtU2JJQ1JTOGVydG1GR3QzemluYVc5c3V0MHhBOWpLeHc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjA5ODY5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjYKVG5VSDZhalVubGNEaytXc1ArcWFGY2ZBTnRUREErOUxoU3lvcWQrL3hzK1llc2NuR0M2dkpWTXZhSzZacTFUamlGWGtWTzE3ZlBRTFNJRjRoamxKQVE9PQo="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.7/Dynapse_0.1.7_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3pWdXZrU3lOcDFGZCtQUkNGeE5lNU1zSWhBdFZrdnQ1ZnU4ZExicE1ET1VqaFR2MVRpUGFyV2ZnOTRJQXBNdHFadVlNZ3dyZFZwYzIvWXh3eTRzOWcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjExMTQ0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjcKNk5GakRoZXpGVGhBSXNNUjRJdzlTMzRhdURjRXVSK2xRZnZ1MnMzQlY0Qlh6NWhHUm1UWGp4WFU2Q0hiNnlSelo5U1VsbVBrdmhMRnhBSWNEZG1FQ3c9PQo="
     }
   }
 }
