@@ -50,3 +50,4 @@
 | 2026-09-25T13:42:31.983Z | macos | beta | 0.1.24 | macos-v0.1.24 | beta-served-verified | 합치기 질문 턴, 가져오기 받기, 운영자 채팅 검수 |
 | 2026-09-25T13:44:43.437Z | macos | stable | 0.1.24 | macos-v0.1.24 | stable-served-verified |  |
 | 2026-09-25T14:02:52.995Z | macos | beta | 0.1.25 | macos-v0.1.25 | beta-served-verified | 강제 업데이트, 템플릿 가져다 놓기, 실행 줄 모델 표시 |
+| 2026-09-25T14:04:04.584Z | macos | stable | 0.1.25 | macos-v0.1.25 | stable-served-verified |  |
