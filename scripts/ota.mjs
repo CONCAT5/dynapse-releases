@@ -67,7 +67,8 @@ for (let k = 0; k < 90 && !ok; k++) {
   const j = await fetch(`${url}?t=${Date.now()}`, { cache: "no-store" }).then(r => (r.ok ? r.json() : null)).catch(() => null);
   if (j?.native === native && j?.ota === n) {
     const m = await fetch(`${c.pagesBase}/${rel}/manifest.json?t=${Date.now()}`).then(r => (r.ok ? r.text() : null)).catch(() => null);
-    ok = m !== null && JSON.parse(m).ota === n;
+    const sg = await fetch(`${c.pagesBase}/${rel}/manifest.json.sig?t=${Date.now()}`).then(r => r.ok).catch(() => false);   // 서명 파일도 서빙돼야 앱이 받는다
+    ok = m !== null && JSON.parse(m).ota === n && sg;
   }
   if (!ok) await sleep(10_000);
 }

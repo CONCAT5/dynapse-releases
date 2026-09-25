@@ -16,3 +16,6 @@ node_modules/
 # 로컬 환경값(서명·공증 설정) — 공개 리포에 절대 올리지 않는다
 .env
 .env.*
+
+# 화면 묶음(OTA) 서명은 서빙해야 한다(앱이 검증)
+!ota/**/manifest.json.sig
