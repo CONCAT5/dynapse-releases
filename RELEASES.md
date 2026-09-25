@@ -33,3 +33,4 @@
 | 2026-09-24T12:28:13.150Z | macos | beta | 0.1.15 | macos-v0.1.15 | beta-served-verified | 고치기가 Claude Code처럼: 고치고, 직접 확인하고, 다시 고쳐요. 버전마다 전/후 사진 |
 | 2026-09-24T13:30:58.828Z | macos | beta | 0.1.16 | macos-v0.1.16 | beta-served-verified | 작업실이 대화 하나가 됩니다: 웹에서 문장으로 시키면 이 PC의 Claude Code가 이어서 처리해요 |
 | 2026-09-24T23:52:01.334Z | macos | stable | 0.1.16 | macos-v0.1.16 | stable-served-verified |  |
+| 2026-09-25T00:02:17.038Z | macos | beta | 0.1.17 | macos-v0.1.17 | beta-served-verified | 웹에서 디자인·사진 AI를 골라 시켜요. 파트너 작업 결과가 사진으로 보여요 |
