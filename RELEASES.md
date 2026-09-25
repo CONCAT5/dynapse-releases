@@ -36,3 +36,4 @@
 | 2026-09-25T00:02:17.038Z | macos | beta | 0.1.17 | macos-v0.1.17 | beta-served-verified | 웹에서 디자인·사진 AI를 골라 시켜요. 파트너 작업 결과가 사진으로 보여요 |
 | 2026-09-25T00:03:27.637Z | macos | stable | 0.1.17 | macos-v0.1.17 | stable-served-verified |  |
 | 2026-09-25T00:38:23.294Z | macos | beta | 0.1.18 | macos-v0.1.18 | beta-served-verified | 작업실 AI 줄: 누가 사진·슬라이드를 맡을지 눌러서 바꿔요 |
+| 2026-09-25T00:39:34.280Z | macos | stable | 0.1.18 | macos-v0.1.18 | stable-served-verified |  |
