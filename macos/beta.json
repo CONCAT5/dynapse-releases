@@ -1,15 +1,15 @@
 {
-  "version": "0.1.30",
-  "notes": "올리는 상태, 이미지 버전, 초대 수락",
-  "pub_date": "2026-09-25T21:39:30Z",
+  "version": "0.1.31",
+  "notes": "사진 러너, 멈춤 카드",
+  "pub_date": "2026-09-25T23:54:31Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.30/Dynapse_0.1.30_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytmaWxhSjV4SDdjUHR4ODlFcktVWUhNODlZT21LWHliVCtlYVY4eVFPUUkvSWQ3c3ZTaXRTN29Ja29qaURzeWhObGpiNGE3ZS9RdXlxTkdEL1ZFS1FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzcyMzMwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMwClJEVzhXaEowTWZPdG92SExMOVF1cHVIeFZIQ1JWckxNNThIdkM4QmV0ZE40YmhHNGxNMHg3UTJPc1UyWnc1RzlFUEh1TEsyOEJPU3VHb1QwVmVDb0JRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.31/Dynapse_0.1.31_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBENmxJTWRXL1IyQ1BhV01JNHNsWmc4VGxRSU9EcTE4azkvMThqT3NkN1F0T1pDL3Nic245MFU1Zzc0V0xkeDlJd0hybkFLbWd4LytlTTlDNWpLUkFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzgwNDMyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMxClBYcjFrOEorbmF5T2dyVUNkTzJTbHFoVVpJOUxRRklqbGxpMlNpVm16NXVISEpacWVQekpRd1Z2bUh1VU40Tk9LQVhQMTVJdG9CZlFFTmtSZzRyekJ3PT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.30/Dynapse_0.1.30_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytmaWxhSjV4SDdjUHR4ODlFcktVWUhNODlZT21LWHliVCtlYVY4eVFPUUkvSWQ3c3ZTaXRTN29Ja29qaURzeWhObGpiNGE3ZS9RdXlxTkdEL1ZFS1FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzcyMzMwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMwClJEVzhXaEowTWZPdG92SExMOVF1cHVIeFZIQ1JWckxNNThIdkM4QmV0ZE40YmhHNGxNMHg3UTJPc1UyWnc1RzlFUEh1TEsyOEJPU3VHb1QwVmVDb0JRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.31/Dynapse_0.1.31_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBENmxJTWRXL1IyQ1BhV01JNHNsWmc4VGxRSU9EcTE4azkvMThqT3NkN1F0T1pDL3Nic245MFU1Zzc0V0xkeDlJd0hybkFLbWd4LytlTTlDNWpLUkFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzgwNDMyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMxClBYcjFrOEorbmF5T2dyVUNkTzJTbHFoVVpJOUxRRklqbGxpMlNpVm16NXVISEpacWVQekpRd1Z2bUh1VU40Tk9LQVhQMTVJdG9CZlFFTmtSZzRyekJ3PT0K"
     }
   }
 }
