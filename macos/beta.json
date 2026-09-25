@@ -1,15 +1,15 @@
 {
-  "version": "0.1.28",
-  "notes": "홈은 네이티브, 작업은 같은 창에서 웹",
-  "pub_date": "2026-09-25T18:06:37Z",
+  "version": "0.1.29",
+  "notes": "앱 창 하나(웹), 연결 탭 상태 화면",
+  "pub_date": "2026-09-25T21:04:13Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.28/Dynapse_0.1.28_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBLME15bk1zbXVXeGswbWJTaFBKTWZoTTdUMjRvUlpnM3VWS2IzYzh0dEQvTnFNLzd2Q2EzR0tmT0s0TWhPMHRTZnhucVNteTB1dm04QnZMNTJUOVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzU5NTU3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI4CjNUR1ZueXpaRlVneU1JQlc3YXA4eCtpUXR2eHEwYXBUZGY4Znh3cTBKS09wczd3dEZEb3pNYTRPOG4rQjlRVHRvQXdZTExwbVpFUGJNcDBzSXg3N0NRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.29/Dynapse_0.1.29_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3pYcDBRWWIvRytMMkk2aGxPYVh5OUExSDFnSlJzc0Q2aU9zK3RBTW92VnRwRk0vSThtUnRZRmhldFhVMWZvbWd1Mkdsd0d5a0pNTkl1VkFDNzFyRmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzcwMjEzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI5ClN1dEZFaEhUQ0FaOG1GUlpmbldwL2lHWWh3dENIcEFDTEtIYlo3SjNzb1MvOTdjTUppaUcwWmlNVTBhcFp2Ui9NVXp6YzBQMmJtOXJlcU5PVXJOOUNRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.28/Dynapse_0.1.28_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBLME15bk1zbXVXeGswbWJTaFBKTWZoTTdUMjRvUlpnM3VWS2IzYzh0dEQvTnFNLzd2Q2EzR0tmT0s0TWhPMHRTZnhucVNteTB1dm04QnZMNTJUOVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzU5NTU3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI4CjNUR1ZueXpaRlVneU1JQlc3YXA4eCtpUXR2eHEwYXBUZGY4Znh3cTBKS09wczd3dEZEb3pNYTRPOG4rQjlRVHRvQXdZTExwbVpFUGJNcDBzSXg3N0NRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.29/Dynapse_0.1.29_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3pYcDBRWWIvRytMMkk2aGxPYVh5OUExSDFnSlJzc0Q2aU9zK3RBTW92VnRwRk0vSThtUnRZRmhldFhVMWZvbWd1Mkdsd0d5a0pNTkl1VkFDNzFyRmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzcwMjEzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI5ClN1dEZFaEhUQ0FaOG1GUlpmbldwL2lHWWh3dENIcEFDTEtIYlo3SjNzb1MvOTdjTUppaUcwWmlNVTBhcFp2Ui9NVXp6YzBQMmJtOXJlcU5PVXJOOUNRPT0K"
     }
   }
 }
