@@ -9,6 +9,7 @@ import {
   ROOT, PLATFORMS, arg, platformArg, die, run, must, loadConfig, readJson, readJsonIfExists, writeJson,
   cmpSemver, isSemver, manifestErrors, sha256File, assetBase, repoSlug, gitCommitOnly, assertCleanTree, ledgerLine, signingEnv,
 } from "./lib/common.mjs";
+import { execFileSync } from "node:child_process";
 import { verifyArtifact } from "./lib/minisign.mjs";
 import { verifyServed } from "./lib/serve.mjs";
 
@@ -211,6 +212,15 @@ step(10, "RELEASES.md 기록");
 writeFileSync(join(ROOT, "RELEASES.md"), `${readFileSync(join(ROOT, "RELEASES.md"), "utf8").trimEnd()}\n${ledgerLine({ platform, channel: "beta", version: v, tag, result, note })}\n`);
 gitCommitOnly(["RELEASES.md"], `ledger: ${platform} beta ${v} ${result}`);
 rmSync(work, { recursive: true, force: true });
+// 빌드 산출물 .app이 dynapse:// 처리 앱으로 등록되면 웹 링크가 업데이트 없는 로컬 빌드를 연다 — 등록 해제(설치본만 남긴다)
+if (platform === "macos") {
+  const LS = "/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister";
+  const bundles = [];
+  const walk = (d, depth) => { if (depth > 6 || !existsSync(d)) return; for (const n of readdirSync(d)) { const f = join(d, n); if (n === "Dynapse.app") bundles.push(f); else if (statSync(f).isDirectory() && !n.endsWith(".app")) walk(f, depth + 1); } };
+  walk(join(src, "src-tauri", "target"), 0);
+  for (const b of bundles) { try { execFileSync(LS, ["-u", b]); } catch { /* 이미 없음 */ } }
+  try { execFileSync(LS, ["-f", "/Applications/Dynapse.app"]); } catch { /* 설치본 없음 */ }
+}
 
 if (result !== "beta-served-verified") die("서빙 검증 실패 — promote 금지. 원장에 기록됨");
 console.log(`\n✓ ${platform} ${v} beta 발행·서빙 검증 완료.
