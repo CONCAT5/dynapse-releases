@@ -52,3 +52,4 @@
 | 2026-09-25T14:02:52.995Z | macos | beta | 0.1.25 | macos-v0.1.25 | beta-served-verified | 강제 업데이트, 템플릿 가져다 놓기, 실행 줄 모델 표시 |
 | 2026-09-25T14:04:04.584Z | macos | stable | 0.1.25 | macos-v0.1.25 | stable-served-verified |  |
 | 2026-09-25T14:48:41.907Z | macos | beta | 0.1.26 | macos-v0.1.26 | beta-served-verified | 무재시작 업데이트·새 버전 즉시 알림 |
+| 2026-09-25T14:49:54.433Z | macos | stable | 0.1.26 | macos-v0.1.26 | stable-served-verified |  |
