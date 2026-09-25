@@ -43,3 +43,4 @@
 | 2026-09-25T11:12:31.014Z | macos | stable | 0.1.20 | macos-v0.1.20 | stable-served-verified |  |
 | 2026-09-25T11:24:45.491Z | macos | beta | 0.1.21 | macos-v0.1.21 | beta-served-verified | 버전을 커밋으로 동기화, 연결 전에도 채팅이 기다렸다가 시작 |
 | 2026-09-25T11:25:56.323Z | macos | stable | 0.1.21 | macos-v0.1.21 | stable-served-verified |  |
+| 2026-09-25T13:00:30.443Z | macos | beta | 0.1.22 | macos-v0.1.22 | beta-served-verified | 모델 표기·진행 정보, 초대·공동 작업, 가져오기(폴더·붙여넣기·끌어놓기), 브라우저 연결(앱으로 로그인), 상태 줄 우측 |
