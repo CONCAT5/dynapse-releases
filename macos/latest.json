@@ -1,15 +1,15 @@
 {
-  "version": "0.1.27",
-  "notes": "창 하나, 참고 폴더·위치 참조, 휴지통, 뒤로가기",
-  "pub_date": "2026-09-25T15:20:03Z",
+  "version": "0.1.28",
+  "notes": "홈은 네이티브, 작업은 같은 창에서 웹",
+  "pub_date": "2026-09-25T18:06:37Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.27/Dynapse_0.1.27_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzVaRDlsNjlIdmE4SzRTenFZQ3RYYVZVc09wcEpyTWJjK3JQbzV3NklzTUdvWDJxalZ3NWgyMmovWU52emtRSEo5bktCK2JFNWY1bGtmM1V3OEpUYmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzQ5NTY1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI3ClFyUjNJSGc4elhIa1F0VmYrTDlBbjhwS3ZlSzZHMmRGbjdraUZ5Z1owRzltU1NNRGxXOVI3bHNMUS9FMnVVQ0p2ZXlnVldSQ0lUVlZzaTJ3QUlReUJBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.28/Dynapse_0.1.28_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBLME15bk1zbXVXeGswbWJTaFBKTWZoTTdUMjRvUlpnM3VWS2IzYzh0dEQvTnFNLzd2Q2EzR0tmT0s0TWhPMHRTZnhucVNteTB1dm04QnZMNTJUOVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzU5NTU3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI4CjNUR1ZueXpaRlVneU1JQlc3YXA4eCtpUXR2eHEwYXBUZGY4Znh3cTBKS09wczd3dEZEb3pNYTRPOG4rQjlRVHRvQXdZTExwbVpFUGJNcDBzSXg3N0NRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.27/Dynapse_0.1.27_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzVaRDlsNjlIdmE4SzRTenFZQ3RYYVZVc09wcEpyTWJjK3JQbzV3NklzTUdvWDJxalZ3NWgyMmovWU52emtRSEo5bktCK2JFNWY1bGtmM1V3OEpUYmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzQ5NTY1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI3ClFyUjNJSGc4elhIa1F0VmYrTDlBbjhwS3ZlSzZHMmRGbjdraUZ5Z1owRzltU1NNRGxXOVI3bHNMUS9FMnVVQ0p2ZXlnVldSQ0lUVlZzaTJ3QUlReUJBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.28/Dynapse_0.1.28_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBLME15bk1zbXVXeGswbWJTaFBKTWZoTTdUMjRvUlpnM3VWS2IzYzh0dEQvTnFNLzd2Q2EzR0tmT0s0TWhPMHRTZnhucVNteTB1dm04QnZMNTJUOVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzU5NTU3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjI4CjNUR1ZueXpaRlVneU1JQlc3YXA4eCtpUXR2eHEwYXBUZGY4Znh3cTBKS09wczd3dEZEb3pNYTRPOG4rQjlRVHRvQXdZTExwbVpFUGJNcDBzSXg3N0NRPT0K"
     }
   }
 }
