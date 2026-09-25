@@ -63,3 +63,4 @@
 | 2026-09-25T21:40:35.472Z | macos | beta | 0.1.30 | macos-v0.1.30 | beta-served-verified | 올리는 상태, 이미지 버전, 초대 수락 |
 | 2026-09-25T21:42:16.725Z | macos | stable | 0.1.30 | macos-v0.1.30 | stable-served-verified |  |
 | 2026-09-25T23:55:36.631Z | macos | beta | 0.1.31 | macos-v0.1.31 | beta-served-verified | 사진 러너, 멈춤 카드 |
+| 2026-09-25T23:56:48.281Z | macos | stable | 0.1.31 | macos-v0.1.31 | stable-served-verified |  |
