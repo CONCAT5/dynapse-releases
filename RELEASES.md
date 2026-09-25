@@ -61,3 +61,4 @@
 | 2026-09-25T21:05:18.161Z | macos | beta | 0.1.29 | macos-v0.1.29 | beta-served-verified | 앱 창 하나(웹), 연결 탭 상태 화면 |
 | 2026-09-25T21:06:31.371Z | macos | stable | 0.1.29 | macos-v0.1.29 | stable-served-verified |  |
 | 2026-09-25T21:40:35.472Z | macos | beta | 0.1.30 | macos-v0.1.30 | beta-served-verified | 올리는 상태, 이미지 버전, 초대 수락 |
+| 2026-09-25T21:42:16.725Z | macos | stable | 0.1.30 | macos-v0.1.30 | stable-served-verified |  |
