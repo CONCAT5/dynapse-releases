@@ -57,3 +57,4 @@
 | 2026-09-25T15:21:08.545Z | macos | beta | 0.1.27 | macos-v0.1.27 | beta-served-verified | 창 하나, 참고 폴더·위치 참조, 휴지통, 뒤로가기 |
 | 2026-09-25T15:22:19.665Z | macos | stable | 0.1.27 | macos-v0.1.27 | stable-served-verified |  |
 | 2026-09-25T18:07:43.006Z | macos | beta | 0.1.28 | macos-v0.1.28 | beta-served-verified | 홈은 네이티브, 작업은 같은 창에서 웹 |
+| 2026-09-25T18:09:24.612Z | macos | stable | 0.1.28 | macos-v0.1.28 | stable-served-verified |  |
