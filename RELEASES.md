@@ -48,3 +48,4 @@
 | 2026-09-25T13:12:53.908Z | macos | beta | 0.1.23 | macos-v0.1.23 | beta-served-verified | 트레이 새 작업, 사진 칸 표시, 내보내기·가져오기·브라우저 연결 포함 |
 | 2026-09-25T13:14:05.569Z | macos | stable | 0.1.23 | macos-v0.1.23 | stable-served-verified |  |
 | 2026-09-25T13:42:31.983Z | macos | beta | 0.1.24 | macos-v0.1.24 | beta-served-verified | 합치기 질문 턴, 가져오기 받기, 운영자 채팅 검수 |
+| 2026-09-25T13:44:43.437Z | macos | stable | 0.1.24 | macos-v0.1.24 | stable-served-verified |  |
