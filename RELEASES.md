@@ -39,3 +39,4 @@
 | 2026-09-25T00:39:34.280Z | macos | stable | 0.1.18 | macos-v0.1.18 | stable-served-verified |  |
 | 2026-09-25T01:08:05.301Z | macos | beta | 0.1.19 | macos-v0.1.19 | beta-served-verified | 작업실 파일 줄·폴더 열기·내보내기, AI별 모델·강도, 턴 사용량 |
 | 2026-09-25T01:09:16.148Z | macos | stable | 0.1.19 | macos-v0.1.19 | stable-served-verified |  |
+| 2026-09-25T11:11:18.411Z | macos | beta | 0.1.20 | macos-v0.1.20 | beta-served-verified | 앱이 대화 엔진 하나로: 웹 작업실에서 시키면 바로 돌아요 |
