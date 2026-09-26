@@ -86,3 +86,4 @@
 | 2026-09-26T12:19:22.721Z | macos | ota | 0.1.36+ota2 | - | ota-served-verified | 토큰 표시에서 캐시 재사용 제외 |
 | 2026-09-26T12:26:16.564Z | macos | ota | 0.1.36+ota3 | - | ota-served-verified | 자동 승인이 다시 묻지 않게 · 기본 강도 보통 |
 | 2026-09-26T12:39:02.511Z | macos | beta | 0.1.37 | macos-v0.1.37 | beta-served-verified | PDF로 내보내기 · 자동 승인 개선 |
+| 2026-09-26T12:40:13.586Z | macos | stable | 0.1.37 | macos-v0.1.37 | stable-served-verified |  |
