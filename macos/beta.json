@@ -1,15 +1,15 @@
 {
-  "version": "0.1.31",
-  "notes": "사진 러너, 멈춤 카드",
-  "pub_date": "2026-09-25T23:54:31Z",
+  "version": "0.1.32",
+  "notes": "숨은 창이 멈추지 않게 — 연결 상태·메시지 수신 안정화",
+  "pub_date": "2026-09-26T06:19:01Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.31/Dynapse_0.1.31_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBENmxJTWRXL1IyQ1BhV01JNHNsWmc4VGxRSU9EcTE4azkvMThqT3NkN1F0T1pDL3Nic245MFU1Zzc0V0xkeDlJd0hybkFLbWd4LytlTTlDNWpLUkFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzgwNDMyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMxClBYcjFrOEorbmF5T2dyVUNkTzJTbHFoVVpJOUxRRklqbGxpMlNpVm16NXVISEpacWVQekpRd1Z2bUh1VU40Tk9LQVhQMTVJdG9CZlFFTmtSZzRyekJ3PT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.32/Dynapse_0.1.32_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytKWVQ4T0dhNDJ0RXlaOEQzMzV2Ym5sZEc1V1lxcVBVU1ZaTEVYMlIvSDRKZWk0d0k2ZUkzNHlheTlodmZjVmhvWklyMDlPa1JlN2E5dmgwUzJ0R2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDAzNDkxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMyCllFWUlmSUNIWDN6ZDNaeDVqNERyRmlKYjYzWlUzN2VmbHRhL0xNcjJMaHN6UjBqSUkzaXBlLzFNOVpnNS9hRlprNUhZcHhXL1NPUjdYenBwWHhmQkJBPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.31/Dynapse_0.1.31_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBENmxJTWRXL1IyQ1BhV01JNHNsWmc4VGxRSU9EcTE4azkvMThqT3NkN1F0T1pDL3Nic245MFU1Zzc0V0xkeDlJd0hybkFLbWd4LytlTTlDNWpLUkFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMzgwNDMyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMxClBYcjFrOEorbmF5T2dyVUNkTzJTbHFoVVpJOUxRRklqbGxpMlNpVm16NXVISEpacWVQekpRd1Z2bUh1VU40Tk9LQVhQMTVJdG9CZlFFTmtSZzRyekJ3PT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.32/Dynapse_0.1.32_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytKWVQ4T0dhNDJ0RXlaOEQzMzV2Ym5sZEc1V1lxcVBVU1ZaTEVYMlIvSDRKZWk0d0k2ZUkzNHlheTlodmZjVmhvWklyMDlPa1JlN2E5dmgwUzJ0R2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDAzNDkxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMyCllFWUlmSUNIWDN6ZDNaeDVqNERyRmlKYjYzWlUzN2VmbHRhL0xNcjJMaHN6UjBqSUkzaXBlLzFNOVpnNS9hRlprNUhZcHhXL1NPUjdYenBwWHhmQkJBPT0K"
     }
   }
 }
