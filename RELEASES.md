@@ -73,3 +73,4 @@
 | 2026-09-26T06:14:13.407Z | macos | ota | 0.1.31+ota7 | - | ota-served-verified | 작업실 AI 팝오버에서 계정 전환 |
 | 2026-09-26T06:20:07.497Z | macos | beta | 0.1.32 | macos-v0.1.32 | beta-served-verified | 숨은 창이 멈추지 않게 — 연결 상태·메시지 수신 안정화 |
 | 2026-09-26T06:21:19.155Z | macos | stable | 0.1.32 | macos-v0.1.32 | stable-served-verified |  |
+| 2026-09-26T07:05:56.628Z | macos | beta | 0.1.33 | macos-v0.1.33 | beta-served-verified | PDF·MD 등 문서만 가져와도 작업이 생겨요 |
