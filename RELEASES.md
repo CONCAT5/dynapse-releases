@@ -74,3 +74,4 @@
 | 2026-09-26T06:20:07.497Z | macos | beta | 0.1.32 | macos-v0.1.32 | beta-served-verified | 숨은 창이 멈추지 않게 — 연결 상태·메시지 수신 안정화 |
 | 2026-09-26T06:21:19.155Z | macos | stable | 0.1.32 | macos-v0.1.32 | stable-served-verified |  |
 | 2026-09-26T07:05:56.628Z | macos | beta | 0.1.33 | macos-v0.1.33 | beta-served-verified | PDF·MD 등 문서만 가져와도 작업이 생겨요 |
+| 2026-09-26T07:07:09.090Z | macos | stable | 0.1.33 | macos-v0.1.33 | stable-served-verified |  |
