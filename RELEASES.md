@@ -66,3 +66,4 @@
 | 2026-09-25T23:56:48.281Z | macos | stable | 0.1.31 | macos-v0.1.31 | stable-served-verified |  |
 | 2026-09-26T02:37:43.600Z | macos | ota | 0.1.31+ota1 | - | ota-served-verified | 가져오기는 저장만, out.png 제거 |
 | 2026-09-26T02:57:23.798Z | macos | ota | 0.1.31+ota2 | - | ota-served-verified | 리워드 작업 행에 제출 상태 |
+| 2026-09-26T03:18:49.542Z | macos | ota | 0.1.31+ota3 | - | ota-served-verified | 내 작업에 넣기 |
