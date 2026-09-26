@@ -71,3 +71,4 @@
 | 2026-09-26T04:05:41.894Z | macos | ota | 0.1.31+ota5 | - | ota-served-verified | 진행 문구는 결과물에 닿는 것만, 내부 작업은 로그로 |
 | 2026-09-26T04:25:01.264Z | macos | ota | 0.1.31+ota6 | - | ota-served-verified | AI 카드에 로그인 계정 표시, 다른 계정으로 전환 |
 | 2026-09-26T06:14:13.407Z | macos | ota | 0.1.31+ota7 | - | ota-served-verified | 작업실 AI 팝오버에서 계정 전환 |
+| 2026-09-26T06:20:07.497Z | macos | beta | 0.1.32 | macos-v0.1.32 | beta-served-verified | 숨은 창이 멈추지 않게 — 연결 상태·메시지 수신 안정화 |
