@@ -92,3 +92,4 @@
 | 2026-09-26T13:09:55.619Z | macos | ota | 0.1.37+ota3 | - | ota-served-verified | 턴마다 한도 사용량 표시 |
 | 2026-09-26T13:24:12.543Z | macos | ota | 0.1.37+ota4 | - | ota-served-verified | 고른 사진 AI로 먼저 · 대체하면 알려줌 |
 | 2026-09-26T13:53:41.682Z | macos | beta | 0.1.38 | macos-v0.1.38 | beta-served-verified | Gemini 한도 때 다른 Google 계정으로 |
+| 2026-09-26T13:54:52.788Z | macos | stable | 0.1.38 | macos-v0.1.38 | stable-served-verified |  |
