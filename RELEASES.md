@@ -67,3 +67,4 @@
 | 2026-09-26T02:37:43.600Z | macos | ota | 0.1.31+ota1 | - | ota-served-verified | 가져오기는 저장만, out.png 제거 |
 | 2026-09-26T02:57:23.798Z | macos | ota | 0.1.31+ota2 | - | ota-served-verified | 리워드 작업 행에 제출 상태 |
 | 2026-09-26T03:18:49.542Z | macos | ota | 0.1.31+ota3 | - | ota-served-verified | 내 작업에 넣기 |
+| 2026-09-26T03:41:17.106Z | macos | ota | 0.1.31+ota4 | - | ota-served-verified | 카드 썸네일 = 파일 줄 첫 항목, 커밋마다 갱신 |
