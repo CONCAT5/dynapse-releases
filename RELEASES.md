@@ -84,3 +84,4 @@
 | 2026-09-26T11:45:02.223Z | macos | stable | 0.1.36 | macos-v0.1.36 | stable-served-verified |  |
 | 2026-09-26T12:06:02.791Z | macos | ota | 0.1.36+ota1 | - | ota-served-verified | 새 설정으로 다시 붙을 때 턴이 끊기던 문제 |
 | 2026-09-26T12:19:22.721Z | macos | ota | 0.1.36+ota2 | - | ota-served-verified | 토큰 표시에서 캐시 재사용 제외 |
+| 2026-09-26T12:26:16.564Z | macos | ota | 0.1.36+ota3 | - | ota-served-verified | 자동 승인이 다시 묻지 않게 · 기본 강도 보통 |
