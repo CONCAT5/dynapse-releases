@@ -1,7 +1,7 @@
 {
-  "native": "0.1.26",
+  "native": "0.1.31",
   "ota": 1,
-  "base": "ota/macos/0.1.26/1/",
-  "notes": "OTA 경로 첫 확인",
-  "pub_date": "2026-09-25T14:54:10.781Z"
+  "base": "ota/macos/0.1.31/1/",
+  "notes": "가져오기는 저장만, out.png 제거",
+  "pub_date": "2026-09-26T02:37:00.054Z"
 }
