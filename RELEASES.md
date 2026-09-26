@@ -77,3 +77,4 @@
 | 2026-09-26T07:07:09.090Z | macos | stable | 0.1.33 | macos-v0.1.33 | stable-served-verified |  |
 | 2026-09-26T10:36:21.456Z | macos | beta | 0.1.34 | macos-v0.1.34 | beta-served-verified | 사진은 요청에 맞게 — 맞는 재고가 없으면 내 사진 AI로 만들어요 |
 | 2026-09-26T10:37:32.365Z | macos | stable | 0.1.34 | macos-v0.1.34 | stable-served-verified |  |
+| 2026-09-26T10:46:14.487Z | macos | ota | 0.1.34+ota1 | - | ota-served-verified | 추천 사진 교체 · 생성은 필요할 때만 |
