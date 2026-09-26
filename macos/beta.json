@@ -1,15 +1,15 @@
 {
-  "version": "0.1.32",
-  "notes": "숨은 창이 멈추지 않게 — 연결 상태·메시지 수신 안정화",
-  "pub_date": "2026-09-26T06:19:01Z",
+  "version": "0.1.33",
+  "notes": "PDF·MD 등 문서만 가져와도 작업이 생겨요",
+  "pub_date": "2026-09-26T07:04:50Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.32/Dynapse_0.1.32_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytKWVQ4T0dhNDJ0RXlaOEQzMzV2Ym5sZEc1V1lxcVBVU1ZaTEVYMlIvSDRKZWk0d0k2ZUkzNHlheTlodmZjVmhvWklyMDlPa1JlN2E5dmgwUzJ0R2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDAzNDkxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMyCllFWUlmSUNIWDN6ZDNaeDVqNERyRmlKYjYzWlUzN2VmbHRhL0xNcjJMaHN6UjBqSUkzaXBlLzFNOVpnNS9hRlprNUhZcHhXL1NPUjdYenBwWHhmQkJBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.33/Dynapse_0.1.33_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQyswWWMySFg1SGFidEtyS3RnanFUT0Jmd2w0azduWVdTbUUxeEpob1lwS0k1NmVzSGNBZ2hueGZkR3h6Tkk2c25SVlRLdmZMOTgySnhqbGRISzBjWUFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDA2MjQxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMzCjIwL1YzRkhNVDhDaFNQaWxJdWRWV3hKVFMwam5nd3JCQUNwWGdsby9QNzNmdHhESmtZTkFkcWEyN0F0V2R3MVR0WE1ZNDFsYUI2RkNxV1lIY2RFRkNnPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.32/Dynapse_0.1.32_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytKWVQ4T0dhNDJ0RXlaOEQzMzV2Ym5sZEc1V1lxcVBVU1ZaTEVYMlIvSDRKZWk0d0k2ZUkzNHlheTlodmZjVmhvWklyMDlPa1JlN2E5dmgwUzJ0R2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDAzNDkxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMyCllFWUlmSUNIWDN6ZDNaeDVqNERyRmlKYjYzWlUzN2VmbHRhL0xNcjJMaHN6UjBqSUkzaXBlLzFNOVpnNS9hRlprNUhZcHhXL1NPUjdYenBwWHhmQkJBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.33/Dynapse_0.1.33_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQyswWWMySFg1SGFidEtyS3RnanFUT0Jmd2w0azduWVdTbUUxeEpob1lwS0k1NmVzSGNBZ2hueGZkR3h6Tkk2c25SVlRLdmZMOTgySnhqbGRISzBjWUFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDA2MjQxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMzCjIwL1YzRkhNVDhDaFNQaWxJdWRWV3hKVFMwam5nd3JCQUNwWGdsby9QNzNmdHhESmtZTkFkcWEyN0F0V2R3MVR0WE1ZNDFsYUI2RkNxV1lIY2RFRkNnPT0K"
     }
   }
 }
