@@ -82,3 +82,4 @@
 | 2026-09-26T11:04:03.454Z | macos | stable | 0.1.35 | macos-v0.1.35 | stable-served-verified |  |
 | 2026-09-26T11:43:51.483Z | macos | beta | 0.1.36 | macos-v0.1.36 | beta-served-verified | 캔버스 작업실 · 짚어서 말하기 · 글자 직접 수정 · 자동 승인 |
 | 2026-09-26T11:45:02.223Z | macos | stable | 0.1.36 | macos-v0.1.36 | stable-served-verified |  |
+| 2026-09-26T12:06:02.791Z | macos | ota | 0.1.36+ota1 | - | ota-served-verified | 새 설정으로 다시 붙을 때 턴이 끊기던 문제 |
