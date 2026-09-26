@@ -65,3 +65,4 @@
 | 2026-09-25T23:55:36.631Z | macos | beta | 0.1.31 | macos-v0.1.31 | beta-served-verified | 사진 러너, 멈춤 카드 |
 | 2026-09-25T23:56:48.281Z | macos | stable | 0.1.31 | macos-v0.1.31 | stable-served-verified |  |
 | 2026-09-26T02:37:43.600Z | macos | ota | 0.1.31+ota1 | - | ota-served-verified | 가져오기는 저장만, out.png 제거 |
+| 2026-09-26T02:57:23.798Z | macos | ota | 0.1.31+ota2 | - | ota-served-verified | 리워드 작업 행에 제출 상태 |
