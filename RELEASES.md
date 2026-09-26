@@ -89,3 +89,4 @@
 | 2026-09-26T12:40:13.586Z | macos | stable | 0.1.37 | macos-v0.1.37 | stable-served-verified |  |
 | 2026-09-26T12:47:20.322Z | macos | ota | 0.1.37+ota1 | - | ota-served-verified | 열기 화면 없이 바로 작업 화면으로 |
 | 2026-09-26T13:00:25.580Z | macos | ota | 0.1.37+ota2 | - | ota-served-verified | 턴 비용 기록 정확하게 |
+| 2026-09-26T13:09:55.619Z | macos | ota | 0.1.37+ota3 | - | ota-served-verified | 턴마다 한도 사용량 표시 |
