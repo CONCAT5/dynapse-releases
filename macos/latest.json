@@ -1,15 +1,15 @@
 {
-  "version": "0.1.33",
-  "notes": "PDF·MD 등 문서만 가져와도 작업이 생겨요",
-  "pub_date": "2026-09-26T07:04:50Z",
+  "version": "0.1.34",
+  "notes": "사진은 요청에 맞게 — 맞는 재고가 없으면 내 사진 AI로 만들어요",
+  "pub_date": "2026-09-26T10:35:16Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.33/Dynapse_0.1.33_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQyswWWMySFg1SGFidEtyS3RnanFUT0Jmd2w0azduWVdTbUUxeEpob1lwS0k1NmVzSGNBZ2hueGZkR3h6Tkk2c25SVlRLdmZMOTgySnhqbGRISzBjWUFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDA2MjQxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMzCjIwL1YzRkhNVDhDaFNQaWxJdWRWV3hKVFMwam5nd3JCQUNwWGdsby9QNzNmdHhESmtZTkFkcWEyN0F0V2R3MVR0WE1ZNDFsYUI2RkNxV1lIY2RFRkNnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.34/Dynapse_0.1.34_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3ovZ2ZWaVlndjFzMDdqSC95SzZnbWdxOGlIblcwSzZ4eXMxTG0wSjdSRGRDZlU5dDZCQmY2OWVDMllxd0RDaDRNc2RpQzlmZGQrK0lMRm5qNGlNVGd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDE4ODczCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjM0CitLUVM1c2Z0Zkx3VzdCMTFhSCtaQm9CU3h3eHA4Vnp4L2p1WFcyVERtMzNjNzZBeU5KMWwvRVdMeWJCZkFzb1hGYTdKYmlyL1FaUzg4bUovRzkwRUJ3PT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.33/Dynapse_0.1.33_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQyswWWMySFg1SGFidEtyS3RnanFUT0Jmd2w0azduWVdTbUUxeEpob1lwS0k1NmVzSGNBZ2hueGZkR3h6Tkk2c25SVlRLdmZMOTgySnhqbGRISzBjWUFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDA2MjQxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjMzCjIwL1YzRkhNVDhDaFNQaWxJdWRWV3hKVFMwam5nd3JCQUNwWGdsby9QNzNmdHhESmtZTkFkcWEyN0F0V2R3MVR0WE1ZNDFsYUI2RkNxV1lIY2RFRkNnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.34/Dynapse_0.1.34_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3ovZ2ZWaVlndjFzMDdqSC95SzZnbWdxOGlIblcwSzZ4eXMxTG0wSjdSRGRDZlU5dDZCQmY2OWVDMllxd0RDaDRNc2RpQzlmZGQrK0lMRm5qNGlNVGd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDE4ODczCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjM0CitLUVM1c2Z0Zkx3VzdCMTFhSCtaQm9CU3h3eHA4Vnp4L2p1WFcyVERtMzNjNzZBeU5KMWwvRVdMeWJCZkFzb1hGYTdKYmlyL1FaUzg4bUovRzkwRUJ3PT0K"
     }
   }
 }
