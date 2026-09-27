@@ -104,3 +104,4 @@
 | 2026-09-27T09:50:11.727Z | macos | ota | 0.1.39+ota2 | - | ota-served-verified | 토큰 절약: 사진은 앱이 만들고 넣어요 · 바뀐 페이지만 확인 · 지침 가볍게 |
 | 2026-09-27T10:10:17.028Z | macos | ota | 0.1.39+ota3 | - | ota-served-verified | ChatGPT 사진이 바로 끊기던 문제 수정 |
 | 2026-09-27T10:16:52.315Z | macos | ota | 0.1.39+ota4 | - | ota-served-verified | 버전에 화면 번호까지 보여요 |
+| 2026-09-27T10:26:09.955Z | macos | ota | 0.1.39+ota5 | - | ota-served-verified | 멈춤 카드: 'Gemini로 다시' |
