@@ -1,7 +1,7 @@
 {
-  "native": "0.1.39",
-  "ota": 5,
-  "base": "ota/macos/0.1.39/5/",
-  "notes": "멈춤 카드: 'Gemini로 다시'",
-  "pub_date": "2026-09-27T10:25:16.420Z"
+  "native": "0.1.40",
+  "ota": 1,
+  "base": "ota/macos/0.1.40/1/",
+  "notes": "Gemini 한도면 ChatGPT로 이어서",
+  "pub_date": "2026-09-27T10:51:19.712Z"
 }
