@@ -113,3 +113,4 @@
 | 2026-09-27T11:21:17.522Z | macos | ota | 0.1.41+ota1 | - | ota-served-verified | 사진 패널: 내 것 · 재고 · 새로 만들기 |
 | 2026-09-27T11:23:59.241Z | macos | ota | 0.1.41+ota2 | - | ota-served-verified | 끝난 턴의 진행 카드가 멈춰요 |
 | 2026-09-27T11:31:44.621Z | macos | ota | 0.1.41+ota3 | - | ota-served-verified | 리워드 절차 파일 위치 수정 |
+| 2026-09-27T11:46:10.866Z | macos | ota | 0.1.41+ota4 | - | ota-served-verified | 검색 태그 · 리워드 사진 뒤 자동 제출 |
