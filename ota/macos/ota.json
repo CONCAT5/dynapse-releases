@@ -1,7 +1,7 @@
 {
   "native": "0.1.38",
-  "ota": 3,
-  "base": "ota/macos/0.1.38/3/",
-  "notes": "ChatGPT(Codex) 실행 오류 수정",
-  "pub_date": "2026-09-27T06:38:03.428Z"
+  "ota": 4,
+  "base": "ota/macos/0.1.38/4/",
+  "notes": "시작 못 한 요청 이어받기",
+  "pub_date": "2026-09-27T07:18:13.914Z"
 }
