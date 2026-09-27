@@ -1,0 +1,15 @@
+{
+  "native": "0.1.41",
+  "ota": 3,
+  "files": {
+    "app.css": "6a229bdb3a5754fe86426a86779f7609c74045dc0d266bf365ffb6ca4c73fdcd",
+    "chat.js": "735a414f9cbb3bca6c527aee4eb4eef8a82d8615f42c672eeb7216bfec8502a4",
+    "home.js": "56800a022e501f1f392f26f73f74e8572cef6cbbdca6ee6ee20fb0bfd3683fba",
+    "main.js": "c8a2f02d691969d48325818fa29a1f63a86439cdcc2cd5694b0ed82806004d99",
+    "onboard.js": "4fc2547d56ed4235413619aa9efb7ab03b0f6d313165b173ef3f84b98de92513",
+    "photo-runner.js": "a5e4101f2b91bdf8c1019fe54ec9ab56dd4a64c977ca0787699e5dd6707ae23b",
+    "shared/providers.js": "b127af1e18ff1f178ce7aea27d648081b9c353a6ea8b681716104dd40cf44683",
+    "shared/slots.js": "018e86940f92bc0d8c890bb7dc3ab8d772f25623b27994733ad57ded05fb5694",
+    "tokens.css": "bee56ac624f2adad8d1e27de33bdd72339c723518e19bf1dc89f69bb62dfeb43"
+  }
+}
