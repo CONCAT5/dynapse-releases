@@ -107,3 +107,4 @@
 | 2026-09-27T10:26:09.955Z | macos | ota | 0.1.39+ota5 | - | ota-served-verified | 멈춤 카드: 'Gemini로 다시' |
 | 2026-09-27T10:40:34.472Z | macos | beta | 0.1.40 | macos-v0.1.40 | beta-served-verified | 사진 작업: [사진 받기] · 새로고침 중 받은 메시지를 잃지 않아요 |
 | 2026-09-27T10:42:15.530Z | macos | stable | 0.1.40 | macos-v0.1.40 | stable-served-verified |  |
+| 2026-09-27T10:52:03.124Z | macos | ota | 0.1.40+ota1 | - | ota-served-verified | Gemini 한도면 ChatGPT로 이어서 |
