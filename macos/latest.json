@@ -1,15 +1,15 @@
 {
-  "version": "0.1.39",
-  "notes": "ChatGPT 사진: 권한 창(구글 드라이브·문서·오디오) 없이 앱이 직접 사진을 가져와요",
-  "pub_date": "2026-09-27T09:06:48Z",
+  "version": "0.1.40",
+  "notes": "사진 작업: [사진 받기] · 새로고침 중 받은 메시지를 잃지 않아요",
+  "pub_date": "2026-09-27T10:39:29Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.39/Dynapse_0.1.39_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hyVk1oOWFzakZFc05TQjNpRFdDSkdZaWVHdGRhSGxVcE1FUTlYTnlZYXpvM3BKdTVIYkRSZ2prM2pUZzRHZVhSVEFQblVEUEZpRHpVOUZQTlJaMHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDk5OTc0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjM5CnFmTjVqK2ErRlV3NDFJS01XV2paT0Eyd3JEZXJvT2o3OEtjTmQyR2VhMGFDeThTeVFGYSs0YkZGSUxPQ1M4YUhPQno5R2NVWlAzQVIvVTlxSnYwREFBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.40/Dynapse_0.1.40_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy8rQTRkeFEzMitNSkhOME91OCtTL1ZSaitEWUlIa0tHOVVCcERTbGg0b2EzMkVxMi8vMmJoanFhMkJOQWJvaGFaOW51KzhTL0tqU2lmOWxzc2N4RHc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTA1NTE2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQwCmEwdnI2bW9FWnhEWGRobGQ2dzlXelR3QkcvRzd5QmlhOWM3bXNZalFRMUNLclI3akM5a3VLbWgyVEZOSk5UUEFKRTBCRmxRWE1oTmRIMXNQUWF1V0FRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.39/Dynapse_0.1.39_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hyVk1oOWFzakZFc05TQjNpRFdDSkdZaWVHdGRhSGxVcE1FUTlYTnlZYXpvM3BKdTVIYkRSZ2prM2pUZzRHZVhSVEFQblVEUEZpRHpVOUZQTlJaMHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDk5OTc0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjM5CnFmTjVqK2ErRlV3NDFJS01XV2paT0Eyd3JEZXJvT2o3OEtjTmQyR2VhMGFDeThTeVFGYSs0YkZGSUxPQ1M4YUhPQno5R2NVWlAzQVIvVTlxSnYwREFBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.40/Dynapse_0.1.40_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy8rQTRkeFEzMitNSkhOME91OCtTL1ZSaitEWUlIa0tHOVVCcERTbGg0b2EzMkVxMi8vMmJoanFhMkJOQWJvaGFaOW51KzhTL0tqU2lmOWxzc2N4RHc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTA1NTE2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQwCmEwdnI2bW9FWnhEWGRobGQ2dzlXelR3QkcvRzd5QmlhOWM3bXNZalFRMUNLclI3akM5a3VLbWgyVEZOSk5UUEFKRTBCRmxRWE1oTmRIMXNQUWF1V0FRPT0K"
     }
   }
 }
