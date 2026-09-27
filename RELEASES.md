@@ -96,3 +96,4 @@
 | 2026-09-27T05:47:43.226Z | macos | ota | 0.1.38+ota1 | - | ota-served-verified | AI 지시문 영어로 |
 | 2026-09-27T06:31:23.132Z | macos | ota | 0.1.38+ota2 | - | ota-served-verified | 새 지침 받기(슬라이드 리워드) |
 | 2026-09-27T06:38:47.592Z | macos | ota | 0.1.38+ota3 | - | ota-served-verified | ChatGPT(Codex) 실행 오류 수정 |
+| 2026-09-27T07:18:57.636Z | macos | ota | 0.1.38+ota4 | - | ota-served-verified | 시작 못 한 요청 이어받기 |
