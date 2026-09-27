@@ -109,3 +109,4 @@
 | 2026-09-27T10:42:15.530Z | macos | stable | 0.1.40 | macos-v0.1.40 | stable-served-verified |  |
 | 2026-09-27T10:52:03.124Z | macos | ota | 0.1.40+ota1 | - | ota-served-verified | Gemini 한도면 ChatGPT로 이어서 |
 | 2026-09-27T11:02:35.018Z | macos | beta | 0.1.41 | macos-v0.1.41 | beta-served-verified | 요청 하나 = 버전 하나 · 실패하면 원래대로 · [이 버전으로] |
+| 2026-09-27T11:03:45.843Z | macos | stable | 0.1.41 | macos-v0.1.41 | stable-served-verified |  |
