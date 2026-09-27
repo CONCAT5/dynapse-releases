@@ -98,3 +98,4 @@
 | 2026-09-27T06:38:47.592Z | macos | ota | 0.1.38+ota3 | - | ota-served-verified | ChatGPT(Codex) 실행 오류 수정 |
 | 2026-09-27T07:18:57.636Z | macos | ota | 0.1.38+ota4 | - | ota-served-verified | 시작 못 한 요청 이어받기 |
 | 2026-09-27T07:38:24.446Z | macos | ota | 0.1.38+ota5 | - | ota-served-verified | Codex 토큰 계산·검증 Chrome 오류 수정 |
+| 2026-09-27T09:07:53.848Z | macos | beta | 0.1.39 | macos-v0.1.39 | beta-served-verified | ChatGPT 사진: 권한 창(구글 드라이브·문서·오디오) 없이 앱이 직접 사진을 가져와요 |
