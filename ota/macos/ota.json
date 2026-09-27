@@ -1,7 +1,7 @@
 {
-  "native": "0.1.38",
-  "ota": 5,
-  "base": "ota/macos/0.1.38/5/",
-  "notes": "Codex 토큰 계산·검증 Chrome 오류 수정",
-  "pub_date": "2026-09-27T07:37:41.044Z"
+  "native": "0.1.39",
+  "ota": 1,
+  "base": "ota/macos/0.1.39/1/",
+  "notes": "사진 버전 고르기가 AI 없이 바로 바뀌어요",
+  "pub_date": "2026-09-27T09:30:15.583Z"
 }
