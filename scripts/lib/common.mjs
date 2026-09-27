@@ -34,9 +34,28 @@ export function platformArg() {
 
 // 명령 실행 — 성공 판정은 exit code로만 (stderr 출력은 실패가 아니다, §4 [사고 7])
 export function run(cmd, args, opts = {}) {
+  const w = opts.shell ? null : winShim(cmd);
+  if (w) [cmd, args] = /\.exe$/i.test(w) ? [w, args] : [process.execPath, [w, ...args]];
   const r = spawnSync(cmd, args, { encoding: "utf8", stdio: opts.inherit ? "inherit" : "pipe", ...opts });
   if (r.error) throw r.error;
   return { code: r.status, out: (r.stdout ?? "").trim(), err: (r.stderr ?? "").trim() };
+}
+// Windows: pnpm 등 npm 전역 CLI는 .cmd 심뿐이라 셸 없이 spawn하면 ENOENT. shell:true는 인자를 인용하지 않는다(--notes 등 위험)
+// → 심 파일이 가리키는 entry를 읽어 직접 실행(#34 B5): .js/.cjs면 node.exe로, .exe(pnpm 10+ 네이티브)면 그 exe를. gh·git은 .exe라 그대로
+const shims = new Map();
+function winShim(cmd) {
+  if (process.platform !== "win32" || /[\\/.]/.test(cmd)) return null;
+  if (!shims.has(cmd)) {
+    let entry = null;
+    const exe = spawnSync("where", [`${cmd}.exe`], { encoding: "utf8" });
+    if (exe.status !== 0) {
+      const shim = (spawnSync("where", [`${cmd}.cmd`], { encoding: "utf8" }).stdout ?? "").split(/\r?\n/)[0].trim();
+      const rel = shim && readFileSync(shim, "utf8").replaceAll('"%~dp0\\', '"%dp0%\\').split('"%dp0%\\').slice(1).map(s => s.split('"')[0]).find(s => /\.(c|m)?js$/i.test(s) || (/\.exe$/i.test(s) && !/(^|\\)node\.exe$/i.test(s)));
+      if (rel && existsSync(join(dirname(shim), rel))) entry = join(dirname(shim), rel);
+    }
+    shims.set(cmd, entry);
+  }
+  return shims.get(cmd);
 }
 export function must(cmd, args, opts = {}) {
   const r = run(cmd, args, opts);

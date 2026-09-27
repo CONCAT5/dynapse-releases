@@ -33,7 +33,7 @@
     // 각 플랫폼 download.json만 읽는다 — releases/latest 링크는 마지막에 올린 플랫폼을 가리키므로 쓰지 않는다 (docs/11 §1.1)
     const P = [
       { id: "macos", name: "macOS", note: "Apple 실리콘 · Intel 공용", mine: /Mac/i.test(navigator.userAgent) },
-      { id: "windows", name: "Windows", note: "64비트", mine: /Win/i.test(navigator.userAgent) },
+      { id: "windows", name: "Windows", note: "64비트 · SmartScreen 경고가 뜨면 [추가 정보 → 실행]", mine: /Win/i.test(navigator.userAgent) },
     ];
     const mb = (n) => (n / 1048576).toFixed(1) + "MB";
     const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);

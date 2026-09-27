@@ -86,6 +86,9 @@ if (platform === "macos") {
     die(`키체인에 서명 인증서 없음: ${process.env.APPLE_SIGNING_IDENTITY}`);
   const t = must("rustup", ["target", "list", "--installed"]);
   for (const x of ["aarch64-apple-darwin", "x86_64-apple-darwin"]) if (!t.includes(x)) die(`rustup target add ${x} 필요 (universal 빌드)`);
+} else if (c.allowUnsigned) {
+  // 시범 기간(#34 B6): Authenticode 없이 — SmartScreen 경고는 다운로드 페이지 안내로. updater(minisign) 서명은 그대로 필수
+  console.log("  ⚠ allowUnsigned — Windows 설치 파일을 OS 서명 없이 발행 (원장에 unsigned 표기)");
 } else {
   if (!c.windowsSignCommand) die("release.config.json windowsSignCommand 미정 — Windows 서명 방식(YubiKey 로컬 / 클라우드) 결재 후 진행 (§5.3)");
   if (run("where", ["signtool"], { shell: true }).code !== 0) die("signtool 없음 (Windows SDK)");
@@ -113,7 +116,7 @@ const triple = platform === "macos" ? "universal-apple-darwin" : null;
 const bundleDir = join(src, "src-tauri", "target", ...(triple ? [triple] : []), "release", "bundle");
 rmSync(bundleDir, { recursive: true, force: true }); // 옛 산출물이 섞여 올라가지 않게
 const overlay = {
-  bundle: { createUpdaterArtifacts: true, ...(platform === "windows" ? { windows: { signCommand: c.windowsSignCommand } } : {}) },
+  bundle: { createUpdaterArtifacts: true, ...(platform === "windows" && !c.allowUnsigned ? { windows: { signCommand: c.windowsSignCommand } } : {}) },
   plugins: {
     updater: {
       pubkey: c.pubkey,
@@ -162,7 +165,7 @@ if (platform === "macos") {
   assets.push([tgz, updaterFile], [`${tgz}.sig`, `${updaterFile}.sig`], [dmg, installerName]);
 } else {
   const exe = one("nsis", "-setup.exe");
-  must("signtool", ["verify", "/pa", exe], { shell: true });
+  if (!c.allowUnsigned) must("signtool", ["verify", "/pa", exe], { shell: true });
   updaterFile = installerName = `Dynapse_${v}_x64-setup.exe`;
   assets.push([exe, updaterFile], [`${exe}.sig`, `${updaterFile}.sig`]);
 }
@@ -171,7 +174,7 @@ mkdirSync(stage, { recursive: true });
 for (const [from, name] of assets) copyFileSync(from, join(stage, name));
 const signature = readFileSync(join(stage, `${updaterFile}.sig`), "utf8").trim();
 verifyArtifact(readFileSync(join(stage, updaterFile)), signature, c.pubkey, v);
-console.log("  ✓ OS 서명 · updater 서명(버전 바인딩) 검증");
+console.log(platform === "windows" && c.allowUnsigned ? "  ✓ updater 서명(버전 바인딩) 검증 · OS 서명 없음(allowUnsigned)" : "  ✓ OS 서명 · updater 서명(버전 바인딩) 검증");
 const localSha = Object.fromEntries(assets.map(([, n]) => [n, sha256File(join(stage, n))]));
 
 // ───────── 4. Release 업로드 (prerelease로 — promote 때 해제) ─────────
@@ -203,9 +206,10 @@ gitCommitOnly([`${platform}/beta.json`], `${platform}: beta ${v}`);
 
 // ───────── 7. 서빙 검증 ─────────
 step(7, "서빙 검증 (최대 15분)");
-let result = "beta-served-verified", note = notes;
+const unsigned = platform === "windows" && c.allowUnsigned;
+let result = "beta-served-verified", note = unsigned ? `unsigned · ${notes}` : notes;
 try { await verifyServed(c, platform, "beta", v); }
-catch (e) { result = "beta-SERVE-VERIFY-FAILED"; note = e.message; console.error(`  ⚠ ${e.message}`); }
+catch (e) { result = "beta-SERVE-VERIFY-FAILED"; note = unsigned ? `unsigned · ${e.message}` : e.message; console.error(`  ⚠ ${e.message}`); }
 
 // ───────── 10. 원장 ─────────
 step(10, "RELEASES.md 기록");
