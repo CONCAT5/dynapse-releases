@@ -127,3 +127,4 @@
 | 2026-09-28T07:50:54.096Z | macos | ota | 0.1.44+ota1 | - | ota-served-verified | 최신 버전 공개를 앱이 바로 |
 | 2026-09-28T08:07:54.682Z | macos | ota | 0.1.44+ota2 | - | ota-served-verified | 브라우저에서 열기, 최신으로 공개가 정확한 버전을 공개 |
 | 2026-09-28T08:21:15.951Z | windows | beta | 0.1.45 | windows-v0.1.45 | beta-served-verified | unsigned · Windows: 기본 PowerShell(5.1)에서도 ChatGPT(Codex) 원클릭 설치 · 미리보기 웹폰트 허용 |
+| 2026-09-28T08:22:29.030Z | windows | stable | 0.1.45 | windows-v0.1.45 | stable-served-verified |  |
