@@ -125,3 +125,4 @@
 | 2026-09-28T07:44:00.908Z | macos | beta | 0.1.44 | macos-v0.1.44 | beta-served-verified | CLI 한 번에 설치 · 사진 패널이 AI 줄의 모델·강도로 만들어요 |
 | 2026-09-28T07:45:12.053Z | macos | stable | 0.1.44 | macos-v0.1.44 | stable-served-verified |  |
 | 2026-09-28T07:50:54.096Z | macos | ota | 0.1.44+ota1 | - | ota-served-verified | 최신 버전 공개를 앱이 바로 |
+| 2026-09-28T08:07:54.682Z | macos | ota | 0.1.44+ota2 | - | ota-served-verified | 브라우저에서 열기, 최신으로 공개가 정확한 버전을 공개 |
