@@ -117,3 +117,4 @@
 | 2026-09-27T12:06:41.264Z | macos | ota | 0.1.41+ota5 | - | ota-served-verified | 리워드 [제출하기] 버튼 |
 | 2026-09-28T01:15:32.248Z | windows | beta | 0.1.41 | windows-v0.1.41 | beta-served-verified | unsigned · Windows 첫 베타 — 서명 없음(SmartScreen 경고 시 [추가 정보 → 실행]) |
 | 2026-09-28T01:23:13.582Z | windows | stable | 0.1.41 | windows-v0.1.41 | stable-served-verified |  |
+| 2026-09-28T03:38:32.793Z | windows | beta | 0.1.42 | windows-v0.1.42 | beta-served-verified | unsigned · Windows: 설치 직후 ChatGPT(Codex)·Gemini가 계속 '설치 필요'로 보이던 문제 수정(한글 사용자 폴더) |
