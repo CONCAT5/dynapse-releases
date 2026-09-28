@@ -1,15 +1,15 @@
 {
-  "version": "0.1.44",
-  "notes": "CLI 한 번에 설치 · 사진 패널이 AI 줄의 모델·강도로 만들어요",
-  "pub_date": "2026-09-28T07:42:56Z",
+  "version": "0.1.45",
+  "notes": "dynapse.ai 주소로 이전, 글꼴 패널, 리워드 교체 제출, 브라우저에서 열기, 웹폰트 미리보기",
+  "pub_date": "2026-09-28T08:49:29Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.44/Dynapse_0.1.44_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hVWWdSWWVndmFSODFVQllONm1aZVhXeGNkNjN6Rk16ZzdIMnpUTnJCMFk3YWh4UFpKV21Sb05HeXRzcjRRS1FoY01UdnA4YTdPWE90dEFNM2xOYkE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTgxMzMwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQ0CjJOZFFwd3YxTUJ4ZCtpbWM3NFhmclR6Y0dsYjlZc0w1b1BZQnR4U3ZNamlDVXMwU2o1TzNBZUNHR3M4cnR0cjh0WlZyVmZoUUlnb1hXSzkxaGpYS0J3PT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.45/Dynapse_0.1.45_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzM3ZXBBRThqU2dWSi9ZblNCU1BINnZnaWZ4azVsVnhDOE5Ea2p5V2hZQnJBZ2FLdElVTGQ5aEg5N2tUcEg1SG1XUmVUQ1ZwamM3K25DMks3UHRza0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTg1MzMyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQ1ClpLQWZFZVAxZFEwOXhwRWVLWHZyNk5RNUppbmp3SGhDMGp4eWJ1VFIxd0FEYTk4ZHEybkN4aTJ4dDgvZ3VVbjlRUUc3NmJjTnF4SUtSMXA1UWRtQ0FBPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.44/Dynapse_0.1.44_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hVWWdSWWVndmFSODFVQllONm1aZVhXeGNkNjN6Rk16ZzdIMnpUTnJCMFk3YWh4UFpKV21Sb05HeXRzcjRRS1FoY01UdnA4YTdPWE90dEFNM2xOYkE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTgxMzMwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQ0CjJOZFFwd3YxTUJ4ZCtpbWM3NFhmclR6Y0dsYjlZc0w1b1BZQnR4U3ZNamlDVXMwU2o1TzNBZUNHR3M4cnR0cjh0WlZyVmZoUUlnb1hXSzkxaGpYS0J3PT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.45/Dynapse_0.1.45_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzM3ZXBBRThqU2dWSi9ZblNCU1BINnZnaWZ4azVsVnhDOE5Ea2p5V2hZQnJBZ2FLdElVTGQ5aEg5N2tUcEg1SG1XUmVUQ1ZwamM3K25DMks3UHRza0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTg1MzMyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQ1ClpLQWZFZVAxZFEwOXhwRWVLWHZyNk5RNUppbmp3SGhDMGp4eWJ1VFIxd0FEYTk4ZHEybkN4aTJ4dDgvZ3VVbjlRUUc3NmJjTnF4SUtSMXA1UWRtQ0FBPT0K"
     }
   }
 }
