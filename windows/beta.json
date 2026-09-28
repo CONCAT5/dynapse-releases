@@ -1,0 +1,11 @@
+{
+  "version": "0.1.41",
+  "notes": "Windows 첫 베타 — 서명 없음(SmartScreen 경고 시 [추가 정보 → 실행])",
+  "pub_date": "2026-09-28T01:14:26Z",
+  "platforms": {
+    "windows-x86_64": {
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.41/Dynapse_0.1.41_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1Mjlaa3ZTSmFiRXhRL0IwdnUzVzRJSElxS2lKTkhuYXNFaHQrU2x6MkV6bndqSWNGS0xObUFQNEhQeENNVWVNV2tic3djc3Z6STJKR1FwRGtIQnJDVGcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTU4MDU2CWZpbGU6RHluYXBzZV8wLjEuNDFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS40MQovWGlCVS9RdnpWSWlhNEQ4Rk9KUVFOK1oxSDBOMHoycUZMSTVHRkQ1bHF6bmVGVVBPZ2xaQnFBTE4xeDhwcDhOUkI5Z2ZqelhmclZyYnczcU5UNUlEUT09Cg=="
+    }
+  }
+}
