@@ -134,3 +134,4 @@
 | 2026-09-28T08:59:14.734Z | windows | beta | 0.1.46 | windows-v0.1.46 | beta-served-verified | unsigned · 새 주소 dynapse.ai로 연결 |
 | 2026-09-28T09:01:10.137Z | windows | stable | 0.1.46 | windows-v0.1.46 | stable-served-verified |  |
 | 2026-09-28T09:21:06.215Z | macos | beta | 0.1.46 | macos-v0.1.46 | beta-served-verified | 새 주소가 안 열리는 PC에서 옛 주소로 자동 전환(흰 창 해결) |
+| 2026-09-28T09:23:49.773Z | macos | stable | 0.1.46 | macos-v0.1.46 | stable-served-verified |  |
