@@ -1,5 +1,5 @@
 // 서빙 검증 — "올렸다"가 아니라 "Pages가 내보내는 것을 받아 서명까지 확인했다"가 완료 기준 (§0-4, §4-7)
-import { feedUrl, manifestErrors, sleep } from "./common.mjs";
+import { feedUrl, manifestErrors, sleep, pubkeyOf } from "./common.mjs";
 import { verifyArtifact } from "./minisign.mjs";
 
 async function getJson(url) {
@@ -34,7 +34,7 @@ export async function verifyServed(c, platform, channel, expectVersion, { timeou
       if (r.status !== 200) throw new Error(`${key}: asset ${p.url} → 최종 HTTP ${r.status}`);
       seen.set(p.url, Buffer.from(await r.arrayBuffer()));
     }
-    verifyArtifact(seen.get(p.url), p.signature, c.pubkey, m.version);
+    verifyArtifact(seen.get(p.url), p.signature, pubkeyOf(c, platform), m.version);
     log(`  ✓ ${key}: 서명·버전(${m.version}) 검증 (${seen.get(p.url).length} bytes)`);
   }
   return m;

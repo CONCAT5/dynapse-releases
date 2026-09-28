@@ -4,7 +4,7 @@
 // 묶음은 **지금 stable 네이티브 버전**(= 소스 package.json 버전)에만 적용된다. 앱은 서명(updater와 같은 키)·해시를 맞춘 뒤, 도는 작업이 없을 때 화면만 새로고침
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync, copyFileSync } from "node:fs";
 import { join, resolve, relative } from "node:path";
-import { ROOT, platformArg, die, arg, run, must, loadConfig, readJson, readJsonIfExists, writeJson, sha256File, gitCommitOnly, assertCleanTree, ledgerLine, signingEnv, sleep } from "./lib/common.mjs";
+import { ROOT, platformArg, die, arg, run, must, loadConfig, readJson, readJsonIfExists, writeJson, sha256File, gitCommitOnly, assertCleanTree, ledgerLine, signingEnv, sleep, pubkeyOf } from "./lib/common.mjs";
 import { verifyArtifact } from "./lib/minisign.mjs";
 
 const platform = platformArg();
@@ -50,10 +50,10 @@ const manifest = { native, ota: n, files: {} };
 for (const [k, p] of Object.entries(files)) { mkdirSync(join(out, k, ".."), { recursive: true }); copyFileSync(p, join(out, k)); manifest.files[k] = sha256File(p); }
 writeFileSync(join(out, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n");
 const signed = `${native}+ota${n}`;
-const signEnv = { ...process.env, ...(await signingEnv()) };
+const signEnv = { ...process.env, ...(await signingEnv(platform)) };
 const sg = run("pnpm", ["tauri", "signer", "sign", "--app-version", signed, join(out, "manifest.json")], { cwd: src, env: signEnv });
 if (sg.code !== 0) die(`서명 실패\n${sg.err.split("\n").slice(-3).join("\n")}`);
-verifyArtifact(readFileSync(join(out, "manifest.json")), readFileSync(join(out, "manifest.json.sig"), "utf8"), c.pubkey, signed);
+verifyArtifact(readFileSync(join(out, "manifest.json")), readFileSync(join(out, "manifest.json.sig"), "utf8"), pubkeyOf(c, platform), signed);
 console.log(`  ✓ 서명 ${signed} · 파일 ${Object.keys(files).length}`);
 
 console.log("[3] 피드 올리기");

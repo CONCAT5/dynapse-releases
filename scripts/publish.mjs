@@ -7,7 +7,7 @@ import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import {
   ROOT, PLATFORMS, arg, platformArg, die, run, must, loadConfig, readJson, readJsonIfExists, writeJson,
-  cmpSemver, isSemver, manifestErrors, sha256File, assetBase, repoSlug, gitCommitOnly, assertCleanTree, ledgerLine, signingEnv,
+  cmpSemver, isSemver, manifestErrors, sha256File, assetBase, repoSlug, gitCommitOnly, assertCleanTree, ledgerLine, signingEnv, pubkeyOf,
 } from "./lib/common.mjs";
 import { execFileSync } from "node:child_process";
 import { verifyArtifact } from "./lib/minisign.mjs";
@@ -94,7 +94,7 @@ if (platform === "macos") {
   if (run("where", ["signtool"], { shell: true }).code !== 0) die("signtool 없음 (Windows SDK)");
 }
 // 비밀번호는 마지막에 묻는다 — 그 전 검사에서 막히면 입력할 필요가 없게
-const signEnv = { ...process.env, ...(await signingEnv()) }; // 서명하는 자식 프로세스에만 전달
+const signEnv = { ...process.env, ...(await signingEnv(platform)) }; // 서명하는 자식 프로세스에만 전달
 {
   // 개인키로 더미 서명 → release.config.json의 pubkey로 검증 = 키쌍 일치 확인
   const d = mkdtempSync(join(tmpdir(), "dynapse-pre-"));
@@ -102,7 +102,7 @@ const signEnv = { ...process.env, ...(await signingEnv()) }; // 서명하는 자
   writeFileSync(f, `dynapse preflight ${Date.now()}`);
   const sg = run("pnpm", ["tauri", "signer", "sign", "--app-version", v, f], { cwd: src, env: signEnv });
   if (sg.code !== 0) die(`더미 서명 실패 — 비밀번호가 틀렸거나 키 파일이 손상됨\n${sg.err.split("\n").slice(-3).join("\n")}`);
-  try { verifyArtifact(readFileSync(f), readFileSync(`${f}.sig`, "utf8"), c.pubkey, v); }
+  try { verifyArtifact(readFileSync(f), readFileSync(`${f}.sig`, "utf8"), pubkeyOf(c, platform), v); }
   catch (e) { die(`개인키와 release.config.json의 pubkey가 짝이 아님: ${e.message}`); }
   rmSync(d, { recursive: true, force: true });
   console.log("  ✓ updater 키쌍 일치");
@@ -119,7 +119,7 @@ const overlay = {
   bundle: { createUpdaterArtifacts: true, ...(platform === "windows" && !c.allowUnsigned ? { windows: { signCommand: c.windowsSignCommand } } : {}) },
   plugins: {
     updater: {
-      pubkey: c.pubkey,
+      pubkey: pubkeyOf(c, platform),
       endpoints: [`${c.pagesBase}/${platform}/latest.json`], // 빌드 시점에 플랫폼별 고정 (§3.2). beta는 앱이 latest→beta로 바꿔 확인
       requireSignedVersion: true,
       windows: { installMode: "passive" },
@@ -173,7 +173,7 @@ const stage = join(work, "assets");
 mkdirSync(stage, { recursive: true });
 for (const [from, name] of assets) copyFileSync(from, join(stage, name));
 const signature = readFileSync(join(stage, `${updaterFile}.sig`), "utf8").trim();
-verifyArtifact(readFileSync(join(stage, updaterFile)), signature, c.pubkey, v);
+verifyArtifact(readFileSync(join(stage, updaterFile)), signature, pubkeyOf(c, platform), v);
 console.log(platform === "windows" && c.allowUnsigned ? "  ✓ updater 서명(버전 바인딩) 검증 · OS 서명 없음(allowUnsigned)" : "  ✓ OS 서명 · updater 서명(버전 바인딩) 검증");
 const localSha = Object.fromEntries(assets.map(([, n]) => [n, sha256File(join(stage, n))]));
 

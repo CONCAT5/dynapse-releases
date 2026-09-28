@@ -175,6 +175,10 @@ export async function sleep(ms) { await new Promise(r => setTimeout(r, ms)); }
 // ── updater 서명 키 (docs/11 §5.1, 2026-09-23 결정): 키 파일은 대표 Mac에, 비밀번호는 배포 때 대표가 직접 입력 ──
 // 비밀번호: 소스 폴더의 로컬 .env(git 무시·600)에 있으면 그 값, 없으면 가려서 입력받는다. 서명하는 자식 프로세스(env)에만 넘긴다.
 export const DEFAULT_KEY_PATH = join(process.env.HOME ?? process.env.USERPROFILE ?? "", ".tauri", "dynapse-updater.key");
+// 플랫폼별 키(2026-09-28 대표 결정): Windows는 Windows PC의 자기 키(dynapse-updater-windows.key · pubkeyWindows). macOS는 기존 키 그대로.
+// 앱은 빌드 때 받은 pubkey 하나만 믿으므로 플랫폼마다 달라도 된다(OTA 묶음도 같은 키로 서명)
+export const keyPathOf = (platform) => platform === "windows" ? join(process.env.HOME ?? process.env.USERPROFILE ?? "", ".tauri", "dynapse-updater-windows.key") : DEFAULT_KEY_PATH;
+export const pubkeyOf = (c, platform) => (platform === "windows" && c.pubkeyWindows) || c.pubkey;
 
 export async function askHidden(prompt) {
   if (!process.stdin.isTTY) die("비밀번호는 터미널에서 직접 입력해야 한다 (stdin이 터미널이 아님)");
@@ -198,9 +202,9 @@ export async function askHidden(prompt) {
   });
 }
 
-export async function signingEnv() {
-  const path = process.env.TAURI_SIGNING_PRIVATE_KEY_PATH || DEFAULT_KEY_PATH;
-  if (!existsSync(path)) die(`updater 개인키 없음: ${path} — pnpm tauri signer generate -w ${DEFAULT_KEY_PATH}`);
+export async function signingEnv(platform) {
+  const path = process.env.TAURI_SIGNING_PRIVATE_KEY_PATH || keyPathOf(platform);
+  if (!existsSync(path)) die(`updater 개인키 없음: ${path} — pnpm tauri signer generate -w ${keyPathOf(platform)}`);
   if (process.platform !== "win32" && (statSync(path).mode & 0o077)) die(`개인키 권한이 너무 열려 있음 — chmod 600 ${path}`);
   const key = readFileSync(path, "utf8").trim();
   const password = process.env.TAURI_SIGNING_PRIVATE_KEY_PASSWORD || await askHidden("updater 키 비밀번호: "); // 로컬 .env에 있으면 묻지 않는다
