@@ -129,3 +129,4 @@
 | 2026-09-28T08:21:15.951Z | windows | beta | 0.1.45 | windows-v0.1.45 | beta-served-verified | unsigned · Windows: 기본 PowerShell(5.1)에서도 ChatGPT(Codex) 원클릭 설치 · 미리보기 웹폰트 허용 |
 | 2026-09-28T08:22:29.030Z | windows | stable | 0.1.45 | windows-v0.1.45 | stable-served-verified |  |
 | 2026-09-28T08:50:33.504Z | macos | beta | 0.1.45 | macos-v0.1.45 | beta-served-verified | dynapse.ai 주소로 이전, 글꼴 패널, 리워드 교체 제출, 브라우저에서 열기, 웹폰트 미리보기 |
+| 2026-09-28T08:53:10.951Z | macos | stable | 0.1.45 | macos-v0.1.45 | stable-served-verified |  |
