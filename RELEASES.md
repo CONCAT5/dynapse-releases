@@ -131,3 +131,4 @@
 | 2026-09-28T08:50:33.504Z | macos | beta | 0.1.45 | macos-v0.1.45 | beta-served-verified | dynapse.ai 주소로 이전, 글꼴 패널, 리워드 교체 제출, 브라우저에서 열기, 웹폰트 미리보기 |
 | 2026-09-28T08:53:10.951Z | macos | stable | 0.1.45 | macos-v0.1.45 | stable-served-verified |  |
 | 2026-09-28T08:54:26.428Z | macos | ota | 0.1.45+ota1 | - | ota-served-verified | 덱 사진 합계, 빈 칸 채우기 |
+| 2026-09-28T08:59:14.734Z | windows | beta | 0.1.46 | windows-v0.1.46 | beta-served-verified | unsigned · 새 주소 dynapse.ai로 연결 |
