@@ -1,11 +1,11 @@
 {
-  "version": "0.1.42",
-  "notes": "Windows: 설치 직후 ChatGPT(Codex)·Gemini가 계속 '설치 필요'로 보이던 문제 수정(한글 사용자 폴더)",
-  "pub_date": "2026-09-28T03:37:26Z",
+  "version": "0.1.44",
+  "notes": "Windows: [설치하기] 원클릭 설치 · 데스크톱 앱만 있을 때 안내 · 설치·로그인 뒤 연결 탭 모델 선택이 비던 문제 수정",
+  "pub_date": "2026-09-28T06:55:50Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.42/Dynapse_0.1.42_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjNBdjVvN3R5MGtNWDVweEJ1R1VTRlE2MlZtaFoxRlRPQ3JXMkdDa3lTYjdRRGZaYXVKWktCdUU0M2R2WHgzbkV3RG9YQllCMS9BWko2YWhkQXpMaFFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTY2NjMyCWZpbGU6RHluYXBzZV8wLjEuNDJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS40Mgo0eURJeEtVWnI5djNDd3I2VlBmbzFlQnM3NFdOYU0xV01kWHF4Wk1BTEVCOGUyL2ZWU3drYm9TV2RZRWd4VWdRenlUT05xeVMyNmhxU0t0ekl1U21DUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.44/Dynapse_0.1.44_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnhhQTJ2bnlPYjNpWC9GQzNXczdpQlJRK0pNMERZYjFRY2lCZ2h3ZGgrVjcrVDhSS3k0RFdMaGZjMVZPUEV6YUkxclNmRGNyT1BFVVkyeC91TWxpUnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTc4NTQwCWZpbGU6RHluYXBzZV8wLjEuNDRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS40NAozZzRsWjF4cDZLemNOWGJjck1Wc29oeDU0YVkvcG9GYTdaMjJrOWVDQU9DR3dBYnZ5dSt3ZDlKc0g5QU5helpyQjdQWlZCZ3E5Q0pwTWFFVlVWWVFDUT09Cg=="
     }
   }
 }
