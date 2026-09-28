@@ -1,11 +1,11 @@
 {
-  "version": "0.1.45",
-  "notes": "Windows: 기본 PowerShell(5.1)에서도 ChatGPT(Codex) 원클릭 설치 · 미리보기 웹폰트 허용",
-  "pub_date": "2026-09-28T08:20:09Z",
+  "version": "0.1.46",
+  "notes": "새 주소 dynapse.ai로 연결",
+  "pub_date": "2026-09-28T08:58:09Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.45/Dynapse_0.1.45_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjRJYjRMYU83cmNsYllubGJIMUprYUtzUEpxMGl3cmVQa003cUFjdGpmb05acXVURjczVElaeHZWeVpGd24wR0xBV0FFb2ttZTNaemxjdlZhT3VFQWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTgzNTk5CWZpbGU6RHluYXBzZV8wLjEuNDVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS40NQpGQ0luVFJ5cnpRSDBaV1htd0FWekRyMGlFd1FKOWFTK2oyZUxBQnE3eVVaTU1hZ2NML0xFSnQxTlFoR1FMMk1NSWtlSGI2UXNNeWFuUk8vblpjSlBCZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.46/Dynapse_0.1.46_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjU2Q1p3QVdqQ1JSSVN3VlplQ3A3djVsUFdYUTg2QXFjeHczbU5mV2ZNeHdxZURRRjhTMDJaTEtJVG0vWkN3QzQ2aEhwMlVhdUhxTTRZaFhUVVdLaXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTg1ODc5CWZpbGU6RHluYXBzZV8wLjEuNDZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS40NgpqcTF3MjJjZEF3Nk9VVWRya2d5YWIrNWl5ME1WTEE2T0J0R2QxUVJrREpHTGV6bWJuS1BDYTdGQVlLeEFNNFE5TXhoRkF2N2dEdisyQmFhM09CNndDQT09Cg=="
     }
   }
 }
