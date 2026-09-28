@@ -120,3 +120,4 @@
 | 2026-09-28T03:38:32.793Z | windows | beta | 0.1.42 | windows-v0.1.42 | beta-served-verified | unsigned · Windows: 설치 직후 ChatGPT(Codex)·Gemini가 계속 '설치 필요'로 보이던 문제 수정(한글 사용자 폴더) |
 | 2026-09-28T03:44:33.164Z | windows | stable | 0.1.42 | windows-v0.1.42 | stable-served-verified |  |
 | 2026-09-28T06:52:01.550Z | windows | beta | 0.1.43 | windows-v0.1.43 | beta-served-verified | unsigned · Windows: [설치하기] 한 번으로 공식 설치가 진행돼요(ChatGPT·Gemini·Claude). 데스크톱 앱만 있을 때는 무엇을 더 설치하면 되는지 알려 줘요 |
+| 2026-09-28T06:56:56.834Z | windows | beta | 0.1.44 | windows-v0.1.44 | beta-served-verified | unsigned · Windows: [설치하기] 원클릭 설치 · 데스크톱 앱만 있을 때 안내 · 설치·로그인 뒤 연결 탭 모델 선택이 비던 문제 수정 |
