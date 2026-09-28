@@ -1,11 +1,11 @@
 {
-  "version": "0.1.44",
-  "notes": "Windows: [설치하기] 원클릭 설치 · 데스크톱 앱만 있을 때 안내 · 설치·로그인 뒤 연결 탭 모델 선택이 비던 문제 수정",
-  "pub_date": "2026-09-28T06:55:50Z",
+  "version": "0.1.45",
+  "notes": "Windows: 기본 PowerShell(5.1)에서도 ChatGPT(Codex) 원클릭 설치 · 미리보기 웹폰트 허용",
+  "pub_date": "2026-09-28T08:20:09Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.44/Dynapse_0.1.44_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnhhQTJ2bnlPYjNpWC9GQzNXczdpQlJRK0pNMERZYjFRY2lCZ2h3ZGgrVjcrVDhSS3k0RFdMaGZjMVZPUEV6YUkxclNmRGNyT1BFVVkyeC91TWxpUnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTc4NTQwCWZpbGU6RHluYXBzZV8wLjEuNDRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS40NAozZzRsWjF4cDZLemNOWGJjck1Wc29oeDU0YVkvcG9GYTdaMjJrOWVDQU9DR3dBYnZ5dSt3ZDlKc0g5QU5helpyQjdQWlZCZ3E5Q0pwTWFFVlVWWVFDUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.45/Dynapse_0.1.45_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjRJYjRMYU83cmNsYllubGJIMUprYUtzUEpxMGl3cmVQa003cUFjdGpmb05acXVURjczVElaeHZWeVpGd24wR0xBV0FFb2ttZTNaemxjdlZhT3VFQWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTgzNTk5CWZpbGU6RHluYXBzZV8wLjEuNDVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS40NQpGQ0luVFJ5cnpRSDBaV1htd0FWekRyMGlFd1FKOWFTK2oyZUxBQnE3eVVaTU1hZ2NML0xFSnQxTlFoR1FMMk1NSWtlSGI2UXNNeWFuUk8vblpjSlBCZz09Cg=="
     }
   }
 }
