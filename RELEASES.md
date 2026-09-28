@@ -123,3 +123,4 @@
 | 2026-09-28T06:56:56.834Z | windows | beta | 0.1.44 | windows-v0.1.44 | beta-served-verified | unsigned · Windows: [설치하기] 원클릭 설치 · 데스크톱 앱만 있을 때 안내 · 설치·로그인 뒤 연결 탭 모델 선택이 비던 문제 수정 |
 | 2026-09-28T06:58:24.544Z | windows | stable | 0.1.44 | windows-v0.1.44 | stable-served-verified |  |
 | 2026-09-28T07:44:00.908Z | macos | beta | 0.1.44 | macos-v0.1.44 | beta-served-verified | CLI 한 번에 설치 · 사진 패널이 AI 줄의 모델·강도로 만들어요 |
+| 2026-09-28T07:45:12.053Z | macos | stable | 0.1.44 | macos-v0.1.44 | stable-served-verified |  |
