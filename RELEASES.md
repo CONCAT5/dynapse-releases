@@ -116,3 +116,4 @@
 | 2026-09-27T11:46:10.866Z | macos | ota | 0.1.41+ota4 | - | ota-served-verified | 검색 태그 · 리워드 사진 뒤 자동 제출 |
 | 2026-09-27T12:06:41.264Z | macos | ota | 0.1.41+ota5 | - | ota-served-verified | 리워드 [제출하기] 버튼 |
 | 2026-09-28T01:15:32.248Z | windows | beta | 0.1.41 | windows-v0.1.41 | beta-served-verified | unsigned · Windows 첫 베타 — 서명 없음(SmartScreen 경고 시 [추가 정보 → 실행]) |
+| 2026-09-28T01:23:13.582Z | windows | stable | 0.1.41 | windows-v0.1.41 | stable-served-verified |  |
