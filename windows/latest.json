@@ -1,11 +1,11 @@
 {
-  "version": "0.1.46",
-  "notes": "새 주소 dynapse.ai로 연결",
-  "pub_date": "2026-09-28T08:58:09Z",
+  "version": "0.1.49",
+  "notes": "버전 보기, 내 PC 글꼴, dynapse.ai 연결 안정화",
+  "pub_date": "2026-09-29T00:29:43Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.46/Dynapse_0.1.46_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjU2Q1p3QVdqQ1JSSVN3VlplQ3A3djVsUFdYUTg2QXFjeHczbU5mV2ZNeHdxZURRRjhTMDJaTEtJVG0vWkN3QzQ2aEhwMlVhdUhxTTRZaFhUVVdLaXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNTg1ODc5CWZpbGU6RHluYXBzZV8wLjEuNDZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS40NgpqcTF3MjJjZEF3Nk9VVWRya2d5YWIrNWl5ME1WTEE2T0J0R2QxUVJrREpHTGV6bWJuS1BDYTdGQVlLeEFNNFE5TXhoRkF2N2dEdisyQmFhM09CNndDQT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.49/Dynapse_0.1.49_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjloZkVYN3l1NW1pZjQwOTJyb244Smx1SXRQcTg4dTMzQlBRZTRWTTVpaU43ZnFLK1Y2aWhiYzYzWVlIY1BiOWl4NkpHazJNVWFGcHJJbzJZM1FHN1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNjQxNzY4CWZpbGU6RHluYXBzZV8wLjEuNDlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS40OQpaTER6Z2hKRkxUNElTTDAwamlKelp4MVgwMk9heFZJaFdkN2IwZktnZGh1dEQzUWhZV2g3bHo3RHhCRlE2STlGaHN5UUd6T1RpZGZyN29aYjF0ZFNCQT09Cg=="
     }
   }
 }
