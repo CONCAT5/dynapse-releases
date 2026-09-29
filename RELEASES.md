@@ -141,3 +141,4 @@
 | 2026-09-29T00:23:30.652Z | macos | beta | 0.1.48 | macos-v0.1.48 | beta-served-verified | 내 PC 글꼴 찾기, 없는 글꼴 안내 |
 | 2026-09-29T00:24:41.065Z | macos | stable | 0.1.48 | macos-v0.1.48 | stable-served-verified |  |
 | 2026-09-29T00:30:51.244Z | windows | beta | 0.1.49 | windows-v0.1.49 | beta-served-verified | unsigned · 버전 보기, 내 PC 글꼴, dynapse.ai 연결 안정화 |
+| 2026-09-29T00:32:22.163Z | windows | stable | 0.1.49 | windows-v0.1.49 | stable-served-verified |  |
