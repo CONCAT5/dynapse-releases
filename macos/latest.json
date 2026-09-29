@@ -1,15 +1,15 @@
 {
-  "version": "0.1.48",
-  "notes": "내 PC 글꼴 찾기, 없는 글꼴 안내",
-  "pub_date": "2026-09-29T00:22:26Z",
+  "version": "0.1.49",
+  "notes": "작업별 공유(포인트), 공유 켜면 바로 올리기",
+  "pub_date": "2026-09-29T02:24:27Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.48/Dynapse_0.1.48_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzVtM0x0NVljTDdJZE1BbE9aREtMblJnNXVRTTdNd20zZ2tWc1NhU2JDRW5iZWZsQklxZWwrT09wZTkxWmxNNVp1YUx6U3RtUXUzUmU1cG4wWGJkVFFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNjQxMzAxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQ4CmRsbVZ6TGFaOE5IV3VYbVQxUFFaU3NQb0FBQU9NSjM1ZmFPQjk0WEJjcUQyS0UxSW1CQjVSYnduYU1ZWENaRGdnbEFKcWQxN1BMaGdKV0pZMFM1eEFRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.49/Dynapse_0.1.49_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzFZNS9CRWRlaENadFA1RmpsR3JJYmNpVW9mUDNCMWl2Mzk5TVR3ZkhuRTJENldseStxZVJtUENGWW5tOXZ3dDBsMngzU3VDcDB3d0JuSXB1L0lOZndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNjQ4NjI4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQ5Cjd1aFhrcHN5RTB1OGhXamsvYUZCOXdibHBmSWthTUw2SjdSOXZYWnRNWDdMaCsxTEdyenlXQmF0RnRUdHFBNkdkdFpnVTlRTmxOaHRjazIzRHlxV0NRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.48/Dynapse_0.1.48_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzVtM0x0NVljTDdJZE1BbE9aREtMblJnNXVRTTdNd20zZ2tWc1NhU2JDRW5iZWZsQklxZWwrT09wZTkxWmxNNVp1YUx6U3RtUXUzUmU1cG4wWGJkVFFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNjQxMzAxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQ4CmRsbVZ6TGFaOE5IV3VYbVQxUFFaU3NQb0FBQU9NSjM1ZmFPQjk0WEJjcUQyS0UxSW1CQjVSYnduYU1ZWENaRGdnbEFKcWQxN1BMaGdKV0pZMFM1eEFRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.49/Dynapse_0.1.49_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzFZNS9CRWRlaENadFA1RmpsR3JJYmNpVW9mUDNCMWl2Mzk5TVR3ZkhuRTJENldseStxZVJtUENGWW5tOXZ3dDBsMngzU3VDcDB3d0JuSXB1L0lOZndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNjQ4NjI4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjQ5Cjd1aFhrcHN5RTB1OGhXamsvYUZCOXdibHBmSWthTUw2SjdSOXZYWnRNWDdMaCsxTEdyenlXQmF0RnRUdHFBNkdkdFpnVTlRTmxOaHRjazIzRHlxV0NRPT0K"
     }
   }
 }
