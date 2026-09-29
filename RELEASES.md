@@ -150,3 +150,4 @@
 | 2026-09-29T08:55:19.314Z | macos | stable | 0.1.51 | macos-v0.1.51 | stable-served-verified |  |
 | 2026-09-29T11:42:12.878Z | macos | ota | 0.1.51+ota1 | - | ota-served-verified | 서버 연결이 끊기면 주소를 다시 골라 자동 복구 |
 | 2026-09-29T12:38:20.934Z | macos | ota | 0.1.51+ota2 | - | ota-served-verified | 카드뉴스 리워드 제출 |
+| 2026-09-29T22:04:13.240Z | macos | ota | 0.1.51+ota3 | - | ota-served-verified | 받자마자 '받았어요', 준비 단계 표시, 레이아웃 자동 갱신 |
