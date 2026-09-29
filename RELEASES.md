@@ -138,3 +138,4 @@
 | 2026-09-29T00:02:16.218Z | macos | beta | 0.1.47 | macos-v0.1.47 | beta-served-verified | 버전 보기 즉시(읽기만), 되돌리기만 새 버전 |
 | 2026-09-29T00:03:25.300Z | macos | stable | 0.1.47 | macos-v0.1.47 | stable-served-verified |  |
 | 2026-09-29T00:12:44.931Z | macos | ota | 0.1.47+ota1 | - | ota-served-verified | 대화로 고른 글꼴 기록 |
+| 2026-09-29T00:23:30.652Z | macos | beta | 0.1.48 | macos-v0.1.48 | beta-served-verified | 내 PC 글꼴 찾기, 없는 글꼴 안내 |
