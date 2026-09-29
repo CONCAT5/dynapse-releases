@@ -146,3 +146,4 @@
 | 2026-09-29T02:31:43.551Z | macos | stable | 0.1.49 | macos-v0.1.49 | stable-served-verified |  |
 | 2026-09-29T02:36:39.792Z | windows | beta | 0.1.50 | windows-v0.1.50 | beta-served-verified | unsigned · 작업 공유 켜기 반영 |
 | 2026-09-29T02:37:54.890Z | windows | stable | 0.1.50 | windows-v0.1.50 | stable-served-verified |  |
+| 2026-09-29T08:54:08.434Z | macos | beta | 0.1.51 | macos-v0.1.51 | beta-served-verified | 덱 사진 수정이 그 장표에만 적용 |
