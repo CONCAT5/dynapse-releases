@@ -149,3 +149,4 @@
 | 2026-09-29T08:54:08.434Z | macos | beta | 0.1.51 | macos-v0.1.51 | beta-served-verified | 덱 사진 수정이 그 장표에만 적용 |
 | 2026-09-29T08:55:19.314Z | macos | stable | 0.1.51 | macos-v0.1.51 | stable-served-verified |  |
 | 2026-09-29T11:42:12.878Z | macos | ota | 0.1.51+ota1 | - | ota-served-verified | 서버 연결이 끊기면 주소를 다시 골라 자동 복구 |
+| 2026-09-29T12:38:20.934Z | macos | ota | 0.1.51+ota2 | - | ota-served-verified | 카드뉴스 리워드 제출 |
