@@ -152,3 +152,4 @@
 | 2026-09-29T12:38:20.934Z | macos | ota | 0.1.51+ota2 | - | ota-served-verified | 카드뉴스 리워드 제출 |
 | 2026-09-29T22:04:13.240Z | macos | ota | 0.1.51+ota3 | - | ota-served-verified | 받자마자 '받았어요', 준비 단계 표시, 레이아웃 자동 갱신 |
 | 2026-09-29T23:31:42.298Z | windows | beta | 0.1.51 | windows-v0.1.51 | beta-served-verified | unsigned · Codex 설치가 막히면 기다렸다 이어서 · 브라우저 연결 확인 창이 앞에 · 사진 수정은 그 장표에만 · 카드뉴스 · 받자마자 '받았어요' |
+| 2026-09-29T23:33:30.272Z | windows | stable | 0.1.51 | windows-v0.1.51 | stable-served-verified |  |
