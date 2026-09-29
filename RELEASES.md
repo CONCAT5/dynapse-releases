@@ -143,3 +143,4 @@
 | 2026-09-29T00:30:51.244Z | windows | beta | 0.1.49 | windows-v0.1.49 | beta-served-verified | unsigned · 버전 보기, 내 PC 글꼴, dynapse.ai 연결 안정화 |
 | 2026-09-29T00:32:22.163Z | windows | stable | 0.1.49 | windows-v0.1.49 | stable-served-verified |  |
 | 2026-09-29T02:25:31.822Z | macos | beta | 0.1.49 | macos-v0.1.49 | beta-served-verified | 작업별 공유(포인트), 공유 켜면 바로 올리기 |
+| 2026-09-29T02:31:43.551Z | macos | stable | 0.1.49 | macos-v0.1.49 | stable-served-verified |  |
