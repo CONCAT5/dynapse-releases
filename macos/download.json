@@ -1,8 +1,8 @@
 {
-  "version": "0.1.49",
-  "pub_date": "2026-09-29T02:24:27Z",
-  "name": "Dynapse_0.1.49_universal.dmg",
-  "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.49/Dynapse_0.1.49_universal.dmg",
-  "sha256": "cf796205e030c73888cd176ff5569b5e76cb8d834c1c203f19b66b86506e07c9",
-  "size": 16858596
+  "version": "0.1.51",
+  "pub_date": "2026-09-29T08:53:03Z",
+  "name": "Dynapse_0.1.51_universal.dmg",
+  "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.51/Dynapse_0.1.51_universal.dmg",
+  "sha256": "7607053405475c1601f185eb0300c3137207dcb3ebda71a85a7a4769d16a4fcd",
+  "size": 16895683
 }
