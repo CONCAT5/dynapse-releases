@@ -137,3 +137,4 @@
 | 2026-09-28T09:23:49.773Z | macos | stable | 0.1.46 | macos-v0.1.46 | stable-served-verified |  |
 | 2026-09-29T00:02:16.218Z | macos | beta | 0.1.47 | macos-v0.1.47 | beta-served-verified | 버전 보기 즉시(읽기만), 되돌리기만 새 버전 |
 | 2026-09-29T00:03:25.300Z | macos | stable | 0.1.47 | macos-v0.1.47 | stable-served-verified |  |
+| 2026-09-29T00:12:44.931Z | macos | ota | 0.1.47+ota1 | - | ota-served-verified | 대화로 고른 글꼴 기록 |
