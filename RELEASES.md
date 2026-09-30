@@ -154,3 +154,4 @@
 | 2026-09-29T23:31:42.298Z | windows | beta | 0.1.51 | windows-v0.1.51 | beta-served-verified | unsigned · Codex 설치가 막히면 기다렸다 이어서 · 브라우저 연결 확인 창이 앞에 · 사진 수정은 그 장표에만 · 카드뉴스 · 받자마자 '받았어요' |
 | 2026-09-29T23:33:30.272Z | windows | stable | 0.1.51 | windows-v0.1.51 | stable-served-verified |  |
 | 2026-09-30T09:41:02.975Z | macos | beta | 0.1.52 | macos-v0.1.52 | beta-served-verified | 사진 크래시 수정·자동 축소, 직접 수정 묶음, 공개 즉시, 작업 중단(■) |
+| 2026-09-30T09:42:43.661Z | macos | stable | 0.1.52 | macos-v0.1.52 | stable-served-verified |  |
