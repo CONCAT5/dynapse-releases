@@ -156,3 +156,4 @@
 | 2026-09-30T09:41:02.975Z | macos | beta | 0.1.52 | macos-v0.1.52 | beta-served-verified | 사진 크래시 수정·자동 축소, 직접 수정 묶음, 공개 즉시, 작업 중단(■) |
 | 2026-09-30T09:42:43.661Z | macos | stable | 0.1.52 | macos-v0.1.52 | stable-served-verified |  |
 | 2026-09-30T09:46:15.600Z | windows | beta | 0.1.52 | windows-v0.1.52 | beta-served-verified | unsigned · 실행 중인 턴 멈추기, 직접 수정 모아서 저장, 공개 즉시 반영, 사진 자동 줄이기 |
+| 2026-09-30T09:47:35.236Z | windows | stable | 0.1.52 | windows-v0.1.52 | stable-served-verified |  |
