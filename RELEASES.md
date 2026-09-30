@@ -158,3 +158,4 @@
 | 2026-09-30T09:46:15.600Z | windows | beta | 0.1.52 | windows-v0.1.52 | beta-served-verified | unsigned · 실행 중인 턴 멈추기, 직접 수정 모아서 저장, 공개 즉시 반영, 사진 자동 줄이기 |
 | 2026-09-30T09:47:35.236Z | windows | stable | 0.1.52 | windows-v0.1.52 | stable-served-verified |  |
 | 2026-09-30T10:11:47.341Z | macos | ota | 0.1.52+ota1 | - | ota-served-verified | 시간 분해, 사진 2장 동시, 글자만 고친 턴 빠르게 |
+| 2026-09-30T10:25:36.683Z | macos | ota | 0.1.52+ota2 | - | ota-served-verified | #52 운영 지표 — 턴마다 메타 한 줄(시간·토큰·검사·사진·중단) |
