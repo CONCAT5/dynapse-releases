@@ -1,11 +1,11 @@
 {
-  "version": "0.1.51",
-  "notes": "Codex 설치가 막히면 기다렸다 이어서 · 브라우저 연결 확인 창이 앞에 · 사진 수정은 그 장표에만 · 카드뉴스 · 받자마자 '받았어요'",
-  "pub_date": "2026-09-29T23:30:37Z",
+  "version": "0.1.52",
+  "notes": "실행 중인 턴 멈추기, 직접 수정 모아서 저장, 공개 즉시 반영, 사진 자동 줄이기",
+  "pub_date": "2026-09-30T09:45:10Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.51/Dynapse_0.1.51_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1Mi9tUlU4Y1ZyM2VQOVQ0UlNHNTFrK3pKMi9kK3k1bjcyeFlxU09GQkM5L3M4S1NQeURvUkpldXl5L1dmSndoUE1WMVRrTU04eHNtR3Q3Uk5VUndmZGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNzI0NjI0CWZpbGU6RHluYXBzZV8wLjEuNTFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS41MQpGWTAzTEFwb1VmRGxpZG1JNzV2V1dMdzJSMmpQYmMwdjJSSDlNc1NsVitqWVFIUDNVelRqeUJrcEU1L1k2Q1Zlb3cxMHVma0M2d3NORnZMUGFiMUtCZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.52/Dynapse_0.1.52_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnlnZy9JbktXS1d4QmJtdjJ0TzhvTUIxY0ZPeURCejg5WWZlL3pTUmlNb21JUjZTTk4zM2l3ZG9yR1gwMmdud3dPWlhWSVU5Qk84SEdxZWttS0RBWFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNzYxNDk3CWZpbGU6RHluYXBzZV8wLjEuNTJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS41MgpjcUE4WVg2b1dHSnJ6MUZwR1pySjZ2YTZvVnYrYUQ5YTdwNDBEMmtKa0huMFRPaExyeGR1Sm11ZFJvQSttcks0UktkbVpFN3RsWFZYaWRCMmpYNjdDdz09Cg=="
     }
   }
 }
