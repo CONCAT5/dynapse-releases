@@ -163,3 +163,4 @@
 | 2026-09-30T14:12:40.519Z | macos | stable | 0.1.53 | macos-v0.1.53 | stable-served-verified |  |
 | 2026-09-30T14:42:56.753Z | macos | ota | 0.1.53+ota1 | - | ota-served-verified | #54 보정 1 — 덱 전 장 프리필 · 도구 시간 실측 |
 | 2026-09-30T20:17:42.243Z | macos | ota | 0.1.53+ota2 | - | ota-served-verified | #55 검증 실패해도 되돌리지 않음 · #54 보정 2 프리필 파일별 · 준비 오류 표시 |
+| 2026-09-30T21:52:38.219Z | macos | ota | 0.1.53+ota3 | - | ota-served-verified | #54 보정 3 — 리워드 마무리 안내 |
