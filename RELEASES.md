@@ -160,3 +160,4 @@
 | 2026-09-30T10:11:47.341Z | macos | ota | 0.1.52+ota1 | - | ota-served-verified | 시간 분해, 사진 2장 동시, 글자만 고친 턴 빠르게 |
 | 2026-09-30T10:25:36.683Z | macos | ota | 0.1.52+ota2 | - | ota-served-verified | #52 운영 지표 — 턴마다 메타 한 줄(시간·토큰·검사·사진·중단) |
 | 2026-09-30T13:02:23.816Z | macos | beta | 0.1.53 | macos-v0.1.53 | beta-served-verified | #54 속도 — 답을 사진보다 먼저, 검사는 앱이 한 번(Chrome 하나), 글자만 고친 턴 검사 버그 수정 · #51 §2 부하 보고 사진 동시 수 |
+| 2026-09-30T14:12:40.519Z | macos | stable | 0.1.53 | macos-v0.1.53 | stable-served-verified |  |
