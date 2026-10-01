@@ -139,7 +139,20 @@ if (b.code !== 0) die(`빌드 실패 (exit ${b.code})`);
   const found = [];
   const walk = (d, depth) => { if (depth > 4 || !existsSync(d)) return; for (const n of readdirSync(d)) { const f = join(d, n); if (/\.(dSYM|pdb)$/.test(n) && /release/.test(f)) found.push(f); else if (depth < 4 && !/^(bundle|deps|build|incremental)$/.test(n) && statSync(f).isDirectory()) walk(f, depth + 1); } };
   walk(rel, 0);
-  if (found.length) { mkdirSync(keep, { recursive: true }); for (const f of found) { const arch = (f.match(/(aarch64|x86_64|i686)[^/\\]*/)?.[0] ?? "").split(/[/\\]/)[0]; cpSync(f, join(keep, `${arch ? `${arch}-` : ""}${f.split(/[\\/]/).pop()}`), { recursive: true, dereference: true }); } console.log(`  심볼 ${found.length}개 → ${keep}`); }
+  if (found.length) { mkdirSync(keep, { recursive: true }); for (const f of found) { const arch = (f.match(/(aarch64|x86_64|i686)[^/\\]*/)?.[0] ?? "").split(/[/\\]/)[0]; cpSync(f, join(keep, `${arch ? `${arch}-` : ""}${f.split(/[\\/]/).pop()}`), { recursive: true, dereference: true }); } console.log(`  심볼 ${found.length}개 → ${keep}`);
+    // 비공개 저장소 백업(CONCAT5/dynapse-symbols — 공개 금지) · 실패해도 발행은 계속(로컬 사본이 있다)
+    try {
+      const zips = [];
+      for (const n of readdirSync(keep)) {
+        const z = join(tmpdir(), `${platform}-${v}-${n}.zip`);
+        rmSync(z, { force: true });
+        if (process.platform === "darwin") execFileSync("ditto", ["-c", "-k", "--keepParent", join(keep, n), z]); else execFileSync("tar", ["-a", "-c", "-f", z, "-C", keep, n]);
+        zips.push(z);
+      }
+      execFileSync("gh", ["release", "create", `${platform}-${v}`, ...zips, "-R", "CONCAT5/dynapse-symbols", "--title", `${platform} ${v}`, "--notes", `src ${srcSha(src)}`], { stdio: "ignore" });
+      console.log(`  심볼 백업 → CONCAT5/dynapse-symbols ${platform}-${v}`);
+    } catch (e) { console.log(`  ⚠ 심볼 백업 실패(로컬 사본은 있음): ${String(e?.message ?? e).split("\n")[0].slice(0, 120)}`); }
+  }
   else console.log("  심볼 없음(이번 빌드 설정에 디버그 정보가 없다)");
 }
 if (must("git", ["rev-parse", "HEAD"], { cwd: src }) !== srcHead) die("빌드 도중 소스 HEAD가 바뀜 — 산출물 폐기");
