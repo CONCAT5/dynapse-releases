@@ -167,3 +167,4 @@
 | 2026-09-30T23:34:14.717Z | macos | ota | 0.1.53+ota4 | - | ota-served-verified | 기본 강도 낮음 |
 | 2026-10-01T07:35:45.265Z | macos | ota | 0.1.53+ota5 | - | ota-served-verified | #56 받기 결과 표시·재시도 |
 | 2026-10-01T08:17:50.729Z | macos | ota | 0.1.53+ota6 | - | ota-served-verified | #58 웹폰트 주소 붙여넣기 (JS만 · 0.1.54 네이티브는 공증 대기) |
+| 2026-10-01T08:36:07.532Z | macos | ota | 0.1.53+ota7 | - | ota-served-verified | #56 보정 1 가져온 덱 = 편집 턴 · 복제 · 매니저 글꼴 목록 |
