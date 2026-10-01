@@ -171,3 +171,4 @@
 | 2026-10-01T09:03:00.619Z | macos | ota | 0.1.53+ota8 | - | ota-served-verified | src 9d849c002 · #54 C8 모델별 프로세스 · #53 살아 있는 캔버스 · 속도 정리 · 글자 수정 자리 정확히 |
 | 2026-10-01T09:07:48.364Z | macos | beta | 0.1.54 | macos-v0.1.54 | beta-served-verified | src 9d849c002 · #58 OS 글꼴 목록 · #54 C12 무거운 명령 메인 스레드 밖 · 크래시 심볼 · tokens.css 쓰기 |
 | 2026-10-01T09:09:18.500Z | macos | stable | 0.1.54 | macos-v0.1.54 | stable-served-verified |  |
+| 2026-10-01T23:32:58.857Z | windows | beta | 0.1.55 | windows-v0.1.55 | beta-served-verified | src afa4accc7 · unsigned · 답 먼저 · 사진은 뒤에, 작업 중 캔버스 실시간, 가져온 덱 열기 수정, PC 글꼴 전부 목록에(DirectWrite), 사진 동시 2는 부하 보고 |
