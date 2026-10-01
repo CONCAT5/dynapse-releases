@@ -1,8 +1,8 @@
 {
-  "version": "0.1.52",
-  "pub_date": "2026-09-30T09:45:10Z",
-  "name": "Dynapse_0.1.52_x64-setup.exe",
-  "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.52/Dynapse_0.1.52_x64-setup.exe",
-  "sha256": "517de99d279abb3f2d774fcb96a5209426b6c49d109e1e13ae877620b8ce2b9e",
-  "size": 7519201
+  "version": "0.1.55",
+  "pub_date": "2026-10-01T23:31:52Z",
+  "name": "Dynapse_0.1.55_x64-setup.exe",
+  "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.55/Dynapse_0.1.55_x64-setup.exe",
+  "sha256": "9fe33a3515bf205c5ac370a169d6a194aa0d98b4c66395460e54abb677c0fd61",
+  "size": 7580717
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.1.52",
-  "notes": "실행 중인 턴 멈추기, 직접 수정 모아서 저장, 공개 즉시 반영, 사진 자동 줄이기",
-  "pub_date": "2026-09-30T09:45:10Z",
+  "version": "0.1.55",
+  "notes": "답 먼저 · 사진은 뒤에, 작업 중 캔버스 실시간, 가져온 덱 열기 수정, PC 글꼴 전부 목록에(DirectWrite), 사진 동시 2는 부하 보고",
+  "pub_date": "2026-10-01T23:31:52Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.52/Dynapse_0.1.52_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnlnZy9JbktXS1d4QmJtdjJ0TzhvTUIxY0ZPeURCejg5WWZlL3pTUmlNb21JUjZTTk4zM2l3ZG9yR1gwMmdud3dPWlhWSVU5Qk84SEdxZWttS0RBWFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNzYxNDk3CWZpbGU6RHluYXBzZV8wLjEuNTJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS41MgpjcUE4WVg2b1dHSnJ6MUZwR1pySjZ2YTZvVnYrYUQ5YTdwNDBEMmtKa0huMFRPaExyeGR1Sm11ZFJvQSttcks0UktkbVpFN3RsWFZYaWRCMmpYNjdDdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.55/Dynapse_0.1.55_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnkyS1A4T3Y0NS9TaGRKaDA0UUkxbzJQRWhIUmtqaGNMeDJxS21RNjgvak9saEtBcHVZbjB0Uzh6RlNlK2xkeE1peHBUUXBrbFd3MVlqdDBzbEh5K2dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODk3NDk4CWZpbGU6RHluYXBzZV8wLjEuNTVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS41NQpPOGV0Z0s2RWFFRHRReHNYU2xuV1ZkRFpjUS9rU1JyWGRid0pRcUhQSGtqazA2Y1NxK2duZmhMazJqVTFSdmlqd2NQd0ZGVllCdHRlZjFUeTBBaWRCUT09Cg=="
     }
   }
 }
