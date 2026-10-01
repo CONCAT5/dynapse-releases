@@ -139,7 +139,7 @@ if (b.code !== 0) die(`빌드 실패 (exit ${b.code})`);
   const found = [];
   const walk = (d, depth) => { if (depth > 4 || !existsSync(d)) return; for (const n of readdirSync(d)) { const f = join(d, n); if (/\.(dSYM|pdb)$/.test(n) && /release/.test(f)) found.push(f); else if (depth < 4 && !/^(bundle|deps|build|incremental)$/.test(n) && statSync(f).isDirectory()) walk(f, depth + 1); } };
   walk(rel, 0);
-  if (found.length) { mkdirSync(keep, { recursive: true }); for (const f of found) cpSync(f, join(keep, f.split(/[\\/]/).pop()), { recursive: true }); console.log(`  심볼 ${found.length}개 → ${keep}`); }
+  if (found.length) { mkdirSync(keep, { recursive: true }); for (const f of found) { const arch = (f.match(/(aarch64|x86_64|i686)[^/\\]*/)?.[0] ?? "").split(/[/\\]/)[0]; cpSync(f, join(keep, `${arch ? `${arch}-` : ""}${f.split(/[\\/]/).pop()}`), { recursive: true, dereference: true }); } console.log(`  심볼 ${found.length}개 → ${keep}`); }
   else console.log("  심볼 없음(이번 빌드 설정에 디버그 정보가 없다)");
 }
 if (must("git", ["rev-parse", "HEAD"], { cwd: src }) !== srcHead) die("빌드 도중 소스 HEAD가 바뀜 — 산출물 폐기");
