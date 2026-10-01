@@ -169,3 +169,4 @@
 | 2026-10-01T08:17:50.729Z | macos | ota | 0.1.53+ota6 | - | ota-served-verified | #58 웹폰트 주소 붙여넣기 (JS만 · 0.1.54 네이티브는 공증 대기) |
 | 2026-10-01T08:36:07.532Z | macos | ota | 0.1.53+ota7 | - | ota-served-verified | #56 보정 1 가져온 덱 = 편집 턴 · 복제 · 매니저 글꼴 목록 |
 | 2026-10-01T09:03:00.619Z | macos | ota | 0.1.53+ota8 | - | ota-served-verified | src 9d849c002 · #54 C8 모델별 프로세스 · #53 살아 있는 캔버스 · 속도 정리 · 글자 수정 자리 정확히 |
+| 2026-10-01T09:07:48.364Z | macos | beta | 0.1.54 | macos-v0.1.54 | beta-served-verified | src 9d849c002 · #58 OS 글꼴 목록 · #54 C12 무거운 명령 메인 스레드 밖 · 크래시 심볼 · tokens.css 쓰기 |
