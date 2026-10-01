@@ -165,3 +165,4 @@
 | 2026-09-30T20:17:42.243Z | macos | ota | 0.1.53+ota2 | - | ota-served-verified | #55 검증 실패해도 되돌리지 않음 · #54 보정 2 프리필 파일별 · 준비 오류 표시 |
 | 2026-09-30T21:52:38.219Z | macos | ota | 0.1.53+ota3 | - | ota-served-verified | #54 보정 3 — 리워드 마무리 안내 |
 | 2026-09-30T23:34:14.717Z | macos | ota | 0.1.53+ota4 | - | ota-served-verified | 기본 강도 낮음 |
+| 2026-10-01T07:35:45.265Z | macos | ota | 0.1.53+ota5 | - | ota-served-verified | #56 받기 결과 표시·재시도 |
