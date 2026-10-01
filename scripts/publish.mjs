@@ -146,7 +146,7 @@ if (b.code !== 0) die(`빌드 실패 (exit ${b.code})`);
       for (const n of readdirSync(keep)) {
         const z = join(tmpdir(), `${platform}-${v}-${n}.zip`);
         rmSync(z, { force: true });
-        if (process.platform === "darwin") execFileSync("ditto", ["-c", "-k", "--keepParent", join(keep, n), z]); else execFileSync("tar", ["-a", "-c", "-f", z, "-C", keep, n]);
+        if (process.platform === "darwin") execFileSync("ditto", ["-c", "-k", "--keepParent", join(keep, n), z]); else execFileSync(process.platform === "win32" ? join(process.env.SystemRoot ?? "C:\Windows", "System32", "tar.exe") : "tar", ["-a", "-c", "-f", z, "-C", keep, n]);   // Windows는 내장 bsdtar(zip 지원) — Git Bash의 GNU tar는 -a zip이 없고 C: 를 원격 호스트로 읽는다
         zips.push(z);
       }
       execFileSync("gh", ["release", "create", `${platform}-${v}`, ...zips, "-R", "CONCAT5/dynapse-symbols", "--title", `${platform} ${v}`, "--notes", `src ${srcSha(src)}`], { stdio: "ignore" });
