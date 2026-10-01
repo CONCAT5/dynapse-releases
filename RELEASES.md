@@ -166,3 +166,4 @@
 | 2026-09-30T21:52:38.219Z | macos | ota | 0.1.53+ota3 | - | ota-served-verified | #54 보정 3 — 리워드 마무리 안내 |
 | 2026-09-30T23:34:14.717Z | macos | ota | 0.1.53+ota4 | - | ota-served-verified | 기본 강도 낮음 |
 | 2026-10-01T07:35:45.265Z | macos | ota | 0.1.53+ota5 | - | ota-served-verified | #56 받기 결과 표시·재시도 |
+| 2026-10-01T08:17:50.729Z | macos | ota | 0.1.53+ota6 | - | ota-served-verified | #58 웹폰트 주소 붙여넣기 (JS만 · 0.1.54 네이티브는 공증 대기) |
