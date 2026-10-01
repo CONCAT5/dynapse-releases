@@ -2,12 +2,12 @@
 // 배포 1~7·10단계 (docs/11 §4) — beta 채널로만 발행한다. stable은 실기기 검증 후 promote.mjs.
 //   node scripts/publish.mjs --platform macos|windows --source <prototypes/desktop 경로> --notes "…" [--dry-run]
 // 이 스크립트는 자기 플랫폼 폴더(+원장 RELEASES.md) 밖의 파일을 쓰지 않는다.
-import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync, copyFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync, copyFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import {
   ROOT, PLATFORMS, arg, platformArg, die, run, must, loadConfig, readJson, readJsonIfExists, writeJson,
-  cmpSemver, isSemver, manifestErrors, sha256File, assetBase, repoSlug, gitCommitOnly, assertCleanTree, ledgerLine, signingEnv, pubkeyOf,
+  cmpSemver, isSemver, manifestErrors, sha256File, assetBase, repoSlug, gitCommitOnly, assertCleanTree, ledgerLine, srcSha, signingEnv, pubkeyOf,
 } from "./lib/common.mjs";
 import { execFileSync } from "node:child_process";
 import { verifyArtifact } from "./lib/minisign.mjs";
@@ -131,6 +131,17 @@ const overlayPath = join(work, "release.conf.json");
 writeJson(overlayPath, overlay);
 const b = run("pnpm", ["tauri", "build", "--config", overlayPath, ...(triple ? ["--target", triple] : [])], { cwd: src, inherit: true, env: signEnv });
 if (b.code !== 0) die(`빌드 실패 (exit ${b.code})`);
+// 크래시 심볼 보관(#48 G) — target/**/release의 .dSYM(macOS)·.pdb(Windows)를 이 PC 비공개 폴더로. 공개 릴리스 리포에는 올리지 않는다
+{
+  const home = process.env.HOME ?? process.env.USERPROFILE ?? ".";
+  const keep = join(home, "development", "dynapse-symbols", `${platform}-${v}`);
+  const rel = join(src, "src-tauri", "target");
+  const found = [];
+  const walk = (d, depth) => { if (depth > 4 || !existsSync(d)) return; for (const n of readdirSync(d)) { const f = join(d, n); if (/\.(dSYM|pdb)$/.test(n) && /release/.test(f)) found.push(f); else if (depth < 4 && !/^(bundle|deps|build|incremental)$/.test(n) && statSync(f).isDirectory()) walk(f, depth + 1); } };
+  walk(rel, 0);
+  if (found.length) { mkdirSync(keep, { recursive: true }); for (const f of found) cpSync(f, join(keep, f.split(/[\\/]/).pop()), { recursive: true }); console.log(`  심볼 ${found.length}개 → ${keep}`); }
+  else console.log("  심볼 없음(이번 빌드 설정에 디버그 정보가 없다)");
+}
 if (must("git", ["rev-parse", "HEAD"], { cwd: src }) !== srcHead) die("빌드 도중 소스 HEAD가 바뀜 — 산출물 폐기");
 assertCleanTree(src, "빌드 후 소스 리포");
 
@@ -213,7 +224,7 @@ catch (e) { result = "beta-SERVE-VERIFY-FAILED"; note = unsigned ? `unsigned · 
 
 // ───────── 10. 원장 ─────────
 step(10, "RELEASES.md 기록");
-writeFileSync(join(ROOT, "RELEASES.md"), `${readFileSync(join(ROOT, "RELEASES.md"), "utf8").trimEnd()}\n${ledgerLine({ platform, channel: "beta", version: v, tag, result, note })}\n`);
+writeFileSync(join(ROOT, "RELEASES.md"), `${readFileSync(join(ROOT, "RELEASES.md"), "utf8").trimEnd()}\n${ledgerLine({ platform, channel: "beta", version: v, tag, result, note: `src ${srcSha(src)} · ${note}` })}\n`);
 gitCommitOnly(["RELEASES.md"], `ledger: ${platform} beta ${v} ${result}`);
 rmSync(work, { recursive: true, force: true });
 // 빌드 산출물 .app이 dynapse:// 처리 앱으로 등록되면 웹 링크가 업데이트 없는 로컬 빌드를 연다 — 등록 해제(설치본만 남긴다)

@@ -1,3 +1,4 @@
+import { execFileSync } from "node:child_process";
 // 배포 스크립트 공용 — 규칙은 docs/11-desktop-release-policy.md. 외부 의존성 없음(Node 20+).
 import { readFileSync, writeFileSync, existsSync, statSync } from "node:fs";
 import { spawnSync } from "node:child_process";
@@ -148,6 +149,8 @@ export function downloadErrors(d, platform, c) {
 }
 
 // ── 원장 (§4-10) ──
+// 소스 커밋(#48 G) — 어느 커밋으로 빌드했는지 원장에 남긴다
+export function srcSha(dir) { try { return execFileSync("git", ["-C", dir, "rev-parse", "--short=9", "HEAD"], { encoding: "utf8" }).trim(); } catch { return "?"; } }
 export function ledgerLine({ platform, channel, version, tag, result, note = "" }) {
   return `| ${new Date().toISOString()} | ${platform} | ${channel} | ${version} | ${tag} | ${result} | ${note.replace(/\|/g, "/")} |`;
 }

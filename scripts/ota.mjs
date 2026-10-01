@@ -4,7 +4,7 @@
 // 묶음은 **지금 stable 네이티브 버전**(= 소스 package.json 버전)에만 적용된다. 앱은 서명(updater와 같은 키)·해시를 맞춘 뒤, 도는 작업이 없을 때 화면만 새로고침
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync, copyFileSync } from "node:fs";
 import { join, resolve, relative } from "node:path";
-import { ROOT, platformArg, die, arg, run, must, loadConfig, readJson, readJsonIfExists, writeJson, sha256File, gitCommitOnly, assertCleanTree, ledgerLine, signingEnv, sleep, pubkeyOf } from "./lib/common.mjs";
+import { ROOT, platformArg, die, arg, run, must, loadConfig, readJson, readJsonIfExists, writeJson, sha256File, gitCommitOnly, assertCleanTree, ledgerLine, srcSha, signingEnv, sleep, pubkeyOf } from "./lib/common.mjs";
 import { verifyArtifact } from "./lib/minisign.mjs";
 
 const platform = platformArg();
@@ -72,7 +72,7 @@ for (let k = 0; k < 90 && !ok; k++) {
   }
   if (!ok) await sleep(10_000);
 }
-writeFileSync(join(ROOT, "RELEASES.md"), `${readFileSync(join(ROOT, "RELEASES.md"), "utf8").trimEnd()}\n${ledgerLine({ platform, channel: "ota", version: signed, tag: "-", result: ok ? "ota-served-verified" : "ota-SERVE-VERIFY-FAILED", note: notes })}\n`);
+writeFileSync(join(ROOT, "RELEASES.md"), `${readFileSync(join(ROOT, "RELEASES.md"), "utf8").trimEnd()}\n${ledgerLine({ platform, channel: "ota", version: signed, tag: "-", result: ok ? "ota-served-verified" : "ota-SERVE-VERIFY-FAILED", note: `src ${srcSha(src)} · ${notes}` })}\n`);
 gitCommitOnly(["RELEASES.md"], `ledger: ${platform} ota ${signed}`);
 if (!ok) die("서빙 확인 실패 — 원장에 기록됨");
 console.log(`\n✓ ${platform} ${signed} 화면 묶음 발행·서빙 확인. 켜져 있는 ${native} 앱은 SSE 알림(또는 30분 확인)으로 받아 한가할 때 새로고침`);
