@@ -173,3 +173,4 @@
 | 2026-10-01T09:09:18.500Z | macos | stable | 0.1.54 | macos-v0.1.54 | stable-served-verified |  |
 | 2026-10-01T23:32:58.857Z | windows | beta | 0.1.55 | windows-v0.1.55 | beta-served-verified | src afa4accc7 · unsigned · 답 먼저 · 사진은 뒤에, 작업 중 캔버스 실시간, 가져온 덱 열기 수정, PC 글꼴 전부 목록에(DirectWrite), 사진 동시 2는 부하 보고 |
 | 2026-10-01T23:35:48.158Z | windows | stable | 0.1.55 | windows-v0.1.55 | stable-served-verified |  |
+| 2026-10-02T02:11:00.001Z | macos | ota | 0.1.54+ota1 | - | ota-served-verified | src a2fbdad50 · #49-보정 1 재고에 공유 · #58 보정 1 (JS · 소스 a2fbdad) |
