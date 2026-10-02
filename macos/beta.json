@@ -1,15 +1,15 @@
 {
-  "version": "0.1.54",
-  "notes": "#58 OS 글꼴 목록 · #54 C12 무거운 명령 메인 스레드 밖 · 크래시 심볼 · tokens.css 쓰기",
-  "pub_date": "2026-10-01T09:06:42Z",
+  "version": "0.1.56",
+  "notes": "#61 앱 창: 끌어놓기·새 탭 링크·다운로드·dynapse 링크·발표 전체화면·내보내기 결과 채팅·Dock 복귀·큰 파일 바이트",
+  "pub_date": "2026-10-02T02:48:17Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.54/Dynapse_0.1.54_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzYyaXlqSHRFbUR1SDUvNzE1Z3lIbnFjYmNINzZ2MGNxNm1JL0M1ZG1ISytBSjlLU0xaYmJROFVqWDQ0alIwSkFBRm1pQTVQZ3VBVU5FcGNOemY3RmdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODQ1NTYzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjU0Ckpmb3NQdStGQWczMlljcmlxUzJ5MDFRL2ZGcmU0aUZZMUpuemFZMHN6M1hDUXVtUTh1cGZiU1Q5cklRaHNOWjF5cm1od0pHMmxrV1hGdXMyWm9BZ0NRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.56/Dynapse_0.1.56_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBma1NHcVZjZldHdWRVdi9ybm1KSE5nOTdLUzM4dEFtcUJLR2JKM1d3T2NTRzBSczdOVGM0UnhTY2xqZUIxeWtUQjFOYXZKMTNHUWFPUkFqRkJINkEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwOTA5MjM1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjU2CkNqUnV0QnlSL0sycGFRN29jUXI5VmNibHJXcTVIZjJaOWF0aGRaeHdRZUpGQUxUaUlkNGIwMWNXZDBvZG01elVOM0ptbkFpSEdEbjdTa3ltTGxjYUNRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.54/Dynapse_0.1.54_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzYyaXlqSHRFbUR1SDUvNzE1Z3lIbnFjYmNINzZ2MGNxNm1JL0M1ZG1ISytBSjlLU0xaYmJROFVqWDQ0alIwSkFBRm1pQTVQZ3VBVU5FcGNOemY3RmdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODQ1NTYzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjU0Ckpmb3NQdStGQWczMlljcmlxUzJ5MDFRL2ZGcmU0aUZZMUpuemFZMHN6M1hDUXVtUTh1cGZiU1Q5cklRaHNOWjF5cm1od0pHMmxrV1hGdXMyWm9BZ0NRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.56/Dynapse_0.1.56_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBma1NHcVZjZldHdWRVdi9ybm1KSE5nOTdLUzM4dEFtcUJLR2JKM1d3T2NTRzBSczdOVGM0UnhTY2xqZUIxeWtUQjFOYXZKMTNHUWFPUkFqRkJINkEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwOTA5MjM1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjU2CkNqUnV0QnlSL0sycGFRN29jUXI5VmNibHJXcTVIZjJaOWF0aGRaeHdRZUpGQUxUaUlkNGIwMWNXZDBvZG01elVOM0ptbkFpSEdEbjdTa3ltTGxjYUNRPT0K"
     }
   }
 }
