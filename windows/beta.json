@@ -1,11 +1,11 @@
 {
-  "version": "0.1.55",
-  "notes": "답 먼저 · 사진은 뒤에, 작업 중 캔버스 실시간, 가져온 덱 열기 수정, PC 글꼴 전부 목록에(DirectWrite), 사진 동시 2는 부하 보고",
-  "pub_date": "2026-10-01T23:31:52Z",
+  "version": "0.1.56",
+  "notes": "앱 창에 파일 끌어놓기, 새 창 링크는 브라우저로, 받은 파일 탐색기에서 보기, 큰 파일 가져오기, 덱 사진 재고화",
+  "pub_date": "2026-10-02T06:01:25Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.55/Dynapse_0.1.55_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnkyS1A4T3Y0NS9TaGRKaDA0UUkxbzJQRWhIUmtqaGNMeDJxS21RNjgvak9saEtBcHVZbjB0Uzh6RlNlK2xkeE1peHBUUXBrbFd3MVlqdDBzbEh5K2dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwODk3NDk4CWZpbGU6RHluYXBzZV8wLjEuNTVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS41NQpPOGV0Z0s2RWFFRHRReHNYU2xuV1ZkRFpjUS9rU1JyWGRid0pRcUhQSGtqazA2Y1NxK2duZmhMazJqVTFSdmlqd2NQd0ZGVllCdHRlZjFUeTBBaWRCUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.56/Dynapse_0.1.56_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjhtQTVnTFNvTmFNN1luSnhxT29IMWJyeW50aHA0Mm9paEc2emFQZUpZUTR5U1VPOTJiZTI5ZEloelpFbUJRZXkySFpmL2xRbTh4d0IyVHBCRy9rSEFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwOTIwODYzCWZpbGU6RHluYXBzZV8wLjEuNTZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS41NgoxN3BnUlhVTHNLY2dTMTQ4Wjh6TzhGK0FtdnM0WDc0eXNOcm1hODNGVDYxYmlybjlrWWJtTEN4QkpQQXRtWURJOGs2RFR5cmI2WlRKazNpNlBKaDhBQT09Cg=="
     }
   }
 }
