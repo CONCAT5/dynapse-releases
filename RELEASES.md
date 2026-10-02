@@ -175,3 +175,4 @@
 | 2026-10-01T23:35:48.158Z | windows | stable | 0.1.55 | windows-v0.1.55 | stable-served-verified |  |
 | 2026-10-02T02:11:00.001Z | macos | ota | 0.1.54+ota1 | - | ota-served-verified | src a2fbdad50 · #49-보정 1 재고에 공유 · #58 보정 1 (JS · 소스 a2fbdad) |
 | 2026-10-02T02:49:24.196Z | macos | beta | 0.1.56 | macos-v0.1.56 | beta-served-verified | src ddea4b2b2 · #61 앱 창: 끌어놓기·새 탭 링크·다운로드·dynapse 링크·발표 전체화면·내보내기 결과 채팅·Dock 복귀·큰 파일 바이트 |
+| 2026-10-02T02:50:40.151Z | macos | stable | 0.1.56 | macos-v0.1.56 | stable-served-verified |  |
