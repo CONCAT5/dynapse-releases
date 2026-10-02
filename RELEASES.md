@@ -177,3 +177,4 @@
 | 2026-10-02T02:49:24.196Z | macos | beta | 0.1.56 | macos-v0.1.56 | beta-served-verified | src ddea4b2b2 · #61 앱 창: 끌어놓기·새 탭 링크·다운로드·dynapse 링크·발표 전체화면·내보내기 결과 채팅·Dock 복귀·큰 파일 바이트 |
 | 2026-10-02T02:50:40.151Z | macos | stable | 0.1.56 | macos-v0.1.56 | stable-served-verified |  |
 | 2026-10-02T06:02:32.527Z | windows | beta | 0.1.56 | windows-v0.1.56 | beta-served-verified | src 87d9b7bf8 · unsigned · 앱 창에 파일 끌어놓기, 새 창 링크는 브라우저로, 받은 파일 탐색기에서 보기, 큰 파일 가져오기, 덱 사진 재고화 |
+| 2026-10-02T06:03:55.174Z | windows | stable | 0.1.56 | windows-v0.1.56 | stable-served-verified |  |
