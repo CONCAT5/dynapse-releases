@@ -186,3 +186,4 @@
 | 2026-10-03T07:52:20.329Z | windows | ota | 0.1.56+ota1 | - | ota-served-verified | src 54abc25e9 · #62 리워드 검사·반려 카드, #63 사진 하루 상한(서버 값), #67 첫 화면 위치 한 줄 |
 | 2026-10-03T09:28:32.332Z | macos | beta | 0.1.57 | macos-v0.1.57 | beta-served-verified | src eca832cc0 · #70 문서 색인(PDF·Word·PPT·엑셀) |
 | 2026-10-03T09:30:26.498Z | macos | stable | 0.1.57 | macos-v0.1.57 | stable-served-verified |  |
+| 2026-10-03T09:59:43.149Z | macos | ota | 0.1.57+ota1 | - | ota-served-verified | src 01429c2e3 · 글자 없는 문서는 내 AI가 읽어 저장 |
