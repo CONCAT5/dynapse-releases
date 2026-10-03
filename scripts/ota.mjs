@@ -35,7 +35,7 @@ const prev = readJsonIfExists(feedPath);
 const n = prev?.native === native ? prev.ota + 1 : 1;
 
 console.log(`\n[1] 화면 빌드 (${native} · 묶음 ${n})`);
-must("pnpm", ["-s", "build:web"], { cwd: src });
+must("pnpm", ["run", "build:web"], { cwd: src });   // -s 없이(pnpm 12는 -s를 모른다 · Windows)
 const dist = join(src, "dist");
 const files = {};
 const walk = (d) => { for (const f of readdirSync(d)) { const p = join(d, f); if (statSync(p).isDirectory()) walk(p); else if (/\.(js|css)$/.test(f) && f !== "loader.js") files[relative(dist, p).split("\\").join("/")] = p; } };
