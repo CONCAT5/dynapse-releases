@@ -179,3 +179,4 @@
 | 2026-10-02T06:02:32.527Z | windows | beta | 0.1.56 | windows-v0.1.56 | beta-served-verified | src 87d9b7bf8 · unsigned · 앱 창에 파일 끌어놓기, 새 창 링크는 브라우저로, 받은 파일 탐색기에서 보기, 큰 파일 가져오기, 덱 사진 재고화 |
 | 2026-10-02T06:03:55.174Z | windows | stable | 0.1.56 | windows-v0.1.56 | stable-served-verified |  |
 | 2026-10-02T23:15:14.864Z | macos | ota | 0.1.56+ota1 | - | ota-served-verified | src 9f35fe88f · #62: 리워드 검사 --reward(빈 사진 칸·사진 칸 빼기) |
+| 2026-10-03T01:42:13.841Z | macos | ota | 0.1.56+ota2 | - | ota-served-verified | src fd0d55e39 · #63: 사진 하루 상한을 서버(코호트) 값으로, 리워드 사진은 상한 밖 |
