@@ -184,3 +184,4 @@
 | 2026-10-03T06:01:17.528Z | macos | ota | 0.1.56+ota4 | - | ota-served-verified | src 3f19bace2 · 리워드 작업은 항상 리워드 규칙으로 검사 |
 | 2026-10-03T06:35:23.162Z | macos | ota | 0.1.56+ota5 | - | ota-served-verified | src 54abc25e9 · #67 첫 화면 위치 한 줄 |
 | 2026-10-03T07:52:20.329Z | windows | ota | 0.1.56+ota1 | - | ota-served-verified | src 54abc25e9 · #62 리워드 검사·반려 카드, #63 사진 하루 상한(서버 값), #67 첫 화면 위치 한 줄 |
+| 2026-10-03T09:28:32.332Z | macos | beta | 0.1.57 | macos-v0.1.57 | beta-served-verified | src eca832cc0 · #70 문서 색인(PDF·Word·PPT·엑셀) |
