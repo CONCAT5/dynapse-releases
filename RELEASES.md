@@ -180,3 +180,4 @@
 | 2026-10-02T06:03:55.174Z | windows | stable | 0.1.56 | windows-v0.1.56 | stable-served-verified |  |
 | 2026-10-02T23:15:14.864Z | macos | ota | 0.1.56+ota1 | - | ota-served-verified | src 9f35fe88f · #62: 리워드 검사 --reward(빈 사진 칸·사진 칸 빼기) |
 | 2026-10-03T01:42:13.841Z | macos | ota | 0.1.56+ota2 | - | ota-served-verified | src fd0d55e39 · #63: 사진 하루 상한을 서버(코호트) 값으로, 리워드 사진은 상한 밖 |
+| 2026-10-03T05:44:23.322Z | macos | ota | 0.1.56+ota3 | - | ota-served-verified | src f189cbf4e · #62 보정 1: 제출 전 리워드 검사, 반려 카드 |
