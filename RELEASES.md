@@ -198,3 +198,4 @@
 | 2026-10-04T13:39:16.866Z | windows | beta | 0.1.59 | windows-v0.1.59 | beta-served-verified | src 5bf72e6db · unsigned · 긴 문서 요약은 보조 호출로, 보조 작업이 편집 AI를 따름, 연결·설치 실패 진단 |
 | 2026-10-04T13:40:36.518Z | windows | stable | 0.1.59 | windows-v0.1.59 | stable-served-verified |  |
 | 2026-10-04T13:53:06.439Z | macos | beta | 0.1.59 | macos-v0.1.59 | beta-served-verified | src 30c8eaed5 · PPTX 왕복(글·사진 칸만 되돌리기) · 트레이 의견 보내기 · 진단 보고 · 문서 요약 보조 |
+| 2026-10-04T13:54:36.091Z | macos | stable | 0.1.59 | macos-v0.1.59 | stable-served-verified |  |
