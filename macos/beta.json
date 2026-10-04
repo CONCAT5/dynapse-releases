@@ -1,15 +1,15 @@
 {
-  "version": "0.1.58",
-  "notes": "PPTX 가져오기(내용·표·그림)·PPTX 내보내기(편집 가능)·PNG 2배 · 리워드 검사 옵션 허용",
-  "pub_date": "2026-10-04T12:05:17Z",
+  "version": "0.1.59",
+  "notes": "PPTX 왕복(글·사진 칸만 되돌리기) · 트레이 의견 보내기 · 진단 보고 · 문서 요약 보조",
+  "pub_date": "2026-10-04T13:52:00Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.58/Dynapse_0.1.58_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy9UOTBNL2NrMnRsYUxWdGVPcTZOZS9vRnd0TnFEZHhmQWM0YjY5T2hielJmeEwzdlNyeWhiLzU5R1NUMVRpZDVzUklEZWE2SjlNc3Q2MDU2aGpGTXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTE1NDcxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjU4CkltbGRCYWFTVHJvUU5XWTExN0N2MHZaeGwxSWFzNEVURmxMZHAvSXZ5RGl4emFtYyt0ci8rY09MekhXMWtIaWxlTkRkR0cwT1FMclVQYXlIcVEzOURnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.59/Dynapse_0.1.59_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytjSE9qWitlNUdCZXJUb3lDRk5jWjBianlCR3pYQ24xUll2bXlaV3JUVm5HTTN6TmxTbGxYOU0zcllEQVBLdVNiTzFKbkdqL1Npck5BU2dld1dwTXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTIxODc3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjU5CjhOQjd1MFdENWZTWC9qOXkxSWxwV3VLVVdZRlA2YmxuVFJ5YmdSS2lLTDF5a2FJeFJrRjlsd2pUOFF1TEV2OVpmS2l4K2lySjJJYVdVMzJSNjlXdUFRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.58/Dynapse_0.1.58_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy9UOTBNL2NrMnRsYUxWdGVPcTZOZS9vRnd0TnFEZHhmQWM0YjY5T2hielJmeEwzdlNyeWhiLzU5R1NUMVRpZDVzUklEZWE2SjlNc3Q2MDU2aGpGTXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTE1NDcxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjU4CkltbGRCYWFTVHJvUU5XWTExN0N2MHZaeGwxSWFzNEVURmxMZHAvSXZ5RGl4emFtYyt0ci8rY09MekhXMWtIaWxlTkRkR0cwT1FMclVQYXlIcVEzOURnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.59/Dynapse_0.1.59_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytjSE9qWitlNUdCZXJUb3lDRk5jWjBianlCR3pYQ24xUll2bXlaV3JUVm5HTTN6TmxTbGxYOU0zcllEQVBLdVNiTzFKbkdqL1Npck5BU2dld1dwTXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTIxODc3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjU5CjhOQjd1MFdENWZTWC9qOXkxSWxwV3VLVVdZRlA2YmxuVFJ5YmdSS2lLTDF5a2FJeFJrRjlsd2pUOFF1TEV2OVpmS2l4K2lySjJJYVdVMzJSNjlXdUFRPT0K"
     }
   }
 }
