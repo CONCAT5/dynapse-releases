@@ -1,11 +1,11 @@
 {
-  "version": "0.1.56",
-  "notes": "앱 창에 파일 끌어놓기, 새 창 링크는 브라우저로, 받은 파일 탐색기에서 보기, 큰 파일 가져오기, 덱 사진 재고화",
-  "pub_date": "2026-10-02T06:01:25Z",
+  "version": "0.1.58",
+  "notes": "넣은 문서(PDF·Word·PPT·엑셀) 색인, PPTX·PNG 2배 내보내기, 리워드 검사 수정",
+  "pub_date": "2026-10-04T12:03:01Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.56/Dynapse_0.1.56_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjhtQTVnTFNvTmFNN1luSnhxT29IMWJyeW50aHA0Mm9paEc2emFQZUpZUTR5U1VPOTJiZTI5ZEloelpFbUJRZXkySFpmL2xRbTh4d0IyVHBCRy9rSEFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwOTIwODYzCWZpbGU6RHluYXBzZV8wLjEuNTZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS41NgoxN3BnUlhVTHNLY2dTMTQ4Wjh6TzhGK0FtdnM0WDc0eXNOcm1hODNGVDYxYmlybjlrWWJtTEN4QkpQQXRtWURJOGs2RFR5cmI2WlRKazNpNlBKaDhBQT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.58/Dynapse_0.1.58_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjREUDNEcGlCdm1aR2VKZURkQkU4RUd5RGx6OHZmQTZMd3VwYnJ2YzA4dVhmVUxCZ3YvMUg1dENMTmhSTEprajhkemlrWERXSmxxY3UyT1N0YXRNWlFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTE1MzYyCWZpbGU6RHluYXBzZV8wLjEuNThfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS41OApQM3R0Smx2M0RTOG1HQTg2M3lNN253N2V4c3dYOVhCUkNPY3p4bkY0R1Fjai8yU0tvOGNoa1Z2QXNPVEViWUJDUUUyMlBjQW5iOTBNQ1lybjNBYzJDdz09Cg=="
     }
   }
 }
