@@ -187,3 +187,4 @@
 | 2026-10-03T09:28:32.332Z | macos | beta | 0.1.57 | macos-v0.1.57 | beta-served-verified | src eca832cc0 · #70 문서 색인(PDF·Word·PPT·엑셀) |
 | 2026-10-03T09:30:26.498Z | macos | stable | 0.1.57 | macos-v0.1.57 | stable-served-verified |  |
 | 2026-10-03T09:59:43.149Z | macos | ota | 0.1.57+ota1 | - | ota-served-verified | src 01429c2e3 · 글자 없는 문서는 내 AI가 읽어 저장 |
+| 2026-10-04T11:32:03.334Z | macos | ota | 0.1.57+ota2 | - | ota-served-verified | src 7519e0458 · 리워드 작업은 앱을 다시 켜도 리워드 규칙으로 검사 |
