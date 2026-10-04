@@ -191,3 +191,4 @@
 | 2026-10-04T12:04:05.921Z | windows | beta | 0.1.58 | windows-v0.1.58 | beta-served-verified | src b744c2496 · unsigned · 넣은 문서(PDF·Word·PPT·엑셀) 색인, PPTX·PNG 2배 내보내기, 리워드 검사 수정 |
 | 2026-10-04T12:05:23.580Z | windows | stable | 0.1.58 | windows-v0.1.58 | stable-served-verified |  |
 | 2026-10-04T12:06:23.519Z | macos | beta | 0.1.58 | macos-v0.1.58 | beta-served-verified | src a9719f1f5 · PPTX 가져오기(내용·표·그림)·PPTX 내보내기(편집 가능)·PNG 2배 · 리워드 검사 옵션 허용 |
+| 2026-10-04T12:08:10.010Z | macos | stable | 0.1.58 | macos-v0.1.58 | stable-served-verified |  |
