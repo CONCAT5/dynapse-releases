@@ -1,7 +1,7 @@
 {
   "native": "0.1.58",
-  "ota": 1,
-  "base": "ota/macos/0.1.58/1/",
-  "notes": "폰트 요청·긴 문서 요약을 Sonnet 보조 호출로(메인 세션 그대로)",
-  "pub_date": "2026-10-04T12:16:50.642Z"
+  "ota": 2,
+  "base": "ota/macos/0.1.58/2/",
+  "notes": "보조 작업이 편집 AI를 따른다(ChatGPT 편집이면 Codex 가벼운 모델)",
+  "pub_date": "2026-10-04T12:34:24.699Z"
 }
