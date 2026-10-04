@@ -189,3 +189,4 @@
 | 2026-10-03T09:59:43.149Z | macos | ota | 0.1.57+ota1 | - | ota-served-verified | src 01429c2e3 · 글자 없는 문서는 내 AI가 읽어 저장 |
 | 2026-10-04T11:32:03.334Z | macos | ota | 0.1.57+ota2 | - | ota-served-verified | src 7519e0458 · 리워드 작업은 앱을 다시 켜도 리워드 규칙으로 검사 |
 | 2026-10-04T12:04:05.921Z | windows | beta | 0.1.58 | windows-v0.1.58 | beta-served-verified | src b744c2496 · unsigned · 넣은 문서(PDF·Word·PPT·엑셀) 색인, PPTX·PNG 2배 내보내기, 리워드 검사 수정 |
+| 2026-10-04T12:05:23.580Z | windows | stable | 0.1.58 | windows-v0.1.58 | stable-served-verified |  |
