@@ -1,11 +1,11 @@
 {
-  "version": "0.1.58",
-  "notes": "넣은 문서(PDF·Word·PPT·엑셀) 색인, PPTX·PNG 2배 내보내기, 리워드 검사 수정",
-  "pub_date": "2026-10-04T12:03:01Z",
+  "version": "0.1.59",
+  "notes": "긴 문서 요약은 보조 호출로, 보조 작업이 편집 AI를 따름, 연결·설치 실패 진단",
+  "pub_date": "2026-10-04T13:38:10Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.58/Dynapse_0.1.58_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjREUDNEcGlCdm1aR2VKZURkQkU4RUd5RGx6OHZmQTZMd3VwYnJ2YzA4dVhmVUxCZ3YvMUg1dENMTmhSTEprajhkemlrWERXSmxxY3UyT1N0YXRNWlFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTE1MzYyCWZpbGU6RHluYXBzZV8wLjEuNThfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS41OApQM3R0Smx2M0RTOG1HQTg2M3lNN253N2V4c3dYOVhCUkNPY3p4bkY0R1Fjai8yU0tvOGNoa1Z2QXNPVEViWUJDUUUyMlBjQW5iOTBNQ1lybjNBYzJDdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.59/Dynapse_0.1.59_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjNmN25FZVlvL2kveU5RUGtDZDM2dXRqOE1OaVRJeW0rOXNtdC9WVGplOHBnOVd3UzBlekJRZU1ua2dTQlU0Rm5sVjRUMUpRTTdxV2J6eXdoUTFBakFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTIxMDcxCWZpbGU6RHluYXBzZV8wLjEuNTlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS41OQpZZ2FHRC81cXdjNTg1Rmx6a2l6eVcrSzd3a0hCNWJCWld6aVl0VzRkN3F6ZU85ZXVDZjR4Nk5lY29Qa2d2Q29RNmh0QXp1bTZVUGV3cHdaY1k0S05DZz09Cg=="
     }
   }
 }
