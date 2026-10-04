@@ -195,3 +195,4 @@
 | 2026-10-04T12:17:34.522Z | macos | ota | 0.1.58+ota1 | - | ota-served-verified | src 45f3c6ef0 · 폰트 요청·긴 문서 요약을 Sonnet 보조 호출로(메인 세션 그대로) |
 | 2026-10-04T12:35:08.454Z | macos | ota | 0.1.58+ota2 | - | ota-served-verified | src 22a3bfb8f · 보조 작업이 편집 AI를 따른다(ChatGPT 편집이면 Codex 가벼운 모델) |
 | 2026-10-04T13:16:30.311Z | macos | ota | 0.1.58+ota3 | - | ota-served-verified | src d275512f9 · 연결·설치 실패 진단(요약 자동, 로그는 [보고하기]로) |
+| 2026-10-04T13:39:16.866Z | windows | beta | 0.1.59 | windows-v0.1.59 | beta-served-verified | src 5bf72e6db · unsigned · 긴 문서 요약은 보조 호출로, 보조 작업이 편집 AI를 따름, 연결·설치 실패 진단 |
