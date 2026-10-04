@@ -1,11 +1,11 @@
 {
-  "version": "0.1.59",
-  "notes": "긴 문서 요약은 보조 호출로, 보조 작업이 편집 AI를 따름, 연결·설치 실패 진단",
-  "pub_date": "2026-10-04T13:38:10Z",
+  "version": "0.1.60",
+  "notes": "GitHub·Vercel 계정 확인·로그인, 내보낸 HTML 레시피 줄, PPTX 왕복 편집, 내 사진 무드 톤, 트레이 의견 보내기",
+  "pub_date": "2026-10-04T23:20:19Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.59/Dynapse_0.1.59_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjNmN25FZVlvL2kveU5RUGtDZDM2dXRqOE1OaVRJeW0rOXNtdC9WVGplOHBnOVd3UzBlekJRZU1ua2dTQlU0Rm5sVjRUMUpRTTdxV2J6eXdoUTFBakFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTIxMDcxCWZpbGU6RHluYXBzZV8wLjEuNTlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS41OQpZZ2FHRC81cXdjNTg1Rmx6a2l6eVcrSzd3a0hCNWJCWld6aVl0VzRkN3F6ZU85ZXVDZjR4Nk5lY29Qa2d2Q29RNmh0QXp1bTZVUGV3cHdaY1k0S05DZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.60/Dynapse_0.1.60_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MndZVUp1ekFWWEp6U3NKKzJNUDdNRlBGd2lwbEdVNzVpSUlUc25yRUxUSm1MdmVTTFYzcVN0TVdzVE50MzdGYVNvY3FsSWJXVHFkS0FXRFg1a1FwRndFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTU1OTk5CWZpbGU6RHluYXBzZV8wLjEuNjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS42MAoyQXZmY2ozS09WVjYrQnk2cVRObFAwcUdQSHg2V2xCK01ZWnZpam5ldVFiSUhZdFAzS2w0T3RHVEV3YVJmVGdEWVRwV3lqbW45azkyTzBCWnZOTERBUT09Cg=="
     }
   }
 }
