@@ -204,3 +204,4 @@
 | 2026-10-04T23:18:19.371Z | macos | stable | 0.1.60 | macos-v0.1.60 | stable-served-verified |  |
 | 2026-10-04T23:21:26.170Z | windows | beta | 0.1.60 | windows-v0.1.60 | beta-served-verified | src 05c4594da · unsigned · GitHub·Vercel 계정 확인·로그인, 내보낸 HTML 레시피 줄, PPTX 왕복 편집, 내 사진 무드 톤, 트레이 의견 보내기 |
 | 2026-10-04T23:22:46.952Z | windows | stable | 0.1.60 | windows-v0.1.60 | stable-served-verified |  |
+| 2026-10-04T23:50:27.047Z | macos | ota | 0.1.60+ota1 | - | ota-served-verified | src 374b23813 · 직접 수정: 되돌리기·다시 하기 한 걸음씩, 칩 하나로 저장 |
