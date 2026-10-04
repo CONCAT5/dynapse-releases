@@ -201,3 +201,4 @@
 | 2026-10-04T13:54:36.091Z | macos | stable | 0.1.59 | macos-v0.1.59 | stable-served-verified |  |
 | 2026-10-04T14:02:00.689Z | macos | ota | 0.1.59+ota1 | - | ota-served-verified | src 667102c18 · 번역 턴(글자 칸만, 서식 그대로) |
 | 2026-10-04T23:16:55.696Z | macos | beta | 0.1.60 | macos-v0.1.60 | beta-served-verified | src 32a035c8d · GitHub·Vercel 계정 연결(배포 준비) · 내보낸 HTML에 이 덱 사용량 한 줄 |
+| 2026-10-04T23:18:19.371Z | macos | stable | 0.1.60 | macos-v0.1.60 | stable-served-verified |  |
