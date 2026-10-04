@@ -193,3 +193,4 @@
 | 2026-10-04T12:06:23.519Z | macos | beta | 0.1.58 | macos-v0.1.58 | beta-served-verified | src a9719f1f5 · PPTX 가져오기(내용·표·그림)·PPTX 내보내기(편집 가능)·PNG 2배 · 리워드 검사 옵션 허용 |
 | 2026-10-04T12:08:10.010Z | macos | stable | 0.1.58 | macos-v0.1.58 | stable-served-verified |  |
 | 2026-10-04T12:17:34.522Z | macos | ota | 0.1.58+ota1 | - | ota-served-verified | src 45f3c6ef0 · 폰트 요청·긴 문서 요약을 Sonnet 보조 호출로(메인 세션 그대로) |
+| 2026-10-04T12:35:08.454Z | macos | ota | 0.1.58+ota2 | - | ota-served-verified | src 22a3bfb8f · 보조 작업이 편집 AI를 따른다(ChatGPT 편집이면 Codex 가벼운 모델) |
