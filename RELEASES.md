@@ -206,3 +206,4 @@
 | 2026-10-04T23:22:46.952Z | windows | stable | 0.1.60 | windows-v0.1.60 | stable-served-verified |  |
 | 2026-10-04T23:50:27.047Z | macos | ota | 0.1.60+ota1 | - | ota-served-verified | src 374b23813 · 직접 수정: 되돌리기·다시 하기 한 걸음씩, 칩 하나로 저장 |
 | 2026-10-05T00:39:30.538Z | windows | ota | 0.1.60+ota1 | - | ota-served-verified | src 55f2e5109 · #78 보정 6: 편집 패널이 고른 요소에 맞춘 검사기, 다시 하기 |
+| 2026-10-05T11:57:46.238Z | macos | ota | 0.1.60+ota2 | - | ota-served-verified | src 8b35c69f6 · 원고 그대로 모드 · 우리 회사 틀 적용 |
