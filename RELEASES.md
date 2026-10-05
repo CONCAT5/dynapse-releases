@@ -208,3 +208,4 @@
 | 2026-10-05T00:39:30.538Z | windows | ota | 0.1.60+ota1 | - | ota-served-verified | src 55f2e5109 · #78 보정 6: 편집 패널이 고른 요소에 맞춘 검사기, 다시 하기 |
 | 2026-10-05T11:57:46.238Z | macos | ota | 0.1.60+ota2 | - | ota-served-verified | src 8b35c69f6 · 원고 그대로 모드 · 우리 회사 틀 적용 |
 | 2026-10-05T21:59:40.219Z | macos | beta | 0.1.61 | macos-v0.1.61 | beta-served-verified | src 47519ae47 · PPTX 호환 보고·호환 세팅 · PDF·인스타·상세페이지 내보내기 |
+| 2026-10-05T22:01:07.514Z | macos | stable | 0.1.61 | macos-v0.1.61 | stable-served-verified |  |
