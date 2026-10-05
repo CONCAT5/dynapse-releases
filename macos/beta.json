@@ -1,15 +1,15 @@
 {
-  "version": "0.1.60",
-  "notes": "GitHub·Vercel 계정 연결(배포 준비) · 내보낸 HTML에 이 덱 사용량 한 줄",
-  "pub_date": "2026-10-04T23:15:50Z",
+  "version": "0.1.61",
+  "notes": "PPTX 호환 보고·호환 세팅 · PDF·인스타·상세페이지 내보내기",
+  "pub_date": "2026-10-05T21:58:34Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.60/Dynapse_0.1.60_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3dZNitNaDh5M2lmcThuLzhJbFFzZU1Gc0VsZ3d5MHpVYUVoRGRCWHdvV2JXNDRUeDUzTEplWDVSSUNUQmFNblhOalNXNExpSDRiZDlxL2pTNElpM2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTU1Njk4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjYwClY1UkRvTjRjL0kzQlRwY2JYWFBRSmtXVU1xcGo1YnpndnRTbFMyY0Y2T0VVMHYzUHRJRUdqZHlBOHpCZ2NIOEFxaGtQbW5scVB1L1pVU1ZOVE9VckNnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.61/Dynapse_0.1.61_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzFaZEtyVmJtamdIK1VBVThmWUxsRW91ako0OTA1Y0x0SDRrZUF0enB0UFFscUtVNGJORzFrb3RHeTRGVWJLNzdhTThIeWUrNGpVN0wyUDU2RUI1L2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjM3NDI5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjYxCndaelVDWk9sQzM4ekRjN3cxWkhyMGl0YnpSRmZSRDIzeEQ1czV5Y0ROb1RuaGoybmRpYXQ1akk3N1pvTHFUemdSSDIzdDFqZTUzMHp5dXRFdEVnR0J3PT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.60/Dynapse_0.1.60_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3dZNitNaDh5M2lmcThuLzhJbFFzZU1Gc0VsZ3d5MHpVYUVoRGRCWHdvV2JXNDRUeDUzTEplWDVSSUNUQmFNblhOalNXNExpSDRiZDlxL2pTNElpM2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTU1Njk4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjYwClY1UkRvTjRjL0kzQlRwY2JYWFBRSmtXVU1xcGo1YnpndnRTbFMyY0Y2T0VVMHYzUHRJRUdqZHlBOHpCZ2NIOEFxaGtQbW5scVB1L1pVU1ZOVE9VckNnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.61/Dynapse_0.1.61_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzFaZEtyVmJtamdIK1VBVThmWUxsRW91ako0OTA1Y0x0SDRrZUF0enB0UFFscUtVNGJORzFrb3RHeTRGVWJLNzdhTThIeWUrNGpVN0wyUDU2RUI1L2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjM3NDI5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjYxCndaelVDWk9sQzM4ekRjN3cxWkhyMGl0YnpSRmZSRDIzeEQ1czV5Y0ROb1RuaGoybmRpYXQ1akk3N1pvTHFUemdSSDIzdDFqZTUzMHp5dXRFdEVnR0J3PT0K"
     }
   }
 }
