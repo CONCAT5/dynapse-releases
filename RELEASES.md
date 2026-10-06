@@ -210,3 +210,4 @@
 | 2026-10-05T21:59:40.219Z | macos | beta | 0.1.61 | macos-v0.1.61 | beta-served-verified | src 47519ae47 · PPTX 호환 보고·호환 세팅 · PDF·인스타·상세페이지 내보내기 |
 | 2026-10-05T22:01:07.514Z | macos | stable | 0.1.61 | macos-v0.1.61 | stable-served-verified |  |
 | 2026-10-06T12:15:28.499Z | macos | ota | 0.1.61+ota1 | - | ota-served-verified | src b0c5fde18 · 공개 실패 시 이유를 보여 줌 |
+| 2026-10-06T12:37:02.596Z | macos | beta | 0.1.62 | macos-v0.1.62 | beta-served-verified | src 7c9ae1e68 · 내보낸 파일 이름을 작업 제목으로 · PPTX 안내 파일 하나로(다시 넣는 법 포함) |
