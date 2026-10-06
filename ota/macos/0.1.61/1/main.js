@@ -1,0 +1,1514 @@
+import { assemblyHtml, mainHtml } from "./onboard.js";
+import { diagAuto, diagReport } from "./diag.js";
+import { G, GIT_INSTALL_URL, detectAllGit, detectGit, gitBody } from "./git.js";
+import { askCompatOnce, postChat, wput, retryPendingPulls, appVerify, exportRender, backfill, chatActive, importStart, ensureVerify, idleSessions, onChatMessage, openWeb, replayWaiting, sessions, sharedWorks, syncAll } from "./chat.js";
+// 엔진 창(main)이 숨어도 멈추지 않게 — 풀리지 않는 WebLock을 쥔 페이지는 WebView2가 동결하지 않는다(wry 권장 우회, #34 B4)
+void navigator.locks?.request("dynapse-engine", () => new Promise(() => { }));
+// 도메인 바꿀 때 같이: src-tauri/src/bridge.rs ORIGINS(새 주소 맨 앞) · capabilities/inapp.json remote.urls (#35 B4)
+// 새 주소가 이 PC에서 안 열리면(도메인 직후 DNS 캐시 등) 옛 주소로 — 켤 때 한 번 확인하고, 옛 주소면 10분마다 다시(pickHub)
+export const HUB_NEW = "https://dynapse.ai", HUB_OLD = "https://ai-task-hub-nu.vercel.app";
+export let HUB = HUB_NEW;
+export let MCP_URL = `${HUB}/api/mcp`;
+const reach = async (u) => (await exec("curl", ["-s", "-o", navigator.userAgent.includes("Windows") ? "NUL" : "/dev/null", "-m", "5", "-w", "%{http_code}", `${u}/api/fonts`]).catch(() => ({ stdout: "" }))).stdout.trim() === "200";
+export async function pickHub() {
+    const next = (await reach(HUB_NEW)) ? HUB_NEW : (await reach(HUB_OLD)) ? HUB_OLD : HUB_NEW;
+    if (next !== HUB) {
+        HUB = next;
+        MCP_URL = `${HUB}/api/mcp`;
+        console.log("[hub]", HUB);
+    }
+    if (HUB !== HUB_NEW && !rePick) {
+        rePick = true;
+        setTimeout(() => { rePick = false; void pickHub(); }, 10 * 60_000);
+    } // 옛 주소 쓰는 동안 10분마다(예약은 하나만)
+}
+let rePick = false;
+// 설치 = 원클릭(2026-09-28 대표 결정, 09-24 "공식 페이지만"을 바꿈) — [설치하기]가 공식 설치 스크립트를 보이는 창에서(runner.rs open_install). 이 페이지는 창을 못 열 때만. URL은 응답 200 확인
+const INSTALL_URL = { claude: "https://code.claude.com/docs/en/setup", codex: "https://developers.openai.com/codex/cli", agy: "https://antigravity.google/docs/getting-started?tab=cli" };
+const AI_NAME = { claude: "Claude", codex: "ChatGPT" }; // 사용자에게는 쓰는 AI 이름으로
+const CAPS = { claude: ["편집"], codex: ["사진", "편집"] };
+const capsText = (c) => c.join("·");
+const RUNNER_NAME = { claude: "Claude Code", codex: "Codex" }; // 실제로 도는 공식 도구
+export const WORK_ID = /^[A-Za-z0-9_-]{4,64}$/;
+// 계정 한 줄(#22-보정 15) — CLI가 알려 주는 값만. 이메일은 가운데를 가린다(kw***@concat.kr). 자격증명 파일은 읽지 않는다
+const maskEmail = (e) => { const [u, d] = e.split("@"); return d ? `${u.slice(0, 2)}***@${d}` : null; };
+const switching = {};
+export const S = {
+    token: null,
+    refresh: null,
+    deviceId: "",
+    handle: null,
+    defaultModels: {},
+    photoLimits: {}, // 사진 AI 한도(#22-보정 2) — { gemini: "2026-09-26" } 그날 자정까지                            // 홈 AI 카드에서 고른 기본 모델(#21 보정 12) — 작업에서 따로 안 고르면 이것
+    browsers: [], // 연결된 브라우저(#20) — 프로필 팝오버
+    tools: {
+        claude: { checked: false, installed: false, loggedIn: null, connected: null, version: "" },
+        codex: { checked: false, installed: false, loggedIn: null, connected: null, version: "" },
+    },
+    ag: { checked: false, installed: false, loggedIn: null, connected: false, version: "", desktop: false },
+    minVersions: {},
+    hubMsg: "",
+    hubBusy: false,
+    recent: [],
+    pop: null,
+    models: {}, // CLI가 알려 준 모델(#18)
+    claudeLimit: null, // Claude rate_limit_event(남은 양 — 실측상 Claude만 준다)
+    sync: false,
+    thumbUpload: true, // 작은 미리보기 업로드(#20 보정 2 — 기본 켜짐, 웹 상태 팝오버에서 끈다)                           // 클라우드 프라이빗 동기화(#12-Z Z3) — 웹 [동기화 켜기]를 기기 보고 응답으로 안다
+    bridge: null, // 로컬 브릿지(bridge.rs) — 기기 보고로 서버에 알린다
+    git: false, // 작업 폴더 = 저장소(#12-AE) — git이 없으면 스냅샷 폴더로 폴백
+    app: null,
+    channel: "stable",
+    updateReady: null,
+    toast: "",
+    onboard: null,
+    installFail: {}, // 설치 창이 남긴 실패(#41 A) — 카드가 [다시 설치] + 로그
+};
+let busySent = null;
+export let store;
+const $app = document.getElementById("app");
+const $top = document.getElementById("top");
+export const T = () => window.__TAURI__;
+// ───────────── 유틸 ─────────────
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+const b64url = (buf) => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+const rand = (n) => b64url(crypto.getRandomValues(new Uint8Array(n)));
+function toast(msg) {
+    S.toast = msg;
+    render();
+    setTimeout(() => { if (S.toast === msg) {
+        S.toast = "";
+        render();
+    } }, 3500);
+}
+export const exec = (program, args, stdin, cwd) => T().core.invoke("run_exec", { program, args, stdin: stdin ?? null, cwd: cwd ?? null });
+const procs = new Map();
+const early = new Map();
+const buffer = (id) => { if (!early.has(id))
+    early.set(id, { lines: [] }); return early.get(id); };
+async function listenRunner() {
+    await T().event.listen("runner-line", ({ payload: p }) => {
+        const h = procs.get(p.id);
+        if (h)
+            h.line(p.line);
+        else
+            buffer(p.id).lines.push(p.line);
+    });
+    await T().event.listen("runner-exit", ({ payload: p }) => {
+        const h = procs.get(p.id);
+        if (h) {
+            procs.delete(p.id);
+            h.exit(p.code);
+        }
+        else
+            buffer(p.id).exit = p.code;
+    });
+}
+// keep = stdin을 열어 둔다(#14 대화 세션 — run_write로 한 줄씩, run_close_stdin으로 끝)
+export async function spawn(program, args, stdin, cwd, onLine, onStart, keep = false) {
+    const id = await T().core.invoke("run_spawn", { program, args, stdin: keep && !stdin ? null : stdin, cwd, keepStdin: keep });
+    onStart(id);
+    return new Promise((resolve) => {
+        const b = early.get(id);
+        early.delete(id);
+        b?.lines.forEach(onLine);
+        if (b && "exit" in b) {
+            resolve(b.exit ?? null);
+            return;
+        }
+        procs.set(id, { line: onLine, exit: resolve });
+    });
+}
+export async function http(method, url0, o = {}, retried = false) {
+    const url = HUB !== HUB_NEW && url0.startsWith(HUB_NEW) ? HUB + url0.slice(HUB_NEW.length) : url0; // 서버가 준 새 주소(업로드 등)도 이 PC가 여는 주소로
+    const args = ["-sS", "-X", method, url, "-w", "\n%{http_code}"];
+    if (o.json !== undefined)
+        args.push("-H", "content-type: application/json", "--data-binary", JSON.stringify(o.json));
+    if (o.form)
+        for (const [k, v] of Object.entries(o.form))
+            args.push("--data-urlencode", `${k}=${v}`);
+    if (o.file)
+        args.push("-H", `content-type: ${o.contentType ?? "application/octet-stream"}`, "--data-binary", `@${o.file}`);
+    if (o.sse)
+        args.push("-H", "accept: application/json, text/event-stream");
+    for (const h of o.headers ?? [])
+        if (/^[a-z-]{2,40}: [^\r\n]{0,200}$/i.test(h))
+            args.push("-H", h);
+    if (o.out)
+        args.push("-L", "--create-dirs", "-o", o.out); // materials/·.dynapse/photos/ 하위 경로도(동기화 받기)
+    if (o.auth && S.token)
+        args.push("-H", `@${await T().core.invoke("auth_header_file", { token: S.token })}`);
+    const r = await exec("curl", args);
+    if (r.code !== 0)
+        throw new Error(`네트워크 오류: ${r.stderr.trim() || r.code}`);
+    const i = r.stdout.lastIndexOf("\n");
+    const res = { status: Number(r.stdout.slice(i + 1)), body: r.stdout.slice(0, i) };
+    // 토큰 만료 → refresh 후 한 번만 다시 (서버는 인증이 필요한 요청에 401을 준다)
+    if (res.status === 401 && o.auth && S.refresh && !retried && (await refreshToken()))
+        return http(method, url, o, true);
+    return res;
+}
+export async function api(method, path, json) {
+    const r = await http(method, `${HUB}${path}`, { json, auth: true });
+    let data = null;
+    try {
+        data = JSON.parse(r.body);
+    }
+    catch { /* 빈 본문 */ }
+    return { status: r.status, data };
+}
+export async function mcp(name, args = {}) {
+    const r = await http("POST", MCP_URL, {
+        json: { jsonrpc: "2.0", id: Date.now(), method: "tools/call", params: { name, arguments: args } }, auth: true, sse: true,
+    });
+    if (r.status === 401)
+        return { isError: true, text: "Dynapse 연결이 필요해요" };
+    const line = r.body.split("\n").find(l => l.startsWith("data: "));
+    const msg = JSON.parse(line ? line.slice(6) : r.body);
+    if (msg.error)
+        throw new Error(msg.error.message ?? "커넥터 오류");
+    const text = msg.result?.content?.[0]?.text ?? "";
+    let data;
+    try {
+        data = JSON.parse(text);
+    }
+    catch { /* 문자열 응답 */ }
+    return { isError: !!msg.result?.isError, text, data };
+}
+// ───────────── AI 도구: 감지 · 공식 로그인 · Dynapse 연결(MCP 등록) ─────────────
+// 데스크톱 앱 흔적(CLI 없을 때만 본다, 30초 캐시) — "ChatGPT 앱은 있어요 · CLI 하나만 더"(2026-09-28 다른 Windows PC: Codex 데스크톱 앱만 있어 계속 "설치 필요")
+let apps = null;
+async function desktopApps() {
+    if (!apps || Date.now() - apps.at > 30_000)
+        apps = { at: Date.now(), v: await T().core.invoke("desktop_apps").catch(() => ({ claude: false, codex: false, antigravity: false })) };
+    return apps.v;
+}
+// 원클릭 설치(2026-09-28 대표 결정) — 공식 설치 스크립트를 보이는 창에서. 창을 못 열면 예전처럼 공식 페이지
+const installWatch = {};
+async function installCli(id) {
+    const tool = id === "gemini" ? "agy" : id;
+    const had = !!S.installFail[tool];
+    delete S.installFail[tool];
+    render();
+    if (had)
+        void reportDevice();
+    const opened = await T().core.invoke("open_install", { tool }).then(() => true).catch(() => { void T().shell.open(INSTALL_URL[tool]); return false; });
+    apps = null;
+    if (opened)
+        void watchInstall(tool);
+}
+// 설치 창이 끝나면 결과 파일을 남긴다 — 2초마다 본다(최대 15분, 다시 누르면 새 감시로 바뀜). 성공이면 곧바로 감지, 실패면 카드가 이유를 안다
+async function watchInstall(tool) {
+    const me = (installWatch[tool] = (installWatch[tool] ?? 0) + 1);
+    const until = Date.now() + 15 * 60_000;
+    while (Date.now() < until && installWatch[tool] === me) {
+        await new Promise(r => setTimeout(r, 2000));
+        const r = await T().core.invoke("install_result", { tool }).catch(() => null);
+        if (!r || installWatch[tool] !== me)
+            continue;
+        if (r.status === "ok") {
+            apps = null;
+            if (tool === "agy")
+                await agDetect();
+            else
+                await detect(tool);
+            const found = tool === "agy" ? S.ag.installed : S.tools[tool].installed;
+            if (!found) {
+                S.installFail[tool] = { status: "missing", log: "" };
+                void diagAuto({ tool, stage: "install", code: "missing_after_install", summary: "설치 창은 끝났는데 명령을 찾지 못했어요" });
+            }
+        }
+        else {
+            S.installFail[tool] = { status: r.status.startsWith("fail:") ? r.status : "fail:other", log: r.log };
+            void diagAuto({ tool, stage: "install", code: S.installFail[tool].status, log: r.log });
+        } // 진단(대표 2026-10-04) — 요약만 자동
+        render();
+        void reportDevice();
+        return;
+    }
+}
+async function installRecheck(tool) {
+    apps = null;
+    if (tool === "agy")
+        await agDetect();
+    else
+        await detect(tool);
+    if (tool === "agy" ? S.ag.installed : S.tools[tool].installed)
+        delete S.installFail[tool];
+    render();
+    void reportDevice();
+}
+async function detect(id) {
+    const t = S.tools[id];
+    const v = await exec(id, ["--version"]).catch(() => null);
+    t.installed = !!v && v.code === 0;
+    if (v && v.code !== 0)
+        void diagAuto({ tool: id, stage: "detect", code: `version_exit:${v.code}`, log: `${v.stderr ?? ""}\n${v.stdout ?? ""}` }); // 있는데 안 도는 CLI(경로·권한·런타임)
+    t.desktop = !t.installed && (await desktopApps())[id];
+    t.version = t.installed ? v.stdout.trim().split("\n")[0] : "";
+    t.loggedIn = null;
+    t.connected = null;
+    if (t.installed && id === "claude") {
+        // 실측: `claude auth status --json` → { "loggedIn": true, ... }
+        const r = await exec("claude", ["auth", "status", "--json"]).catch(() => null);
+        try {
+            const j = r ? JSON.parse(r.stdout) : {};
+            t.loggedIn = j.loggedIn === true;
+            t.account = t.loggedIn && typeof j.email === "string" ? maskEmail(j.email) : null;
+            t.plan = t.loggedIn && typeof j.subscriptionType === "string" ? j.subscriptionType.slice(0, 20) : null;
+        }
+        catch {
+            t.loggedIn = null;
+            t.account = null;
+            t.plan = null;
+        }
+    }
+    if (t.installed && id === "codex") {
+        // 실측: 로그인 시 `codex login status` → exit 0 + "Logged in using …" (미로그인 문구는 실측 전)
+        const r = await exec("codex", ["login", "status"]).catch(() => null);
+        t.loggedIn = !!r && r.code === 0 && /Logged in/i.test(r.stdout + r.stderr);
+        // 실측: "Logged in using ChatGPT" — 이메일은 주지 않는다
+        t.account = t.loggedIn ? (/ChatGPT/i.test(r.stdout + r.stderr) ? "ChatGPT 계정" : "API 키") : null;
+        t.plan = null;
+    }
+    if (t.installed) {
+        // 실측(claude 2.1.118 · codex-cli 0.156.1): `mcp get <이름>` — 등록이 없으면 exit 1
+        const g = await exec(id, ["mcp", "get", "dynapse"]).catch(() => null);
+        t.connected = !!g && g.code === 0;
+    }
+    t.checked = true;
+    render();
+}
+export async function openLogin(id) {
+    try {
+        await T().core.invoke("open_login", { tool: id });
+    }
+    catch (e) {
+        toast(String(e));
+        void diagAuto({ tool: id, stage: "login", code: "open_login_fail", summary: String(e) });
+        return false;
+    }
+    // 돌아와서 누를 필요 없게 2초마다 재검사(최대 3분) — 사용자가 누른 뒤에만 도는 로컬 확인
+    const until = Date.now() + 180_000;
+    while (Date.now() < until) {
+        await new Promise(r => setTimeout(r, 2000));
+        await detect(id);
+        if (S.tools[id].loggedIn) {
+            reportDevice();
+            return true;
+        }
+    }
+    void diagAuto({ tool: id, stage: "login", code: "login_timeout", summary: "로그인 창을 연 뒤 3분 동안 로그인이 확인되지 않았어요", cli: S.tools[id].version || null });
+    return false;
+}
+async function connectTool(id, quiet = false) {
+    // 그 도구의 MCP 설정에 Dynapse 서버를 등록 — 실측한 공식 명령만
+    const args = id === "claude"
+        ? ["mcp", "add", "--transport", "http", "-s", "user", "dynapse", MCP_URL]
+        : ["mcp", "add", "dynapse", "--url", MCP_URL];
+    const r = await exec(id, args).catch(e => ({ code: -1, stdout: "", stderr: String(e) }));
+    if (r.code !== 0 && !/already exists/i.test(r.stdout + r.stderr)) {
+        toast(`연결하지 못했어요: ${(r.stderr || r.stdout).trim().slice(0, 120)}`);
+        return false;
+    }
+    await detect(id);
+    if (!quiet)
+        toast(`${AI_NAME[id]} 연결됨`);
+    reportDevice();
+    return true;
+}
+const semver = (v) => (v.match(/(\d+)\.(\d+)\.(\d+)/) ?? []).slice(1).map(Number);
+function older(v, min) {
+    const a = semver(v), b = semver(min);
+    if (a.length < 3 || b.length < 3)
+        return false;
+    for (let i = 0; i < 3; i++)
+        if (a[i] !== b[i])
+            return a[i] < b[i];
+    return false;
+}
+const isOld = (id) => { const m = S.minVersions[id]; return !!m && S.tools[id].installed && older(S.tools[id].version, m); };
+async function loadMinVersions() {
+    // 서버가 받아 주는 최소 버전 — 공개 정보라 연결 전(401 본문)에도 온다
+    const r = await http("GET", `${HUB}/api/device`).catch(() => null);
+    try {
+        const j = JSON.parse(r.body);
+        if (j.min_versions)
+            S.minVersions = j.min_versions;
+    }
+    catch { /* 오프라인 — 실패 로그로 판정 */ }
+}
+async function bringLatest(id, log) {
+    const r = await exec(id, ["update"]).catch(e => ({ code: -1, stdout: "", stderr: String(e) }));
+    log?.(`[${id} update] exit ${r.code} ${(r.stdout + r.stderr).trim().slice(-300)}`);
+    await detect(id);
+    return r.code === 0 && !isOld(id);
+}
+// ───────────── Gemini · Antigravity CLI `agy` (#12-M) — 앱이 헤드리스로 직접 부른다(사람 개입 0) ─────────────
+// 로그인 확인 = `agy -p "pong" --output-format json --print-timeout 30s` exit 0 (약 12k 토큰) → 하루 1회만, 통과한 날은 캐시
+// modelsOnly — 목록 확인만(토큰 0). 3초 감지 루프가 "로그인 안 됨"을 다시 볼 때 — 목록을 못 받아도 pong으로 넘어가지 않는다
+async function agyLoginOk(force = false, modelsOnly = false) {
+    const today = new Date().toISOString().slice(0, 10);
+    if (!force && (await store.get("agy_login_ok")) === today)
+        return true;
+    // 먼저 `agy models`(생성 없음 · 토큰 0, 서버에서 모델 목록을 받는다 — #29 C7). 목록을 못 받을 때만 예전 pong(약 12k 토큰)으로 확인
+    const m = await exec("agy", ["models"]).catch(() => null);
+    const listed = !!m && m.code === 0 && /^gemini-/m.test(m.stdout);
+    // 로그인 전이면 models가 "Please sign in …"(exit 0)을 낸다 — 이때 pong을 돌리면 agy가 숨은 프로세스에서 브라우저 로그인을 시작해
+    // 붙여넣을 창이 없는 코드 화면만 뜬다(2026-09-28 Windows 실측) → 로그인 안 됨으로 끝낸다. 로그인은 open_login 창에서만
+    if (!listed && (modelsOnly || (m && /sign in/i.test(m.stdout + m.stderr))))
+        return false;
+    const r = listed ? m : await exec("agy", ["-p", "pong", "--output-format", "json", "--print-timeout", "30s", "--effort", "low"]).catch(() => null);
+    const ok = !!r && r.code === 0;
+    if (ok) {
+        await store.set("agy_login_ok", today);
+        await store.save();
+    }
+    return ok;
+}
+async function agDetect(checkLogin = false) {
+    const v = await exec("agy", ["--version"]).catch(() => null);
+    const installed = !!v && v.code === 0;
+    const st = await T().core.invoke("ag_status").catch(() => ({ installed: false, connected: false }));
+    let loggedIn = installed ? S.ag.loggedIn : null;
+    if (installed && (checkLogin || loggedIn === null))
+        loggedIn = await agyLoginOk(checkLogin);
+    // 로그인 안 됨으로 남아 있으면 목록만 다시(토큰 0) — 앱 밖(터미널)에서 로그인해도 곧 반영(2026-09-28 Windows 실측: 한 번 false면 다음 날까지 그대로였다)
+    else if (installed && loggedIn === false)
+        loggedIn = await agyLoginOk(true, true);
+    S.ag = { checked: true, installed, loggedIn, connected: st.connected, version: installed ? v.stdout.trim() : "", desktop: !installed && (st.installed || (await desktopApps()).antigravity) };
+    render();
+}
+// Gemini 다른 Google 계정으로(대표 결정 ①) — 공식 대화형 창을 /logout으로 시작 → 사용자가 그 창에서 /login(브라우저 Google 로그인).
+// 자격증명은 agy가 직접 다룬다. 20초 뒤부터 15초마다 짧은 확인(최대 6분), 되면 한도 표시를 지우고 연결 상태를 알린다
+export async function agySwitch() {
+    if (switching.gemini)
+        return false;
+    switching.gemini = "run";
+    void reportDevice();
+    try {
+        await T().core.invoke("open_login", { tool: "agy-switch" });
+        await new Promise(r => setTimeout(r, 20_000));
+        const until = Date.now() + 6 * 60_000;
+        while (Date.now() < until) {
+            if (await agyLoginOk(true)) {
+                if (S.photoLimits.gemini) {
+                    delete S.photoLimits.gemini;
+                    await store.set("photo_limits", S.photoLimits);
+                    await store.save();
+                }
+                await agDetect();
+                return true;
+            }
+            await new Promise(r => setTimeout(r, 15_000));
+        }
+        return false;
+    }
+    catch (e) {
+        toast(String(e));
+        return false;
+    }
+    finally {
+        delete switching.gemini;
+        void reportDevice();
+    }
+}
+// 공식 로그인 창(터미널의 `agy`) → 10초마다 확인(최대 3분)
+export async function agyLogin() {
+    try {
+        await T().core.invoke("open_login", { tool: "agy" });
+    }
+    catch (e) {
+        toast(String(e));
+        return false;
+    }
+    const until = Date.now() + 180_000;
+    while (Date.now() < until) {
+        await new Promise(r => setTimeout(r, 10_000));
+        if (await agyLoginOk(true)) {
+            await agDetect();
+            reportDevice();
+            return true;
+        }
+    }
+    return false;
+}
+// ───────────── Dynapse 연결 (OAuth 코드 + PKCE, 127.0.0.1 루프백) — 브라우저의 자동 계정으로 동의 1클릭 ─────────────
+async function hubLogin() {
+    S.hubBusy = true;
+    S.hubMsg = "브라우저에서 [연결 허용]을 누르면 자동으로 돌아와요.";
+    render();
+    try {
+        const port = await T().core.invoke("oauth_listen");
+        const redirect = `http://127.0.0.1:${port}/cb`;
+        const reg = await http("POST", `${HUB}/oauth/register`, { json: { redirect_uris: [redirect], client_name: "Dynapse 앱" } });
+        if (reg.status !== 201)
+            throw new Error(`앱 등록 실패 (${reg.status})`);
+        const clientId = JSON.parse(reg.body).client_id;
+        const verifier = rand(32);
+        const challenge = b64url(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(verifier)));
+        const state = rand(16);
+        const q = new URLSearchParams({ response_type: "code", client_id: clientId, redirect_uri: redirect, code_challenge: challenge, code_challenge_method: "S256", state });
+        await T().shell.open(`${HUB}/oauth/authorize?${q}`);
+        const cb = await T().core.invoke("oauth_wait", { port });
+        if (cb.error || !cb.code)
+            throw new Error(`연결이 취소됐어요${cb.error ? ` (${cb.error})` : ""}`);
+        if (cb.state !== state)
+            throw new Error("보안 확인값이 맞지 않아요. 다시 실행하세요.");
+        const tok = await http("POST", `${HUB}/oauth/token`, {
+            form: { grant_type: "authorization_code", code: cb.code, code_verifier: verifier, redirect_uri: redirect, client_id: clientId },
+        });
+        const j = JSON.parse(tok.body);
+        if (tok.status !== 200 || !j.access_token)
+            throw new Error(`연결 실패 (${j.error ?? tok.status})`);
+        await saveToken(j.access_token, j.refresh_token ?? null);
+        S.hubMsg = "";
+        await reportDevice();
+    }
+    catch (e) {
+        S.hubMsg = e.message;
+        toast(S.hubMsg);
+    }
+    S.hubBusy = false;
+    render(); // 연결을 기다리던 웹 요청은 확인 카드에서 이어서 [실행]
+}
+async function refreshToken() {
+    if (!S.refresh)
+        return false;
+    const r = await http("POST", `${HUB}/oauth/token`, { form: { grant_type: "refresh_token", refresh_token: S.refresh } }, true).catch(() => null);
+    if (!r || r.status !== 200)
+        return false;
+    const j = JSON.parse(r.body);
+    await saveToken(j.access_token, j.refresh_token ?? S.refresh);
+    return true;
+}
+async function saveToken(access, refresh) {
+    S.token = access;
+    S.refresh = refresh;
+    await store.set("token", access);
+    await store.set("refresh", refresh);
+    await store.save();
+    listenEvents();
+}
+async function forgetToken() {
+    S.token = null;
+    S.refresh = null;
+    S.handle = null;
+    await store.delete("token");
+    await store.delete("refresh");
+    await store.save();
+}
+async function disconnectHub() {
+    // 서버 토큰 폐기(RFC 7009) + 이 기기 보고 삭제 + 로컬 토큰 삭제
+    if (S.token) {
+        await api("DELETE", `/api/device?device_id=${encodeURIComponent(S.deviceId)}`).catch(() => { });
+        for (const t of [S.token, S.refresh])
+            if (t)
+                await http("POST", `${HUB}/oauth/revoke`, { form: { token: t } }).catch(() => { });
+    }
+    await forgetToken();
+    render();
+}
+// 기기 상태 보고 — 앱 시작·로그인/연결 변화·실행 완료 때 + 10분 심장박동(#12-Z — 웹이 "온라인"·"이 PC"를 안다). 응답으로 아이디·동기화도 갱신
+async function reportDevice() {
+    if (!S.token)
+        return;
+    const t = (x) => ({ installed: x.installed, loggedIn: x.loggedIn, connected: x.connected });
+    S.bridge ??= await T().core.invoke("bridge_info").catch(() => null);
+    const r = await api("POST", "/api/device", deviceBody()).catch(() => null);
+    if (r?.data?.update_required)
+        void forceUpdate(); // 서버 최소 버전보다 낮다(#21 보정 2) — 곧바로 받는다
+    await refreshMe();
+}
+export function deviceBody() {
+    const t = (x, k) => ({ installed: x.installed, loggedIn: x.loggedIn, connected: x.connected, account: x.account ?? null, plan: x.plan ?? null, switching: switching[k] ?? null, desktop: x.desktop === true, install: x.installed ? null : S.installFail[k]?.status ?? null });
+    return {
+        device_id: S.deviceId, app_version: S.app?.version ? `${S.app.version}${otaNow() ? `+ota${otaNow()}` : ""}` : undefined, ota: otaNow(), default_models: S.defaultModels, // app_version = 화면 묶음 번호까지(대표: 새로고침됐는지 알 수 없다)
+        models: { ...S.models, _default: S.defaultModels, _photo_limits: S.photoLimits }, limits: S.claudeLimit ? { claude: S.claudeLimit } : undefined,
+        // 기기 등록(#12-Z Z1) — 이름(처음 한 번 기본값)·OS·로컬 브릿지 포트·이번 실행의 토큰
+        name: S.app?.host || undefined, os: S.app?.os, online: true,
+        ...(S.bridge ? { bridge_port: S.bridge.port, bridge_token: S.bridge.token } : {}),
+        tools: { claude: t(S.tools.claude, "claude"), codex: t(S.tools.codex, "codex"),
+            agy: { installed: S.ag.installed, loggedIn: S.ag.loggedIn, connected: null, account: S.ag.loggedIn ? "Google 계정" : null, switching: switching.gemini ?? null, desktop: S.ag.desktop, install: S.ag.installed ? null : S.installFail.agy?.status ?? null }, // agy는 계정 정보·로그아웃 명령이 없다(실측)
+            antigravity: { installed: S.ag.installed, loggedIn: S.ag.loggedIn, connected: S.ag.checked ? S.ag.connected : null } },
+        git: gitBody(), // 배포 계정(#80) — 연결 여부·이 PC에서 확인한 시각·가린 이름
+    };
+}
+async function detectModels() {
+    const out = {};
+    const h = S.tools.claude.installed ? await exec("claude", ["--help"]).catch(() => null) : null;
+    const m = h?.stdout.replace(/\s+/g, " ").match(/alias for the latest model \(e\.g\. ([^)]*)\)/);
+    if (m)
+        out.claude = [...m[1].matchAll(/'([a-z0-9.-]+)'/g)].map(x => ({ id: x[1], name: x[1][0].toUpperCase() + x[1].slice(1) }));
+    const c = S.tools.codex.installed ? await exec("codex", ["debug", "models"]).catch(() => null) : null;
+    try {
+        const j = JSON.parse(c?.stdout ?? "");
+        out.chatgpt = j.models.filter(x => x.visibility === "list").map(x => ({ id: x.slug, name: x.display_name, efforts: x.supported_reasoning_levels?.map(e => e.effort) }));
+    }
+    catch { /* 목록 없음 → 기본 */ }
+    const a = S.ag.installed ? await exec("agy", ["models"]).catch(() => null) : null;
+    const base = new Map();
+    for (const line of a?.stdout.split("\n") ?? []) {
+        const [id, name] = line.split("\t");
+        if (!id?.startsWith("gemini-") || !name)
+            continue;
+        const bm = id.match(/^(.*?)-(high|medium|low)$/);
+        const key = bm ? bm[1] : id;
+        const o = base.get(key) ?? { id: key, name: name.replace(/\s*\((High|Medium|Low)\)$/, ""), efforts: [] };
+        if (bm)
+            o.efforts.push(bm[2]);
+        base.set(key, o);
+    }
+    if (base.size)
+        out.gemini = [...base.values()];
+    S.models = out;
+}
+// 계정 상태 다시 받기(#12-AD AD1) — 아이디·동기화. 딥링크를 받으면 판정 전에 먼저 부른다(낡은 값으로 막지 않게)
+async function refreshMe() {
+    if (!S.token)
+        return;
+    const g = await api("GET", "/api/device").catch(() => null);
+    if (g?.status === 200 && g.data) {
+        S.thumbUpload = g.data.user.thumb_upload !== false;
+        setSync(!!g.data.user.sync);
+        for (const w of g.data.open_works ?? [])
+            sharedWorks.add(w); // 공유가 열린 작업(#38)만 저장마다 올린다
+        S.handle = g.data.user.handle;
+    }
+    else if (g?.status === 401)
+        await forgetToken();
+    pushStatus();
+    render();
+}
+function setSync(on) {
+    const turnedOn = !S.sync && on;
+    S.sync = on;
+    if (turnedOn)
+        syncAll(); // 방금 켰으면 이 기기의 작업을 한 번 올린다
+}
+// 이 PC의 실시간 상태를 로컬 브릿지 /ping에 싣는다(#12-AD AD1) — 웹 작업 CTA가 낡은 기기 보고 대신 이걸로 판정
+function pushStatus() {
+    const t = (x) => ({ installed: x.installed, loggedIn: x.loggedIn });
+    T().core.invoke("bridge_status", { json: JSON.stringify({ version: S.app?.version, device_id: S.deviceId ?? null,
+            tools: { claude: t(S.tools.claude), codex: t(S.tools.codex), agy: { installed: S.ag.installed, loggedIn: S.ag.loggedIn } } }) }).catch(() => { });
+}
+// 서버가 미는 이벤트(#12-AD AD1) — /api/device/events SSE를 curl -N으로 붙잡는다(55초마다 서버가 닫으면 다시 붙음).
+// sync는 즉시 반영, message는 작업실 대화를 세션으로(#14). 폴링 없음
+let eventsOn = false;
+async function listenEvents() {
+    if (eventsOn || !S.token)
+        return;
+    eventsOn = true;
+    let ev = "";
+    const hdr = await T().core.invoke("auth_header_file", { token: S.token }).catch(() => null);
+    if (S.app?.updater)
+        checkSoon(); // SSE 재연결 때도 새 버전 확인(10분에 한 번 이하)
+    const code = hdr ? await spawn("curl", ["-sS", "-N", "-f", "-H", `@${hdr}`, `${HUB}/api/device/events?device_id=${encodeURIComponent(S.deviceId)}`], "", null, (l) => {
+        if (l.startsWith("event: ")) {
+            ev = l.slice(7).trim();
+            return;
+        }
+        if (!l.startsWith("data: "))
+            return;
+        let d;
+        try {
+            d = JSON.parse(l.slice(6));
+        }
+        catch {
+            return;
+        }
+        if (ev === "sync")
+            setSync(d === true);
+        else if (ev === "message")
+            onChatMessage(d); // 작업실 대화(#14)
+        // 새 버전 알림(pub/sub) — 서버가 stable·화면 묶음이 새로 올라가면 이 연결로 민다
+        else if (ev === "update") {
+            const v = d.version;
+            if (v && v !== S.app?.version)
+                void forceUpdate();
+        }
+        else if (ev === "ota") {
+            const n = d;
+            if (n.native === S.app?.version && (n.ota ?? 0) > otaNow())
+                void otaCheck();
+        }
+    }, () => { }).catch(() => -1) : -1;
+    eventsOn = false;
+    if (code === 22 && S.refresh)
+        await refreshToken().catch(() => false); // -f: 401 → 토큰 갱신 후 다시
+    // 연결이 계속 안 되면(도메인 직후 DNS 캐시 등 — curl 6: 주소를 못 찾음, 7: 연결 실패) 허브 주소를 다시 고른다. 켤 때 한 번만 고르던 것(2026-09-29 한 시간 끊김)
+    evFails = code === 0 || code === 22 ? 0 : evFails + 1;
+    if (evFails >= 2 || code === 6 || code === 7) {
+        evFails = 0;
+        await pickHub().catch(() => { });
+    }
+    if (S.token)
+        setTimeout(listenEvents, code === 0 ? 500 : 5_000);
+}
+let evFails = 0;
+// ───────────── 딥링크 — connect·open·folder·export 넷(#20). 작업은 전부 작업실 메시지 ─────────────
+// [앱으로 로그인](#20 브라우저 간 계정) — 붙이기 전에 확인 창(딥링크는 아무 사이트나 쏠 수 있다). 같은 네트워크 검사는 서버가
+// 붙이지 않은 이유를 웹에 알린다(#41 B) — 웹은 회색으로 기다리지 않고 그 이유에 맞는 버튼을 보인다. 인증 없음(nonce 소지)
+const declineLink = (s, reason) => http("POST", `${HUB}/api/session/link/decline`, { json: { s, reason } }).catch(() => null);
+async function linkBrowser(s) {
+    if (!/^[A-Za-z0-9_-]{20,100}$/.test(s))
+        return;
+    // 앱이 Dynapse에 연결 안 됨 → 연결 전 화면(그 화면의 [Dynapse 연결])을 앞으로 + 웹은 "앱 창에서 [Dynapse 연결]을 먼저"
+    const noAccount = async () => { void declineLink(s, "no_account"); await T().core.invoke("show_main", { show: true }).catch(() => { }); toast("먼저 [Dynapse 연결]을 눌러 주세요"); };
+    if (!S.token) {
+        await noAccount();
+        return;
+    }
+    const peek = await api("GET", `/api/device/link-session?s=${s}`).catch(() => null);
+    if (peek?.status === 401) {
+        await noAccount();
+        return;
+    }
+    if (peek?.status !== 200) {
+        toast(peek?.data?.error ?? "링크가 끝났어요 — 브라우저에서 다시 눌러 주세요");
+        return;
+    }
+    const ok = await T().core.invoke("app_confirm", { title: "브라우저 연결", message: `${peek.data?.ua || "브라우저"}를 내 계정(${peek.data?.handle ?? S.handle ?? ""})에 연결할까요?\n\n직접 누른 게 아니면 [취소]를 누르세요.`, ok: "연결" }).catch(() => false);
+    if (!ok) {
+        void declineLink(s, "cancel");
+        return;
+    }
+    const r = await api("POST", "/api/device/link-session", { s, device_id: S.deviceId }).catch(() => null);
+    toast(r?.status === 200 ? `${peek.data?.ua ?? "브라우저"} 연결됨` : r?.data?.error ?? "연결하지 못했어요");
+    if (r?.status === 200)
+        void loadBrowsers();
+}
+// 연결된 브라우저(#20) — 프로필 팝오버 목록
+async function loadBrowsers() {
+    const r = await api("GET", "/api/device/browsers").catch(() => null);
+    if (r?.status === 200) {
+        S.browsers = r.data?.browsers ?? [];
+        render();
+    }
+}
+// 폴더 가져오기(#20) — 고르기(또는 경로 확인) → 새 작업 → 복사(.git 그대로) → 첫 커밋 "가져옴" → 작업실 + 첫 턴
+async function importFolder(path) {
+    if (!S.token) {
+        toast("Dynapse 연결 필요");
+        return;
+    }
+    const picked = await T().core.invoke("import_pick", { path: path ?? null }).catch(e => { toast(String(e)); return null; });
+    if (!picked)
+        return;
+    const name = picked.split(/[\\/]/).filter(Boolean).pop() ?? "폴더";
+    const r = await api("POST", "/api/works", { title: name.slice(0, 30), status: "done", page: "import", device_id: S.deviceId }).catch(() => null);
+    const id = r?.data?.id;
+    if (!id) {
+        toast("작업을 만들지 못했어요");
+        return;
+    }
+    const files = await T().core.invoke("import_copy", { id, path: picked }).catch(e => { toast(String(e)); return null; });
+    if (!files)
+        return;
+    await api("POST", "/api/works", { id, status: "done", local_path: await T().core.invoke("work_dir", { id }), device_id: S.deviceId }).catch(() => { });
+    await importStart(id, { source: name }); // 저장만(#22-보정 5) — 커밋 + "가져옴" 한 줄, AI 턴 없음
+    await openWeb(`/works/${id}`);
+}
+async function takeLinks() {
+    const urls = await T().core.invoke("take_deep_links");
+    for (const u of urls)
+        await handleLink(u);
+}
+async function handleLink(raw) {
+    let url;
+    try {
+        url = new URL(raw);
+    }
+    catch {
+        return;
+    }
+    const action = url.hostname || url.pathname.replace(/^\/+/, "").split("/")[0];
+    const p = url.searchParams;
+    const w = p.get("work") ?? "";
+    // 딥링크는 넷뿐(#20) — 작업은 전부 작업실 메시지로 온다(만들기·수정·공개·사진·되돌리기 = 문장)
+    if (action === "connect") {
+        startOnboard(false);
+        return;
+    } // 웹 [앱에서 AI 연결] — AI 고르기·공식 로그인 화면
+    if (action === "import") {
+        await importFolder(p.get("path") || undefined);
+        return;
+    }
+    if (action === "update") {
+        await forceUpdate();
+        return;
+    }
+    // 웹 화면 열기(#21 보정 13 — Safari 등 브릿지가 막힌 브라우저의 [앱에서 열기]) — 우리 웹의 경로만
+    if (action === "page") {
+        const path = p.get("path") ?? "";
+        if (/^\/[\w/?=&.-]*$/.test(path) && !path.includes("..") && !path.startsWith("//"))
+            await openWeb(path);
+        return;
+    } // 웹 [앱 업데이트](#21 보정 2)
+    if (action === "link") {
+        await linkBrowser(p.get("s") ?? "");
+        return;
+    } // [앱으로 로그인](#20) — 브라우저 세션을 이 계정에   // 폴더 가져오기(#20) — 경로가 오면 확인 창을 먼저
+    if (!WORK_ID.test(w))
+        return;
+    // 결과·오류는 그 작업 채팅에 한 줄(#61 A6 — toast는 숨은 기본 창에 떠서 앱 창에선 안 보였다)
+    const say = (text, err = false) => { toast(text); void postChat(w, [{ role: "event", text, payload: { kind: err ? "error" : "stage", ai: "dynapse" } }]).catch(() => { }); };
+    if (action === "open") {
+        await openWeb(`/works/${w}`);
+        return;
+    } // 인앱 창의 같은 웹 화면(로컬 원본이 IPC로 보인다)
+    // [브라우저에서 열기](#35 B2) — 그 페이지를 사진이 들어간 사본(.dynapse/out/⟨page⟩.bundle.html)으로, 이 PC 브리지 주소로 기본 브라우저에
+    if (action === "browser") {
+        const file = p.get("file") ?? "result-cover.html";
+        if (!/^result-[a-z0-9-]+\.html$/.test(file))
+            return;
+        await ensureVerify(w);
+        await appVerify(w, [file]).catch(() => null);
+        S.bridge ??= await T().core.invoke("bridge_info").catch(() => null);
+        if (!S.bridge) {
+            say("브라우저로 열 수 없어요", true);
+            return;
+        }
+        await T().shell.open(`http://127.0.0.1:${S.bridge.port}/works/${encodeURIComponent(w)}/.dynapse/out/${file.replace(/^result-|\.html$/g, "")}.bundle.html?t=${S.bridge.token}`).catch(e => say(`브라우저로 열지 못했어요 · ${String(e).slice(0, 80)}`, true));
+        return;
+    }
+    if (action === "folder") {
+        await T().core.invoke("open_work", { id: w, file: null }).catch(e => say(`폴더를 열지 못했어요 · ${String(e).slice(0, 80)}`, true));
+        return;
+    }
+    if (action === "export") { // ~/Downloads zip(렌더 사진이 없으면 검증 1회로 만든 뒤)
+        const k0 = p.get("kind") ?? "";
+        const kind = ["html", "pdf", "photo", "pptx", "png2x", "instagram", "detail"].includes(k0) ? k0 : "png"; // PDF = 전체 페이지를 한 파일로(인쇄용) · photo = 사진 작업의 지금 사진 한 장 · pptx = 편집 가능한 PPTX(#73) · png2x = 2배 PNG
+        if (kind === "png") {
+            const f = await T().core.invoke("work_files", { id: w }).catch(() => []);
+            if (!f.some(x => x.name.startsWith(".dynapse/out/"))) {
+                await ensureVerify(w);
+                await appVerify(w);
+            }
+        }
+        say(kind === "pdf" ? "PDF 만드는 중…" : kind === "pptx" ? "PPTX 만드는 중…" : "내보내는 중…");
+        // PPTX·2배 PNG(#73) — 앱이 렌더해 둔 뒤 Downloads로(브라우저 다운로드가 아니라 앱이 쓰고 Finder/탐색기에서 보인다 — 앱 창에서도 같은 길)
+        let compatNote = "";
+        if (kind === "pptx" || kind === "png2x") {
+            const r = await exportRender(w, kind);
+            if (!r.ok) {
+                say(`내보내지 못했어요 · ${r.error ?? ""}`, true);
+                return;
+            }
+            // 호환 보고(#81 보정 1) — 깨뜨리지 않고 평탄화한 것을 칩처럼 한 줄로(compat.txt와 같은 내용) · 처음이면 제안 카드 한 번
+            const c = r.compat;
+            if (kind === "pptx" && c) {
+                const it = [c.shadow ? `그림자 ${c.shadow}곳 → 이미지로` : "", c.gradient ? `그라데이션 ${c.gradient}곳 → 이미지로` : "", c.textShadow ? `글자 그림자 ${c.textShadow}곳 → 없어짐` : "", c.alpha ? `투명 글자 ${c.alpha}곳 → 불투명 색` : "", c.webp ? `WebP ${c.webp}장 → JPEG` : "", c.fonts?.length ? `글꼴 ${c.fonts.slice(0, 2).join("·")} → 맑은 고딕(한쇼·폴라리스)` : ""].filter(Boolean);
+                if (it.length)
+                    compatNote = ` · ${it.join(" · ")} · compat.txt`;
+                const n = (c.shadow ?? 0) + (c.gradient ?? 0) + (c.textShadow ?? 0) + (c.alpha ?? 0) + (c.webp ?? 0);
+                if (n)
+                    void askCompatOnce(w, n).catch(() => { });
+            }
+        }
+        // 인스타·상세페이지(#81 §3) — 규격 파일 묶음(AI 0). 인스타는 카드 작업만(슬라이드를 잘라 정사각으로 만들지 않는다 — 웹이 안내 카드를 띄운다)
+        let caption = null;
+        if (kind === "instagram") {
+            const files = (await T().core.invoke("work_files", { id: w }).catch(() => [])).map(f => f.name);
+            if (!files.some(f => /^result-card-\d+\.html$/.test(f))) {
+                say("인스타는 카드뉴스 작업에서 · 슬라이드를 자르면 깨진 카드가 돼요", true);
+                return;
+            }
+            const r = await exportRender(w, "png2x");
+            if (!r.ok) {
+                say(`내보내지 못했어요 · ${r.error ?? ""}`, true);
+                return;
+            }
+            caption = await instaCaption(w, files).catch(() => null);
+        }
+        if (kind === "detail") {
+            const r = await exportRender(w, "detail");
+            if (!r.ok) {
+                say(`내보내지 못했어요 · ${r.error ?? ""}`, true);
+                return;
+            }
+        }
+        // HTML 레시피 접힘(#74 보정 1) — 이 작업의 사용량 한 줄을 서버에서 받아 두면 내보낸 deck.html 아래에 접혀 들어간다(없거나 실패하면 접힘 없음)
+        if (kind === "html") {
+            const u = await api("GET", `/api/works/${w}/metrics`).then(r => (r.status === 200 ? r.data : null)).catch(() => null);
+            await wput(w, ".dynapse/out/recipe.json", JSON.stringify({ text: u?.text ?? null })).catch(() => { });
+        }
+        await T().core.invoke("export_work", { id: w, kind, caption }).then(path => say(`내보냈어요 · ${path.replace(/^.*[\\/](Downloads)[\\/]/, "$1/")}${kind === "pptx" ? ` · PowerPoint·한쇼·폴라리스·Google Slides에서 열림 · 글꼴 대체표 fonts.txt${compatNote}` : ""}`)).catch(e => say(`내보내지 못했어요 · ${String(e).slice(0, 80)}`, true));
+    }
+}
+// ───────────── 업데이트 (docs/11 §3.4) ─────────────
+const UPDATE_FIRST_MS = 30_000;
+const UPDATE_EVERY_MS = 60 * 60 * 1000; // 1시간(#21 보정 2) + 시작·SSE 재연결 때
+// 실행 중 = 어느 작업실 세션이 턴을 도는 중(#20 — 실행 경로는 대화 하나)
+function jobRunning() { return [...sessions.values()].some(s => s.busy); }
+// 실행 줄 — 도는 턴 한 줄(AI · 작업 · 단계) + [보기]. 없으면 home.ts의 유휴 칩
+function runLine() {
+    for (const [key, s] of sessions)
+        if (s.busy) {
+            const id = key.split("|")[0], title = S.recent.find(r => r.work === id)?.t ?? id;
+            return `<div class="job"><span class="job__title">${esc(title)}</span><span class="job__stage">${esc(s.lastStage ?? "읽는 중")}${s.runModel ? ` · ${esc(shortModel(s.runModel))}` : ""}</span><span class="job__btns"><button class="pill pill--sm" data-act="open-work" data-id="${esc(id)}">보기</button></span></div>`;
+        }
+    return "";
+}
+// 모델 짧은 이름(#20 모델 표기 — 웹 lib/model-name과 같은 규칙) — 실행 줄에 "· Opus 4.6"
+function shortModel(id) {
+    const m = id.match(/^claude-(opus|fable|sonnet|haiku)-(\d+(?:-\d+)?)/i);
+    return m ? `${m[1][0].toUpperCase()}${m[1].slice(1)} ${m[2].replace(/-/g, ".")}` : id.replace(/^gpt-/i, "GPT-");
+}
+async function checkUpdate(manual) {
+    if (!S.app?.updater)
+        return; // 로컬 빌드 — 조용히(문구 없음)
+    if (manual)
+        toast("확인하는 중…");
+    try {
+        const u = await T().core.invoke("update_check", { channel: S.channel });
+        if (u) {
+            S.updateReady = u.version;
+            if (manual)
+                toast(`${u.version} 받음`);
+        }
+        else if (manual)
+            toast("최신");
+        render();
+    }
+    catch (e) {
+        console.warn("update check failed", e);
+        if (manual)
+            toast(`확인하지 못했어요: ${e.message ?? e}`);
+    }
+}
+// 서버가 요구하거나(update_required) 웹 [앱 업데이트](dynapse://update) — 받고, 도는 작업이 없으면 바로 설치·다시 시작
+let forcing = false;
+async function forceUpdate() {
+    if (forcing || !S.app?.updater)
+        return;
+    forcing = true;
+    try {
+        if (!S.updateReady)
+            await checkUpdate(false);
+        if (!S.updateReady)
+            return;
+        for (let k = 0; k < 120 && jobRunning(); k++)
+            await new Promise(r => setTimeout(r, 5000)); // 턴이 끝날 때까지(최대 10분)
+        if (!jobRunning()) {
+            toast(`${S.updateReady} · 다시 시작`);
+            await installUpdate();
+        }
+    }
+    finally {
+        forcing = false;
+    }
+}
+// 무재시작 업데이트(OTA) — 서명된 화면 묶음을 받아 두고, 도는 작업이 없을 때 화면만 새로고침(앱은 그대로 켜져 있다)
+const otaNow = () => window.__DYN_OTA ?? 0;
+let otaBusy = false;
+async function otaCheck() {
+    if (otaBusy || !S.app?.updater)
+        return;
+    otaBusy = true;
+    try {
+        const n = await T().core.invoke("ota_fetch").catch(e => { console.warn("ota", e); return null; });
+        if (!n || n <= otaNow())
+            return;
+        // 쉬는 중일 때만 — 대화 턴·사진 턴·막 받은 메시지 모두(chatActive). 한가해진 뒤 3초 더 조용하면 새로고침(받는 순간 새로고침돼 메시지를 잃던 것)
+        const busy = () => jobRunning() || chatActive();
+        for (let k = 0; k < 360; k++) {
+            if (!busy()) {
+                await new Promise(r => setTimeout(r, 3000));
+                if (!busy())
+                    break;
+            }
+            else
+                await new Promise(r => setTimeout(r, 5000));
+        }
+        if (busy())
+            return;
+        for (const s of sessions.values())
+            if (s.procId !== undefined)
+                await T().core.invoke("run_close_stdin", { id: s.procId }).catch(() => { }); // 쉬는 세션은 닫는다(다음 메시지에 --resume)
+        location.reload();
+    }
+    finally {
+        otaBusy = false;
+    }
+}
+let lastCheck = 0;
+function checkSoon() { if (Date.now() - lastCheck > 10 * 60_000) {
+    lastCheck = Date.now();
+    void checkUpdate(false);
+} }
+async function installUpdate() {
+    if (jobRunning()) {
+        toast("작업이 끝나면 설치할 수 있어요");
+        return;
+    }
+    try {
+        await T().core.invoke("update_install");
+    }
+    catch (e) {
+        toast(`설치하지 못했어요: ${e.message ?? e}`);
+    }
+}
+const LOCATION_MSG = { dmg: "디스크 이미지", translocated: "격리 위치", outside: "응용 프로그램 폴더 밖" };
+// ───────────── 첫 실행 온보딩 (WORKORDER #12 B) — "어떤 AI를 쓰세요?" → 공식 로그인 → 연결됐어요 ─────────────
+function startOnboard(first) {
+    void T().core.invoke("show_main", { show: true }).catch(() => { });
+    S.onboard = { step: "pick", picked: [], queue: [], hubStarted: false, connected: [], first };
+    render();
+}
+async function onboardNext() {
+    const o = S.onboard;
+    if (!o)
+        return;
+    if (o.step === "pick") {
+        o.queue = o.picked.filter(p => p !== "gemini").map(p => (p === "chatgpt" ? "codex" : "claude"));
+        // 마무리(#12-N N1): 디자인 AI 중 먼저 고른 것
+        const first = o.picked.find(p => p === "claude" || p === "chatgpt") ?? null;
+        if (first) {
+            await store.set("primary_pref", first);
+            await store.save();
+        }
+        o.agDone = false;
+        o.step = "tool";
+    }
+    while (o.queue.length) {
+        const id = o.queue[0];
+        o.current = id;
+        o.phase = "checking";
+        render();
+        if (!Object.keys(S.minVersions).length)
+            await loadMinVersions();
+        await detect(id);
+        const t = S.tools[id];
+        if (t.installed && isOld(id)) {
+            o.phase = "latest";
+            render();
+            await bringLatest(id);
+        } // 설치됨·구버전 → 공식 명령 먼저 (#12-D D1)
+        if (!t.installed) {
+            o.phase = "install";
+            render();
+            // 설치를 3초마다 확인(최대 10분) — 설치되면 알아서 로그인 단계로. [나중에]를 누르면 멈춘다
+            const until = Date.now() + 600_000;
+            while (Date.now() < until && S.onboard === o && o.current === id && o.phase === "install") {
+                await new Promise(r => setTimeout(r, 3000));
+                if (S.onboard !== o || o.current !== id || o.phase !== "install")
+                    return;
+                await detect(id);
+                if (S.tools[id].installed)
+                    break;
+            }
+            if (!S.tools[id].installed)
+                return;
+            continue;
+        }
+        if (t.loggedIn === false) {
+            o.phase = "login";
+            render();
+            const ok = await openLogin(id);
+            if (!ok)
+                return; // 3분 안에 안 됐으면 화면의 [로그인 창 다시 열기]
+        }
+        o.phase = "connecting";
+        render();
+        if (await connectTool(id, true))
+            o.connected.push(id);
+        o.queue.shift();
+    }
+    if (o.picked.includes("gemini") && !o.agDone) {
+        // Gemini: Antigravity CLI(agy) 설치 확인 → 로그인(앱 자격증명 재사용, 없으면 공식 로그인 1회). 사진은 앱이 헤드리스로 (#12-M)
+        o.step = "gemini";
+        o.current = undefined;
+        o.phase = "checking";
+        render();
+        await agDetect(true);
+        if (!S.ag.installed) {
+            o.phase = "install";
+            render();
+            const until = Date.now() + 600_000;
+            while (Date.now() < until && S.onboard === o && o.step === "gemini" && o.phase === "install") {
+                await new Promise(r => setTimeout(r, 3000));
+                if (S.onboard !== o || o.step !== "gemini" || o.phase !== "install")
+                    return;
+                await agDetect();
+                if (S.ag.installed)
+                    break;
+            }
+            if (!S.ag.installed)
+                return;
+        }
+        if (S.ag.loggedIn !== true) {
+            o.phase = "login";
+            render();
+            o.agOk = await agyLogin();
+        }
+        else
+            o.agOk = true;
+        o.agDone = true;
+    }
+    // 끝 화면 = 상태 창 첫 화면(협업 슬라이드, #12-F F1). "연결됐어요" 문장 화면은 없다
+    await finishOnboard();
+    if (!S.token && !o.hubStarted) {
+        o.hubStarted = true;
+        await hubLogin();
+    } // Dynapse 계정 연결은 이 순간 자동 — 브라우저 [연결 허용] 1클릭
+    render();
+}
+async function finishOnboard() {
+    S.onboard = null;
+    void replayWaiting(); // 온보딩에서 막 로그인했으면 기다리던 메시지부터(#20)
+    await store.set("onboarded", true);
+    await store.save();
+    render();
+    if (S.token)
+        void openFront(); // 온보딩이 끝나면 같은 자리에 웹(#21 보정 8·13)
+}
+// 계정 전환(#22-보정 15) — 공식 로그아웃 → 공식 로그인 창. 자격증명은 CLI가 직접 다룬다. 그 AI의 턴이 돌고 있으면 끝난 뒤에
+export async function switchAccount(tool) {
+    if (tool === "gemini")
+        return agySwitch();
+    if (switching[tool])
+        return;
+    const busy = () => [...sessions.values()].some(s => s.tool === tool && s.busy);
+    if (busy()) {
+        switching[tool] = "wait";
+        void reportDevice();
+        const until = Date.now() + 30 * 60_000;
+        while (busy() && Date.now() < until)
+            await new Promise(r => setTimeout(r, 3000));
+    }
+    switching[tool] = "run";
+    void reportDevice();
+    try {
+        await exec(tool, tool === "claude" ? ["auth", "logout"] : ["logout"]).catch(() => null);
+        for (const [k, s] of sessions)
+            if (s.tool === tool && !s.busy)
+                sessions.delete(k); // 이전 계정의 대화 세션은 이어 쓰지 않는다
+        await openLogin(tool);
+    }
+    finally {
+        delete switching[tool];
+        await detect(tool);
+        await reportDevice();
+    }
+}
+// 배포 계정(#80) — [설치] = 공식 설치 페이지만(스크립트 래핑 없음) · [로그인]·[다른 계정으로] = 공식 로그인 창 → 2초마다 이 PC에서 다시 확인(최대 3분)
+async function gitAction(id, name, model) {
+    if (name === "install") {
+        await T().shell.open(GIT_INSTALL_URL[id]).catch(() => { });
+        return;
+    }
+    if (name !== "login")
+        return;
+    const tool = model === "switch" ? `${id === "github" ? "gh" : "vercel"}-switch` : id === "github" ? "gh" : "vercel";
+    try {
+        await T().core.invoke("open_login", { tool });
+    }
+    catch (e) {
+        toast(String(e));
+        void diagAuto({ tool: id === "github" ? "gh" : "vercel", stage: "login", code: "open_login_fail", summary: String(e) });
+        return;
+    }
+    const before = G[id].account, until = Date.now() + 180_000;
+    while (Date.now() < until) {
+        await new Promise(r => setTimeout(r, 2000));
+        await detectGit(id);
+        if (G[id].loggedIn && (model !== "switch" || G[id].account !== before))
+            break;
+    }
+    void reportDevice();
+}
+// 웹이 시키는 앱 동작(#21 보정 13) — AI 이름은 웹 어휘(claude·chatgpt·gemini)
+async function appAction(a) {
+    if (a.ai === "github" || a.ai === "vercel") {
+        await gitAction(a.ai, a.name, a.model);
+        return;
+    }
+    const tool = a.ai === "chatgpt" || a.ai === "codex" ? "codex" : a.ai === "gemini" || a.ai === "agy" ? "gemini" : "claude";
+    // [다른 계정으로](#22-보정 15) — 브릿지 허용 동작을 늘리지 않으려고 login + model "switch"로 받는다
+    if (a.name === "login" && a.model === "switch")
+        await switchAccount(tool === "gemini" ? "gemini" : tool);
+    else if (a.name === "login") {
+        if (tool === "gemini")
+            await agyLogin();
+        else
+            await openLogin(tool);
+        await autoDetect(true);
+    }
+    else if (a.name === "install" && a.model === "report")
+        void diagReport({ tool: tool === "gemini" ? "agy" : tool }); // [보고하기](진단) — 허용 동작을 늘리지 않으려고 install + model "report"
+    else if (a.name === "install")
+        await installCli(tool);
+    else if (a.name === "update")
+        void forceUpdate();
+    else if (a.name === "add-ai")
+        startOnboard(false);
+    else if (a.name === "set-model") {
+        const role = tool === "codex" ? "chatgpt" : tool;
+        if (a.model)
+            S.defaultModels[role] = a.model;
+        else
+            delete S.defaultModels[role];
+        await store.set("default_models", S.defaultModels);
+        await store.save();
+        void reportDevice();
+    }
+}
+// 창 하나, 화면 둘(#21 보정 12) — 트레이 "열기"가 웹을 아직 안 연 상태에서 오면 작업(/works)을, 연결 전이면 홈
+async function openFront(path = "/works") {
+    if (!S.token || S.onboard) {
+        await T().core.invoke("show_main", { show: true }).catch(() => { });
+        return;
+    }
+    await openWeb(path);
+}
+// 설치 대기 줄(#41 A) — 기다리는 중 / 안 됐음(→ [다시 설치] + 로그) / 끝났는데 못 찾음(→ [다시 확인])
+function installRow(tool, dataId, skipAct) {
+    const f = S.installFail[tool];
+    const log = f?.log ? `<details class="logbox"><summary>로그</summary><pre>${esc(f.log)}</pre></details>` : "";
+    const status = !f ? "설치를 기다리는 중…" : f.status === "missing" ? "설치는 끝났는데 찾지 못했어요" : "설치가 안 됐어요";
+    const main = f?.status === "missing"
+        ? `<button class="pill" data-act="install-recheck" data-id="${tool}">다시 확인</button><button class="pill pill--soft" data-act="install" data-id="${dataId}">다시 설치</button>`
+        : `<button class="pill" data-act="install" data-id="${dataId}">${f ? "다시 설치" : "설치하기"}</button>`;
+    return `<p class="muted">${status}</p>${log}<div class="card__row">${main}<button class="pill pill--soft" data-act="${skipAct}">나중에</button></div>`;
+}
+function onboardView() {
+    const o = S.onboard;
+    const back = o.first ? "" : `<button class="pill pill--soft" data-act="ob-cancel">닫기</button>`;
+    if (o.step === "pick") {
+        const b = (k, name, note) => `<button class="ob__ai ${o.picked.includes(k) ? "ob__ai--on" : ""}" data-act="ob-pick" data-id="${k}"><b>${name}</b><small>${note}</small></button>`;
+        const hint = `<p class="muted" style="margin-top:-4px">사진은 ChatGPT나 Gemini, 디자인은 Claude나 ChatGPT가 해요.</p>`;
+        return `<div class="ob">${assemblyHtml()}<h1>어떤 AI를 쓰세요?</h1><p class="lead">쓰는 AI를 모두 고르세요. 내 구독으로 이 기기에서 만들어요.</p>
+      <div class="ob__ais">${b("claude", "Claude", "편집")}${b("chatgpt", "ChatGPT", "사진 · 편집")}${b("gemini", "Gemini", "사진 · Antigravity 안에서")}</div>${hint}
+      ${o.picked.includes("gemini") ? `<div class="note">Gemini는 Antigravity 앱 안에서 써요. 앱이 연결해 두면 Antigravity에서 한 문장으로 시작해요.</div>` : ""}
+      <div class="card__row">${back}<button class="pill" data-act="ob-next" ${o.picked.length ? "" : "disabled"}>다음</button></div></div>`;
+    }
+    if (o.step === "tool" && o.current) {
+        const id = o.current, name = AI_NAME[id];
+        const body = o.phase === "install"
+            ? `<h1>${S.tools[id].desktop ? `${name} 앱은 있어요. ${id === "codex" ? "Codex CLI" : RUNNER_NAME[id]} 하나만 더 설치하면 연결돼요` : `${RUNNER_NAME[id]}를 설치하면 ${name}로 ${capsText(CAPS[id])}을 할 수 있어요`}</h1>
+         <p class="lead">[설치하기]를 누르면 공식 설치가 새 창에서 진행돼요. 끝나면 앱이 알아서 다음으로 넘어가요.</p>
+         ${installRow(id, id, "ob-skip")}`
+            : o.phase === "login"
+                ? `<h1>${name}에 로그인하면 ${capsText(CAPS[id])}을 할 수 있어요</h1><p class="lead">열린 ${name} 공식 로그인 창에서 로그인해 주세요. 끝나면 자동으로 다음으로 넘어가요.</p>
+         <p class="muted">로그인 중…</p>
+         <div class="card__row"><button class="pill pill--soft" data-act="ob-relogin">로그인 창 다시 열기</button><button class="pill pill--soft" data-act="ob-skip">건너뛰기</button></div>`
+                : `<h1>${name}</h1><p class="lead">${o.phase === "connecting" ? "연결하는 중…" : o.phase === "latest" ? `${RUNNER_NAME[id]}를 최신으로 맞추는 중…` : "확인하는 중…"}</p>`;
+        return `<div class="ob">${body}</div>`;
+    }
+    if (o.step === "gemini") {
+        const body = o.phase === "install"
+            ? `<h1>${S.ag.desktop ? "Antigravity 앱은 있어요. Gemini CLI 하나만 더 설치하면 사진을 만들 수 있어요" : "Gemini CLI를 설치하면 Gemini로 사진을 만들 수 있어요"}</h1>
+         <p class="lead">[설치하기]를 누르면 공식 설치가 새 창에서 진행돼요. 설치 끝에 Google 로그인이 이어지면, 브라우저에 나온 코드를 그 창에 붙여넣고 Enter를 누르세요.</p>
+         ${installRow("agy", "gemini", "ob-ag-skip")}`
+            : o.phase === "login"
+                ? `<h1>Gemini에 로그인하면 사진을 할 수 있어요</h1><p class="lead">열린 공식 로그인 창에서 로그인해 주세요. 끝나면 자동으로 다음으로 넘어가요.</p>
+         <div class="card__row"><button class="pill pill--soft" data-act="ob-ag-skip">나중에</button></div>`
+                : `<h1>Gemini</h1><p class="lead">${o.phase === "connecting" ? "연결하는 중…" : "확인하는 중…"}</p>`;
+        return `<div class="ob">${body}</div>`;
+    }
+    return "";
+}
+// ───────────── 렌더 ─────────────
+function aiStates() {
+    const busy = (id) => [...sessions.values()].some(x => x.busy && x.tool === id);
+    const t = (id, brand) => ({
+        key: id, name: AI_NAME[id], runner: RUNNER_NAME[id], caps: CAPS[id], brand,
+        checked: S.tools[id].checked, installed: S.tools[id].installed, loggedIn: S.tools[id].loggedIn, connected: !!S.tools[id].connected, busy: busy(id),
+    });
+    return [t("claude", "claude"), t("codex", "openai"),
+        { key: "gemini", name: "Gemini", runner: "Antigravity CLI", caps: ["사진"], brand: "googlegemini",
+            checked: S.ag.checked, installed: S.ag.installed, loggedIn: S.ag.loggedIn, connected: S.ag.connected, busy: false }];
+}
+export function render() {
+    // 네이티브 화면은 온보딩과 "연결 전" 한 장뿐(#21 보정 13). 연결된 상태 화면은 웹 /connect
+    const a = S.app;
+    const loc = a?.updater && a.location_issue ? `⚠ ${LOCATION_MSG[a.location_issue]} · 업데이트 안 됨` : null;
+    $top.innerHTML = `<span class="brandmark"><img src="symbol.svg" alt="" class="top__logo" /><b>Dynapse</b></span>`;
+    const logOpen = document.querySelector(".logbox")?.open;
+    $app.innerHTML = S.onboard ? onboardView() : mainHtml({ connected: !!S.token, hubBusy: S.hubBusy, version: a ? `${a.version}${otaNow() ? `+ota${otaNow()}` : ""}` : "", location: loc });
+    if (logOpen)
+        document.querySelector(".logbox")?.setAttribute("open", "");
+    const busy = jobRunning();
+    if (busy !== busySent) {
+        busySent = busy;
+        T().core.invoke("set_busy", { busy }).catch(() => { });
+    }
+    let $t = document.getElementById("toast");
+    if (!$t) {
+        $t = document.createElement("div");
+        $t.id = "toast";
+        $t.className = "toast";
+        document.body.appendChild($t);
+    }
+    $t.textContent = S.toast;
+    $t.hidden = !S.toast;
+}
+// ───────────── 상태 자동 감지 (#12-G) — 창이 포커스일 때 3초마다, 준비 안 된 AI만. 로그인되면 연결(MCP 등록)은 조용히 ─────────────
+let polling = false;
+async function autoDetect(all = false) {
+    if (polling || jobRunning() || S.onboard)
+        return;
+    polling = true;
+    const was = JSON.stringify([S.tools.claude.installed, S.tools.claude.loggedIn, S.tools.codex.installed, S.tools.codex.loggedIn, S.ag.installed, S.ag.loggedIn]);
+    try {
+        for (const id of ["claude", "codex"]) {
+            const t = S.tools[id];
+            if (!all && t.installed && t.loggedIn && t.connected)
+                continue;
+            await detect(id);
+            if (t.installed && t.loggedIn && t.connected === false)
+                await connectTool(id, true);
+        }
+        if (all || !S.ag.installed || S.ag.loggedIn !== true)
+            await agDetect();
+        const gw = JSON.stringify(gitBody());
+        await detectAllGit().catch(() => { });
+        if (JSON.stringify(gitBody()).replace(/"at":\d+/g, "") !== gw.replace(/"at":\d+/g, ""))
+            void reportDevice(); // 배포 계정(#80) — 5분에 한 번(gh auth status는 네트워크를 탄다)
+        await replayWaiting(); // 로그인되면 기다리던 작업실 메시지를 이어서(#20)
+        pushStatus(); // 로그인 확인(토큰 소모)은 하루 1회 캐시 — 3초 루프에서 다시 안 한다
+        // 로그인 상태가 바뀌면 곧바로 서버에 — 웹 연결 카드는 기기 보고를 본다(심장박동까지 기다리지 않게)
+        // 모델 목록도 다시 — 앱 시작 때 한 번만 읽어서, 켜 둔 채 CLI를 설치·로그인하면 연결 탭 모델 선택이 비어 있었다(2026-09-28 다른 Windows PC)
+        if (JSON.stringify([S.tools.claude.installed, S.tools.claude.loggedIn, S.tools.codex.installed, S.tools.codex.loggedIn, S.ag.installed, S.ag.loggedIn]) !== was) {
+            await detectModels().catch(() => { });
+            void reportDevice();
+        }
+    }
+    finally {
+        polling = false;
+    }
+}
+// 창이 포커스면 3초마다. 웹 창을 보는 동안(엔진 창은 숨어 포커스가 없다)에도 12초마다 — 준비 안 된 AI만 보므로 가볍다(2026-09-28 Windows 실측: 웹에서 로그인해도 카드가 안 바뀌었다)
+let detectTick = 0;
+setInterval(() => { if (document.hasFocus() || ++detectTick % 4 === 0)
+    autoDetect(); }, 3000);
+addEventListener("focus", () => { autoDetect(true); void retryPendingPulls().catch(() => { }); }); // 포커스 때도 못 받은 작업 다시(#56, 1분에 한 번)
+// ───────────── 이벤트 ─────────────
+const LOGOUT_URL = { claude: "https://code.claude.com/docs/en/setup", codex: "https://developers.openai.com/codex/cli", gemini: INSTALL_URL.agy };
+document.addEventListener("click", async (ev) => {
+    const el = ev.target.closest("[data-act]");
+    const inPop = ev.target.closest(".pop");
+    const act = el?.dataset.act, id = el?.dataset.id ?? "";
+    if (act !== "pop" && !inPop && S.pop) {
+        S.pop = null;
+        if (!el) {
+            render();
+            return;
+        }
+    }
+    if (!el)
+        return;
+    switch (act) {
+        case "pop":
+            S.pop = S.pop === id ? null : id;
+            render();
+            if (S.pop === "profile")
+                void loadBrowsers();
+            break;
+        case "login":
+            S.pop = null;
+            render();
+            if (id === "gemini")
+                await agyLogin();
+            else
+                await openLogin(id);
+            await autoDetect(true);
+            render();
+            break;
+        case "install":
+            await installCli(id === "gemini" || id === "antigravity" ? "gemini" : id);
+            break;
+        case "install-recheck":
+            if (id === "claude" || id === "codex" || id === "agy")
+                await installRecheck(id);
+            break;
+        case "logout-help":
+            await T().shell.open(LOGOUT_URL[id]);
+            break;
+        case "hub-login":
+            S.pop = null;
+            hubLogin();
+            break;
+        case "hub-logout":
+            S.pop = null;
+            await disconnectHub();
+            break;
+        case "web":
+            S.pop = null;
+            render();
+            await openWeb(id);
+            break;
+        case "import-folder":
+            await importFolder();
+            break;
+        // 홈 툴바(#21 보정 12) — › = 보던 작업 화면 · ⟳ = 다시 살피기
+        case "go-web":
+            await T().core.invoke("go_web").catch(() => openWeb("/works"));
+            break;
+        case "home-reload":
+            await autoDetect();
+            render();
+            break;
+        case "pick-model": {
+            const [ai, m] = id.split("|");
+            if (m)
+                S.defaultModels[ai] = m;
+            else
+                delete S.defaultModels[ai];
+            await store.set("default_models", S.defaultModels);
+            await store.save();
+            render();
+            void reportDevice();
+            break;
+        } // 웹 화면 = 인앱 창(같은 창 재사용)
+        case "view-work":
+            await openWeb(`/works/${id}`);
+            break;
+        case "view-path":
+            await openWeb(id);
+            break;
+        case "open-work":
+            await openWeb(`/works/${id}`);
+            break; // 최근 = 웹 /works/⟨id⟩(인앱 창)
+        case "ob-pick":
+            if (S.onboard) {
+                const k = id;
+                S.onboard.picked = S.onboard.picked.includes(k) ? S.onboard.picked.filter(x => x !== k) : [...S.onboard.picked, k];
+                render();
+            }
+            break;
+        case "ob-next":
+            onboardNext();
+            break;
+        case "ob-relogin":
+            if (S.onboard?.current) {
+                const cur = S.onboard.current;
+                if (await openLogin(cur))
+                    onboardNext();
+            }
+            break;
+        case "ob-skip":
+            if (S.onboard) {
+                S.onboard.queue.shift();
+                onboardNext();
+            }
+            break;
+        case "ob-ag-skip":
+            if (S.onboard) {
+                S.onboard.agDone = true;
+                S.onboard.phase = undefined;
+                onboardNext();
+            }
+            break;
+        case "ob-cancel":
+            S.onboard = null;
+            render();
+            break;
+        case "ob-add":
+            S.pop = null;
+            startOnboard(false);
+            break;
+        case "update-install":
+            installUpdate();
+            break;
+        case "channel":
+            S.channel = S.channel === "beta" ? "stable" : "beta";
+            await store.set("update_channel", S.channel);
+            await store.save();
+            S.updateReady = null;
+            render();
+            checkUpdate(false);
+            break;
+    }
+});
+// ───────────── 시작 ─────────────
+const HEARTBEAT_MS = 10 * 60_000;
+(async () => {
+    await listenRunner();
+    await pickHub();
+    store = await T().store.load("dynapse.json", { autoSave: false, defaults: {} });
+    S.token = (await store.get("token")) ?? null;
+    S.refresh = (await store.get("refresh")) ?? null;
+    const rec = (await store.get("recent")) ?? [];
+    S.recent = rec.filter((r) => typeof r === "object" && !!r && !!r.work); // 예전 문자열 기록(열 수 없음)은 버린다
+    S.deviceId = (await store.get("device_id")) ?? "";
+    if (!S.deviceId) {
+        S.deviceId = `dev_${rand(12)}`;
+        await store.set("device_id", S.deviceId);
+        await store.save();
+    }
+    S.app = await T().core.invoke("app_info");
+    S.channel = (await store.get("update_channel")) === "beta" ? "beta" : "stable";
+    S.git = await T().core.invoke("repo_available").catch(() => false);
+    if (!(await store.get("onboarded")))
+        startOnboard(true);
+    render();
+    await T().event.listen("front", () => { void openFront(); }); // 트레이 "열기"·앱 다시 켜기
+    // 엔진 창이 보이게 되면(재시작·화면 묶음 새로고침·Dock 등) 연결돼 있고 온보딩 중이 아니면 "열기" 카드 없이 곧바로 웹으로
+    let goingWeb = 0;
+    const autoWeb = () => {
+        if (!S.token || S.onboard || document.visibilityState !== "visible" || Date.now() - goingWeb < 3000)
+            return;
+        // 엔진 창이 실제로 화면에 보일 때만(숨은 창의 포커스·가시성 이벤트로 웹을 목록으로 다시 열지 않게 — 수락 뒤 목록으로 가던 의심 경로)
+        const w = T().window?.getCurrentWindow?.();
+        void (w ? w.isVisible() : Promise.resolve(false)).then(vis => {
+            if (!vis)
+                return;
+            goingWeb = Date.now();
+            void T().core.invoke("go_web").catch(() => openWeb("/works")); // 웹 창이 없으면 handoff로(앱 계정 그대로)
+        }).catch(() => { });
+    };
+    addEventListener("focus", autoWeb);
+    document.addEventListener("visibilitychange", autoWeb);
+    // 창 하나(#21 보정 8·13) — 연결돼 있으면 같은 창이 웹(/works), 아니면 기본 창(온보딩·연결). OTA 새로고침으로 다시 돌 땐 보이는 화면을 건드리지 않는다
+    let reloaded = false;
+    try {
+        reloaded = sessionStorage.getItem("dyn:boot") === "1";
+        sessionStorage.setItem("dyn:boot", "1");
+    }
+    catch { /* 없음 */ }
+    if (!reloaded) {
+        if (S.token && !S.onboard)
+            void openFront();
+        else
+            await T().core.invoke("show_main", { show: true }).catch(() => { });
+    }
+    // 웹 연결 화면(/connect)의 [로그인]·[설치]·[새 버전]·[+]·모델 — 브릿지·IPC가 여기로(#21 보정 13)
+    await T().event.listen("app-action", (e) => { void appAction(e.payload); });
+    S.defaultModels = (await store.get("default_models")) ?? {};
+    S.photoLimits = (await store.get("photo_limits")) ?? {};
+    await T().event.listen("deep-link", () => { takeLinks(); });
+    await T().event.listen("tray-new", () => { void openWeb("/works/new"); }); // 트레이 "새 작업"(#20 보정 4) — 빈 작업실을 인앱 창으로
+    await T().event.listen("tray-feedback", () => { void openWeb("/me#feedback"); }); // 트레이 "의견 보내기"(#75)
+    await Promise.all([detect("claude"), detect("codex"), agDetect(), loadMinVersions()]);
+    await detectModels().catch(() => { });
+    await reportDevice();
+    await takeLinks(); // 이 링크로 앱이 켜졌으면 여기서 처리
+    backfill();
+    setTimeout(() => void retryPendingPulls().catch(() => { }), 8000); // 못 받은 작업 다시(#56) — 시작 뒤 연결이 붙을 즈음
+    setInterval(() => { if (!jobRunning())
+        reportDevice(); }, HEARTBEAT_MS); // 기기 심장박동(#12-Z) — 웹의 온라인·"이 PC"
+    listenEvents(); // 작업실 대화·동기화(#14 — 폴링 없음, 서버가 민다)
+    setInterval(idleSessions, 60_000);
+    if (S.app.updater) {
+        setTimeout(() => checkUpdate(false), UPDATE_FIRST_MS);
+        setInterval(() => checkUpdate(false), UPDATE_EVERY_MS);
+        setTimeout(() => void otaCheck(), 15_000);
+        setInterval(() => void otaCheck(), 30 * 60_000); // 화면 묶음 — 시작 15초 뒤·30분마다(+ SSE 알림)
+    }
+})();
+// 인스타 캡션(#81 §3) — 문장을 새로 쓰지 않고 칸 글자를 그대로 모은다: 훅 카드 주장 + 포인트 카드 제목(번호) + 마지막 카드의 다음 행동 + # 태그 5개(상호·주제)
+async function instaCaption(id, files) {
+    const order = ((await T().core.invoke("work_read", { id, file: ".dynapse/pages.json" }).then(t => JSON.parse(t)).catch(() => null)) ?? files.filter(f => /^result-card-\d+\.html$/.test(f)).sort((a, b) => Number(a.match(/\d+/)[0]) - Number(b.match(/\d+/)[0]))).filter(f => /^result-card-\d+\.html$/.test(f));
+    const slot = (h, k) => (h.match(new RegExp(`data-slot=["']${k}["'][^>]*>([^<]*)<`))?.[1] ?? "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/\s+/g, " ").trim();
+    const pages = await Promise.all(order.map(f => T().core.invoke("work_read", { id, file: f }).catch(() => "")));
+    if (!pages.length)
+        return "";
+    const first = pages[0], last = pages[pages.length - 1];
+    const points = pages.slice(1, -1).map(h => slot(h, "card_title")).filter(Boolean);
+    const brand = slot(first, "brand");
+    const labels = await T().core.invoke("work_read", { id, file: ".dynapse/labels.json" }).then(t => JSON.parse(t)).catch(() => null);
+    const tags = [...new Set([brand, ...(labels?.subject ?? []), ...(labels?.feel ?? [])].map(t => t.replace(/[^\p{L}\p{N}_]/gu, "")).filter(t => t.length >= 2))].slice(0, 5);
+    return [[slot(first, "card_title"), slot(first, "card_line")].filter(Boolean).join("\n"), points.map((t, i) => `${i + 1}. ${t}`).join("\n"), slot(last, "card_line"), tags.map(t => `#${t}`).join(" ")].filter(Boolean).join("\n\n");
+}
