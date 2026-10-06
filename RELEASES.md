@@ -212,3 +212,4 @@
 | 2026-10-06T12:15:28.499Z | macos | ota | 0.1.61+ota1 | - | ota-served-verified | src b0c5fde18 · 공개 실패 시 이유를 보여 줌 |
 | 2026-10-06T12:37:02.596Z | macos | beta | 0.1.62 | macos-v0.1.62 | beta-served-verified | src 7c9ae1e68 · 내보낸 파일 이름을 작업 제목으로 · PPTX 안내 파일 하나로(다시 넣는 법 포함) |
 | 2026-10-06T12:38:21.630Z | macos | stable | 0.1.62 | macos-v0.1.62 | stable-served-verified |  |
+| 2026-10-06T21:42:40.246Z | macos | ota | 0.1.62+ota1 | - | ota-served-verified | src b72570f80 · 글 주소로 카드뉴스 · 다음 회차 · 내 사진 우선 |
