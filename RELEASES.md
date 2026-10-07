@@ -214,3 +214,4 @@
 | 2026-10-06T12:38:21.630Z | macos | stable | 0.1.62 | macos-v0.1.62 | stable-served-verified |  |
 | 2026-10-06T21:42:40.246Z | macos | ota | 0.1.62+ota1 | - | ota-served-verified | src b72570f80 · 글 주소로 카드뉴스 · 다음 회차 · 내 사진 우선 |
 | 2026-10-06T21:47:31.220Z | macos | ota | 0.1.62+ota2 | - | ota-served-verified | src 39efdaf96 · 원고 장 나누기 |
+| 2026-10-07T07:04:53.194Z | windows | beta | 0.1.62 | windows-v0.1.62 | beta-served-verified | src 6920d3601 · unsigned · 내보낸 파일 이름 = 작업 제목, PPTX 안내 파일 하나, 인스타·상세페이지 내보내기, 글 주소로 카드뉴스, 원고 장 나누기 (git 작성자 미설정으로 6단계에서 멈춰 손으로 마무리) |
