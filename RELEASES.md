@@ -220,3 +220,4 @@
 | 2026-10-07T11:00:45.531Z | macos | ota | 0.1.62+ota4 | - | ota-served-verified | src 25b07adf2 · 사진 없으면 사진 없음 배치 |
 | 2026-10-07T11:44:01.485Z | macos | ota | 0.1.62+ota5 | - | ota-served-verified | src 5659bcf9a · 사진 반영 확인 |
 | 2026-10-07T13:02:06.837Z | macos | ota | 0.1.62+ota6 | - | ota-served-verified | src 1b07da0f5 · 내 자료함 |
+| 2026-10-07T13:24:27.428Z | macos | ota | 0.1.62+ota7 | - | ota-served-verified | src 2cc8bc99b · 자료함 연결·이어하기 |
