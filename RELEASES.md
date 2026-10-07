@@ -218,3 +218,4 @@
 | 2026-10-07T07:06:33.812Z | windows | stable | 0.1.62 | windows-v0.1.62 | stable-served-verified |  |
 | 2026-10-07T10:57:06.455Z | macos | ota | 0.1.62+ota3 | - | ota-served-verified | src 25b07adf2 · 글로 만들 때 사진 규칙 |
 | 2026-10-07T11:00:45.531Z | macos | ota | 0.1.62+ota4 | - | ota-served-verified | src 25b07adf2 · 사진 없으면 사진 없음 배치 |
+| 2026-10-07T11:44:01.485Z | macos | ota | 0.1.62+ota5 | - | ota-served-verified | src 5659bcf9a · 사진 반영 확인 |
