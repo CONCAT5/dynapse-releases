@@ -1,0 +1,24 @@
+/* 자동 복사: prototypes/hub/src/app/globals.css :root — 수정 금지 */
+:root {
+  /* qi (Quiet Intelligence) = 기본 무드 */
+  --paper: #FFFFFF;        /* 전체 배경 흰색 (Pinterest 질감) */
+  --wash: #F5F6F4;         /* 중립 필 배경 — 검색바·hover 필 용 (구 paper) */
+  --card: #FFFFFF;
+  --ink: #1F2933;
+  --ink-soft: #3E4C59;
+  --ink-faint: #7B8794;
+  --rule: #DDE2DE;
+  --accent: #5F7466;
+  --accent-deep: #4A5C50;
+  --accent-wash: #EBF0EC;
+  /* wa (Warm Archive) = 보조 강조 — '벌기' 면의 문 */
+  --wa: #7D2E3B;
+  --wa-wash: #F6EFE4;
+  --wa-ink: #2B2320;
+
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 2px 12px rgba(31, 41, 51, .06);
+  --shadow-lift: 0 10px 28px rgba(31, 41, 51, .12);
+  --sans: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", -apple-system, sans-serif;
+}
