@@ -217,3 +217,4 @@
 | 2026-10-07T07:04:53.194Z | windows | beta | 0.1.62 | windows-v0.1.62 | beta-served-verified | src 6920d3601 · unsigned · 내보낸 파일 이름 = 작업 제목, PPTX 안내 파일 하나, 인스타·상세페이지 내보내기, 글 주소로 카드뉴스, 원고 장 나누기 (git 작성자 미설정으로 6단계에서 멈춰 손으로 마무리) |
 | 2026-10-07T07:06:33.812Z | windows | stable | 0.1.62 | windows-v0.1.62 | stable-served-verified |  |
 | 2026-10-07T10:57:06.455Z | macos | ota | 0.1.62+ota3 | - | ota-served-verified | src 25b07adf2 · 글로 만들 때 사진 규칙 |
+| 2026-10-07T11:00:45.531Z | macos | ota | 0.1.62+ota4 | - | ota-served-verified | src 25b07adf2 · 사진 없으면 사진 없음 배치 |
