@@ -219,3 +219,4 @@
 | 2026-10-07T10:57:06.455Z | macos | ota | 0.1.62+ota3 | - | ota-served-verified | src 25b07adf2 · 글로 만들 때 사진 규칙 |
 | 2026-10-07T11:00:45.531Z | macos | ota | 0.1.62+ota4 | - | ota-served-verified | src 25b07adf2 · 사진 없으면 사진 없음 배치 |
 | 2026-10-07T11:44:01.485Z | macos | ota | 0.1.62+ota5 | - | ota-served-verified | src 5659bcf9a · 사진 반영 확인 |
+| 2026-10-07T13:02:06.837Z | macos | ota | 0.1.62+ota6 | - | ota-served-verified | src 1b07da0f5 · 내 자료함 |
