@@ -1,11 +1,11 @@
 {
-  "version": "0.1.60",
-  "notes": "GitHub·Vercel 계정 확인·로그인, 내보낸 HTML 레시피 줄, PPTX 왕복 편집, 내 사진 무드 톤, 트레이 의견 보내기",
-  "pub_date": "2026-10-04T23:20:19Z",
+  "version": "0.1.62",
+  "notes": "내보낸 파일 이름 = 작업 제목, PPTX 안내 파일 하나, 인스타·상세페이지 내보내기, 글 주소로 카드뉴스, 원고 장 나누기",
+  "pub_date": "2026-10-07T07:03:26Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.60/Dynapse_0.1.60_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MndZVUp1ekFWWEp6U3NKKzJNUDdNRlBGd2lwbEdVNzVpSUlUc25yRUxUSm1MdmVTTFYzcVN0TVdzVE50MzdGYVNvY3FsSWJXVHFkS0FXRFg1a1FwRndFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTU1OTk5CWZpbGU6RHluYXBzZV8wLjEuNjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS42MAoyQXZmY2ozS09WVjYrQnk2cVRObFAwcUdQSHg2V2xCK01ZWnZpam5ldVFiSUhZdFAzS2w0T3RHVEV3YVJmVGdEWVRwV3lqbW45azkyTzBCWnZOTERBUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.62/Dynapse_0.1.62_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1Mi9vdkNvc08vV09zM1ZmaTM5TzFtOVJGSHNqbW9KWGZCZ1VPcE0zMm82RFgvdGMrbi9uajBEN0pKM0lQQTIwbWgxdWdHeVF0dEYzNFJZNXJnMUUrckFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzU2NTg2CWZpbGU6RHluYXBzZV8wLjEuNjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS42MgpDRnQ5c3RIMjZNYjFvMVFMZldXOHphN1p1WjNJRGpMRWhmRXczcmhQNTRRRm9xazZuLzd1b1M4YVVDaDlQRFZCZFFCc3lKdUFkM3RPZ3V1dENjelJEUT09Cg=="
     }
   }
 }
