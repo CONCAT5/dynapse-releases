@@ -227,3 +227,4 @@
 | 2026-10-08T03:01:18.735Z | windows | ota | 0.1.62+ota1 | - | ota-served-verified | src 5b8d15a8d · 내 자료함·폴더(목적별 묶음), 폴더 사진을 덱에, 브랜드 저장, 사진 없으면 사진 없는 레이아웃, 새 레이아웃 14종 |
 | 2026-10-08T03:08:46.940Z | macos | ota | 0.1.62+ota11 | - | ota-served-verified | src 2da495185 · 사진 실패 이유와 다른 AI로 다시 |
 | 2026-10-08T03:33:22.351Z | macos | ota | 0.1.62+ota12 | - | ota-served-verified | src 83b1fefeb · 메시지의 블로그 주소도 앱이 열어 본문·사진까지 |
+| 2026-10-08T03:37:19.415Z | macos | ota | 0.1.62+ota13 | - | ota-served-verified | src f9f2129e4 · 글을 먼저 읽고(Sonnet) 그 읽기로 만들기 |
