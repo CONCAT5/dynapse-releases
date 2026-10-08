@@ -222,3 +222,4 @@
 | 2026-10-07T13:02:06.837Z | macos | ota | 0.1.62+ota6 | - | ota-served-verified | src 1b07da0f5 · 내 자료함 |
 | 2026-10-07T13:24:27.428Z | macos | ota | 0.1.62+ota7 | - | ota-served-verified | src 2cc8bc99b · 자료함 연결·이어하기 |
 | 2026-10-07T13:44:22.891Z | macos | ota | 0.1.62+ota8 | - | ota-served-verified | src 4dac70843 · 폴더: 목적별 묶음 — 여러 출처 기억, 쓰인 작업 기록, 초대받은 폴더 받기 |
+| 2026-10-08T02:31:35.235Z | macos | ota | 0.1.62+ota9 | - | ota-served-verified | src 9455c5312 · 폴더 사진을 덱에 먼저 · 사진 인덱스(보이는 것·비율·맞는 칸) |
