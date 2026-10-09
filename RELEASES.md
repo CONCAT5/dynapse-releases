@@ -232,3 +232,4 @@
 | 2026-10-08T03:56:30.057Z | windows | ota | 0.1.62+ota2 | - | ota-served-verified | src 91b29c97b · 메시지 속 블로그 주소도 읽기, 글을 먼저 읽고 만들기, 글 속 그림은 통째로, 사진 채우기 실패 이유 표시 |
 | 2026-10-08T06:13:06.183Z | macos | ota | 0.1.62+ota15 | - | ota-served-verified | src 3e7927e8a · 스타일 팩 14종 |
 | 2026-10-08T08:29:14.675Z | windows | ota | 0.1.62+ota3 | - | ota-served-verified | src 3e7927e8a · 스타일 팩 14종 |
+| 2026-10-09T06:37:37.349Z | macos | beta | 0.1.63 | macos-v0.1.63 | beta-served-verified | src 00420c413 · PDF 장 순서·카드 크기 · PPTX 번호 목록 · 글 가져오기 보안(#88) |
