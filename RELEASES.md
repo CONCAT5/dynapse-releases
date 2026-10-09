@@ -238,3 +238,4 @@
 | 2026-10-09T07:44:51.237Z | macos | ota | 0.1.64+ota1 | - | ota-served-verified | src f60047c03 · 승인한 명령이 건드린 폴더도 함께 열기 |
 | 2026-10-09T09:01:31.914Z | macos | ota | 0.1.64+ota2 | - | ota-served-verified | src 7538e7605 · 작업에서도 내 Claude 커넥터(메일·캘린더 등) |
 | 2026-10-09T09:59:48.803Z | macos | ota | 0.1.64+ota3 | - | ota-served-verified | src 9046d2d20 · 폴더 ↔ 작업 자료 양방향 |
+| 2026-10-09T11:41:27.360Z | windows | beta | 0.1.64 | windows-v0.1.64 | beta-served-verified | src 689475ec0 · unsigned · 새 앱 아이콘, PDF 장 순서·카드 크기, PPTX 숫자 기호, 글 가져오기 안전장치, Drive·커넥터 연결, 폴더 자료 양방향 |
