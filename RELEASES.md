@@ -235,3 +235,4 @@
 | 2026-10-09T06:37:37.349Z | macos | beta | 0.1.63 | macos-v0.1.63 | beta-served-verified | src 00420c413 · PDF 장 순서·카드 크기 · PPTX 번호 목록 · 글 가져오기 보안(#88) |
 | 2026-10-09T07:18:37.812Z | macos | beta | 0.1.64 | macos-v0.1.64 | beta-served-verified | src e86b93aea · Drive 링크 바로 확인·연결 · ChatGPT(Codex) 연결 · PDF 순서·크기 · PPTX 번호 · 글 가져오기 보안 · 글 모으기 |
 | 2026-10-09T07:20:16.401Z | macos | stable | 0.1.64 | macos-v0.1.64 | stable-served-verified |  |
+| 2026-10-09T07:44:51.237Z | macos | ota | 0.1.64+ota1 | - | ota-served-verified | src f60047c03 · 승인한 명령이 건드린 폴더도 함께 열기 |
