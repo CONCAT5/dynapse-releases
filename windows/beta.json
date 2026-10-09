@@ -1,11 +1,11 @@
 {
-  "version": "0.1.62",
-  "notes": "내보낸 파일 이름 = 작업 제목, PPTX 안내 파일 하나, 인스타·상세페이지 내보내기, 글 주소로 카드뉴스, 원고 장 나누기",
-  "pub_date": "2026-10-07T07:03:26Z",
+  "version": "0.1.64",
+  "notes": "새 앱 아이콘, PDF 장 순서·카드 크기, PPTX 숫자 기호, 글 가져오기 안전장치, Drive·커넥터 연결, 폴더 자료 양방향",
+  "pub_date": "2026-10-09T11:39:51Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.62/Dynapse_0.1.62_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1Mi9vdkNvc08vV09zM1ZmaTM5TzFtOVJGSHNqbW9KWGZCZ1VPcE0zMm82RFgvdGMrbi9uajBEN0pKM0lQQTIwbWgxdWdHeVF0dEYzNFJZNXJnMUUrckFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzU2NTg2CWZpbGU6RHluYXBzZV8wLjEuNjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS42MgpDRnQ5c3RIMjZNYjFvMVFMZldXOHphN1p1WjNJRGpMRWhmRXczcmhQNTRRRm9xazZuLzd1b1M4YVVDaDlQRFZCZFFCc3lKdUFkM3RPZ3V1dENjelJEUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.64/Dynapse_0.1.64_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjFTeVpjYnlCSndBTk9jdFZkRkw4RlF0WFVhNHY5V3VIREtxdExSQ3RuRkJUVG9ValVzVnpKTWswNEo2SjFuNUJtNXFoZGVtTnpTYWlkckRRVFZpNHdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTQ1OTcxCWZpbGU6RHluYXBzZV8wLjEuNjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS42NAozbEg4VHBGVHFpOXJCaFFXczNjSDdna2pJVW12WkN6ZXFqZW1ya1NORngvR0tjRTYyN3pVTjVEbjdUdVJJY1g5YmpBemRWYXJrQ042QlQwb2RQVUREUT09Cg=="
     }
   }
 }
