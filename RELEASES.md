@@ -241,3 +241,4 @@
 | 2026-10-09T11:41:27.360Z | windows | beta | 0.1.64 | windows-v0.1.64 | beta-served-verified | src 689475ec0 · unsigned · 새 앱 아이콘, PDF 장 순서·카드 크기, PPTX 숫자 기호, 글 가져오기 안전장치, Drive·커넥터 연결, 폴더 자료 양방향 |
 | 2026-10-09T11:43:17.892Z | windows | stable | 0.1.64 | windows-v0.1.64 | stable-served-verified |  |
 | 2026-10-09T23:14:00.711Z | macos | ota | 0.1.64+ota4 | - | ota-served-verified | src 1da085f87 · 작업 상한 멈춤을 선택 카드로 · <img> 사진 칸 채우기 |
+| 2026-10-09T23:18:48.800Z | macos | ota | 0.1.64+ota5 | - | ota-served-verified | src 483eef7e0 · 멈춘 이유 표시 · 단계 한도도 이어서 카드 |
