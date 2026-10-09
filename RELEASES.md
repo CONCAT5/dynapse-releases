@@ -236,3 +236,4 @@
 | 2026-10-09T07:18:37.812Z | macos | beta | 0.1.64 | macos-v0.1.64 | beta-served-verified | src e86b93aea · Drive 링크 바로 확인·연결 · ChatGPT(Codex) 연결 · PDF 순서·크기 · PPTX 번호 · 글 가져오기 보안 · 글 모으기 |
 | 2026-10-09T07:20:16.401Z | macos | stable | 0.1.64 | macos-v0.1.64 | stable-served-verified |  |
 | 2026-10-09T07:44:51.237Z | macos | ota | 0.1.64+ota1 | - | ota-served-verified | src f60047c03 · 승인한 명령이 건드린 폴더도 함께 열기 |
+| 2026-10-09T09:01:31.914Z | macos | ota | 0.1.64+ota2 | - | ota-served-verified | src 7538e7605 · 작업에서도 내 Claude 커넥터(메일·캘린더 등) |
