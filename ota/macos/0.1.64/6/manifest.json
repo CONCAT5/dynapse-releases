@@ -1,0 +1,19 @@
+{
+  "native": "0.1.64",
+  "ota": 6,
+  "files": {
+    "app.css": "54cf2c568309a055ed7a1e044fc8da880b95d2bc223e85bbe6cb55c3e81c855e",
+    "article.js": "644bf8dc6fafaf6e5d623ace6ded6c283c9d5f9173bed262c2ba6351d68c1551",
+    "chat.js": "81e5c5f31cf1370d17af52134da20da24770c1b373aade0224578da25b708e41",
+    "diag.js": "655c3e7c7a36aa111f45c4c8801990eba6c6d97dd7b8d8cf1f4aa0d246af5bfe",
+    "git.js": "99a3487084443288b12e67fc61078c2cd8198c66f8d48c9bb0322d632cc8c205",
+    "home.js": "8d2b38ff1f80120aada369d4504778dfc27cf47a34a7b85c137f5f49c1a1619a",
+    "main.js": "534088c40625330c4a420a74a8bbc24bfa7b1612987e93c6db391c9a50f8c6c4",
+    "onboard.js": "69849fb6c7007a99f102d385f4e76f5796560e70eefa8d95e515be40999e5a8d",
+    "photo-runner.js": "f50491ae85cbfc89fd4349d1679cc78587c9cc3ff22889ad1fbacca5e1ff6e18",
+    "shared/layout-registry.js": "64528c188985e51ff97774dff4dda8d67c36670fe6542db48c88d68e253dd5fd",
+    "shared/providers.js": "b127af1e18ff1f178ce7aea27d648081b9c353a6ea8b681716104dd40cf44683",
+    "shared/slots.js": "018e86940f92bc0d8c890bb7dc3ab8d772f25623b27994733ad57ded05fb5694",
+    "tokens.css": "bee56ac624f2adad8d1e27de33bdd72339c723518e19bf1dc89f69bb62dfeb43"
+  }
+}
