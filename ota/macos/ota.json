@@ -1,7 +1,7 @@
 {
   "native": "0.1.64",
-  "ota": 6,
-  "base": "ota/macos/0.1.64/6/",
-  "notes": "앱 화면 공유 링크(Aside 등) 읽기",
-  "pub_date": "2026-10-10T00:40:20.435Z"
+  "ota": 7,
+  "base": "ota/macos/0.1.64/7/",
+  "notes": "장이 쓰는 assets 사진도 동기화·복제",
+  "pub_date": "2026-10-10T21:10:11.361Z"
 }
