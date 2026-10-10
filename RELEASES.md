@@ -243,3 +243,4 @@
 | 2026-10-09T23:14:00.711Z | macos | ota | 0.1.64+ota4 | - | ota-served-verified | src 1da085f87 · 작업 상한 멈춤을 선택 카드로 · <img> 사진 칸 채우기 |
 | 2026-10-09T23:18:48.800Z | macos | ota | 0.1.64+ota5 | - | ota-served-verified | src 483eef7e0 · 멈춘 이유 표시 · 단계 한도도 이어서 카드 |
 | 2026-10-10T00:41:14.659Z | macos | ota | 0.1.64+ota6 | - | ota-served-verified | src cd08d808f · 앱 화면 공유 링크(Aside 등) 읽기 |
+| 2026-10-10T21:11:15.068Z | macos | ota | 0.1.64+ota7 | - | ota-served-verified | src 862fdc2ea · 장이 쓰는 assets 사진도 동기화·복제 |
