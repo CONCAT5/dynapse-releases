@@ -244,3 +244,4 @@
 | 2026-10-09T23:18:48.800Z | macos | ota | 0.1.64+ota5 | - | ota-served-verified | src 483eef7e0 · 멈춘 이유 표시 · 단계 한도도 이어서 카드 |
 | 2026-10-10T00:41:14.659Z | macos | ota | 0.1.64+ota6 | - | ota-served-verified | src cd08d808f · 앱 화면 공유 링크(Aside 등) 읽기 |
 | 2026-10-10T21:11:15.068Z | macos | ota | 0.1.64+ota7 | - | ota-served-verified | src 862fdc2ea · 장이 쓰는 assets 사진도 동기화·복제 |
+| 2026-10-11T07:14:12.219Z | windows | ota | 0.1.64+ota1 | - | ota-served-verified | src 862fdc2ea · 멈춘 턴은 이유 표시·[그래도 시작] 수정, 앱 화면 공유 링크(Aside 등) 읽기, 장이 쓰는 사진도 동기화 |
