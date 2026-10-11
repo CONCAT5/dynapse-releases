@@ -248,3 +248,4 @@
 | 2026-10-11T07:26:49.627Z | macos | ota | 0.1.64+ota8 | - | ota-served-verified | src ca1c6eb56 · 턴 결과 종류 기록 |
 | 2026-10-11T09:24:57.337Z | macos | ota | 0.1.64+ota9 | - | ota-served-verified | src 869c4824a · 장 점검 배지(대비) |
 | 2026-10-11T09:42:57.085Z | macos | ota | 0.1.64+ota10 | - | ota-served-verified | src 0481b4ad7 · 한글 줄바꿈 묶기 |
+| 2026-10-11T09:47:54.846Z | macos | ota | 0.1.64+ota11 | - | ota-served-verified | src bb11a1e38 · 숨긴 장은 내보내기에서 빼기 |
