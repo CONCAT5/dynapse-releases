@@ -249,3 +249,4 @@
 | 2026-10-11T09:24:57.337Z | macos | ota | 0.1.64+ota9 | - | ota-served-verified | src 869c4824a · 장 점검 배지(대비) |
 | 2026-10-11T09:42:57.085Z | macos | ota | 0.1.64+ota10 | - | ota-served-verified | src 0481b4ad7 · 한글 줄바꿈 묶기 |
 | 2026-10-11T09:47:54.846Z | macos | ota | 0.1.64+ota11 | - | ota-served-verified | src bb11a1e38 · 숨긴 장은 내보내기에서 빼기 |
+| 2026-10-11T09:56:02.620Z | macos | beta | 0.1.65 | macos-v0.1.65 | beta-served-verified | src 90edbd723 · 숨긴 장은 PDF·PNG·HTML 내보내기에서 빠져요 |
