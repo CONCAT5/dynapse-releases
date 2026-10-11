@@ -253,8 +253,5 @@
 | 2026-10-11T10:00:23.260Z | windows | beta | 0.1.65 | windows-v0.1.65 | beta-served-verified | src a82159c51 · unsigned · 숨긴 장은 내보내기에서 빼기, 사진 위 글자 대비 점검, 한글 줄바꿈 묶기, 턴 결과 기록 |
 | 2026-10-11T10:01:36.157Z | windows | stable | 0.1.65 | windows-v0.1.65 | stable-served-verified |  |
 | 2026-10-11T11:13:54.199Z | macos | stable | 0.1.65 | macos-v0.1.65 | stable-served-verified |  |
-<<<<<<< HEAD
 | 2026-10-11T11:15:13.215Z | macos | ota | 0.1.65+ota1 | - | ota-served-verified | src 03cc827d3 · 사람이 끈 보정은 다시 넣지 않기 |
-=======
 | 2026-10-11T11:15:17.186Z | windows | ota | 0.1.65+ota1 | - | ota-served-verified | src 03cc827d3 · #91 보정 1: 사람이 고른 것이 점검보다 우선(대비 경고 무시 표시) |
->>>>>>> 71c7ce2 (ledger: windows ota 0.1.65+ota1)
