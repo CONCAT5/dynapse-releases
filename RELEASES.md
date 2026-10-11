@@ -252,3 +252,4 @@
 | 2026-10-11T09:56:02.620Z | macos | beta | 0.1.65 | macos-v0.1.65 | beta-served-verified | src 90edbd723 · 숨긴 장은 PDF·PNG·HTML 내보내기에서 빠져요 |
 | 2026-10-11T10:00:23.260Z | windows | beta | 0.1.65 | windows-v0.1.65 | beta-served-verified | src a82159c51 · unsigned · 숨긴 장은 내보내기에서 빼기, 사진 위 글자 대비 점검, 한글 줄바꿈 묶기, 턴 결과 기록 |
 | 2026-10-11T10:01:36.157Z | windows | stable | 0.1.65 | windows-v0.1.65 | stable-served-verified |  |
+| 2026-10-11T11:13:54.199Z | macos | stable | 0.1.65 | macos-v0.1.65 | stable-served-verified |  |
