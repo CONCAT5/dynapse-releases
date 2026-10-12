@@ -255,3 +255,4 @@
 | 2026-10-11T11:13:54.199Z | macos | stable | 0.1.65 | macos-v0.1.65 | stable-served-verified |  |
 | 2026-10-11T11:15:13.215Z | macos | ota | 0.1.65+ota1 | - | ota-served-verified | src 03cc827d3 · 사람이 끈 보정은 다시 넣지 않기 |
 | 2026-10-11T11:15:17.186Z | windows | ota | 0.1.65+ota1 | - | ota-served-verified | src 03cc827d3 · #91 보정 1: 사람이 고른 것이 점검보다 우선(대비 경고 무시 표시) |
+| 2026-10-12T04:40:37.208Z | macos | ota | 0.1.65+ota2 | - | ota-served-verified | src 038a68d48 · ChatGPT 모델 400 자동 재시도 |
