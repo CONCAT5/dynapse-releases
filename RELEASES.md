@@ -266,3 +266,4 @@
 | 2026-10-12T16:27:20.768Z | macos | ota | 0.1.65+ota7 | - | ota-served-verified | src fe837494d · 요청 범위(칸·장·덱)·사진 활용 |
 | 2026-10-12T22:36:16.383Z | macos | ota | 0.1.65+ota8 | - | ota-served-verified | src b82d2d2a6 · 직접 고친 글자 저장 보장·줄바꿈 |
 | 2026-10-12T22:48:56.258Z | macos | ota | 0.1.65+ota9 | - | ota-served-verified | src b1ebba554 · 시각화(차트·아이콘·페르소나) |
+| 2026-10-12T23:05:38.421Z | macos | beta | 0.1.66 | macos-v0.1.66 | beta-served-verified | src 7cb4a13eb · 언어판(한 작업 안에 영어판)·시각화·검토 |
