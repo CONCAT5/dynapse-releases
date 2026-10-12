@@ -261,3 +261,4 @@
 | 2026-10-12T12:44:52.106Z | windows | ota | 0.1.65+ota3 | - | ota-served-verified | src 599073aed · #97 장 순서는 앱이 정리(턴마다 pages.json) |
 | 2026-10-12T12:51:20.163Z | macos | ota | 0.1.65+ota4 | - | ota-served-verified | src 39287bc8e · 턴 끝에 AI가 덱 그림을 보고 고침(검토 꼼꼼히) |
 | 2026-10-12T13:12:05.756Z | macos | ota | 0.1.65+ota5 | - | ota-served-verified | src 48decef33 · 복제 시 장 순서·숨김·글꼴 유지 |
+| 2026-10-12T13:28:35.640Z | macos | ota | 0.1.65+ota6 | - | ota-served-verified | src f4bbc6d92 · PDF 파일 이름·넘친 글자 검사 |
