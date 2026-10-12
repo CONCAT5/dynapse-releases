@@ -1,15 +1,15 @@
 {
-  "version": "0.1.65",
-  "notes": "숨긴 장은 PDF·PNG·HTML 내보내기에서 빠져요",
-  "pub_date": "2026-10-11T09:54:57Z",
+  "version": "0.1.66",
+  "notes": "언어판(한 작업 안에 영어판)·시각화·검토",
+  "pub_date": "2026-10-12T23:03:32Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.65/Dynapse_0.1.65_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzVzRHVnODYwSWxpSjlOU3VEeDdRSEJzV3R4S3VoQnR5d2JkTXUzWFZMUzB6cWkwMHJybi84Q0NlaHFrcnBsemFNa0ZuMXZZUXRQOW1FYzB6bHBhK2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzEyNDQ3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjY1CjdReUtTUDRyS1dXcWt0amVjMlI1d3hXaElBTllkSnNLWjhGcHRsMkJRUVhwcjIwYU8vLytLUEJiZjFwZms3ZEhiL2I2ZFV4c1V5U3pTVEI5NjJXR0FBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.66/Dynapse_0.1.66_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hBTktzT3NQR2tmUURyUkd2VUVBVlgveWRVTDBYQldONEIvVFVLWktDZUFlbm9Md0NwaXFNNVF3TWZ4WHFpcXltOHZEMGZNTDB1S0ZGUnVsdTVQSEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODQ2MTU2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjY2ClZ4ayt6SjVHMks1cXNFV29hVDg4RHFGd056dkJzYWxUUFZZTWtnSU1XaGxIYm9wU2dqdEp3RitZSkhDQ1kwK3pyQnR0NGQxQmRiK1J0TUNGa1hybUNnPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.65/Dynapse_0.1.65_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzVzRHVnODYwSWxpSjlOU3VEeDdRSEJzV3R4S3VoQnR5d2JkTXUzWFZMUzB6cWkwMHJybi84Q0NlaHFrcnBsemFNa0ZuMXZZUXRQOW1FYzB6bHBhK2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzEyNDQ3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjY1CjdReUtTUDRyS1dXcWt0amVjMlI1d3hXaElBTllkSnNLWjhGcHRsMkJRUVhwcjIwYU8vLytLUEJiZjFwZms3ZEhiL2I2ZFV4c1V5U3pTVEI5NjJXR0FBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.66/Dynapse_0.1.66_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hBTktzT3NQR2tmUURyUkd2VUVBVlgveWRVTDBYQldONEIvVFVLWktDZUFlbm9Md0NwaXFNNVF3TWZ4WHFpcXltOHZEMGZNTDB1S0ZGUnVsdTVQSEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODQ2MTU2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjY2ClZ4ayt6SjVHMks1cXNFV29hVDg4RHFGd056dkJzYWxUUFZZTWtnSU1XaGxIYm9wU2dqdEp3RitZSkhDQ1kwK3pyQnR0NGQxQmRiK1J0TUNGa1hybUNnPT0K"
     }
   }
 }
