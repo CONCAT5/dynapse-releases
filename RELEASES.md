@@ -257,3 +257,4 @@
 | 2026-10-11T11:15:17.186Z | windows | ota | 0.1.65+ota1 | - | ota-served-verified | src 03cc827d3 · #91 보정 1: 사람이 고른 것이 점검보다 우선(대비 경고 무시 표시) |
 | 2026-10-12T04:40:37.208Z | macos | ota | 0.1.65+ota2 | - | ota-served-verified | src 038a68d48 · ChatGPT 모델 400 자동 재시도 |
 | 2026-10-12T04:54:44.915Z | windows | ota | 0.1.65+ota2 | - | ota-served-verified | src 038a68d48 · #95 ChatGPT 사진: 계정이 못 쓰는 모델이면 모델 없이 다시, 내보내기 확인 카드 버튼 수정 |
+| 2026-10-12T12:28:16.508Z | macos | ota | 0.1.65+ota3 | - | ota-served-verified | src 4d8b4da24 · 장 순서·쪽번호를 앱이 정리 |
