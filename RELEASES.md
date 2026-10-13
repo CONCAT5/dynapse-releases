@@ -287,3 +287,4 @@
 | 2026-10-13T11:38:03.747Z | macos | ota | 0.1.70+ota6 | - | ota-served-verified | src f0f153cc2 · 위치 참조: ~/ 경로 인식 |
 | 2026-10-13T12:07:00.222Z | macos | ota | 0.1.70+ota7 | - | ota-served-verified | src fedfe4ff1 · 서버 연결 비용 줄이기 · 같은 PC 메시지 바로 받기 |
 | 2026-10-13T12:12:42.127Z | macos | ota | 0.1.70+ota8 | - | ota-served-verified | src 1567a11d6 · 실패 보고 묶어 보내기 |
+| 2026-10-13T12:26:05.753Z | macos | ota | 0.1.70+ota9 | - | ota-served-verified | src 2a2d303ff · 리워드 검증 실패해도 만든 장 보이기 |
