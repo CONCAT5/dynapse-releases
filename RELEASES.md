@@ -302,3 +302,4 @@
 | 2026-10-13T19:03:14.672Z | macos | ota | 0.1.73+ota2 | - | ota-served-verified | src 142abef36 · 연속 레이아웃 검사 수치를 운영 지표로 |
 | 2026-10-13T23:41:43.479Z | windows | beta | 0.1.73 | windows-v0.1.73 | beta-served-verified | src 5eda3e363 · unsigned · 자유 장 카드 크기로 내보내기, 차트 크기 보정, 모션 재생 수정, 이 PC 엔진이 장·덱 요청도 처리, 이야기 덱 연속 배치 |
 | 2026-10-13T23:45:12.158Z | windows | stable | 0.1.73 | windows-v0.1.73 | stable-served-verified |  |
+| 2026-10-13T23:55:19.573Z | macos | ota | 0.1.73+ota3 | - | ota-served-verified | src a4848ac78 · 이 PC 엔진이 배치·장 수 바꾸기도 단계로 나눠 처리 |
