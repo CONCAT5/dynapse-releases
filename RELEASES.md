@@ -283,3 +283,4 @@
 | 2026-10-13T10:36:24.020Z | macos | ota | 0.1.70+ota3 | - | ota-served-verified | src 2119ec1c3 · 앱 창 로그인이 풀리면 자동으로 다시 이어 붙임 |
 | 2026-10-13T10:54:04.119Z | macos | ota | 0.1.70+ota4 | - | ota-served-verified | src 716f2842b · 한가할 때 서버 연결을 줄여 DB를 쉬게 함 · 손대면 바로 다시 연결 |
 | 2026-10-13T11:29:59.655Z | macos | ota | 0.1.70+ota5 | - | ota-served-verified | src 7e9741cfb · 플립북 PDF(표시한 자리만 중간 장) · 자유 레이아웃 검사 이름 |
+| 2026-10-13T11:33:53.041Z | windows | ota | 0.1.70+ota1 | - | ota-served-verified | src 4ac60387f · 실제 도는 모델 표시(기본 · 모델), 앱 창 로그인 자동 복구, DB 쉬게 하기, 플립북 PDF는 표시한 곳만, 리워드 덱 자유 배치 |
