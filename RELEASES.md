@@ -293,3 +293,4 @@
 | 2026-10-13T13:20:38.025Z | windows | beta | 0.1.72 | windows-v0.1.72 | beta-served-verified | src d1125be04 · unsigned · 이 PC 엔진(구독 없이) Windows 예외 처리: NVIDIA 찾기, 종량제 확인, 백신 격리 안내, 사용 중 파일, 드라이버·메모리 오류; 연결 탭 이 PC 칩 문구 수정 |
 | 2026-10-13T13:22:30.506Z | windows | stable | 0.1.72 | windows-v0.1.72 | stable-served-verified |  |
 | 2026-10-13T13:25:03.331Z | macos | beta | 0.1.72 | macos-v0.1.72 | beta-served-verified | src 6fe820f7c · 이 PC 엔진 예외 처리 보강 · 이야기 덱 스토리보드 |
+| 2026-10-13T13:27:53.180Z | macos | stable | 0.1.72 | macos-v0.1.72 | stable-served-verified |  |
