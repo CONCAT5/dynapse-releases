@@ -1,11 +1,11 @@
 {
-  "version": "0.1.72",
-  "notes": "이 PC 엔진(구독 없이) Windows 예외 처리: NVIDIA 찾기, 종량제 확인, 백신 격리 안내, 사용 중 파일, 드라이버·메모리 오류; 연결 탭 이 PC 칩 문구 수정",
-  "pub_date": "2026-10-13T13:19:01Z",
+  "version": "0.1.73",
+  "notes": "자유 장 카드 크기로 내보내기, 차트 크기 보정, 모션 재생 수정, 이 PC 엔진이 장·덱 요청도 처리, 이야기 덱 연속 배치",
+  "pub_date": "2026-10-13T23:40:35Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.72/Dynapse_0.1.72_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjBnZ1JpYlVtQURXWWpidEdEK3pvMDNoVi94c1ZVdklaV3d0dmJtZkJaNDl3REdBb1RjdjR2YmVJVUltYlNkR0xGMjBlN1BoTEdXM0dQSmlZWkRxblFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODk3NTIxCWZpbGU6RHluYXBzZV8wLjEuNzJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS43Mgp4Y0hqUmJKMlh1aDlQcFp5L1A1M09GcUN2M0w5dkdvNk9kZ3psVXEzdmF1VTVGdEJuOWh1MHlNalJLL2daa0h4TGROTllVa1lMeDVkYis3c0ZhVXhEUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.73/Dynapse_0.1.73_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnlYM21PZVBEaGVvN3Z0ODNhYldyeHpLYzFPVzdXYkVGOWwreVZ1MnhWcHY4bWR2N2c3cEhYbTBjMDhIcER1SHdpN1VoVEF4VkFhZ2NkM2NoUWE1VVFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTM0ODAzCWZpbGU6RHluYXBzZV8wLjEuNzNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS43MwpuVlVCcExhYmNDTjJjU0FuR3ZBRkVJTlFWWjNBc3VDYjZrdkg2SUV5T0NaVW1EVEkzTm53R0VKODA5UXZ4dmFGMVBTMUlDcDY4aEFseHh2K2E0am5CUT09Cg=="
     }
   }
 }
