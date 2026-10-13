@@ -298,3 +298,4 @@
 | 2026-10-13T13:31:56.886Z | windows | ota | 0.1.72+ota1 | - | ota-served-verified | src f051e60d8 · 자동 보고·규칙 처리(#116), 이야기 플립북 검사(#111) |
 | 2026-10-13T13:49:29.810Z | macos | beta | 0.1.73 | macos-v0.1.73 | beta-served-verified | src a90c04304 · 자유 배치 카드 PDF 크기 고침 |
 | 2026-10-13T13:51:13.181Z | macos | stable | 0.1.73 | macos-v0.1.73 | stable-served-verified |  |
+| 2026-10-13T14:20:06.154Z | macos | ota | 0.1.73+ota1 | - | ota-served-verified | src 3a5164950 · 졸라맨 플립북(#117): 작업 지시에 플립북 설명서 포함 |
