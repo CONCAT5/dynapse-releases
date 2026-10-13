@@ -291,3 +291,4 @@
 | 2026-10-13T13:09:01.108Z | macos | beta | 0.1.71 | macos-v0.1.71 | beta-served-verified | src d7c881b7c · 구독 AI 없이 이 PC에서 덱 글과 사진을 만드는 이 PC 엔진 · 플립북 PDF · 영어판 내보내기 고침 |
 | 2026-10-13T13:12:48.315Z | macos | stable | 0.1.71 | macos-v0.1.71 | stable-served-verified |  |
 | 2026-10-13T13:20:38.025Z | windows | beta | 0.1.72 | windows-v0.1.72 | beta-served-verified | src d1125be04 · unsigned · 이 PC 엔진(구독 없이) Windows 예외 처리: NVIDIA 찾기, 종량제 확인, 백신 격리 안내, 사용 중 파일, 드라이버·메모리 오류; 연결 탭 이 PC 칩 문구 수정 |
+| 2026-10-13T13:22:30.506Z | windows | stable | 0.1.72 | windows-v0.1.72 | stable-served-verified |  |
