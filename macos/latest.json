@@ -1,15 +1,15 @@
 {
-  "version": "0.1.70",
-  "notes": "발표용 움직임",
-  "pub_date": "2026-10-13T03:33:28Z",
+  "version": "0.1.71",
+  "notes": "구독 AI 없이 이 PC에서 덱 글과 사진을 만드는 이 PC 엔진 · 플립북 PDF · 영어판 내보내기 고침",
+  "pub_date": "2026-10-13T13:07:55Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.70/Dynapse_0.1.70_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzFvbWdZeWdKL3Z1a3Z4U0dHRjhYTXduQ3kva3NMR3RVOTBNdmU2aUVXZmhtRDlKMVQrdDFRTlFqVWVsV3lsUkV5NzF4QjM0eU5vM1NsUXY3MWhjNVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODYyMzUwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjcwCjVuakJTZXJqdUpuNVhTbExsb2VJZTJIVDZSTE5PNFR1K0FtVFgrUlNXem9id2QzK0puRTdtUjFQd2xKRGNpYkFVQXNnVGJBYmRwTTlSUVJ5MjdCZ0NRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.71/Dynapse_0.1.71_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3p2NXAvT0wzeDVtaUhkNXBia1hYQkFvRGFsNzd6NWR0SHVNdWNwQkdQNWNwOGFHV0l3OHU5UnZUdk8wVy8rTjNmM0Mzc05UMHU5bHJiZlNyK1RRc1FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODk2ODE5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjcxClZIREVibG9BYVZSWUJQVU9hRXRsM0laL2VnMDNhWWZ3RTF5Z3h3QVBQcmlMY3ZqVHhGQis2Qmp4TnlWUzdMOGxkWml6cDM4M1Y2ZVB0dExaYjR0NEJnPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.70/Dynapse_0.1.70_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzFvbWdZeWdKL3Z1a3Z4U0dHRjhYTXduQ3kva3NMR3RVOTBNdmU2aUVXZmhtRDlKMVQrdDFRTlFqVWVsV3lsUkV5NzF4QjM0eU5vM1NsUXY3MWhjNVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODYyMzUwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjcwCjVuakJTZXJqdUpuNVhTbExsb2VJZTJIVDZSTE5PNFR1K0FtVFgrUlNXem9id2QzK0puRTdtUjFQd2xKRGNpYkFVQXNnVGJBYmRwTTlSUVJ5MjdCZ0NRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.71/Dynapse_0.1.71_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3p2NXAvT0wzeDVtaUhkNXBia1hYQkFvRGFsNzd6NWR0SHVNdWNwQkdQNWNwOGFHV0l3OHU5UnZUdk8wVy8rTjNmM0Mzc05UMHU5bHJiZlNyK1RRc1FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODk2ODE5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjcxClZIREVibG9BYVZSWUJQVU9hRXRsM0laL2VnMDNhWWZ3RTF5Z3h3QVBQcmlMY3ZqVHhGQis2Qmp4TnlWUzdMOGxkWml6cDM4M1Y2ZVB0dExaYjR0NEJnPT0K"
     }
   }
 }
