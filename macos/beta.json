@@ -1,15 +1,15 @@
 {
-  "version": "0.1.69",
-  "notes": "장 삭제·⌘Z 복원",
-  "pub_date": "2026-10-13T01:42:41Z",
+  "version": "0.1.70",
+  "notes": "발표용 움직임",
+  "pub_date": "2026-10-13T03:33:28Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.69/Dynapse_0.1.69_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzNNSy8yVG9EZTdyWEM0WEZyWlV4Z3AyMGRNbTFyS3JiVVJSSjJBMWlCRjRxaVBvVHd5R0l4ck1mWUxvcFVKbjYyM2h4dDhmZjVLUVNSUlpIaFdqdXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODU1NTgzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjY5Ck5OL3U2TlZ4TGZjdEVNWFA3eTlrSC9nYW14eWREZ3cvQ2VmcHFvR3dmM1NmYldsNVBVTkl1M1RGL2xJaVFnYThnSm8waGFRcVYrMEt3cmJhUTV2VEJRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.70/Dynapse_0.1.70_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzFvbWdZeWdKL3Z1a3Z4U0dHRjhYTXduQ3kva3NMR3RVOTBNdmU2aUVXZmhtRDlKMVQrdDFRTlFqVWVsV3lsUkV5NzF4QjM0eU5vM1NsUXY3MWhjNVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODYyMzUwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjcwCjVuakJTZXJqdUpuNVhTbExsb2VJZTJIVDZSTE5PNFR1K0FtVFgrUlNXem9id2QzK0puRTdtUjFQd2xKRGNpYkFVQXNnVGJBYmRwTTlSUVJ5MjdCZ0NRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.69/Dynapse_0.1.69_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzNNSy8yVG9EZTdyWEM0WEZyWlV4Z3AyMGRNbTFyS3JiVVJSSjJBMWlCRjRxaVBvVHd5R0l4ck1mWUxvcFVKbjYyM2h4dDhmZjVLUVNSUlpIaFdqdXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODU1NTgzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjY5Ck5OL3U2TlZ4TGZjdEVNWFA3eTlrSC9nYW14eWREZ3cvQ2VmcHFvR3dmM1NmYldsNVBVTkl1M1RGL2xJaVFnYThnSm8waGFRcVYrMEt3cmJhUTV2VEJRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.70/Dynapse_0.1.70_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzFvbWdZeWdKL3Z1a3Z4U0dHRjhYTXduQ3kva3NMR3RVOTBNdmU2aUVXZmhtRDlKMVQrdDFRTlFqVWVsV3lsUkV5NzF4QjM0eU5vM1NsUXY3MWhjNVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODYyMzUwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjcwCjVuakJTZXJqdUpuNVhTbExsb2VJZTJIVDZSTE5PNFR1K0FtVFgrUlNXem9id2QzK0puRTdtUjFQd2xKRGNpYkFVQXNnVGJBYmRwTTlSUVJ5MjdCZ0NRPT0K"
     }
   }
 }
