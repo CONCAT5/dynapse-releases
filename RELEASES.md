@@ -269,3 +269,4 @@
 | 2026-10-12T23:05:38.421Z | macos | beta | 0.1.66 | macos-v0.1.66 | beta-served-verified | src 7cb4a13eb · 언어판(한 작업 안에 영어판)·시각화·검토 |
 | 2026-10-13T00:14:07.744Z | macos | beta | 0.1.67 | macos-v0.1.67 | beta-served-verified | src 3e93145cb · Windows 설치 TLS·ChatGPT 사진 모델 재시도·연결 문구 |
 | 2026-10-13T00:29:34.188Z | windows | beta | 0.1.67 | windows-v0.1.67 | beta-served-verified | src 20f05a003 · unsigned · 설치 TLS 1.2·curl 폴백, ChatGPT 사진 재시도, 언어판(영어판 등), 요청 범위별 권한, 직접 고친 글자 보존, 차트는 앱이 그림 |
+| 2026-10-13T00:31:17.696Z | windows | stable | 0.1.67 | windows-v0.1.67 | stable-served-verified |  |
