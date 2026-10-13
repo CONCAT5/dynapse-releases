@@ -1,15 +1,15 @@
 {
-  "version": "0.1.67",
-  "notes": "Windows 설치 TLS·ChatGPT 사진 모델 재시도·연결 문구",
-  "pub_date": "2026-10-13T00:13:02Z",
+  "version": "0.1.68",
+  "notes": "사진 턴 기본 모델·팀원 요청·연결 안내",
+  "pub_date": "2026-10-13T00:35:59Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.67/Dynapse_0.1.67_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzhMcG9Qblkzb2ZhWGE2dlJmTDFoQ09UQWlGLzV0VGQ3S0Fua1FocGQrQWdKTVp5UUlpYTBMQTh0UkIweE5JaFRPdk5LUDNESHlxRFhPT1dEVHVLQkFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODUwMzI2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjY3ClRhL1pINmM4bUJVdUtYWTVtU3M0S3pTRFBNZnMvckdCVWRRZ01ZRlhVWHB6TVNsY2l6bGZoc3ptcnhBcXdDTjN4cTJlUVl6RXlYYVRYTzczWXdFZURBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.68/Dynapse_0.1.68_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3lMZ1VNb1NQaG9jS3lGSDFxQXdqMmNDTDFVYzg4ZkNaWVBVVm9WTHRZbVJZSVIycHRLM0UrMEFNMkNEZmZPU0dWbURvSGYrNVdTREJvc2JVTmRTTkFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODUxNzAzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjY4Cm9tYUNYYXl1L1UzUmlPTW5jNkY3dkVTc213WE5ycktXRFFpM3E1YmFaVkJRbklMejhyQm9uemRIL1psdk1NT3BFREkrWmhBR1FFbTBCY3BvNFAyN0RRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.67/Dynapse_0.1.67_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzhMcG9Qblkzb2ZhWGE2dlJmTDFoQ09UQWlGLzV0VGQ3S0Fua1FocGQrQWdKTVp5UUlpYTBMQTh0UkIweE5JaFRPdk5LUDNESHlxRFhPT1dEVHVLQkFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODUwMzI2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjY3ClRhL1pINmM4bUJVdUtYWTVtU3M0S3pTRFBNZnMvckdCVWRRZ01ZRlhVWHB6TVNsY2l6bGZoc3ptcnhBcXdDTjN4cTJlUVl6RXlYYVRYTzczWXdFZURBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.68/Dynapse_0.1.68_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3lMZ1VNb1NQaG9jS3lGSDFxQXdqMmNDTDFVYzg4ZkNaWVBVVm9WTHRZbVJZSVIycHRLM0UrMEFNMkNEZmZPU0dWbURvSGYrNVdTREJvc2JVTmRTTkFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODUxNzAzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjY4Cm9tYUNYYXl1L1UzUmlPTW5jNkY3dkVTc213WE5ycktXRFFpM3E1YmFaVkJRbklMejhyQm9uemRIL1psdk1NT3BFREkrWmhBR1FFbTBCY3BvNFAyN0RRPT0K"
     }
   }
 }
