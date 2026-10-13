@@ -1,11 +1,11 @@
 {
-  "version": "0.1.65",
-  "notes": "숨긴 장은 내보내기에서 빼기, 사진 위 글자 대비 점검, 한글 줄바꿈 묶기, 턴 결과 기록",
-  "pub_date": "2026-10-11T09:59:18Z",
+  "version": "0.1.67",
+  "notes": "설치 TLS 1.2·curl 폴백, ChatGPT 사진 재시도, 언어판(영어판 등), 요청 범위별 권한, 직접 고친 글자 보존, 차트는 앱이 그림",
+  "pub_date": "2026-10-13T00:28:29Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.65/Dynapse_0.1.65_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnpsdVdqelVYbUNjVFNhS2Y0bVRCb05Rem1MZkVhWUx2TGZMWUF4Vmd1ZmZpNHBYUm1WY1RETkxYM1FDZ3pYcGJqVElLYzVMY0htdFYyQkFnaXg4aXdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzEyNzQwCWZpbGU6RHluYXBzZV8wLjEuNjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS42NQp5RFpMdGVkeTFwVnJ5Rk44ekFXLzR4YStycm5WbSs0TEJFSHFKc2RGZ2xUNEcxT0F0QUNqdXJIR2UrbGZoVDNadXhwSVArTXZ1ejJnOFhZZU1kSEhCZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.67/Dynapse_0.1.67_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjdFcTArcFVkMEw5T3dxWmJPT1dyMnJJNFdpVk94Z0pSTGpZNXhxbkJubTkra1NudGhtOVBpSmwwN21LUE1qK1daVDQrTTZyNXdObTZKUWV6QTRIdEFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODUxMjkwCWZpbGU6RHluYXBzZV8wLjEuNjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS42Nwp3NkxmdUt4QkZ5TnhROUVOYTRSOCt6bWZLOTZjREFOdHZPd1JacStuNEFyS1JId3ZqRjFNcnhncU9kdEY2T04vSUlaL1YxbEU3d1hyWDMvcXY2WU1CUT09Cg=="
     }
   }
 }
