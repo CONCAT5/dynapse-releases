@@ -273,3 +273,4 @@
 | 2026-10-13T00:37:04.585Z | macos | beta | 0.1.68 | macos-v0.1.68 | beta-served-verified | src b0ff47da6 · 사진 턴 기본 모델·팀원 요청·연결 안내 |
 | 2026-10-13T01:43:56.515Z | macos | beta | 0.1.69 | macos-v0.1.69 | beta-served-verified | src cc890e37d · 장 삭제·⌘Z 복원 |
 | 2026-10-13T01:51:48.822Z | windows | beta | 0.1.68 | windows-v0.1.68 | beta-served-verified | src b0ff47da6 · unsigned · 사진 생성이 /connect에서 고른 모델을 씀(작업에서 안 고르면) |
+| 2026-10-13T01:53:35.400Z | windows | stable | 0.1.68 | windows-v0.1.68 | stable-served-verified |  |
