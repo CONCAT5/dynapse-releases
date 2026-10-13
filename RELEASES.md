@@ -278,3 +278,4 @@
 | 2026-10-13T03:40:04.403Z | macos | stable | 0.1.70 | macos-v0.1.70 | stable-served-verified |  |
 | 2026-10-13T04:12:24.665Z | windows | beta | 0.1.70 | windows-v0.1.70 | beta-served-verified | src 83611220c · unsigned · 캔버스에서 장 삭제·⌘Z 복원, 발표 모션(덱 만들 때 고름), 도형을 가로지르는 글자 검사, 복제는 보이는 덱 그대로 |
 | 2026-10-13T04:13:36.127Z | windows | stable | 0.1.70 | windows-v0.1.70 | stable-served-verified |  |
+| 2026-10-13T04:20:25.253Z | macos | ota | 0.1.70+ota1 | - | ota-served-verified | src 83611220c · 복제 시 보이는 덱 그대로·서버 사본 매 턴 |
