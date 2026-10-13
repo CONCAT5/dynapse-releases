@@ -300,3 +300,4 @@
 | 2026-10-13T13:51:13.181Z | macos | stable | 0.1.73 | macos-v0.1.73 | stable-served-verified |  |
 | 2026-10-13T14:20:06.154Z | macos | ota | 0.1.73+ota1 | - | ota-served-verified | src 3a5164950 · 졸라맨 플립북(#117): 작업 지시에 플립북 설명서 포함 |
 | 2026-10-13T19:03:14.672Z | macos | ota | 0.1.73+ota2 | - | ota-served-verified | src 142abef36 · 연속 레이아웃 검사 수치를 운영 지표로 |
+| 2026-10-13T23:41:43.479Z | windows | beta | 0.1.73 | windows-v0.1.73 | beta-served-verified | src 5eda3e363 · unsigned · 자유 장 카드 크기로 내보내기, 차트 크기 보정, 모션 재생 수정, 이 PC 엔진이 장·덱 요청도 처리, 이야기 덱 연속 배치 |
