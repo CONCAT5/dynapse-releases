@@ -1,11 +1,11 @@
 {
-  "version": "0.1.70",
-  "notes": "캔버스에서 장 삭제·⌘Z 복원, 발표 모션(덱 만들 때 고름), 도형을 가로지르는 글자 검사, 복제는 보이는 덱 그대로",
-  "pub_date": "2026-10-13T04:11:19Z",
+  "version": "0.1.72",
+  "notes": "이 PC 엔진(구독 없이) Windows 예외 처리: NVIDIA 찾기, 종량제 확인, 백신 격리 안내, 사용 중 파일, 드라이버·메모리 오류; 연결 탭 이 PC 칩 문구 수정",
+  "pub_date": "2026-10-13T13:19:01Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.70/Dynapse_0.1.70_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjBzc0FST2FFNWthUUFYUm1OaG1NUjBrSGJUWUgyTHR3a1F2S05rK3RPdnk0MUFqMi96Y0F0WmhuaE42Sjlqblh2WlpBOHl2TVd1ODhHa2o5VU9hZlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODY0NjUzCWZpbGU6RHluYXBzZV8wLjEuNzBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS43MApZOVRQblRIZ1A2cHdaekRwejlYY09RQy9XNGs2UEd6Tk5ieUV4ZlNLVXF0TlE5WDRYOE5SQ1VNMmwvbWcraHJZcDlaT3Y5WjNRYml1aitXcENyWkJEQT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.72/Dynapse_0.1.72_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjBnZ1JpYlVtQURXWWpidEdEK3pvMDNoVi94c1ZVdklaV3d0dmJtZkJaNDl3REdBb1RjdjR2YmVJVUltYlNkR0xGMjBlN1BoTEdXM0dQSmlZWkRxblFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODk3NTIxCWZpbGU6RHluYXBzZV8wLjEuNzJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS43Mgp4Y0hqUmJKMlh1aDlQcFp5L1A1M09GcUN2M0w5dkdvNk9kZ3psVXEzdmF1VTVGdEJuOWh1MHlNalJLL2daa0h4TGROTllVa1lMeDVkYis3c0ZhVXhEUT09Cg=="
     }
   }
 }
