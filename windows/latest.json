@@ -1,11 +1,11 @@
 {
-  "version": "0.1.68",
-  "notes": "사진 생성이 /connect에서 고른 모델을 씀(작업에서 안 고르면)",
-  "pub_date": "2026-10-13T01:50:43Z",
+  "version": "0.1.70",
+  "notes": "캔버스에서 장 삭제·⌘Z 복원, 발표 모션(덱 만들 때 고름), 도형을 가로지르는 글자 검사, 복제는 보이는 덱 그대로",
+  "pub_date": "2026-10-13T04:11:19Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.68/Dynapse_0.1.68_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MitielQwcU5qZkFLYVFLTVBtb0syMUdrVlA4aWtCbEJWTlBEOXhxOGY0Q2t6QkZzekkzNVZmcmdzN2JHQkNSM3EvbDdwd0ZORVJRK0ozRERFeVlEandVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODU2MjI1CWZpbGU6RHluYXBzZV8wLjEuNjhfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS42OAovbEZ2T25Za2tvdFptaU9vOFJyMEhMR2MrZTdsUUlPZGFTSENqTnJiT1dCbXM5UXNyOGdEMDJlVHBEYkxGU2xPNDM5VmV4NDlOQVExdERmcmF5NndCZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.70/Dynapse_0.1.70_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjBzc0FST2FFNWthUUFYUm1OaG1NUjBrSGJUWUgyTHR3a1F2S05rK3RPdnk0MUFqMi96Y0F0WmhuaE42Sjlqblh2WlpBOHl2TVd1ODhHa2o5VU9hZlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODY0NjUzCWZpbGU6RHluYXBzZV8wLjEuNzBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS43MApZOVRQblRIZ1A2cHdaekRwejlYY09RQy9XNGs2UEd6Tk5ieUV4ZlNLVXF0TlE5WDRYOE5SQ1VNMmwvbWcraHJZcDlaT3Y5WjNRYml1aitXcENyWkJEQT09Cg=="
     }
   }
 }
