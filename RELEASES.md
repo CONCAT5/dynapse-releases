@@ -297,3 +297,4 @@
 | 2026-10-13T13:29:15.521Z | macos | ota | 0.1.72+ota1 | - | ota-served-verified | src f051e60d8 · 자동 조치 받기 · 엔진 받기 실패 보고 |
 | 2026-10-13T13:31:56.886Z | windows | ota | 0.1.72+ota1 | - | ota-served-verified | src f051e60d8 · 자동 보고·규칙 처리(#116), 이야기 플립북 검사(#111) |
 | 2026-10-13T13:49:29.810Z | macos | beta | 0.1.73 | macos-v0.1.73 | beta-served-verified | src a90c04304 · 자유 배치 카드 PDF 크기 고침 |
+| 2026-10-13T13:51:13.181Z | macos | stable | 0.1.73 | macos-v0.1.73 | stable-served-verified |  |
