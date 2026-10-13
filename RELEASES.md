@@ -271,3 +271,4 @@
 | 2026-10-13T00:29:34.188Z | windows | beta | 0.1.67 | windows-v0.1.67 | beta-served-verified | src 20f05a003 · unsigned · 설치 TLS 1.2·curl 폴백, ChatGPT 사진 재시도, 언어판(영어판 등), 요청 범위별 권한, 직접 고친 글자 보존, 차트는 앱이 그림 |
 | 2026-10-13T00:31:17.696Z | windows | stable | 0.1.67 | windows-v0.1.67 | stable-served-verified |  |
 | 2026-10-13T00:37:04.585Z | macos | beta | 0.1.68 | macos-v0.1.68 | beta-served-verified | src b0ff47da6 · 사진 턴 기본 모델·팀원 요청·연결 안내 |
+| 2026-10-13T01:43:56.515Z | macos | beta | 0.1.69 | macos-v0.1.69 | beta-served-verified | src cc890e37d · 장 삭제·⌘Z 복원 |
