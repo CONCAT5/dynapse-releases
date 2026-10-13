@@ -286,3 +286,4 @@
 | 2026-10-13T11:33:53.041Z | windows | ota | 0.1.70+ota1 | - | ota-served-verified | src 4ac60387f · 실제 도는 모델 표시(기본 · 모델), 앱 창 로그인 자동 복구, DB 쉬게 하기, 플립북 PDF는 표시한 곳만, 리워드 덱 자유 배치 |
 | 2026-10-13T11:38:03.747Z | macos | ota | 0.1.70+ota6 | - | ota-served-verified | src f0f153cc2 · 위치 참조: ~/ 경로 인식 |
 | 2026-10-13T12:07:00.222Z | macos | ota | 0.1.70+ota7 | - | ota-served-verified | src fedfe4ff1 · 서버 연결 비용 줄이기 · 같은 PC 메시지 바로 받기 |
+| 2026-10-13T12:12:42.127Z | macos | ota | 0.1.70+ota8 | - | ota-served-verified | src 1567a11d6 · 실패 보고 묶어 보내기 |
