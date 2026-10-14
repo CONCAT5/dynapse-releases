@@ -316,3 +316,4 @@
 | 2026-10-14T02:19:22.327Z | macos | ota | 0.1.74+ota3 | - | ota-served-verified | src a0c5a263f · 작게 나온 장 키우기·작은 글자 점검, 차트 실제 크기로 |
 | 2026-10-14T02:28:42.724Z | macos | ota | 0.1.74+ota4 | - | ota-served-verified | src ba9c62c59 · 차트 자동 다시 그리기·차트 칩 |
 | 2026-10-14T02:34:02.429Z | macos | ota | 0.1.74+ota5 | - | ota-served-verified | src de7320256 · AI 말투 검사·자동 다듬기 |
+| 2026-10-14T02:41:14.744Z | windows | ota | 0.1.74+ota2 | - | ota-served-verified | src c5f8af7c9 · 다른 모양 보기(썸네일로 고르기), 빈 공간 [키우기], 차트 다시 그리기·손잡이, 턴 예산, AI 말투 다듬기 |
