@@ -311,3 +311,4 @@
 | 2026-10-14T01:14:02.314Z | macos | beta | 0.1.74 | macos-v0.1.74 | beta-served-verified | src 8c29892af · 앱이 장마다 모양을 고르고(후보·적합도→시드 샘플), 원경·중경·근경 콘티, 글자 3단계·강조색 하나·모티프 고정, 다른 모양 보기, 새 블록·그림, 이 PC 엔진 큰 수정 |
 | 2026-10-14T01:15:53.621Z | macos | stable | 0.1.74 | macos-v0.1.74 | stable-served-verified |  |
 | 2026-10-14T01:17:13.195Z | windows | ota | 0.1.74+ota1 | - | ota-served-verified | src 15d764593 · 이 PC 글: 숫자·단위 붙임(조사 뒤도), 잘린 문장 다시 묻고 깔끔히 끊기 |
+| 2026-10-14T01:57:09.096Z | macos | ota | 0.1.74+ota1 | - | ota-served-verified | src b7da03f0d · 다른 모양 보기: 실제 미리보기 2~3개를 보고 고른 뒤에만 바뀜 |
