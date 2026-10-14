@@ -318,3 +318,4 @@
 | 2026-10-14T02:34:02.429Z | macos | ota | 0.1.74+ota5 | - | ota-served-verified | src de7320256 · AI 말투 검사·자동 다듬기 |
 | 2026-10-14T02:41:14.744Z | windows | ota | 0.1.74+ota2 | - | ota-served-verified | src c5f8af7c9 · 다른 모양 보기(썸네일로 고르기), 빈 공간 [키우기], 차트 다시 그리기·손잡이, 턴 예산, AI 말투 다듬기 |
 | 2026-10-14T02:52:37.368Z | macos | ota | 0.1.74+ota6 | - | ota-served-verified | src 772dc36e6 · 핫픽스: 차트 칸 실제 크기로 그리기 |
+| 2026-10-14T03:00:02.275Z | macos | ota | 0.1.74+ota7 | - | ota-served-verified | src 7814e99d3 · 승인 카드 없이 앱 몫 경로 읽기는 거부로 넘어가요 · 리워드 턴엔 승인 카드를 띄우지 않아요 |
