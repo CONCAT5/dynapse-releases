@@ -334,3 +334,4 @@
 | 2026-10-14T07:02:32.076Z | windows | ota | 0.1.74+ota6 | - | ota-served-verified | src 752376928 · 긴급: 기기가 스스로 받거나 올리지 않음 — 새 버전 카드에서 받기(깨끗할 때만) 또는 버리기 |
 | 2026-10-14T07:12:47.918Z | macos | ota | 0.1.74+ota17 | - | ota-served-verified | src 702b38356 · 올리는 중에는 받지 않고, 원본 PC에는 새 판 카드가 뜨지 않아요 |
 | 2026-10-14T07:27:39.098Z | macos | ota | 0.1.74+ota18 | - | ota-served-verified | src a95a7dc43 · 단계 차트 글이 잘리지 않고 두 줄로 · 함께 쓰는 작업에서 멤버 PC는 열 때 자동 저장을 하지 않아요 |
+| 2026-10-14T07:31:24.150Z | macos | ota | 0.1.74+ota19 | - | ota-served-verified | src aec5f1cd8 · 언어판 토글이 원문 언어로 보여요(EN · 한) |
