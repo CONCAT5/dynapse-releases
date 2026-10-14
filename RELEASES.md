@@ -340,3 +340,4 @@
 | 2026-10-14T07:43:33.558Z | macos | ota | 0.1.74+ota21 | - | ota-served-verified | src 97ec7d3d4 · 한국어판 번역이 용어집·원칙을 따르고, 언어판에서 직접 고친 표현을 기억해요 |
 | 2026-10-14T07:48:49.054Z | macos | ota | 0.1.74+ota22 | - | ota-served-verified | src c395fd965 · 언어판을 만든 뒤 전체를 한 번 검사하고 다듬어요 |
 | 2026-10-14T10:45:18.067Z | macos | ota | 0.1.74+ota23 | - | ota-served-verified | src 06387cbb8 · 사진이 박힌 큰 장도 올라가요 · 못 올리면 이유를 보여 줘요 |
+| 2026-10-14T10:50:42.483Z | macos | ota | 0.1.74+ota24 | - | ota-served-verified | src 397a999aa · 공유를 끈 작업은 올리기 실패로 뜨지 않아요 · 짚은 자리가 다음 메시지에도 이어져요 |
