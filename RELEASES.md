@@ -314,3 +314,4 @@
 | 2026-10-14T01:57:09.096Z | macos | ota | 0.1.74+ota1 | - | ota-served-verified | src b7da03f0d · 다른 모양 보기: 실제 미리보기 2~3개를 보고 고른 뒤에만 바뀜 |
 | 2026-10-14T02:10:20.671Z | macos | ota | 0.1.74+ota2 | - | ota-served-verified | src 32b2ede51 · 리워드 턴 예산 8분·검사 2회·땜질 금지·구간 시간 |
 | 2026-10-14T02:19:22.327Z | macos | ota | 0.1.74+ota3 | - | ota-served-verified | src a0c5a263f · 작게 나온 장 키우기·작은 글자 점검, 차트 실제 크기로 |
+| 2026-10-14T02:28:42.724Z | macos | ota | 0.1.74+ota4 | - | ota-served-verified | src ba9c62c59 · 차트 자동 다시 그리기·차트 칩 |
