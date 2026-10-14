@@ -308,3 +308,4 @@
 | 2026-10-14T00:24:52.794Z | macos | ota | 0.1.73+ota6 | - | ota-served-verified | src 69aef3998 · 검토에 레퍼런스 본보기 2장 + 피할 예 1장 |
 | 2026-10-14T00:40:32.264Z | windows | beta | 0.1.74 | windows-v0.1.74 | beta-served-verified | src 4f215b222 · unsigned · 이 PC 엔진 Windows: Intel·AMD GPU(Vulkan) 탐지, 사진 설명의 ... 수정 |
 | 2026-10-14T00:42:01.518Z | windows | stable | 0.1.74 | windows-v0.1.74 | stable-served-verified |  |
+| 2026-10-14T01:14:02.314Z | macos | beta | 0.1.74 | macos-v0.1.74 | beta-served-verified | src 8c29892af · 앱이 장마다 모양을 고르고(후보·적합도→시드 샘플), 원경·중경·근경 콘티, 글자 3단계·강조색 하나·모티프 고정, 다른 모양 보기, 새 블록·그림, 이 PC 엔진 큰 수정 |
