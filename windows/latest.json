@@ -1,11 +1,11 @@
 {
-  "version": "0.1.73",
-  "notes": "자유 장 카드 크기로 내보내기, 차트 크기 보정, 모션 재생 수정, 이 PC 엔진이 장·덱 요청도 처리, 이야기 덱 연속 배치",
-  "pub_date": "2026-10-13T23:40:35Z",
+  "version": "0.1.74",
+  "notes": "이 PC 엔진 Windows: Intel·AMD GPU(Vulkan) 탐지, 사진 설명의 ... 수정",
+  "pub_date": "2026-10-14T00:39:22Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.73/Dynapse_0.1.73_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnlYM21PZVBEaGVvN3Z0ODNhYldyeHpLYzFPVzdXYkVGOWwreVZ1MnhWcHY4bWR2N2c3cEhYbTBjMDhIcER1SHdpN1VoVEF4VkFhZ2NkM2NoUWE1VVFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTM0ODAzCWZpbGU6RHluYXBzZV8wLjEuNzNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS43MwpuVlVCcExhYmNDTjJjU0FuR3ZBRkVJTlFWWjNBc3VDYjZrdkg2SUV5T0NaVW1EVEkzTm53R0VKODA5UXZ4dmFGMVBTMUlDcDY4aEFseHh2K2E0am5CUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.74/Dynapse_0.1.74_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjlCWDE4anNpZTJiMERBUTlwMnJvVXV0eHl4YW5BNmlERGFJYTdDQjdvcG95bGQrRENTZkYyNE5YRmFpQ3R1WUhaTzkzekdtS1dzMVZGRFRXK0dLZkEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTM4MzA5CWZpbGU6RHluYXBzZV8wLjEuNzRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS43NAplR3JoSmx6RzQ2M3UrejZZMEthNmVmRHRDOUVCYXlNazNsd3h4bXpVeE54M3I5VUgwWEIwQjAwYXZTWVZVa2VLcWxmNWNydDdneHNCQUdhRkNMV0pBUT09Cg=="
     }
   }
 }
