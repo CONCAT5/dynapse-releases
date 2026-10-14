@@ -324,3 +324,4 @@
 | 2026-10-14T03:29:28.232Z | windows | ota | 0.1.74+ota3 | - | ota-served-verified | src 554d6f994 · 턴 등급별 예산(가벼운 턴 토큰 상한 수정), 마지막 줄 외톨이 단어 줄 맞춤, 차트 상자 실측, 핀은 대상·요청이 범위 |
 | 2026-10-14T03:31:32.282Z | macos | ota | 0.1.74+ota10 | - | ota-served-verified | src df2945e59 · 작업을 열면 마지막 줄에 한 단어만 넘어간 줄을 바로 맞춰요 |
 | 2026-10-14T03:39:59.609Z | macos | ota | 0.1.74+ota11 | - | ota-served-verified | src f7ebaf1da · 차트 범례·끝 숫자가 겹치거나 잘리지 않아요 · 차트 칩에 '좌우 꽉'이 생겼어요 |
+| 2026-10-14T04:01:06.369Z | macos | ota | 0.1.74+ota12 | - | ota-served-verified | src cc8f7d385 · 직접 정한 장 순서를 AI가 바꾸지 않아요 · 다른 모양 보기에 빈 틀이 나오지 않아요 |
