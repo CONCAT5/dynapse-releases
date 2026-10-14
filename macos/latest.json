@@ -1,15 +1,15 @@
 {
-  "version": "0.1.73",
-  "notes": "자유 배치 카드 PDF 크기 고침",
-  "pub_date": "2026-10-13T13:47:24Z",
+  "version": "0.1.74",
+  "notes": "앱이 장마다 모양을 고르고(후보·적합도→시드 샘플), 원경·중경·근경 콘티, 글자 3단계·강조색 하나·모티프 고정, 다른 모양 보기, 새 블록·그림, 이 PC 엔진 큰 수정",
+  "pub_date": "2026-10-14T01:12:57Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.73/Dynapse_0.1.73_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzZrZnRJMGd0RUJXS2JPNEVVcmd1N29zUURqaTZBekpoNGd3ajNoY3cyRjJETkRKL2ltd1V0M2ErTE5LVlo2VUV4aGVUU0FLRGRqTngwNXBwVGNsOHdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODk5MTc2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjczCkFIUDFoWlEvbEJpSHRocEMrOEZuUWpaV2VYVEkyTkpTYldMRURGQlZ0eGRXYzBNVmxKVDhRMXBiTzVKZVdET3hpdWl5WER4U3JRSFkwK3FKYThPaERnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.74/Dynapse_0.1.74_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3lNQWtzSzV1TGkrN3VQNVlOOC8zVGhRZ1kvRDZoRzZRK25LSGZqOXRmNXdOYng1eW9wOVhrV3YwQkxmSGkyaUVYQ3MrNEQyKy85cW12VndGSGhlRkFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTQwMjk3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjc0ClNLdUNSZGlXV0Q2UHR2eXZBakdWWERZQUR3RFVRZ0ZIN2I4d1JCT2hXRkR4Mnlrb0YzQTNEbkhSazZ4WmU3eE52dDk0anpDRHdUU0hST29UcHg3UENRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.73/Dynapse_0.1.73_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzZrZnRJMGd0RUJXS2JPNEVVcmd1N29zUURqaTZBekpoNGd3ajNoY3cyRjJETkRKL2ltd1V0M2ErTE5LVlo2VUV4aGVUU0FLRGRqTngwNXBwVGNsOHdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODk5MTc2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjczCkFIUDFoWlEvbEJpSHRocEMrOEZuUWpaV2VYVEkyTkpTYldMRURGQlZ0eGRXYzBNVmxKVDhRMXBiTzVKZVdET3hpdWl5WER4U3JRSFkwK3FKYThPaERnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.74/Dynapse_0.1.74_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3lNQWtzSzV1TGkrN3VQNVlOOC8zVGhRZ1kvRDZoRzZRK25LSGZqOXRmNXdOYng1eW9wOVhrV3YwQkxmSGkyaUVYQ3MrNEQyKy85cW12VndGSGhlRkFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTQwMjk3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjc0ClNLdUNSZGlXV0Q2UHR2eXZBakdWWERZQUR3RFVRZ0ZIN2I4d1JCT2hXRkR4Mnlrb0YzQTNEbkhSazZ4WmU3eE52dDk0anpDRHdUU0hST29UcHg3UENRPT0K"
     }
   }
 }
