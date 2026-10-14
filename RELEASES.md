@@ -327,3 +327,4 @@
 | 2026-10-14T04:01:06.369Z | macos | ota | 0.1.74+ota12 | - | ota-served-verified | src cc8f7d385 · 직접 정한 장 순서를 AI가 바꾸지 않아요 · 다른 모양 보기에 빈 틀이 나오지 않아요 |
 | 2026-10-14T04:05:22.577Z | windows | ota | 0.1.74+ota4 | - | ota-served-verified | src 1e9419a80 · 장 순서 잠금, 다른 모양 보기에 실제 내용, 차트 범례·라벨 맞춤·좌우 꽉, 기존 덱도 줄 맞춤 |
 | 2026-10-14T04:25:11.515Z | macos | ota | 0.1.74+ota13 | - | ota-served-verified | src e47935b2f · 가려지거나 잘리거나 겹친 글자를 앱이 몇 px 조정해 바로 맞춰요 |
+| 2026-10-14T05:01:26.742Z | macos | ota | 0.1.74+ota14 | - | ota-served-verified | src d6f983394 · '한국어판 만들어 줘'나 ··· 메뉴로 언어판을 바로 만들어요 |
