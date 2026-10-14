@@ -336,3 +336,4 @@
 | 2026-10-14T07:27:39.098Z | macos | ota | 0.1.74+ota18 | - | ota-served-verified | src a95a7dc43 · 단계 차트 글이 잘리지 않고 두 줄로 · 함께 쓰는 작업에서 멤버 PC는 열 때 자동 저장을 하지 않아요 |
 | 2026-10-14T07:31:24.150Z | macos | ota | 0.1.74+ota19 | - | ota-served-verified | src aec5f1cd8 · 언어판 토글이 원문 언어로 보여요(EN · 한) |
 | 2026-10-14T07:34:52.226Z | macos | ota | 0.1.74+ota20 | - | ota-served-verified | src e4d974cd1 · 언어판에서 차트 글도 번역돼요 |
+| 2026-10-14T07:42:04.463Z | windows | ota | 0.1.74+ota7 | - | ota-served-verified | src 97ec7d3d4 · 긴급: 작업당 올리기 한 번·올리는 중엔 받기/버리기 없음, 함께 하는 사람 기기는 열 때 자동 커밋 없음, 언어판 차트 글자·원문 언어 표시·한국어판 교정 반영, 단계 아이콘 크기 |
