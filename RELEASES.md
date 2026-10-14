@@ -306,3 +306,4 @@
 | 2026-10-14T00:01:06.882Z | macos | ota | 0.1.73+ota4 | - | ota-served-verified | src 8ab41d782 · 리워드 제출: 장 수만큼 파일을 올리도록(12장 덱 5/13 오류) |
 | 2026-10-14T00:18:04.414Z | macos | ota | 0.1.73+ota5 | - | ota-served-verified | src 710327463 · 형태 판단 질문·예시, 이 PC 엔진이 새 그림 형태도 채움 |
 | 2026-10-14T00:24:52.794Z | macos | ota | 0.1.73+ota6 | - | ota-served-verified | src 69aef3998 · 검토에 레퍼런스 본보기 2장 + 피할 예 1장 |
+| 2026-10-14T00:40:32.264Z | windows | beta | 0.1.74 | windows-v0.1.74 | beta-served-verified | src 4f215b222 · unsigned · 이 PC 엔진 Windows: Intel·AMD GPU(Vulkan) 탐지, 사진 설명의 ... 수정 |
