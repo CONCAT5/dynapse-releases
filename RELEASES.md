@@ -329,3 +329,4 @@
 | 2026-10-14T04:25:11.515Z | macos | ota | 0.1.74+ota13 | - | ota-served-verified | src e47935b2f · 가려지거나 잘리거나 겹친 글자를 앱이 몇 px 조정해 바로 맞춰요 |
 | 2026-10-14T05:01:26.742Z | macos | ota | 0.1.74+ota14 | - | ota-served-verified | src d6f983394 · '한국어판 만들어 줘'나 ··· 메뉴로 언어판을 바로 만들어요 |
 | 2026-10-14T06:33:34.851Z | windows | ota | 0.1.74+ota5 | - | ota-served-verified | src 5ad469bba · 가려진·잘린·겹친 글자 자동 맞춤, 언어판은 어떤 말로든···· 메뉴에서, 함께 하는 사람은 최신 버전으로 |
+| 2026-10-14T06:35:12.504Z | macos | ota | 0.1.74+ota15 | - | ota-served-verified | src 5ad469bba · 함께 쓰는 작업을 열면 다른 사람이 올린 최신 판으로 맞춰요 |
