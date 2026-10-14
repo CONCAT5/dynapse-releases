@@ -304,3 +304,4 @@
 | 2026-10-13T23:45:12.158Z | windows | stable | 0.1.73 | windows-v0.1.73 | stable-served-verified |  |
 | 2026-10-13T23:55:19.573Z | macos | ota | 0.1.73+ota3 | - | ota-served-verified | src a4848ac78 · 이 PC 엔진이 배치·장 수 바꾸기도 단계로 나눠 처리 |
 | 2026-10-14T00:01:06.882Z | macos | ota | 0.1.73+ota4 | - | ota-served-verified | src 8ab41d782 · 리워드 제출: 장 수만큼 파일을 올리도록(12장 덱 5/13 오류) |
+| 2026-10-14T00:18:04.414Z | macos | ota | 0.1.73+ota5 | - | ota-served-verified | src 710327463 · 형태 판단 질문·예시, 이 PC 엔진이 새 그림 형태도 채움 |
