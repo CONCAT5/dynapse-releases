@@ -312,3 +312,4 @@
 | 2026-10-14T01:15:53.621Z | macos | stable | 0.1.74 | macos-v0.1.74 | stable-served-verified |  |
 | 2026-10-14T01:17:13.195Z | windows | ota | 0.1.74+ota1 | - | ota-served-verified | src 15d764593 · 이 PC 글: 숫자·단위 붙임(조사 뒤도), 잘린 문장 다시 묻고 깔끔히 끊기 |
 | 2026-10-14T01:57:09.096Z | macos | ota | 0.1.74+ota1 | - | ota-served-verified | src b7da03f0d · 다른 모양 보기: 실제 미리보기 2~3개를 보고 고른 뒤에만 바뀜 |
+| 2026-10-14T02:10:20.671Z | macos | ota | 0.1.74+ota2 | - | ota-served-verified | src 32b2ede51 · 리워드 턴 예산 8분·검사 2회·땜질 금지·구간 시간 |
