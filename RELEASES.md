@@ -346,3 +346,4 @@
 | 2026-10-14T12:51:48.250Z | macos | ota | 0.1.74+ota27 | - | ota-served-verified | src 1b65c530d · 덱을 만들 때 먼저 이 덱이 무엇에 관한 것인지(프레임)를 정하고, 카드로 보여 줘요 |
 | 2026-10-15T00:04:15.447Z | macos | ota | 0.1.74+ota28 | - | ota-served-verified | src f3e8ad855 · 다른 모양 보기에 빈 대안이 나오지 않아요 |
 | 2026-10-15T00:11:41.268Z | macos | ota | 0.1.74+ota29 | - | ota-served-verified | src acc0e9ace · 이번 요청이 만든 오류만 실패로 보여요 · 손대지 않은 장을 매번 다시 쓰지 않아요 |
+| 2026-10-15T04:51:13.591Z | macos | ota | 0.1.74+ota30 | - | ota-served-verified | src 967af907a · 리워드 제출 전에 남은 오류를 한 번 고치고 제출해요 |
