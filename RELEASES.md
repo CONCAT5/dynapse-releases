@@ -348,3 +348,4 @@
 | 2026-10-15T00:11:41.268Z | macos | ota | 0.1.74+ota29 | - | ota-served-verified | src acc0e9ace · 이번 요청이 만든 오류만 실패로 보여요 · 손대지 않은 장을 매번 다시 쓰지 않아요 |
 | 2026-10-15T04:51:13.591Z | macos | ota | 0.1.74+ota30 | - | ota-served-verified | src 967af907a · 리워드 제출 전에 남은 오류를 한 번 고치고 제출해요 |
 | 2026-10-15T05:30:15.034Z | macos | ota | 0.1.74+ota31 | - | ota-served-verified | src 9f32e4624 · 장 위 줄 정리(다른 모양···· 셋만) · 다른 모양 미리 만들기와 제자리 미리보기 · 차트·표는 말로 바로 바꾸기 |
+| 2026-10-15T06:04:58.789Z | macos | ota | 0.1.74+ota32 | - | ota-served-verified | src 20d2bab84 · 표지·섹션·마무리 장의 다른 모양(표지 8 · 섹션 3 · 마무리 4) |
