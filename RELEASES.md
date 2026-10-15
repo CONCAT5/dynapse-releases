@@ -361,3 +361,4 @@
 | 2026-10-15T09:04:34.533Z | macos | ota | 0.1.74+ota42 | - | ota-served-verified | src ee1727331 · 새로 만들기·가져오기가 열어 둔 폴더 안에 생겨요 · 하위 폴더 사진이 깨져 보이던 문제 · 장 추가 요청이 멈추던 문제 |
 | 2026-10-15T09:11:49.365Z | macos | ota | 0.1.74+ota43 | - | ota-served-verified | src f00af3f50 · 큰 사진은 올릴 때 자동으로 줄여요 · 발표 움직임에서 제목·본문은 움직이지 않아요 |
 | 2026-10-15T09:20:19.726Z | macos | ota | 0.1.74+ota44 | - | ota-served-verified | src 32df2ee8b · 큰 사진·장은 올라갈 수 있게 앱이 맞춰요 · 큰 참고 문서는 이름으로 알려요 |
+| 2026-10-15T10:04:27.626Z | macos | ota | 0.1.74+ota45 | - | ota-served-verified | src e37499d28 · CSS가 장에 글자로 찍히던 문제를 고쳐요 |
