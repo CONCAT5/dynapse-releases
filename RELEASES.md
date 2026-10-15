@@ -344,3 +344,4 @@
 | 2026-10-14T12:16:52.646Z | macos | ota | 0.1.74+ota25 | - | ota-served-verified | src ae31a205b · 여러 장이 든 HTML 하나를 가져오면 장마다 나눠요 |
 | 2026-10-14T12:41:23.158Z | macos | ota | 0.1.74+ota26 | - | ota-served-verified | src 932f5176b · 리워드 제작에 본보기 그림을 함께 보여 줘요 |
 | 2026-10-14T12:51:48.250Z | macos | ota | 0.1.74+ota27 | - | ota-served-verified | src 1b65c530d · 덱을 만들 때 먼저 이 덱이 무엇에 관한 것인지(프레임)를 정하고, 카드로 보여 줘요 |
+| 2026-10-15T00:04:15.447Z | macos | ota | 0.1.74+ota28 | - | ota-served-verified | src f3e8ad855 · 다른 모양 보기에 빈 대안이 나오지 않아요 |
