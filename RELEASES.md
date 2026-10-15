@@ -356,3 +356,4 @@
 | 2026-10-15T07:53:12.646Z | macos | ota | 0.1.74+ota37 | - | ota-served-verified | src 2150e0273 · 리워드: 발주가 정한 모양을 계획에 먼저 적고, 제출 전 자동 고침 최대 2회 |
 | 2026-10-15T08:00:36.391Z | macos | ota | 0.1.74+ota38 | - | ota-served-verified | src c71c5ea85 · 표지 사진에서 강조색 · 숫자 모양으로 장 모양 고르기 |
 | 2026-10-15T08:17:24.561Z | macos | ota | 0.1.74+ota39 | - | ota-served-verified | src 3d8852ce4 · 빈 작업에 규칙 문서가 장처럼 뜨던 것 고침 · 빈 규칙 파일 만들지 않음 |
+| 2026-10-15T08:27:45.263Z | macos | ota | 0.1.74+ota40 | - | ota-served-verified | src 94ecf53cb · 덱마다 글꼴 짝 · 글꼴 바꿔줘 · 굵게/가늘게 |
