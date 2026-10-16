@@ -1,7 +1,7 @@
 {
   "native": "0.1.79",
-  "ota": 1,
-  "base": "ota/windows/0.1.79/1/",
-  "notes": "이미 로그인된 Claude·ChatGPT는 첫 실행에 조용히 연결",
-  "pub_date": "2026-10-16T13:17:18.854Z"
+  "ota": 2,
+  "base": "ota/windows/0.1.79/2/",
+  "notes": "#142 마무리: 끊김 없는 연결(이미 로그인된 AI 자동 연결 · Dynapse 로그인은 필요할 때)",
+  "pub_date": "2026-10-16T13:43:42.542Z"
 }
