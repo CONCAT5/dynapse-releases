@@ -202,6 +202,19 @@ console.log(platform === "windows" && c.allowUnsigned ? "  ✓ updater 서명(�
 const localSha = Object.fromEntries(assets.map(([, n]) => [n, sha256File(join(stage, n))]));
 
 // ───────── 4. Release 업로드 (prerelease로 — promote 때 해제) ─────────
+// ───────── 3b. 자가 점검(#141 §4) — 만든 앱을 --selfcheck로 실제로 띄워 작업 창 로드·심장박동·⌘R·⇧⌘R·멈춘 화면 복구·숨긴 창 닫기·업데이트 확인. 하나라도 실패면 발행하지 않는다
+step("3b", "자가 점검");
+const scBin = platform === "macos" ? join(one("macos", ".app"), "Contents", "MacOS", "dynapse-desktop") : join(bundleDir, "..", "dynapse-desktop.exe");
+const scOut = join(work, "selfcheck.json");
+const sc = run(scBin, ["--selfcheck", "--selfcheck-out", scOut], { timeout: 420_000 });
+const scJ = existsSync(scOut) ? JSON.parse(readFileSync(scOut, "utf8")) : null;
+if (!scJ) die(`자가 점검 결과가 없음 (exit ${sc.code})\n${(sc.err || sc.out || "").slice(-600)}`);
+for (const k of scJ.checks ?? []) console.log(`  ${k.ok ? "✓" : "✗"} ${k.name} ${k.ms}ms${k.note ? ` · ${k.note}` : ""}`);
+if (scJ.version !== v) die(`자가 점검 버전 ${scJ.version} ≠ ${v}`);
+if (scJ.pass !== scJ.total) die(`자가 점검 ${scJ.pass}/${scJ.total} — 발행하지 않음`);
+writeJson(join(ROOT, platform, `selfcheck-${v}.json`), scJ);
+console.log(`  ✓ 자가 점검 ${scJ.pass}/${scJ.total}`);
+
 step(4, `Release ${tag} 업로드`);
 must("gh", ["release", "create", tag, "--repo", slug, "--title", `Dynapse ${platform} ${v}`, "--notes", notes, "--prerelease",
   ...assets.map(([, n]) => join(stage, n))]);
@@ -226,7 +239,7 @@ const manifest = {
 const errs = manifestErrors(manifest, platform, c);
 if (errs.length) die(`매니페스트 오류:\n  - ${errs.join("\n  - ")}`);
 writeJson(join(ROOT, platform, "beta.json"), manifest);
-gitCommitOnly([`${platform}/beta.json`], `${platform}: beta ${v}`);
+gitCommitOnly([`${platform}/beta.json`, `${platform}/selfcheck-${v}.json`], `${platform}: beta ${v} · 자가 점검 ${scJ.pass}/${scJ.total}`);
 
 // ───────── 7. 서빙 검증 ─────────
 step(7, "서빙 검증 (최대 15분)");

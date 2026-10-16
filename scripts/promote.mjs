@@ -44,10 +44,18 @@ rmSync(tmp, { recursive: true, force: true });
 console.log(`\n${platform}: stable ${stable?.version ?? "(없음)"} → ${beta.version}`);
 console.log(`  latest.json  ← beta.json 바이트 복사`);
 console.log(`  download.json: ${download.name} ${download.size} bytes sha256 ${download.sha256}`);
-const rl = createInterface({ input: process.stdin, output: process.stdout });
-const typed = (await rl.question(`\n대표 기기에서 실제 업데이트 경로 수신·재실행·Task 1건 E2E를 확인했으면 버전(${beta.version})을 입력: `)).trim();
-rl.close();
-if (typed !== beta.version) die("확인 안 됨 — promote 취소");
+// 자가 점검(#141 §4) — 이 버전의 selfcheck가 전부 통과해야 한다. --selfcheck-ok면 그것을 실기기 확인 대신으로(입력 없이), 아니면 예전처럼 버전 입력
+const scPath = join(ROOT, platform, `selfcheck-${beta.version}.json`);
+const sc = readJsonIfExists(scPath);
+const scOk = !!sc && sc.version === beta.version && sc.total > 0 && sc.pass === sc.total;
+console.log(`  자가 점검: ${sc ? `${sc.pass}/${sc.total}` : "없음"}`);
+if (process.argv.includes("--selfcheck-ok")) { if (!scOk) die(`자가 점검이 통과하지 않음(${sc ? `${sc.pass}/${sc.total}` : "기록 없음"}) — promote 금지`); console.log(`  자가 점검 통과 ${sc.pass}/${sc.total} · 안정으로 올림`); }
+else {
+  const rl = createInterface({ input: process.stdin, output: process.stdout });
+  const typed = (await rl.question(`\n대표 기기에서 실제 업데이트 경로 수신·재실행·Task 1건 E2E를 확인했으면 버전(${beta.version})을 입력: `)).trim();
+  rl.close();
+  if (typed !== beta.version) die("확인 안 됨 — promote 취소");
+}
 
 copyFileSync(betaPath, latestPath);
 if (!readFileSync(latestPath).equals(readFileSync(betaPath))) die("latest.json이 beta.json과 바이트 불일치");
