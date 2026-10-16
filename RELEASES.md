@@ -384,3 +384,4 @@
 | 2026-10-16T07:06:14.667Z | macos | beta | 0.1.77 | macos-v0.1.77 | beta-served-verified | src 516d613c3 · 작업 화면 감시·자동 다시 열기(멈춘 화면 복구 고침) · ⇧⌘R 처음부터 · 숨긴 화면 20분 뒤 닫기 · 터미널 없는 AI 로그인 · 앱 안 이메일 코드 로그인 · 배포 전 자가 점검 |
 | 2026-10-16T07:15:00.545Z | macos | stable | 0.1.77 | macos-v0.1.77 | stable-served-verified |  |
 | 2026-10-16T07:22:24.150Z | windows | beta | 0.1.77 | windows-v0.1.77 | beta-served-verified | src 516d613c3 · unsigned · AI 로그인 터미널 없이, 작업 창 멈춤 감시·자동 복구, 자가 점검 |
+| 2026-10-16T07:24:57.958Z | windows | stable | 0.1.77 | windows-v0.1.77 | stable-served-verified |  |
