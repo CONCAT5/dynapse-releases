@@ -387,3 +387,4 @@
 | 2026-10-16T07:24:57.958Z | windows | stable | 0.1.77 | windows-v0.1.77 | stable-served-verified |  |
 | 2026-10-16T12:32:47.508Z | macos | beta | 0.1.78 | macos-v0.1.78 | beta-served-verified | src 1d4624abf · AI 연결 쉽게(편집·사진 두 줄, 하나면 충분) · 로그인 진행 표시·겹침 방지 · 회사망 프록시를 AI 프로그램에 넘김 · 회사 계정 사진 막힘 안내 |
 | 2026-10-16T12:34:35.831Z | macos | stable | 0.1.78 | macos-v0.1.78 | stable-served-verified |  |
+| 2026-10-16T12:47:20.443Z | macos | beta | 0.1.79 | macos-v0.1.79 | beta-served-verified | src f53f67c54 · 회사망 자동 맞춤(PAC·인증서) · 막히면 이 PC로 이어서 |
