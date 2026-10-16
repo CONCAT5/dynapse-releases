@@ -34,6 +34,18 @@ const feedPath = join(ROOT, "ota", platform, "ota.json");
 const prev = readJsonIfExists(feedPath);
 const n = prev?.native === native ? prev.ota + 1 : 1;
 
+// [0] 점검(#141 §5 a) — 화면 묶음을 만들기 전에: 형식 검사(tsc) + sync-sim(가상 기기가 새 main.ts·chat.ts를 READY까지 띄우고 동기화 시나리오 전부). 하나라도 실패면 내보내지 않는다
+console.log(`\n[0] 점검 · tsc + sync-sim`);
+const tsc = run("npx", ["tsc", "--noEmit", "-p", "."], { cwd: src });
+if (tsc.code !== 0) die(`tsc 실패 — OTA 안 함\n${(tsc.out || tsc.err).slice(-1500)}`);
+const hubDir = join(src, "..", "hub");
+if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
+  if (!existsSync(join(hubDir, "node_modules"))) must("pnpm", ["install", "--frozen-lockfile"], { cwd: hubDir });   // 빌드 사본에 허브 의존성이 없으면 한 번
+  const sim = run("npx", ["tsx", "--import", "./scripts/sync-sim/register.mjs", "scripts/sync-sim.mts"], { cwd: hubDir, timeout: 900_000 });
+  const line = (sim.out.match(/sync-sim \d+\/\d+/) ?? [""])[0];
+  if (sim.code !== 0) die(`sync-sim 실패(${line}) — OTA 안 함\n${sim.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
+  console.log(`  ✓ tsc · ${line}`);
+} else console.log("  ⚠ sync-sim 없음(옛 소스) — tsc만");
 console.log(`\n[1] 화면 빌드 (${native} · 묶음 ${n})`);
 must("pnpm", ["run", "build:web"], { cwd: src });   // -s 없이(pnpm 12는 -s를 모른다 · Windows)
 const dist = join(src, "dist");
