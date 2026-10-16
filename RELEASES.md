@@ -367,3 +367,4 @@
 | 2026-10-16T01:51:57.625Z | macos | beta | 0.1.75 | macos-v0.1.75 | beta-served-verified | src c57baa366 · 작업 화면이 흰 화면으로 멈추지 않게 첫 화면·다시 시도 · AI 설치를 창 없이 먼저 시도 · 설치 뒤 그 작업이 바로 열려요 · 사진 하위 폴더 · 차트 숫자 글꼴 |
 | 2026-10-16T02:08:00.168Z | macos | stable | 0.1.75 | macos-v0.1.75 | stable-served-verified |  |
 | 2026-10-16T02:09:02.973Z | windows | beta | 0.1.75 | windows-v0.1.75 | beta-served-verified | src 5ebb83dc2 · unsigned · AI 도구 조용히 설치(창 없이, 막히면 이식형 Node+npm), 시작 흰 화면 대신 첫 화면·다시 시도, 동기화 빨리감기·자동 합치기, 차트 숫자 글꼴, 사진 하위 폴더 |
+| 2026-10-16T02:11:33.118Z | windows | stable | 0.1.75 | windows-v0.1.75 | stable-served-verified |  |
