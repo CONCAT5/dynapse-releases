@@ -373,3 +373,4 @@
 | 2026-10-16T02:30:43.129Z | macos | ota | 0.1.75+ota3 | - | ota-served-verified | src 0019e3d1c · 언어판을 보며 바꾼 사진이 그 장에도 바로 들어가요 |
 | 2026-10-16T02:58:52.385Z | macos | ota | 0.1.75+ota4 | - | ota-served-verified | src 209653766 · 서버 판으로 맞출 때 내 변경은 보관해요 |
 | 2026-10-16T03:12:03.492Z | macos | ota | 0.1.75+ota5 | - | ota-served-verified | src 87e7fe29b · 함께 하는 작업에서 고르라는 카드 없이 · 같은 장은 나중에 올린 판, 덮인 사람에게 [내 판으로] |
+| 2026-10-16T03:52:55.973Z | macos | ota | 0.1.75+ota6 | - | ota-served-verified | src a2faecde2 · 언어판에서도 다른 모양을 고를 수 있어요 |
