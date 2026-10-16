@@ -386,3 +386,4 @@
 | 2026-10-16T07:22:24.150Z | windows | beta | 0.1.77 | windows-v0.1.77 | beta-served-verified | src 516d613c3 · unsigned · AI 로그인 터미널 없이, 작업 창 멈춤 감시·자동 복구, 자가 점검 |
 | 2026-10-16T07:24:57.958Z | windows | stable | 0.1.77 | windows-v0.1.77 | stable-served-verified |  |
 | 2026-10-16T12:32:47.508Z | macos | beta | 0.1.78 | macos-v0.1.78 | beta-served-verified | src 1d4624abf · AI 연결 쉽게(편집·사진 두 줄, 하나면 충분) · 로그인 진행 표시·겹침 방지 · 회사망 프록시를 AI 프로그램에 넘김 · 회사 계정 사진 막힘 안내 |
+| 2026-10-16T12:34:35.831Z | macos | stable | 0.1.78 | macos-v0.1.78 | stable-served-verified |  |
