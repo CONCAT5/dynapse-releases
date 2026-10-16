@@ -389,3 +389,4 @@
 | 2026-10-16T12:34:35.831Z | macos | stable | 0.1.78 | macos-v0.1.78 | stable-served-verified |  |
 | 2026-10-16T12:47:20.443Z | macos | beta | 0.1.79 | macos-v0.1.79 | beta-served-verified | src f53f67c54 · 회사망 자동 맞춤(PAC·인증서) · 막히면 이 PC로 이어서 |
 | 2026-10-16T12:49:11.260Z | macos | stable | 0.1.79 | macos-v0.1.79 | stable-served-verified |  |
+| 2026-10-16T12:56:08.684Z | windows | beta | 0.1.79 | windows-v0.1.79 | beta-served-verified | src f53f67c54 · unsigned · 회사망에서 멈추지 않게(시스템 프록시·회사 보안 인증서를 AI 도구에), AI 연결 안내 쉽게, 화면 묶음 실패 시 되돌리기 |
