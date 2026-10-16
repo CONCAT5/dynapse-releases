@@ -35,7 +35,7 @@ const prev = readJsonIfExists(feedPath);
 const n = prev?.native === native ? prev.ota + 1 : 1;
 
 // [0] 점검(#141 §5 a) — 화면 묶음을 만들기 전에: 형식 검사(tsc) + sync-sim(가상 기기가 새 main.ts·chat.ts를 READY까지 띄우고 동기화 시나리오 전부). 하나라도 실패면 내보내지 않는다
-console.log(`\n[0] 점검 · tsc + sync-sim`);
+console.log(`\n[0] 점검 · tsc + sync-sim + turn-sim`);
 const tsc = run("pnpm", ["exec", "tsc", "--noEmit", "-p", "."], { cwd: src })   /* npx 대신 pnpm exec — Windows의 새 npx.cmd는 심 풀기가 못 읽어 ENOENT였다 */;
 if (tsc.code !== 0) die(`tsc 실패 — OTA 안 함\n${(tsc.out || tsc.err).slice(-1500)}`);
 const hubDir = join(src, "..", "hub");
@@ -45,6 +45,13 @@ if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
   const line = (sim.out.match(/sync-sim \d+\/\d+/) ?? [""])[0];
   if (sim.code !== 0) die(`sync-sim 실패(${line}) — OTA 안 함\n${sim.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
   console.log(`  ✓ tsc · ${line}`);
+  // 턴 시뮬(#143 §4) — 요청 60건의 범위·등급·경로·거절 판정을 AI 없이. 틀리면 내보내지 않는다
+  if (existsSync(join(src, "scripts", "turn-sim.mts"))) {
+    const ts = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", "../desktop/scripts/turn-sim.mts"], { cwd: hubDir, timeout: 600_000 });
+    const tl = (ts.out.match(/turn-sim \d+\/\d+/) ?? [""])[0];
+    if (ts.code !== 0) die(`turn-sim 실패(${tl}) — OTA 안 함\n${ts.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
+    console.log(`  ✓ ${tl}`);
+  }
 } else console.log("  ⚠ sync-sim 없음(옛 소스) — tsc만");
 console.log(`\n[1] 화면 빌드 (${native} · 묶음 ${n})`);
 must("pnpm", ["run", "build:web"], { cwd: src });   // -s 없이(pnpm 12는 -s를 모른다 · Windows)

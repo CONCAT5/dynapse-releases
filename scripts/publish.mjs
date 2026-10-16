@@ -107,6 +107,18 @@ const signEnv = { ...process.env, ...(await signingEnv(platform)) }; // 서명�
   rmSync(d, { recursive: true, force: true });
   console.log("  ✓ updater 키쌍 일치");
 }
+// 앱 시험(#141 §5 · #143 §4) — OTA [0]과 같은 sync-sim + turn-sim. 빌드 전에(틀리면 빌드·서명하지 않는다). 옛 소스면 건너뜀
+{ const hubDir = join(src, "..", "hub");
+  if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
+    must("pnpm", ["install", "--frozen-lockfile"], { cwd: hubDir });
+    for (const [name, script, t] of [["sync-sim", "scripts/sync-sim.mts", 900_000], ["turn-sim", "../desktop/scripts/turn-sim.mts", 600_000]]) {
+      if (name === "turn-sim" && !existsSync(join(src, "scripts", "turn-sim.mts"))) continue;
+      const r = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", script], { cwd: hubDir, timeout: t });
+      const line = (r.out.match(new RegExp(`${name} \\d+\\/\\d+`)) ?? [""])[0];
+      if (r.code !== 0) die(`${name} 실패(${line}) — 발행 안 함\n${r.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
+      console.log(`  ✓ ${line}`);
+    }
+  } }
 console.log(`  ✓ ${platform} ${v} (태그 ${tag}) 배포 가능`);
 if (dryRun) { console.log("\n--dry-run: preflight만 수행하고 종료"); process.exit(0); }
 
