@@ -375,3 +375,4 @@
 | 2026-10-16T03:12:03.492Z | macos | ota | 0.1.75+ota5 | - | ota-served-verified | src 87e7fe29b · 함께 하는 작업에서 고르라는 카드 없이 · 같은 장은 나중에 올린 판, 덮인 사람에게 [내 판으로] |
 | 2026-10-16T03:52:55.973Z | macos | ota | 0.1.75+ota6 | - | ota-served-verified | src a2faecde2 · 언어판에서도 다른 모양을 고를 수 있어요 |
 | 2026-10-16T03:58:01.285Z | macos | ota | 0.1.75+ota7 | - | ota-served-verified | src 52dfaffa1 · 언어판에서 키우기·차트 조절 · 검사가 못 돈 순간 장을 되돌리지 않아요 |
+| 2026-10-16T04:08:47.665Z | macos | ota | 0.1.75+ota8 | - | ota-served-verified | src bb9462c4b · 장 순서 바꾸기 요청(예: 1~10번 재조정)이 다시 되돌려지지 않아요 · 바뀌면 '순서 바꿈 · N장 이동' · 장을 지운 뒤 언어판 쪽번호도 맞춰요 |
