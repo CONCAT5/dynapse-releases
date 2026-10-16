@@ -368,3 +368,4 @@
 | 2026-10-16T02:08:00.168Z | macos | stable | 0.1.75 | macos-v0.1.75 | stable-served-verified |  |
 | 2026-10-16T02:09:02.973Z | windows | beta | 0.1.75 | windows-v0.1.75 | beta-served-verified | src 5ebb83dc2 · unsigned · AI 도구 조용히 설치(창 없이, 막히면 이식형 Node+npm), 시작 흰 화면 대신 첫 화면·다시 시도, 동기화 빨리감기·자동 합치기, 차트 숫자 글꼴, 사진 하위 폴더 |
 | 2026-10-16T02:11:33.118Z | windows | stable | 0.1.75 | windows-v0.1.75 | stable-served-verified |  |
+| 2026-10-16T02:17:41.219Z | macos | ota | 0.1.75+ota1 | - | ota-served-verified | src d736e90c8 · 묻는 카드 대신 바로 하고 되돌리기 · 길어진 작업은 알아서 이어서 |
