@@ -36,12 +36,12 @@ const n = prev?.native === native ? prev.ota + 1 : 1;
 
 // [0] 점검(#141 §5 a) — 화면 묶음을 만들기 전에: 형식 검사(tsc) + sync-sim(가상 기기가 새 main.ts·chat.ts를 READY까지 띄우고 동기화 시나리오 전부). 하나라도 실패면 내보내지 않는다
 console.log(`\n[0] 점검 · tsc + sync-sim`);
-const tsc = run("npx", ["tsc", "--noEmit", "-p", "."], { cwd: src });
+const tsc = run("pnpm", ["exec", "tsc", "--noEmit", "-p", "."], { cwd: src })   /* npx 대신 pnpm exec — Windows의 새 npx.cmd는 심 풀기가 못 읽어 ENOENT였다 */;
 if (tsc.code !== 0) die(`tsc 실패 — OTA 안 함\n${(tsc.out || tsc.err).slice(-1500)}`);
 const hubDir = join(src, "..", "hub");
 if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
   must("pnpm", ["install", "--frozen-lockfile"], { cwd: hubDir });   // 빌드 사본의 허브 의존성을 잠금 파일대로(낡으면 sync-sim이 PGlite를 못 찾았다 — 2026-10-16 저녁)
-  const sim = run("npx", ["tsx", "--import", "./scripts/sync-sim/register.mjs", "scripts/sync-sim.mts"], { cwd: hubDir, timeout: 900_000 });
+  const sim = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", "scripts/sync-sim.mts"], { cwd: hubDir, timeout: 900_000 });
   const line = (sim.out.match(/sync-sim \d+\/\d+/) ?? [""])[0];
   if (sim.code !== 0) die(`sync-sim 실패(${line}) — OTA 안 함\n${sim.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
   console.log(`  ✓ tsc · ${line}`);
