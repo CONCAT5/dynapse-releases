@@ -1,15 +1,15 @@
 {
-  "version": "0.1.75",
-  "notes": "작업 화면이 흰 화면으로 멈추지 않게 첫 화면·다시 시도 · AI 설치를 창 없이 먼저 시도 · 설치 뒤 그 작업이 바로 열려요 · 사진 하위 폴더 · 차트 숫자 글꼴",
-  "pub_date": "2026-10-16T01:50:53Z",
+  "version": "0.1.77",
+  "notes": "작업 화면 감시·자동 다시 열기(멈춘 화면 복구 고침) · ⇧⌘R 처음부터 · 숨긴 화면 20분 뒤 닫기 · 터미널 없는 AI 로그인 · 앱 안 이메일 코드 로그인 · 배포 전 자가 점검",
+  "pub_date": "2026-10-16T07:05:10Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.75/Dynapse_0.1.75_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzE5Z0tWT1p2NFhDT2ZyRk1TZUt1aUI2RlhsVkhrMDUwbGJnYno1R1duTVRKeUgyNXYxaWVhaHpkd3BnUTBEdmVHekx3SFdZeS9qMHhBU0JtcUtxWEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTE1MzgyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjc1ClVPOTF3VlNQTW9VR1ZJNEhuZDEvME1vR0Q0QUZ4dS9YKzZMbllHSWhpU0VUZHZIaGszTlpIWHZHUzBNNVU0RWdoY1d0Q3MzNEdYQUp1ZmpVRWErUEJnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.77/Dynapse_0.1.77_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzRnamVLRk1iWG1pZ3puUTl4Vk8ydXJTWlF4WnVPcVJQYU9EUXFyT1pvRGdjWHhNUEx5REE5cXczbHVpZitBL3cxUGg1UHV1NC9hMFdxa3F3Z0hZUGdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTM0MTkyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjc3CmxNWDg0c0JYY0U1TjVFd2p6M1R3TWt4YW94bnRTQlVzWW50b1UyN3ZuamJZV0JLSGhKdkRqMGFDUGdFY1NGcnk3Vy82R1hod0llUUlDYWJjOTBUekFnPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.75/Dynapse_0.1.75_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzE5Z0tWT1p2NFhDT2ZyRk1TZUt1aUI2RlhsVkhrMDUwbGJnYno1R1duTVRKeUgyNXYxaWVhaHpkd3BnUTBEdmVHekx3SFdZeS9qMHhBU0JtcUtxWEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTE1MzgyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjc1ClVPOTF3VlNQTW9VR1ZJNEhuZDEvME1vR0Q0QUZ4dS9YKzZMbllHSWhpU0VUZHZIaGszTlpIWHZHUzBNNVU0RWdoY1d0Q3MzNEdYQUp1ZmpVRWErUEJnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.77/Dynapse_0.1.77_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzRnamVLRk1iWG1pZ3puUTl4Vk8ydXJTWlF4WnVPcVJQYU9EUXFyT1pvRGdjWHhNUEx5REE5cXczbHVpZitBL3cxUGg1UHV1NC9hMFdxa3F3Z0hZUGdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTM0MTkyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjc3CmxNWDg0c0JYY0U1TjVFd2p6M1R3TWt4YW94bnRTQlVzWW50b1UyN3ZuamJZV0JLSGhKdkRqMGFDUGdFY1NGcnk3Vy82R1hod0llUUlDYWJjOTBUekFnPT0K"
     }
   }
 }
