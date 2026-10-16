@@ -394,3 +394,4 @@
 | 2026-10-16T12:59:34.762Z | windows | stable | 0.1.79 | windows-v0.1.79 | stable-served-verified |  |
 | 2026-10-16T13:19:04.644Z | windows | ota | 0.1.79+ota1 | - | ota-served-verified | src 245910fd3 · 이미 로그인된 Claude·ChatGPT는 첫 실행에 조용히 연결 |
 | 2026-10-16T13:36:19.975Z | macos | ota | 0.1.79+ota2 | - | ota-served-verified | src eeab6c8ed · 디냅스 로그인 없이 첫 실행 · 초대 작업 [앱에서 열기] 한 번 · 새 PC는 계정이 쓰던 AI만 조용히 설치 · AI 줄에 편집·사진 역할 · 첫 대기 중 안내 세 줄 |
+| 2026-10-16T13:44:57.399Z | windows | ota | 0.1.79+ota2 | - | ota-served-verified | src eeab6c8ed · #142 마무리: 끊김 없는 연결(이미 로그인된 AI 자동 연결 · Dynapse 로그인은 필요할 때) |
