@@ -1,11 +1,11 @@
 {
-  "version": "0.1.74",
-  "notes": "이 PC 엔진 Windows: Intel·AMD GPU(Vulkan) 탐지, 사진 설명의 ... 수정",
-  "pub_date": "2026-10-14T00:39:22Z",
+  "version": "0.1.75",
+  "notes": "AI 도구 조용히 설치(창 없이, 막히면 이식형 Node+npm), 시작 흰 화면 대신 첫 화면·다시 시도, 동기화 빨리감기·자동 합치기, 차트 숫자 글꼴, 사진 하위 폴더",
+  "pub_date": "2026-10-16T02:07:57Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.74/Dynapse_0.1.74_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjlCWDE4anNpZTJiMERBUTlwMnJvVXV0eHl4YW5BNmlERGFJYTdDQjdvcG95bGQrRENTZkYyNE5YRmFpQ3R1WUhaTzkzekdtS1dzMVZGRFRXK0dLZkEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTM4MzA5CWZpbGU6RHluYXBzZV8wLjEuNzRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS43NAplR3JoSmx6RzQ2M3UrejZZMEthNmVmRHRDOUVCYXlNazNsd3h4bXpVeE54M3I5VUgwWEIwQjAwYXZTWVZVa2VLcWxmNWNydDdneHNCQUdhRkNMV0pBUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.75/Dynapse_0.1.75_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1Mi90QlRFTFp2aEZmRGV3UWNNRzNMYVF0M3VuVkhEZU9wSHVUNWx0ck0zZVBVMXVsSTF2cVpVVlp2d2ZRM0plZG44cHJmK3JiZlFQNzJKallVME44aXdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTE2NDUxCWZpbGU6RHluYXBzZV8wLjEuNzVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS43NQo0QWJUK2QrZ2tMemRRSlkrUEx2K2R2YXRUVFJtTTNKeUJVcXBhYWc4Wi8yejUwdE84VUY3MDIyTjRuRUpmNG0vUld0eTFTWkFyM09JQzV1RSszRU1CQT09Cg=="
     }
   }
 }
