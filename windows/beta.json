@@ -1,11 +1,11 @@
 {
-  "version": "0.1.77",
-  "notes": "AI 로그인 터미널 없이, 작업 창 멈춤 감시·자동 복구, 자가 점검",
-  "pub_date": "2026-10-16T07:20:46Z",
+  "version": "0.1.79",
+  "notes": "회사망에서 멈추지 않게(시스템 프록시·회사 보안 인증서를 AI 도구에), AI 연결 안내 쉽게, 화면 묶음 실패 시 되돌리기",
+  "pub_date": "2026-10-16T12:54:59Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.77/Dynapse_0.1.77_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnhoeXpSellYNyt2R3hOaXVJb3FUakhGUmh5VkswQTgvaE9sSmsrUDNNaE0xOVFDcFVHOFdNTTV6L3lscXhLc2RvMnUyQUowc2kxK3RMbmdJbXRTbGdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTM1MTU2CWZpbGU6RHluYXBzZV8wLjEuNzdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS43NwpRaE5hZ3loZnhjdEhJdC95bWZ2L2dla0pNMGtaaEdPbFRGYmZ3UnNBeFA2WjRIVW5zUGYvZ0pidWRTN0lxQkVjcnR4bGpPeTI2SXRUVnMzcy9PUkhEQT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.79/Dynapse_0.1.79_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjJscGR5SXhCVXBDNlNraEZ0KzZUSUxWRVlGeEJNUlpwOUdpc0ROM20rR2N1VnhRalpwSVBBTFhtV3NQTXkwdnltcmQwQUd5RDZBalVLZExUMzZINlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTU1MjAzCWZpbGU6RHluYXBzZV8wLjEuNzlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS43OQpNSXFxZkQyRER3Rk1VZHN0WGhMK2phOHMxc0tlbXlwMHBhTGd6cEJGdXM4UVp4VU52SjkwclRjblptMEc1d0F6WnRCazRISnAyZTltc2FWSnBNNndBZz09Cg=="
     }
   }
 }
