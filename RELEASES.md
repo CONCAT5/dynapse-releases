@@ -370,3 +370,4 @@
 | 2026-10-16T02:11:33.118Z | windows | stable | 0.1.75 | windows-v0.1.75 | stable-served-verified |  |
 | 2026-10-16T02:17:41.219Z | macos | ota | 0.1.75+ota1 | - | ota-served-verified | src d736e90c8 · 묻는 카드 대신 바로 하고 되돌리기 · 길어진 작업은 알아서 이어서 |
 | 2026-10-16T02:19:43.308Z | macos | ota | 0.1.75+ota2 | - | ota-served-verified | src 63df35981 · 짚은 자리에 짧은 말만 보내도 그 글로 바꿔요 · 어디냐고 되묻지 않아요 |
+| 2026-10-16T02:30:43.129Z | macos | ota | 0.1.75+ota3 | - | ota-served-verified | src 0019e3d1c · 언어판을 보며 바꾼 사진이 그 장에도 바로 들어가요 |
