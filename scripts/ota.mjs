@@ -36,6 +36,7 @@ const n = prev?.native === native ? prev.ota + 1 : 1;
 
 // [0] 점검(#141 §5 a) — 화면 묶음을 만들기 전에: 형식 검사(tsc) + sync-sim(가상 기기가 새 main.ts·chat.ts를 READY까지 띄우고 동기화 시나리오 전부). 하나라도 실패면 내보내지 않는다
 console.log(`\n[0] 점검 · tsc + sync-sim + turn-sim`);
+must("node", ["scripts/sync-tokens.mjs"], { cwd: src });   // 생성 파일(src/shared/*)을 먼저 — tsc·sync-sim이 읽는다(#142 추가 6 onb.ts)
 const tsc = run("pnpm", ["exec", "tsc", "--noEmit", "-p", "."], { cwd: src })   /* npx 대신 pnpm exec — Windows의 새 npx.cmd는 심 풀기가 못 읽어 ENOENT였다 */;
 if (tsc.code !== 0) die(`tsc 실패 — OTA 안 함\n${(tsc.out || tsc.err).slice(-1500)}`);
 const hubDir = join(src, "..", "hub");
