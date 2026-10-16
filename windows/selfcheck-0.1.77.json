@@ -1,0 +1,53 @@
+{
+  "arch": "x86_64",
+  "at": 1792135234,
+  "checks": [
+    {
+      "ms": 1502,
+      "name": "load",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 4508,
+      "name": "heartbeat",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 500,
+      "name": "reload",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 501,
+      "name": "hard_reload",
+      "note": "로그인 유지: 시험 계정 없음 — 건너뜀",
+      "ok": true
+    },
+    {
+      "ms": 29070,
+      "name": "watchdog_recover",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 23928,
+      "name": "hidden_close",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 357,
+      "name": "update_feed",
+      "note": "",
+      "ok": true
+    }
+  ],
+  "ms": 60514,
+  "os": "windows",
+  "pass": 7,
+  "total": 7,
+  "version": "0.1.77"
+}
