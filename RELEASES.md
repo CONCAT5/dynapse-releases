@@ -390,3 +390,4 @@
 | 2026-10-16T12:47:20.443Z | macos | beta | 0.1.79 | macos-v0.1.79 | beta-served-verified | src f53f67c54 · 회사망 자동 맞춤(PAC·인증서) · 막히면 이 PC로 이어서 |
 | 2026-10-16T12:49:11.260Z | macos | stable | 0.1.79 | macos-v0.1.79 | stable-served-verified |  |
 | 2026-10-16T12:56:08.684Z | windows | beta | 0.1.79 | windows-v0.1.79 | beta-served-verified | src f53f67c54 · unsigned · 회사망에서 멈추지 않게(시스템 프록시·회사 보안 인증서를 AI 도구에), AI 연결 안내 쉽게, 화면 묶음 실패 시 되돌리기 |
+| 2026-10-16T12:59:11.502Z | macos | ota | 0.1.79+ota1 | - | ota-served-verified | src 415196994 · 이미 로그인된 AI는 바로 시작 · AI 없으면 첫 요청에 ChatGPT 로그인이 바로 열리고 연결되면 그 요청이 저절로 · 한 번에 연결 · OTA 지킴이 |
