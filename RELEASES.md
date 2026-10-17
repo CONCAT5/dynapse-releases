@@ -405,3 +405,4 @@
 | 2026-10-17T06:00:18.449Z | macos | ota | 0.1.79+ota7 | - | ota-served-verified | src f475ffdf9 · 지시서를 덱으로 만들지 않아요 · 큰 덱은 한 번 확인 · 숫자 하나인 장도 다른 모양으로 바꿔요 |
 | 2026-10-17T07:32:14.856Z | macos | beta | 0.1.80 | macos-v0.1.80 | beta-served-verified | src a98dfc81a · 인터넷이 없어도 이 PC 사본을 보고 발표·고쳐요 · AI가 고친 것도 ⌘Z로 · 지시서를 덱으로 만들지 않아요 |
 | 2026-10-17T07:38:39.557Z | macos | stable | 0.1.80 | macos-v0.1.80 | stable-served-verified |  |
+| 2026-10-17T08:06:59.585Z | windows | beta | 0.1.80 | windows-v0.1.80 | beta-served-verified | src c1d4613ec · unsigned · 오프라인 보기(사이트가 안 열려도 이 PC 사본으로 보기·발표·고치기), AI 턴도 되돌리기(Ctrl+Z), PPTX 제목 굵기 유지, 자가 점검이 사용자 턴을 끊지 않음 |
