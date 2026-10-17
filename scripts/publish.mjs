@@ -227,7 +227,8 @@ step("3b", "자가 점검");
   const home = process.env[process.platform === "win32" ? "USERPROFILE" : "HOME"] ?? "";
   const turnOn = () => {
     let v = []; try { v = JSON.parse(readFileSync(join(home, "Dynapse", ".children.json"), "utf8")); } catch { return 0; }
-    if (process.platform === "win32") return v.length;   // Windows는 부모를 쉽게 못 본다 — 기록이 있으면 도는 것으로
+    if (process.platform === "win32") return v.filter(([, prog]) => /^(claude|codex|agy|node)$/.test(String(prog))).length;   // Windows는 부모를 쉽게 못 본다 — AI CLI 기록이 있으면 도는 것으로
+    v = v.filter(([, prog]) => /^(claude|codex|agy|node)$/.test(String(prog)));   // AI CLI만(앱이 늘 띄워 두는 curl 이벤트 스트림은 턴이 아니다)
     return v.filter(([pid, prog]) => { const r = run("ps", ["-p", String(pid), "-o", "ppid=,command="]); const [pp, ...c] = (r.out ?? "").trim().split(/\s+/); return r.out && Number(pp) > 1 && c.join(" ").includes(prog); }).length;
   };
   for (let i = 0; turnOn() > 0; i++) {
