@@ -411,3 +411,4 @@
 | 2026-10-17T10:29:38.733Z | macos | ota | 0.1.80+ota1 | - | ota-served-verified | src 9c752ff55 · 첫 덱 사진 칸을 비워 두지 않음 · 늦게 온 사진 뒤에서 교체(⌘Z) · 공개 사진 찾기 출처 줄 · 뒤에서 도는 일 한 줄 |
 | 2026-10-17T10:47:05.864Z | macos | ota | 0.1.80+ota2 | - | ota-served-verified | src c00ae5deb · OTA 지킴이 고침 · 예전 건너뛰기 번호가 새 묶음을 막던 문제 |
 | 2026-10-17T11:24:12.488Z | windows | ota | 0.1.80+ota2 | - | ota-served-verified | src e872c7807 · 덱 사진은 한 번에 만들어 빈 칸 없이, 뒤에서 하는 일 한곳에, 화면 묶음 보호 수정, 작은 글자 규칙 |
+| 2026-10-17T11:46:27.119Z | macos | ota | 0.1.80+ota3 | - | ota-served-verified | src d14a941b6 · Gemini 편집 · 내 글 그대로 · AI 사용 기록 · 주제 맞는 사진 · 학교·회사 PC용 PPTX · 글꼴 안내 |
