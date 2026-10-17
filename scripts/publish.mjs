@@ -221,6 +221,21 @@ const localSha = Object.fromEntries(assets.map(([, n]) => [n, sha256File(join(st
 // ───────── 4. Release 업로드 (prerelease로 — promote 때 해제) ─────────
 // ───────── 3b. 자가 점검(#141 §4) — 만든 앱을 --selfcheck로 실제로 띄워 작업 창 로드·심장박동·⌘R·⇧⌘R·멈춘 화면 복구·숨긴 창 닫기·업데이트 확인. 하나라도 실패면 발행하지 않는다
 step("3b", "자가 점검");
+// 사용자 앱이 턴을 돌리는 중이면 자가 점검 앱을 띄우지 않는다(2026-10-17 — 점검 인스턴스의 시작 정리가 대표의 도는 claude를 SIGTERM으로 끊었다, exit 143).
+// 판정: ~/Dynapse/.children.json의 CLI(claude·codex·agy·node)가 살아 있고 부모(앱)도 살아 있으면 = 도는 턴. 30초마다 다시 보고 20분까지 기다린 뒤 그래도면 멈춘다
+{
+  const home = process.env[process.platform === "win32" ? "USERPROFILE" : "HOME"] ?? "";
+  const turnOn = () => {
+    let v = []; try { v = JSON.parse(readFileSync(join(home, "Dynapse", ".children.json"), "utf8")); } catch { return 0; }
+    if (process.platform === "win32") return v.length;   // Windows는 부모를 쉽게 못 본다 — 기록이 있으면 도는 것으로
+    return v.filter(([pid, prog]) => { const r = run("ps", ["-p", String(pid), "-o", "ppid=,command="]); const [pp, ...c] = (r.out ?? "").trim().split(/\s+/); return r.out && Number(pp) > 1 && c.join(" ").includes(prog); }).length;
+  };
+  for (let i = 0; turnOn() > 0; i++) {
+    if (i >= 40) die("사용자 앱에서 AI 턴이 20분 넘게 도는 중 — 자가 점검 앱을 띄우지 않음(턴이 끝난 뒤 다시)");
+    if (i === 0) console.log("  … 사용자 앱에서 AI 턴이 도는 중 — 끝날 때까지 기다려요(30초마다 확인 · 최대 20분)");
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 30_000);
+  }
+}
 const scBin = platform === "macos" ? join(one("macos", ".app"), "Contents", "MacOS", "dynapse-desktop") : join(bundleDir, "..", "dynapse-desktop.exe");
 const scOut = join(work, "selfcheck.json");
 const sc = run(scBin, ["--selfcheck", "--selfcheck-out", scOut], { timeout: 420_000 });
