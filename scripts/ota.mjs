@@ -44,7 +44,7 @@ if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
   must("pnpm", ["install", "--frozen-lockfile"], { cwd: hubDir });   // 빌드 사본의 허브 의존성을 잠금 파일대로(낡으면 sync-sim이 PGlite를 못 찾았다 — 2026-10-16 저녁)
   const sim = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", "scripts/sync-sim.mts"], { cwd: hubDir, timeout: 900_000 });
   const line = (sim.out.match(/sync-sim \d+\/\d+/) ?? [""])[0];
-  if (sim.code !== 0) die(`sync-sim 실패(${line}) — OTA 안 함\n${sim.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
+  if (sim.code !== 0) { const L = sim.out.split("\n"); die(`sync-sim 실패(${line}) — OTA 안 함\n${L.flatMap((l, i) => (/✗/.test(l) ? [l, ...L.slice(i + 1, i + 4).filter(x => /^ {4}/.test(x) && !/\[timing\]/.test(x))] : [])).slice(0, 24).join("\n")}`); }   // ✗ 아래 확인 줄까지(무엇이 틀렸는지)
   console.log(`  ✓ tsc · ${line}`);
   // 턴 시뮬(#143 §4) — 요청 60건의 범위·등급·경로·거절 판정을 AI 없이. 틀리면 내보내지 않는다
   if (existsSync(join(src, "scripts", "turn-sim.mts"))) {
