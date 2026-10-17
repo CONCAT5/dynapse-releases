@@ -416,3 +416,4 @@
 | 2026-10-17T12:30:41.740Z | macos | ota | 0.1.80+ota4 | - | ota-served-verified | src c5e9050b2 · 리워드 제출 멈춤 고침 · 주제와 맞지 않는 재고 사진 막음 · 사진 만드는 동안 진행 표시 |
 | 2026-10-17T12:47:03.563Z | macos | ota | 0.1.80+ota5 | - | ota-served-verified | src ae7e5367e · 리워드 제출: tokens.css가 없으면 앱이 만들고 올려요 · 올리기 실패 이유를 말해요 |
 | 2026-10-17T13:28:35.505Z | macos | ota | 0.1.80+ota6 | - | ota-served-verified | src f555118b9 · 지정 모양이 있는 리워드 제출 고침 · PPTX 줄바꿈이 앱과 같게 · 회전·외곽선 글자는 글자로 |
+| 2026-10-17T14:00:20.534Z | macos | ota | 0.1.80+ota7 | - | ota-served-verified | src 7ed1d8821 · 사진 AI가 없어도 이 PC에서 사진을 만들어요 |
