@@ -418,3 +418,4 @@
 | 2026-10-17T13:28:35.505Z | macos | ota | 0.1.80+ota6 | - | ota-served-verified | src f555118b9 · 지정 모양이 있는 리워드 제출 고침 · PPTX 줄바꿈이 앱과 같게 · 회전·외곽선 글자는 글자로 |
 | 2026-10-17T14:00:20.534Z | macos | ota | 0.1.80+ota7 | - | ota-served-verified | src 7ed1d8821 · 사진 AI가 없어도 이 PC에서 사진을 만들어요 |
 | 2026-10-17T23:13:08.836Z | windows | ota | 0.1.80+ota4 | - | ota-served-verified | src 6eff40c12 · 리워드 제출 오류 수정(tokens.css·영어 작업 글), 서버·앱 같은 덱 검사, PPTX 줄·글자 유지, 이 PC 사진, 진행 문구 정리 |
+| 2026-10-17T23:40:27.038Z | macos | ota | 0.1.80+ota8 | - | ota-served-verified | src 00778d020 · 오류가 개발자 문장으로 보이던 문제 · '내 글 그대로'는 그 요청에만 |
