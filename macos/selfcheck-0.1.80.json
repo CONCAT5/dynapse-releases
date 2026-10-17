@@ -1,0 +1,65 @@
+{
+  "arch": "aarch64",
+  "at": 1792222256,
+  "checks": [
+    {
+      "ms": 1523,
+      "name": "load",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 4318,
+      "name": "heartbeat",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 504,
+      "name": "reload",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 510,
+      "name": "hard_reload",
+      "note": "로그인 유지: 시험 계정 없음 — 건너뜀",
+      "ok": true
+    },
+    {
+      "ms": 29475,
+      "name": "watchdog_recover",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 24056,
+      "name": "hidden_close",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 3047,
+      "name": "offline_viewer",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 25,
+      "name": "net_fix",
+      "note": "인증서 170 · 프록시 없음",
+      "ok": true
+    },
+    {
+      "ms": 24,
+      "name": "update_feed",
+      "note": "",
+      "ok": true
+    }
+  ],
+  "ms": 63515,
+  "os": "macos",
+  "pass": 9,
+  "total": 9,
+  "version": "0.1.80"
+}

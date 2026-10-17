@@ -1,15 +1,15 @@
 {
-  "version": "0.1.79",
-  "notes": "회사망 자동 맞춤(PAC·인증서) · 막히면 이 PC로 이어서",
-  "pub_date": "2026-10-16T12:45:45Z",
+  "version": "0.1.80",
+  "notes": "인터넷이 없어도 이 PC 사본을 보고 발표·고쳐요 · AI가 고친 것도 ⌘Z로 · 지시서를 덱으로 만들지 않아요",
+  "pub_date": "2026-10-17T07:31:09Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.79/Dynapse_0.1.79_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzJack40VE5Hek9JekpSN3pNczZ6VzE2d1NyVitIb1A3UWhDZUZWLzY3T1g5Ui9YdkRIQmZScFYrR2F3NVNiVHJtdnFGKzZNZW9ybjJGWUNZdjhqU3cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTU0NjI0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjc5CkI5Rjl1dUJYSzBnaVY0YW9VS2ZEckhsTWtLWEFYQzJuc09WdXd3ZnlFY1RzSmtReGNiZzBDcVpEcDJKMTBjWFU3cFBNaGhtR1UvTEYzY3p5LzU2cEJRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.80/Dynapse_0.1.80_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzYxYWROK25kM214U1F3VnRURjV6QWR4WVdWa0ErVHowWGlYdHZScGR5SmEreXBxeVoxcVpjVFB6cGVrbmNLNkx1T1MwbTdOa3kzakVzOHpjVEtBWXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjIyMTYwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjgwCmd1Zkl5VUhBK1dhWEgwdVhTTlc5czQxZk92WVBGRVY0SlZWU3pWYk5qMW02WnhvR2tmbDVGMHBIa1E0RHRLS2M3MllHVTJDdzF6SUhpZWxSTlNuVkJnPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.79/Dynapse_0.1.79_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzJack40VE5Hek9JekpSN3pNczZ6VzE2d1NyVitIb1A3UWhDZUZWLzY3T1g5Ui9YdkRIQmZScFYrR2F3NVNiVHJtdnFGKzZNZW9ybjJGWUNZdjhqU3cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTU0NjI0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjc5CkI5Rjl1dUJYSzBnaVY0YW9VS2ZEckhsTWtLWEFYQzJuc09WdXd3ZnlFY1RzSmtReGNiZzBDcVpEcDJKMTBjWFU3cFBNaGhtR1UvTEYzY3p5LzU2cEJRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.80/Dynapse_0.1.80_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzYxYWROK25kM214U1F3VnRURjV6QWR4WVdWa0ErVHowWGlYdHZScGR5SmEreXBxeVoxcVpjVFB6cGVrbmNLNkx1T1MwbTdOa3kzakVzOHpjVEtBWXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjIyMTYwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjgwCmd1Zkl5VUhBK1dhWEgwdVhTTlc5czQxZk92WVBGRVY0SlZWU3pWYk5qMW02WnhvR2tmbDVGMHBIa1E0RHRLS2M3MllHVTJDdzF6SUhpZWxSTlNuVkJnPT0K"
     }
   }
 }
