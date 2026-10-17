@@ -119,7 +119,7 @@ const noSimLeft = what => { const o = simOrphans(); if (!o.length) return; for (
       if (name === "turn-sim" && !existsSync(join(src, "scripts", "turn-sim.mts"))) continue;
       const r = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", script], { cwd: hubDir, timeout: t });
       const line = (r.out.match(new RegExp(`${name} \\d+\\/\\d+`)) ?? [""])[0];
-      if (r.code !== 0) die(`${name} 실패(${line}) — 발행 안 함\n${r.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
+      if (r.code !== 0) { const L = r.out.split("\n"); die(`${name} 실패(${line}) — 발행 안 함\n${L.flatMap((l, i) => (/✗/.test(l) ? [l, ...L.slice(i + 1, i + 4).filter(x => /^ {4}/.test(x) && !/\[timing\]/.test(x))] : [])).slice(0, 24).join("\n")}`); }   // ✗ 아래 확인 줄까지
       console.log(`  ✓ ${line}`);
     }
     noSimLeft("발행");
