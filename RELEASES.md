@@ -403,3 +403,4 @@
 | 2026-10-17T04:25:18.491Z | macos | ota | 0.1.79+ota6 | - | ota-served-verified | src 77bc7688a · 웹에서 누른 동작이 설치 뒤 앱에서 그 덱으로 이어져요 · 설치 뒤 막히면 도움 한 줄 |
 | 2026-10-17T04:29:33.674Z | windows | ota | 0.1.79+ota5 | - | ota-served-verified | src 77bc7688a · 이탈 없는 퍼널(단계별 기록·멈춘 단계 안내), 온보딩 보정 |
 | 2026-10-17T06:00:18.449Z | macos | ota | 0.1.79+ota7 | - | ota-served-verified | src f475ffdf9 · 지시서를 덱으로 만들지 않아요 · 큰 덱은 한 번 확인 · 숫자 하나인 장도 다른 모양으로 바꿔요 |
+| 2026-10-17T07:32:14.856Z | macos | beta | 0.1.80 | macos-v0.1.80 | beta-served-verified | src a98dfc81a · 인터넷이 없어도 이 PC 사본을 보고 발표·고쳐요 · AI가 고친 것도 ⌘Z로 · 지시서를 덱으로 만들지 않아요 |
