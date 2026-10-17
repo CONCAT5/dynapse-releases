@@ -408,3 +408,4 @@
 | 2026-10-17T08:06:59.585Z | windows | beta | 0.1.80 | windows-v0.1.80 | beta-served-verified | src c1d4613ec · unsigned · 오프라인 보기(사이트가 안 열려도 이 PC 사본으로 보기·발표·고치기), AI 턴도 되돌리기(Ctrl+Z), PPTX 제목 굵기 유지, 자가 점검이 사용자 턴을 끊지 않음 |
 | 2026-10-17T08:08:39.005Z | windows | stable | 0.1.80 | windows-v0.1.80 | stable-served-verified |  |
 | 2026-10-17T08:38:57.162Z | windows | ota | 0.1.80+ota1 | - | ota-served-verified | src b2874851f · 작업 위치 표시 문구 하나로('나만 보는 중'), 포인트는 생길 때만 표시 |
+| 2026-10-17T10:29:38.733Z | macos | ota | 0.1.80+ota1 | - | ota-served-verified | src 9c752ff55 · 첫 덱 사진 칸을 비워 두지 않음 · 늦게 온 사진 뒤에서 교체(⌘Z) · 공개 사진 찾기 출처 줄 · 뒤에서 도는 일 한 줄 |
