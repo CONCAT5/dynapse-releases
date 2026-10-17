@@ -24,6 +24,9 @@ if (typeof notes !== "string" || !notes.trim()) die('--notes "변경 한 줄" �
     }
   }
 }
+// 시험이 남긴 하네스 고아(#141 추가 1 — 가짜 기기 490개가 남아 맥이 멈췄다): 부모가 1인 device.mts·render-sim 사본 프로세스. 있으면 정리하고 실패
+const simOrphans = () => { if (process.platform === "win32") return []; const r = run("ps", ["-axo", "pid=,ppid=,command="]); return (r.out ?? "").split("\n").map(l => l.trim().match(/^(\d+)\s+(\d+)\s+(.*)$/)).filter(m => m && m[2] === "1" && /sync-sim[\/\\]device\.mts|render-sim-hub-/.test(m[3])); };
+const noSimLeft = what => { const o = simOrphans(); if (!o.length) return; for (const m of o) { try { process.kill(Number(m[1]), "SIGKILL"); } catch { /* 끝남 */ } } die(`시험 프로세스 ${o.length}개가 남았어요(정리함) — ${what} 안 함`); };
 assertCleanTree(ROOT, "배포 리포");
 must("git", ["pull", "--rebase"], { cwd: ROOT });
 
@@ -53,6 +56,7 @@ if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
     if (ts.code !== 0) die(`turn-sim 실패(${tl}) — OTA 안 함\n${ts.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
     console.log(`  ✓ ${tl}`);
   }
+  noSimLeft("OTA");
 } else console.log("  ⚠ sync-sim 없음(옛 소스) — tsc만");
 console.log(`\n[1] 화면 빌드 (${native} · 묶음 ${n})`);
 must("pnpm", ["run", "build:web"], { cwd: src });   // -s 없이(pnpm 12는 -s를 모른다 · Windows)

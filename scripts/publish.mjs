@@ -107,6 +107,9 @@ const signEnv = { ...process.env, ...(await signingEnv(platform)) }; // 서명�
   rmSync(d, { recursive: true, force: true });
   console.log("  ✓ updater 키쌍 일치");
 }
+// 시험이 남긴 하네스 고아(#141 추가 1 — 가짜 기기 490개가 남아 맥이 멈췄다): 부모가 1인 device.mts·render-sim 사본 프로세스. 있으면 정리하고 실패
+const simOrphans = () => { if (process.platform === "win32") return []; const r = run("ps", ["-axo", "pid=,ppid=,command="]); return (r.out ?? "").split("\n").map(l => l.trim().match(/^(\d+)\s+(\d+)\s+(.*)$/)).filter(m => m && m[2] === "1" && /sync-sim[\/\\]device\.mts|render-sim-hub-/.test(m[3])); };
+const noSimLeft = what => { const o = simOrphans(); if (!o.length) return; for (const m of o) { try { process.kill(Number(m[1]), "SIGKILL"); } catch { /* 끝남 */ } } die(`시험 프로세스 ${o.length}개가 남았어요(정리함) — ${what} 안 함`); };
 // 앱 시험(#141 §5 · #143 §4) — OTA [0]과 같은 sync-sim + turn-sim. 빌드 전에(틀리면 빌드·서명하지 않는다). 옛 소스면 건너뜀
 { const hubDir = join(src, "..", "hub");
   if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
@@ -119,6 +122,7 @@ const signEnv = { ...process.env, ...(await signingEnv(platform)) }; // 서명�
       if (r.code !== 0) die(`${name} 실패(${line}) — 발행 안 함\n${r.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
       console.log(`  ✓ ${line}`);
     }
+    noSimLeft("발행");
   } }
 console.log(`  ✓ ${platform} ${v} (태그 ${tag}) 배포 가능`);
 if (dryRun) { console.log("\n--dry-run: preflight만 수행하고 종료"); process.exit(0); }
