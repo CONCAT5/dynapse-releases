@@ -413,3 +413,4 @@
 | 2026-10-17T11:24:12.488Z | windows | ota | 0.1.80+ota2 | - | ota-served-verified | src e872c7807 · 덱 사진은 한 번에 만들어 빈 칸 없이, 뒤에서 하는 일 한곳에, 화면 묶음 보호 수정, 작은 글자 규칙 |
 | 2026-10-17T11:46:27.119Z | macos | ota | 0.1.80+ota3 | - | ota-served-verified | src d14a941b6 · Gemini 편집 · 내 글 그대로 · AI 사용 기록 · 주제 맞는 사진 · 학교·회사 PC용 PPTX · 글꼴 안내 |
 | 2026-10-17T11:50:20.520Z | windows | ota | 0.1.80+ota3 | - | ota-served-verified | src d14a941b6 · Gemini로도 편집, 내 문장 그대로 두기, AI 사용 기록, 주제에 맞는 사진·PPTX 글꼴·걸린 시간 표시 |
+| 2026-10-17T12:30:41.740Z | macos | ota | 0.1.80+ota4 | - | ota-served-verified | src c5e9050b2 · 리워드 제출 멈춤 고침 · 주제와 맞지 않는 재고 사진 막음 · 사진 만드는 동안 진행 표시 |
