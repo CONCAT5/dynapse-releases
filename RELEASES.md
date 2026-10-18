@@ -425,3 +425,4 @@
 | 2026-10-18T07:35:34.800Z | macos | ota | 0.1.80+ota12 | - | ota-served-verified | src 63071f694 · 리워드 제출이 검사에서 계속 반려되던 문제를 고쳤어요 |
 | 2026-10-18T09:35:05.794Z | macos | ota | 0.1.80+ota13 | - | ota-served-verified | src 99f1e1cd4 · PowerPoint에서 줄이 앱과 같게 열려요 |
 | 2026-10-18T10:12:13.063Z | macos | ota | 0.1.80+ota14 | - | ota-served-verified | src 11a98b016 · PPTX에 글꼴을 넣어 글꼴 없는 PC에서도 같게 열려요 |
+| 2026-10-18T10:48:35.035Z | macos | ota | 0.1.80+ota15 | - | ota-served-verified | src abadb5de1 · PPTX에 글꼴이 빠지던 문제를 고쳤어요 |
