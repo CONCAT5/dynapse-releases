@@ -420,3 +420,4 @@
 | 2026-10-17T23:13:08.836Z | windows | ota | 0.1.80+ota4 | - | ota-served-verified | src 6eff40c12 · 리워드 제출 오류 수정(tokens.css·영어 작업 글), 서버·앱 같은 덱 검사, PPTX 줄·글자 유지, 이 PC 사진, 진행 문구 정리 |
 | 2026-10-17T23:40:27.038Z | macos | ota | 0.1.80+ota8 | - | ota-served-verified | src 00778d020 · 오류가 개발자 문장으로 보이던 문제 · '내 글 그대로'는 그 요청에만 |
 | 2026-10-17T23:49:45.463Z | macos | ota | 0.1.80+ota9 | - | ota-served-verified | src d31fcc35a · 공개 기여 안내를 바뀐 정책에 맞췄어요 |
+| 2026-10-18T00:26:28.308Z | macos | ota | 0.1.80+ota10 | - | ota-served-verified | src cdf7771c7 · 글꼴에 없는 글자가 있으면 다른 글꼴로 바꾸고, 학생회 공지 색을 색약에도 구분되게 했어요 |
