@@ -424,3 +424,4 @@
 | 2026-10-18T00:45:12.362Z | macos | ota | 0.1.80+ota11 | - | ota-served-verified | src 1d57799a6 · 시리즈 다음 회차는 지난 회차 디자인 그대로, QR은 링크로 만들어요 |
 | 2026-10-18T07:35:34.800Z | macos | ota | 0.1.80+ota12 | - | ota-served-verified | src 63071f694 · 리워드 제출이 검사에서 계속 반려되던 문제를 고쳤어요 |
 | 2026-10-18T09:35:05.794Z | macos | ota | 0.1.80+ota13 | - | ota-served-verified | src 99f1e1cd4 · PowerPoint에서 줄이 앱과 같게 열려요 |
+| 2026-10-18T10:12:13.063Z | macos | ota | 0.1.80+ota14 | - | ota-served-verified | src 11a98b016 · PPTX에 글꼴을 넣어 글꼴 없는 PC에서도 같게 열려요 |
