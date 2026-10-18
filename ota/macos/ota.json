@@ -1,7 +1,7 @@
 {
   "native": "0.1.80",
-  "ota": 13,
-  "base": "ota/macos/0.1.80/13/",
-  "notes": "PowerPoint에서 줄이 앱과 같게 열려요",
-  "pub_date": "2026-10-18T09:34:12.068Z"
+  "ota": 14,
+  "base": "ota/macos/0.1.80/14/",
+  "notes": "PPTX에 글꼴을 넣어 글꼴 없는 PC에서도 같게 열려요",
+  "pub_date": "2026-10-18T10:11:19.401Z"
 }
