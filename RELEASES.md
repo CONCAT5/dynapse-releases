@@ -422,3 +422,4 @@
 | 2026-10-17T23:49:45.463Z | macos | ota | 0.1.80+ota9 | - | ota-served-verified | src d31fcc35a · 공개 기여 안내를 바뀐 정책에 맞췄어요 |
 | 2026-10-18T00:26:28.308Z | macos | ota | 0.1.80+ota10 | - | ota-served-verified | src cdf7771c7 · 글꼴에 없는 글자가 있으면 다른 글꼴로 바꾸고, 학생회 공지 색을 색약에도 구분되게 했어요 |
 | 2026-10-18T00:45:12.362Z | macos | ota | 0.1.80+ota11 | - | ota-served-verified | src 1d57799a6 · 시리즈 다음 회차는 지난 회차 디자인 그대로, QR은 링크로 만들어요 |
+| 2026-10-18T07:35:34.800Z | macos | ota | 0.1.80+ota12 | - | ota-served-verified | src 63071f694 · 리워드 제출이 검사에서 계속 반려되던 문제를 고쳤어요 |
