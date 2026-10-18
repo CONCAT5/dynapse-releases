@@ -427,3 +427,4 @@
 | 2026-10-18T10:12:13.063Z | macos | ota | 0.1.80+ota14 | - | ota-served-verified | src 11a98b016 · PPTX에 글꼴을 넣어 글꼴 없는 PC에서도 같게 열려요 |
 | 2026-10-18T10:48:35.035Z | macos | ota | 0.1.80+ota15 | - | ota-served-verified | src abadb5de1 · PPTX에 글꼴이 빠지던 문제를 고쳤어요 |
 | 2026-10-18T11:18:20.072Z | macos | ota | 0.1.80+ota16 | - | ota-served-verified | src a62125efe · 앱이 다시 켜지면 못 받은 요청을 이어서 받고, 카드뉴스 장 크기를 지켜요 |
+| 2026-10-18T11:40:14.570Z | macos | ota | 0.1.80+ota17 | - | ota-served-verified | src 4954834a8 · AI가 읽는 지시를 줄여 턴이 가벼워져요 |
