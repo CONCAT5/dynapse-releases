@@ -430,3 +430,4 @@
 | 2026-10-18T11:40:14.570Z | macos | ota | 0.1.80+ota17 | - | ota-served-verified | src 4954834a8 · AI가 읽는 지시를 줄여 턴이 가벼워져요 |
 | 2026-10-18T12:02:58.481Z | macos | ota | 0.1.80+ota18 | - | ota-served-verified | src 3d0d02832 · 글꼴을 넣었을 때 안내를 바로잡고, 모양 바꾼 뒤에도 후보가 보여요 |
 | 2026-10-18T17:28:38.887Z | macos | ota | 0.1.80+ota19 | - | ota-served-verified | src 2d7641d37 · 다른 모양 띠가 비던 문제를 고쳤어요 |
+| 2026-10-18T18:07:43.439Z | macos | ota | 0.1.80+ota20 | - | ota-served-verified | src ad052fb5e · 다른 모양 띠에 후보가 셋 보여요 |
