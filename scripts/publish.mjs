@@ -71,6 +71,12 @@ const v = pkg.version;
 if (!isSemver(v)) die(`package.json version이 SemVer가 아님: ${v}`);
 if (conf.version !== "../package.json") die(`tauri.conf.json version은 "../package.json" 참조여야 함 (현재 ${conf.version}) — 버전 단일 원천 §3.3`);
 if (cargoVer !== v) die(`Cargo.toml version ${cargoVer} ≠ package.json ${v} — package.json만 고치고 Cargo.toml을 맞춰라`);
+// 네이티브 계약(#174 ②) — lib.rs가 native-contract.json(sync-sim 가짜 네이티브와 같은 파일)의 probes·파일 목록에 같은 답을 내는지. OTA 점검의 sync-sim 70은 가짜 쪽만 본다
+if (existsSync(join(src, "src-tauri", "native-contract.json"))) {
+  const ct = run("cargo", ["test", "--lib", "-q", "--", "contract_tests", "work_rel_tests", "round_tests"], { cwd: join(src, "src-tauri"), timeout: 1_200_000 });
+  if (ct.code !== 0) die(`네이티브 계약 시험 실패 — 발행 안 함\n${`${ct.out}${ct.err}`.split("\n").filter(l => /panicked|left|right|error|FAILED/.test(l)).slice(0, 8).join("\n")}`);
+  console.log("  ✓ 네이티브 계약(cargo test contract_tests)");
+}
 
 const tag = `${P.tagPrefix}${v}`;
 if (run("gh", ["api", `repos/${slug}/git/refs/tags/${tag}`]).code === 0) die(`태그 ${tag} 이미 있음 — 한 번 쓴 버전은 다시 쓰지 않는다`);
