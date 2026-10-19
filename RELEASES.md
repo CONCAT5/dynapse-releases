@@ -434,3 +434,4 @@
 | 2026-10-18T18:47:27.812Z | macos | ota | 0.1.80+ota21 | - | ota-served-verified | src ccce76185 · 모양을 바꿔도 문장이 사라지지 않아요 |
 | 2026-10-18T21:45:17.624Z | macos | ota | 0.1.80+ota22 | - | ota-served-verified | src 2f3075142 · 받은 직후에도 다른 모양이 보여요 |
 | 2026-10-18T23:22:51.332Z | macos | ota | 0.1.80+ota23 | - | ota-served-verified | src c7d34a266 · 받은 직후에도 다른 모양이 보여요 |
+| 2026-10-19T00:21:14.981Z | macos | ota | 0.1.80+ota24 | - | ota-served-verified | src 08896719e · 다른 모양으로 바꿔도 쪽 번호가 그대로 남아요 |
