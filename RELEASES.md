@@ -448,3 +448,4 @@
 | 2026-10-19T05:42:09.728Z | windows | stable | 0.1.81 | windows-v0.1.81 | stable-served-verified |  |
 | 2026-10-19T05:55:10.988Z | windows | ota | 0.1.81+ota1 | - | ota-served-verified | src 5ded053c9 · 카드 한 문장 모양 후보 중복·빈 썸네일 수정(#181 보정) |
 | 2026-10-19T08:03:03.932Z | macos | ota | 0.1.81+ota3 | - | ota-served-verified | src f31c21003 · AI 로그인이 풀리면 한 줄과 [다시 로그인] |
+| 2026-10-19T08:36:51.713Z | macos | ota | 0.1.81+ota4 | - | ota-served-verified | src d8d2576fa · 사진 저장 확인 · 멤버가 아닐 때 한 줄 · 초대 링크를 앱 계정으로 |
