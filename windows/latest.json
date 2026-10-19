@@ -1,11 +1,11 @@
 {
-  "version": "0.1.80",
-  "notes": "오프라인 보기(사이트가 안 열려도 이 PC 사본으로 보기·발표·고치기), AI 턴도 되돌리기(Ctrl+Z), PPTX 제목 굵기 유지, 자가 점검이 사용자 턴을 끊지 않음",
-  "pub_date": "2026-10-17T08:05:53Z",
+  "version": "0.1.81",
+  "notes": "사진 넣기·자료 가져오기 수정(CSP ipc), 설치 실패 사유 전달, 장 목록 복구, 카드 한 문장 모양(#181)",
+  "pub_date": "2026-10-19T05:39:10Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.80/Dynapse_0.1.80_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MndCWmN0YUxxQXJmWUE2TlBEd25Nb1RvOCtITlRCRHVVZThDYllUK2Z1NnM5K0ZHWDB5ZnM2a3lwZUhOR2dwU0VNTmpQSHpPc3d4a3Q5QUFjWnFvb0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjI0MjYxCWZpbGU6RHluYXBzZV8wLjEuODBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS44MAptZGhuTXlheDNFTXhSVEVpdEtxNy80UUlYRjR4eVh2SDFlMU1NNlJkMGN6RUljZW9jeWcwd3JPdUZ5Wmp2aUhOVHdXcTBUV09GRCtrWFFkQ3ZOd2ZCQT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.81/Dynapse_0.1.81_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjV3SDlkSEFHYkowanNrZmRqcTFhOEUxNDdtWjVUNkZiMTNnV2N3Qm96STFSSlFvSmpkRzQ1VW5kd0pFSEhSMi84Qlh0SVhzT1BVSjhmSTlIWTlGZGcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzg4MjUxCWZpbGU6RHluYXBzZV8wLjEuODFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS44MQoremgyRzRoK21LeGx5Z2JzR29STk56eWQwK2wyNEc1bklNUjRYMC8ydXVBb25XQU01cmhoWGY0ZWwySFgvMzlVaWdjdy9qRmJaaWdFampwdCtVa2pBdz09Cg=="
     }
   }
 }
