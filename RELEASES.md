@@ -436,3 +436,4 @@
 | 2026-10-18T23:22:51.332Z | macos | ota | 0.1.80+ota23 | - | ota-served-verified | src c7d34a266 · 받은 직후에도 다른 모양이 보여요 |
 | 2026-10-19T00:21:14.981Z | macos | ota | 0.1.80+ota24 | - | ota-served-verified | src 08896719e · 다른 모양으로 바꿔도 쪽 번호가 그대로 남아요 |
 | 2026-10-19T00:30:02.209Z | windows | ota | 0.1.80+ota5 | - | ota-served-verified | src 08896719e · 덱 리워드 제출 반려 수정(tokens.css), PPTX 글꼴 넣기·줄 유지, 카드뉴스 시리즈·학생/단체, 받지 못한 턴 다시 보내기, 모양 바꾸기 문장 보존, 재고 덱 색 유지 |
+| 2026-10-19T01:09:04.746Z | windows | ota | 0.1.80+ota6 | - | ota-served-verified | src dc6227e2a · 깨진 장 목록 복구·모양 바꾸기 ⌘Z·PPTX 브라우저 대기·보상 제출 중복 방지(#177 #178) |
