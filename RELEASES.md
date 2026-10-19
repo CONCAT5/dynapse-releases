@@ -444,3 +444,4 @@
 | 2026-10-19T04:18:18.338Z | macos | stable | 0.1.81 | macos-v0.1.81 | stable-served-verified |  |
 | 2026-10-19T04:38:29.486Z | macos | ota | 0.1.81+ota1 | - | ota-served-verified | src 0f7b439c5 · 한 문장뿐인 장도 다른 모양을 셋 골라요 |
 | 2026-10-19T05:33:47.516Z | macos | ota | 0.1.81+ota2 | - | ota-served-verified | src 5ded053c9 · 다른 모양 후보 중복·한 단어 빈 그림 고침 |
+| 2026-10-19T05:40:15.797Z | windows | beta | 0.1.81 | windows-v0.1.81 | beta-served-verified | src 4e23a9b5a · unsigned · 사진 넣기·자료 가져오기 수정(CSP ipc), 설치 실패 사유 전달, 장 목록 복구, 카드 한 문장 모양(#181) |
