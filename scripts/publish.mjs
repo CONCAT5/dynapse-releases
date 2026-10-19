@@ -237,7 +237,9 @@ step("3b", "자가 점검");
     v = v.filter(([, prog]) => /^(claude|codex|agy|node)$/.test(String(prog)));   // AI CLI만(앱이 늘 띄워 두는 curl 이벤트 스트림은 턴이 아니다)
     return v.filter(([pid, prog]) => { const r = run("ps", ["-p", String(pid), "-o", "ppid=,command="]); const [pp, ...c] = (r.out ?? "").trim().split(/\s+/); return r.out && Number(pp) > 1 && c.join(" ").includes(prog); }).length;
   };
-  for (let i = 0; turnOn() > 0; i++) {
+  // --live-ok(2026-10-19 대표 "앱 켜 둔 채 점검해도 돼") — 사용자가 그 실행에 한해 승인했을 때만. 10-17의 정리 결함(reap_stale)은 고쳐졌다(a771634) · 기록을 남긴다
+  if (process.argv.includes("--live-ok") && turnOn() > 0) console.log("  ! 사용자 앱에서 AI 턴이 도는 중이지만 사용자 승인(--live-ok)으로 자가 점검을 띄워요");
+  else for (let i = 0; turnOn() > 0; i++) {
     if (i >= 40) die("사용자 앱에서 AI 턴이 20분 넘게 도는 중 — 자가 점검 앱을 띄우지 않음(턴이 끝난 뒤 다시)");
     if (i === 0) console.log("  … 사용자 앱에서 AI 턴이 도는 중 — 끝날 때까지 기다려요(30초마다 확인 · 최대 20분)");
     Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 30_000);
