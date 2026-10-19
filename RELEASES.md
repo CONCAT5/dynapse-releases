@@ -438,3 +438,4 @@
 | 2026-10-19T00:30:02.209Z | windows | ota | 0.1.80+ota5 | - | ota-served-verified | src 08896719e · 덱 리워드 제출 반려 수정(tokens.css), PPTX 글꼴 넣기·줄 유지, 카드뉴스 시리즈·학생/단체, 받지 못한 턴 다시 보내기, 모양 바꾸기 문장 보존, 재고 덱 색 유지 |
 | 2026-10-19T01:09:04.746Z | windows | ota | 0.1.80+ota6 | - | ota-served-verified | src dc6227e2a · 깨진 장 목록 복구·모양 바꾸기 ⌘Z·PPTX 브라우저 대기·보상 제출 중복 방지(#177 #178) |
 | 2026-10-19T01:25:51.138Z | macos | ota | 0.1.80+ota25 | - | ota-served-verified | src 506aaa6d8 · 모양을 바꾼 뒤 ⌘Z로 되돌리기 · 제목 고침에도 장 순서 그대로 · Gemini PC 리워드 제출 고침 · 공유 끈 작업 받기 고침 |
+| 2026-10-19T02:28:16.831Z | windows | ota | 0.1.80+ota7 | - | ota-served-verified | src 7a1867d66 · 첫 방문 카드뉴스 채우기·주제별 색·채택 즉시 공개(#175 #179) |
