@@ -442,3 +442,4 @@
 | 2026-10-19T03:54:34.263Z | macos | ota | 0.1.80+ota26 | - | ota-served-verified | src 9a5ef1ac8 · 모양을 바꾼 뒤 ⌘Z가 보던 장 그대로 돌아와요 |
 | 2026-10-19T04:16:51.255Z | macos | beta | 0.1.81 | macos-v0.1.81 | beta-served-verified | src fa1ca97e4 · 사진 넣기·색면 채우기 고침 · 설치가 막힌 이유 안내 · 장 목록 복구 |
 | 2026-10-19T04:18:18.338Z | macos | stable | 0.1.81 | macos-v0.1.81 | stable-served-verified |  |
+| 2026-10-19T04:38:29.486Z | macos | ota | 0.1.81+ota1 | - | ota-served-verified | src 0f7b439c5 · 한 문장뿐인 장도 다른 모양을 셋 골라요 |
