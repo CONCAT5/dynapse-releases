@@ -450,3 +450,4 @@
 | 2026-10-19T08:03:03.932Z | macos | ota | 0.1.81+ota3 | - | ota-served-verified | src f31c21003 · AI 로그인이 풀리면 한 줄과 [다시 로그인] |
 | 2026-10-19T08:36:51.713Z | macos | ota | 0.1.81+ota4 | - | ota-served-verified | src d8d2576fa · 사진 저장 확인 · 멤버가 아닐 때 한 줄 · 초대 링크를 앱 계정으로 |
 | 2026-10-19T09:10:10.026Z | windows | ota | 0.1.81+ota2 | - | ota-served-verified | src 696caa8c1 · 업데이트가 막히면 이유+설치 파일 받기·AI 로그인 풀림 다시 잇기·사진 저장 확인·초대 계정 합치기(#185 #186) |
+| 2026-10-19T09:29:58.588Z | macos | ota | 0.1.81+ota5 | - | ota-served-verified | src 059c28b6c · 업데이트가 안 되면 [설치 파일 받기] 한 줄 · 옛 판 안내 |
