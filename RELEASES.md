@@ -454,3 +454,4 @@
 | 2026-10-19T09:50:24.540Z | macos | ota | 0.1.81+ota6 | - | ota-served-verified | src 46c0ee705 · 바꾼 장 순서대로 내보내기 · 순서를 바꾸면 장 번호도 |
 | 2026-10-19T10:48:41.610Z | windows | ota | 0.1.81+ota3 | - | ota-served-verified | src e468accdd · 바꾼 장 순서대로 내보내기·무거운 턴 바로 시작·속성 패널 글꼴/크기·업데이트 실패 시 설치 파일 줄(#185 #187 #189 #190) |
 | 2026-10-19T13:05:49.359Z | macos | beta | 0.1.82 | macos-v0.1.82 | beta-served-verified | src b379ca6c2 · 내보내기 중 앱이 멈추지 않아요 · 바꾼 장 순서대로 내보내기 · 두 장 동시에 고치기 · 앱 첫 화면 정리 |
+| 2026-10-19T13:07:40.524Z | macos | stable | 0.1.82 | macos-v0.1.82 | stable-served-verified |  |
