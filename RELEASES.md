@@ -451,3 +451,4 @@
 | 2026-10-19T08:36:51.713Z | macos | ota | 0.1.81+ota4 | - | ota-served-verified | src d8d2576fa · 사진 저장 확인 · 멤버가 아닐 때 한 줄 · 초대 링크를 앱 계정으로 |
 | 2026-10-19T09:10:10.026Z | windows | ota | 0.1.81+ota2 | - | ota-served-verified | src 696caa8c1 · 업데이트가 막히면 이유+설치 파일 받기·AI 로그인 풀림 다시 잇기·사진 저장 확인·초대 계정 합치기(#185 #186) |
 | 2026-10-19T09:29:58.588Z | macos | ota | 0.1.81+ota5 | - | ota-served-verified | src 059c28b6c · 업데이트가 안 되면 [설치 파일 받기] 한 줄 · 옛 판 안내 |
+| 2026-10-19T09:50:24.540Z | macos | ota | 0.1.81+ota6 | - | ota-served-verified | src 46c0ee705 · 바꾼 장 순서대로 내보내기 · 순서를 바꾸면 장 번호도 |
