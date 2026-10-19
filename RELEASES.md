@@ -459,3 +459,4 @@
 | 2026-10-19T19:01:07.882Z | windows | beta | 0.1.82 | windows-v0.1.82 | beta-served-verified | src bf57eee2c · unsigned · PDF 내보내기 멈춤·창 크기 되돌림 수정(긴 작업을 화면 밖에서, #188), 업데이트 실패 시 설치 파일 받기, 온보딩 한 화면 한 일(#184) |
 | 2026-10-19T19:03:31.853Z | windows | stable | 0.1.82 | windows-v0.1.82 | stable-served-verified |  |
 | 2026-10-19T19:51:32.150Z | windows | ota | 0.1.82+ota1 | - | ota-served-verified | src 57a4746e7 · 덱 그림 톤 하나로·이 장 그림으로 설명·📍 요청은 그 칸 안에서·보상 바로 공개·발표 순서 수정(#192~#198) |
+| 2026-10-19T23:51:08.604Z | macos | ota | 0.1.82+ota2 | - | ota-served-verified | src 700b7f7df · 사진 AI가 막히면 다른 AI·이 PC로 이어서 · 만들 길이 없을 때만 카드 하나 · 사진 진행 표시 |
