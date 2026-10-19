@@ -456,3 +456,4 @@
 | 2026-10-19T13:05:49.359Z | macos | beta | 0.1.82 | macos-v0.1.82 | beta-served-verified | src b379ca6c2 · 내보내기 중 앱이 멈추지 않아요 · 바꾼 장 순서대로 내보내기 · 두 장 동시에 고치기 · 앱 첫 화면 정리 |
 | 2026-10-19T13:07:40.524Z | macos | stable | 0.1.82 | macos-v0.1.82 | stable-served-verified |  |
 | 2026-10-19T13:48:38.949Z | macos | ota | 0.1.82+ota1 | - | ota-served-verified | src 31edd651b · 덱 그림 톤을 하나로 맞춰요 · 이 장 그림으로 설명되게 · 보고서 문장을 발표 문구로 |
+| 2026-10-19T19:01:07.882Z | windows | beta | 0.1.82 | windows-v0.1.82 | beta-served-verified | src bf57eee2c · unsigned · PDF 내보내기 멈춤·창 크기 되돌림 수정(긴 작업을 화면 밖에서, #188), 업데이트 실패 시 설치 파일 받기, 온보딩 한 화면 한 일(#184) |
