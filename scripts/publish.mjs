@@ -245,7 +245,12 @@ step("3b", "자가 점검");
 }
 const scBin = platform === "macos" ? join(one("macos", ".app"), "Contents", "MacOS", "dynapse-desktop") : join(bundleDir, "..", "dynapse-desktop.exe");
 const scOut = join(work, "selfcheck.json");
-const sc = run(scBin, ["--selfcheck", "--selfcheck-out", scOut], { timeout: 420_000 });
+// --journey(#174 ①): 실제 앱 여정 — 새 점검 기기 계정(운영 서버 selfcheck 표시)으로 디자인 입히기 → 받기 → 다른 모양 ≥3 → 적용·⌘Z → 사진 → Claude 턴(하루 한 번, 이 맥의 Claude 로그인) → PPTX(글꼴·줄) → 다시 들이기 → 제출 전 L0(0P) → 정리.
+// 여정은 네이티브 점검과 함께 돌고 네이티브가 최대 8분 기다린다 — 전체 15분. 대표 앱의 턴은 위에서 끝날 때까지 기다렸다
+// 서버 쪽(점검 계정·정리 /api/app/selfcheck)이 운영에 있을 때만 — 없으면(401이 아니면) 여정 없이 예전 점검만 하고 한 줄 경고
+const journeyReady = await fetch("https://dynapse.ai/api/app/selfcheck", { method: "DELETE" }).then(r => r.status === 401).catch(() => false);
+if (!journeyReady) console.log("  ⚠ 운영 서버에 여정 점검 길(/api/app/selfcheck)이 없음 — 여정 없이 자가 점검");
+const sc = run(scBin, ["--selfcheck", ...(journeyReady ? ["--journey"] : []), "--selfcheck-out", scOut], { timeout: 900_000 });
 const scJ = existsSync(scOut) ? JSON.parse(readFileSync(scOut, "utf8")) : null;
 if (!scJ) die(`자가 점검 결과가 없음 (exit ${sc.code})\n${(sc.err || sc.out || "").slice(-600)}`);
 for (const k of scJ.checks ?? []) console.log(`  ${k.ok ? "✓" : "✗"} ${k.name} ${k.ms}ms${k.note ? ` · ${k.note}` : ""}`);
