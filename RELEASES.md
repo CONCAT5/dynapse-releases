@@ -439,3 +439,4 @@
 | 2026-10-19T01:09:04.746Z | windows | ota | 0.1.80+ota6 | - | ota-served-verified | src dc6227e2a · 깨진 장 목록 복구·모양 바꾸기 ⌘Z·PPTX 브라우저 대기·보상 제출 중복 방지(#177 #178) |
 | 2026-10-19T01:25:51.138Z | macos | ota | 0.1.80+ota25 | - | ota-served-verified | src 506aaa6d8 · 모양을 바꾼 뒤 ⌘Z로 되돌리기 · 제목 고침에도 장 순서 그대로 · Gemini PC 리워드 제출 고침 · 공유 끈 작업 받기 고침 |
 | 2026-10-19T02:28:16.831Z | windows | ota | 0.1.80+ota7 | - | ota-served-verified | src 7a1867d66 · 첫 방문 카드뉴스 채우기·주제별 색·채택 즉시 공개(#175 #179) |
+| 2026-10-19T03:54:34.263Z | macos | ota | 0.1.80+ota26 | - | ota-served-verified | src 9a5ef1ac8 · 모양을 바꾼 뒤 ⌘Z가 보던 장 그대로 돌아와요 |
