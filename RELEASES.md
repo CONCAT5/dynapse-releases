@@ -465,3 +465,4 @@
 | 2026-10-20T01:55:36.479Z | windows | beta | 0.1.83 | windows-v0.1.83 | beta-served-verified | src d2b969c4c · unsigned · 업데이트가 회사망에서도(우리 주소로) · 창 없이 조용히 설치 · 쓰는 중엔 다시 시작하지 않음 · 장별 동시 작업(#191) |
 | 2026-10-20T01:57:30.835Z | windows | stable | 0.1.83 | windows-v0.1.83 | stable-served-verified |  |
 | 2026-10-20T03:37:15.558Z | macos | beta | 0.1.83 | macos-v0.1.83 | beta-served-verified | src f10773420 · 0.1.83 — 리워드는 계획 뒤 한 장씩 만들고 알아서 제출 · 제출 확인은 한 번만(막는 건 계약 위반뿐) · 카드 덱은 카드 크기 그대로 · 업데이트 주소를 우리 서버로 · 쪽 번호를 덱 전체에서 · ChatGPT 로그인 끊김 고침 |
+| 2026-10-20T03:39:04.556Z | macos | stable | 0.1.83 | macos-v0.1.83 | stable-served-verified |  |
