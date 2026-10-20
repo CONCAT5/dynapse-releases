@@ -1,0 +1,155 @@
+{
+  "arch": "x86_64",
+  "at": 1792461254,
+  "checks": [
+    {
+      "ms": 1002,
+      "name": "load",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 4760,
+      "name": "heartbeat",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 751,
+      "name": "reload",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 502,
+      "name": "hard_reload",
+      "note": "로그인 유지: 시험 계정 없음 — 건너뜀",
+      "ok": true
+    },
+    {
+      "ms": 28876,
+      "name": "watchdog_recover",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 24195,
+      "name": "hidden_close",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 3014,
+      "name": "offline_viewer",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 16,
+      "name": "reward_tokens",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 583,
+      "name": "journey_account",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 2915,
+      "name": "journey_instant",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 8241,
+      "name": "journey_pull",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 6700,
+      "name": "journey_band",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 12534,
+      "name": "journey_apply_undo",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 60,
+      "name": "journey_photo",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 0,
+      "name": "journey_ai_turn",
+      "note": "skip: 이 실행은 AI 턴 없음",
+      "ok": true
+    },
+    {
+      "ms": 0,
+      "name": "journey_pin_turn",
+      "note": "skip: 이 실행은 AI 턴 없음",
+      "ok": true
+    },
+    {
+      "ms": 0,
+      "name": "journey_lanes",
+      "note": "skip: 이 실행은 AI 턴 없음",
+      "ok": true
+    },
+    {
+      "ms": 7444,
+      "name": "journey_pptx",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 4638,
+      "name": "journey_pdf",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 4163,
+      "name": "journey_reimport",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 975,
+      "name": "journey_reward_l0",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 441,
+      "name": "journey_cleanup",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 3364,
+      "name": "net_fix",
+      "note": "인증서 150 · 프록시 없음",
+      "ok": true
+    },
+    {
+      "ms": 1039,
+      "name": "update_feed",
+      "note": "",
+      "ok": true
+    }
+  ],
+  "ms": 68206,
+  "os": "windows",
+  "pass": 24,
+  "total": 24,
+  "version": "0.1.83"
+}

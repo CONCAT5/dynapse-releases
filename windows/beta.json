@@ -1,11 +1,11 @@
 {
-  "version": "0.1.82",
-  "notes": "PDF 내보내기 멈춤·창 크기 되돌림 수정(긴 작업을 화면 밖에서, #188), 업데이트 실패 시 설치 파일 받기, 온보딩 한 화면 한 일(#184)",
-  "pub_date": "2026-10-19T19:00:01Z",
+  "version": "0.1.83",
+  "notes": "업데이트가 회사망에서도(우리 주소로) · 창 없이 조용히 설치 · 쓰는 중엔 다시 시작하지 않음 · 장별 동시 작업(#191)",
+  "pub_date": "2026-10-20T01:54:26Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.82/Dynapse_0.1.82_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjV2WHBZRjVrRVVzaDIxQVEybXJKTVJVSnl3MzFxTE96MDFZSFBSeWQ0T0ozWjhiaWpjTEt5TVNkeG53d0tFQlhCQjFmcWdnb3RtSmpFamxpZjc0eXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDM2MzE2CWZpbGU6RHluYXBzZV8wLjEuODJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS44MgpjWHgzOEpYVzhIK2hKbkQ5c2dhWnpsZkJrbGVWTnAyZGRrS2JHL3dHcTBOVTdOdWFSSnl1TnVaWWVFNFBpNUdNdHN6ZGJYbWhQenZZY1NUSkZZNnpBUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.83/Dynapse_0.1.83_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnpkVkxjTy9Sc2xVZnBnUzYvKzlKMUJ0QXBhVDArNkl4N2tPZGs5emczcVFTVVZ5RlQ0cldoMGNIRThDR2dyMG5Lbm44VEdtd2NISEJodVd0ZTRkZ2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDYxMTczCWZpbGU6RHluYXBzZV8wLjEuODNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS44MwpJSjVwaXQzK3psQ2lCNlpDVVBSdzZYOVUxeit0eEh6S0FOY1VZM0lRTmdtNVl6N1h6Ykd5V1RXMVZxWDR1L21sR1NQVUpWbnBHa0lJQ2ppMG5VU2tBQT09Cg=="
     }
   }
 }
