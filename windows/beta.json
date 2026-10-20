@@ -1,11 +1,11 @@
 {
-  "version": "0.1.84",
-  "notes": "리워드는 계획 뒤 한 장씩 만들고 알아서 제출 · 제출 확인 한 번 · 카드 덱은 카드 크기 그대로 · ChatGPT 로그인 끊김 고침 · 사진 사다리 · 덱 모티프 · 대화 바꾸기(#199 #201 #204 #205 #211~#214)",
-  "pub_date": "2026-10-20T04:28:05Z",
+  "version": "0.1.85",
+  "notes": "Gemini 로그인을 창 없이 — 브라우저에서 로그인하고 코드를 복사만 하면 앱이 넣어요 · Windows 리워드 제출 실패(명령줄 길이) 고침 · 홈 입력 하나·인쇄 리워드(#217 #220 #221)",
+  "pub_date": "2026-10-20T07:24:06Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.84/Dynapse_0.1.84_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjRCMjFGemltSnlrMmJWcUt5QVRSVENKeGI2aHU2d0hVRzQzWUI1YkZLanFtanhYV1RqL1RoZ3dzc0VDYWNibjVIaW5iY2MzVUVMU0VFNnlZN2U0OXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDcwMzkwCWZpbGU6RHluYXBzZV8wLjEuODRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS44NApNZXhiVG16YzhYVkNJVG1NRnk0U1RKWWpxUjljZjRMM2pIeXRvcThmU1R5YlFNTGZVbjRaUXZMN05SbTFTMmYrMDYzSWd0SFVEbWJJRS9RZ1NzRG9Ddz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.85/Dynapse_0.1.85_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjRCTmpVZzdjNjhzVXBoN3FwdjFuSHd3Mk9uc0VzVzBKaXJmeU9iNjJtZ3BkeWtPMXZSdFFtM3JoZFNudTJVMzA0RVdHd000ZTFMeDh6d3FFTnhsQVFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDgwOTYxCWZpbGU6RHluYXBzZV8wLjEuODVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS44NQp6WUNQeWZjcTJSak5XNWVyWWw0SXF4cDhhd0hOVHVlTnpQYjdEc243ZDdycGEzdkNXLy8rbmZlZjlYR3hCcWN4SDlITlVvRmREY0JHMzIwMm5ZYVJBQT09Cg=="
     }
   }
 }
