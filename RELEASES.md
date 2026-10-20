@@ -471,3 +471,4 @@
 | 2026-10-20T06:56:44.330Z | macos | beta | 0.1.85 | macos-v0.1.85 | beta-served-verified | src 7d575fd45 · 0.1.85 — 내보내기 버튼이 작업 형식에 맞는 파일을 골라요 · 인쇄 작업은 인쇄소에 보낼 PDF로 · Gemini 로그인을 앱 안에서 |
 | 2026-10-20T06:58:26.301Z | macos | stable | 0.1.85 | macos-v0.1.85 | stable-served-verified |  |
 | 2026-10-20T07:25:42.775Z | windows | beta | 0.1.85 | windows-v0.1.85 | beta-served-verified | src 92c491ccd · unsigned · Gemini 로그인을 창 없이 — 브라우저에서 로그인하고 코드를 복사만 하면 앱이 넣어요 · Windows 리워드 제출 실패(명령줄 길이) 고침 · 홈 입력 하나·인쇄 리워드(#217 #220 #221) |
+| 2026-10-20T07:29:48.674Z | windows | stable | 0.1.85 | windows-v0.1.85 | stable-served-verified |  |
