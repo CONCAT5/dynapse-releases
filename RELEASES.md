@@ -468,3 +468,4 @@
 | 2026-10-20T03:39:04.556Z | macos | stable | 0.1.83 | macos-v0.1.83 | stable-served-verified |  |
 | 2026-10-20T04:29:13.646Z | windows | beta | 0.1.84 | windows-v0.1.84 | beta-served-verified | src e1d384b09 · unsigned · 리워드는 계획 뒤 한 장씩 만들고 알아서 제출 · 제출 확인 한 번 · 카드 덱은 카드 크기 그대로 · ChatGPT 로그인 끊김 고침 · 사진 사다리 · 덱 모티프 · 대화 바꾸기(#199 #201 #204 #205 #211~#214) |
 | 2026-10-20T04:30:37.447Z | windows | stable | 0.1.84 | windows-v0.1.84 | stable-served-verified |  |
+| 2026-10-20T06:56:44.330Z | macos | beta | 0.1.85 | macos-v0.1.85 | beta-served-verified | src 7d575fd45 · 0.1.85 — 내보내기 버튼이 작업 형식에 맞는 파일을 골라요 · 인쇄 작업은 인쇄소에 보낼 PDF로 · Gemini 로그인을 앱 안에서 |
