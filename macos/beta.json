@@ -1,15 +1,15 @@
 {
-  "version": "0.1.82",
-  "notes": "내보내기 중 앱이 멈추지 않아요 · 바꾼 장 순서대로 내보내기 · 두 장 동시에 고치기 · 앱 첫 화면 정리",
-  "pub_date": "2026-10-19T13:04:43Z",
+  "version": "0.1.83",
+  "notes": "0.1.83 — 리워드는 계획 뒤 한 장씩 만들고 알아서 제출 · 제출 확인은 한 번만(막는 건 계약 위반뿐) · 카드 덱은 카드 크기 그대로 · 업데이트 주소를 우리 서버로 · 쪽 번호를 덱 전체에서 · ChatGPT 로그인 끊김 고침",
+  "pub_date": "2026-10-20T03:36:09Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.82/Dynapse_0.1.82_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3c0bXM1Z1VUNzY3bytwejVqaTBHUEpFaVRzVVZjMjZWbk14RHF4WDBNdjRyQThTeXZDSUQzWWdYdlNuQ0UxcCtWRWMrWTV4NDBlaXc3bzdaS25nS0FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDE0OTQxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjgyCitCd05YVXhtQjhVY05EZUhsZnIxVFo2TzhpQ00wS2R5MmVjK3VLVmxWYldsUXFoclV4UWNLVGdCMDArQ3R1aFRpa3NVWkJZNFRkQ1FtN2hEb3dqMEFnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.83/Dynapse_0.1.83_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzQwcDVFQ2l5TzI2U1pRb1IxY0FHdkdqT0lJblAwWWtvUEM0aVNuWThrOG51aG9sa2RTSGpNb21NNDZjOHZRQjZZamJUNkZEYzExMmQ1UWVYUE9CV1F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDY3MjYwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjgzCllTQjV0cFhnOEJsK2RHYzZPK0J5V0xmN0VDKy8xOXplNHVkVzZtTG1PbzRvajhHTzJrZFhyR1JVZnVXM3JTSENtczJCM0xGOWtzZTh6WHMxWHhLRUJBPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.82/Dynapse_0.1.82_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3c0bXM1Z1VUNzY3bytwejVqaTBHUEpFaVRzVVZjMjZWbk14RHF4WDBNdjRyQThTeXZDSUQzWWdYdlNuQ0UxcCtWRWMrWTV4NDBlaXc3bzdaS25nS0FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDE0OTQxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjgyCitCd05YVXhtQjhVY05EZUhsZnIxVFo2TzhpQ00wS2R5MmVjK3VLVmxWYldsUXFoclV4UWNLVGdCMDArQ3R1aFRpa3NVWkJZNFRkQ1FtN2hEb3dqMEFnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.83/Dynapse_0.1.83_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzQwcDVFQ2l5TzI2U1pRb1IxY0FHdkdqT0lJblAwWWtvUEM0aVNuWThrOG51aG9sa2RTSGpNb21NNDZjOHZRQjZZamJUNkZEYzExMmQ1UWVYUE9CV1F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDY3MjYwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjgzCllTQjV0cFhnOEJsK2RHYzZPK0J5V0xmN0VDKy8xOXplNHVkVzZtTG1PbzRvajhHTzJrZFhyR1JVZnVXM3JTSENtczJCM0xGOWtzZTh6WHMxWHhLRUJBPT0K"
     }
   }
 }
