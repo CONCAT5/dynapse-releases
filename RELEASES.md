@@ -467,3 +467,4 @@
 | 2026-10-20T03:37:15.558Z | macos | beta | 0.1.83 | macos-v0.1.83 | beta-served-verified | src f10773420 · 0.1.83 — 리워드는 계획 뒤 한 장씩 만들고 알아서 제출 · 제출 확인은 한 번만(막는 건 계약 위반뿐) · 카드 덱은 카드 크기 그대로 · 업데이트 주소를 우리 서버로 · 쪽 번호를 덱 전체에서 · ChatGPT 로그인 끊김 고침 |
 | 2026-10-20T03:39:04.556Z | macos | stable | 0.1.83 | macos-v0.1.83 | stable-served-verified |  |
 | 2026-10-20T04:29:13.646Z | windows | beta | 0.1.84 | windows-v0.1.84 | beta-served-verified | src e1d384b09 · unsigned · 리워드는 계획 뒤 한 장씩 만들고 알아서 제출 · 제출 확인 한 번 · 카드 덱은 카드 크기 그대로 · ChatGPT 로그인 끊김 고침 · 사진 사다리 · 덱 모티프 · 대화 바꾸기(#199 #201 #204 #205 #211~#214) |
+| 2026-10-20T04:30:37.447Z | windows | stable | 0.1.84 | windows-v0.1.84 | stable-served-verified |  |
