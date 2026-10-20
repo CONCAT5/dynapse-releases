@@ -474,3 +474,4 @@
 | 2026-10-20T07:29:48.674Z | windows | stable | 0.1.85 | windows-v0.1.85 | stable-served-verified |  |
 | 2026-10-20T08:10:37.500Z | macos | ota | 0.1.85+ota1 | - | ota-served-verified | src def66e937 · 제출 전 사진 묶기·빈 칸 자동 처리, Gemini 로그인 확인 표시, 접는 인쇄물 제출 |
 | 2026-10-20T08:25:11.072Z | windows | ota | 0.1.85+ota1 | - | ota-served-verified | src def66e937 · 리워드 사진 칸 연결 고침·빈 글 칸 앱이 정리·연결 필요 카드 하나로·리워드 장 묶어 만들기(#211 #214 #225) |
+| 2026-10-20T09:38:25.140Z | macos | ota | 0.1.85+ota2 | - | ota-served-verified | src 3565afbca · AI 제출 거절 시 앱이 다시 제출, 사진 장 정리, 리워드 덱 묶음 턴 |
