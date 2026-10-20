@@ -463,3 +463,4 @@
 | 2026-10-20T00:37:11.723Z | macos | ota | 0.1.82+ota3 | - | ota-served-verified | src 4e3df8d59 · 리워드 19세 확인을 작업실 안에서 · Gemini 로그인 코드 자동 넣기 · 리워드는 앱이 먼저 맡아요 |
 | 2026-10-20T00:51:47.283Z | macos | ota | 0.1.82+ota4 | - | ota-served-verified | src d59ff313a · ChatGPT 로그인이 중간에 끊기지 않아요 |
 | 2026-10-20T01:55:36.479Z | windows | beta | 0.1.83 | windows-v0.1.83 | beta-served-verified | src d2b969c4c · unsigned · 업데이트가 회사망에서도(우리 주소로) · 창 없이 조용히 설치 · 쓰는 중엔 다시 시작하지 않음 · 장별 동시 작업(#191) |
+| 2026-10-20T01:57:30.835Z | windows | stable | 0.1.83 | windows-v0.1.83 | stable-served-verified |  |
