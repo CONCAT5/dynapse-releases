@@ -143,9 +143,10 @@ const overlay = {
   plugins: {
     updater: {
       pubkey: pubkeyOf(c, platform),
-      endpoints: [`${c.pagesBase}/${platform}/latest.json`], // 빌드 시점에 플랫폼별 고정 (§3.2). beta는 앱이 latest→beta로 바꿔 확인
+      // 빌드 시점에 플랫폼별 고정 (§3.2). beta는 앱이 latest→beta로 바꿔 확인. 우리 주소(허브가 Pages를 비춘다 · 설치 파일도 우리 주소로)가 먼저, Pages가 다음 — GitHub이 막힌 회사망(2026-10-20). OTA도 같은 순서(ota.rs pages_bases)
+      endpoints: [`${c.feedMirror ?? "https://dynapse.ai/api/app/feed"}/${platform}/latest.json`, `${c.pagesBase}/${platform}/latest.json`],
       requireSignedVersion: true,
-      windows: { installMode: "passive" },
+      windows: { installMode: "quiet" },   // 창 없이 설치하고 다시 켠다(/S /R · 사용자 설치라 권한 창 없음) — 2026-10-20 "심리스"
     },
   },
 };
