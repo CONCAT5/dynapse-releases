@@ -488,3 +488,4 @@
 | 2026-10-21T05:27:33.051Z | macos | ota | 0.1.85+ota11 | - | ota-served-verified | src a2800d1f2 · 장 크기 지키기(직접 말하면 허용) · 조금 옮기기 앱이 바로 · 한국어판 남은 영어 다시 번역 |
 | 2026-10-21T05:51:37.778Z | macos | ota | 0.1.85+ota12 | - | ota-served-verified | src 581665522 · 장 크기 되돌리기는 이름 댄 장만 |
 | 2026-10-21T06:38:02.842Z | macos | ota | 0.1.85+ota13 | - | ota-served-verified | src d86e58ab8 · 인쇄용 PDF·AI 사용 기록 내보내기 · 빈 공간 채우기·짚은 자리 검사가 실제로 돌아요 · 청첩장 예시 사진 뒷모습으로 |
+| 2026-10-21T06:54:22.620Z | windows | ota | 0.1.85+ota4 | - | ota-served-verified | src cc2cf0fe4 · 인쇄 PDF 막힘 고침·내보내기 하나로·리워드 사진 4장·모바일 리워드·번역·장 크기(#240~#244) |
