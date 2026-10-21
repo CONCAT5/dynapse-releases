@@ -490,3 +490,4 @@
 | 2026-10-21T06:38:02.842Z | macos | ota | 0.1.85+ota13 | - | ota-served-verified | src d86e58ab8 · 인쇄용 PDF·AI 사용 기록 내보내기 · 빈 공간 채우기·짚은 자리 검사가 실제로 돌아요 · 청첩장 예시 사진 뒷모습으로 |
 | 2026-10-21T06:54:22.620Z | windows | ota | 0.1.85+ota4 | - | ota-served-verified | src cc2cf0fe4 · 인쇄 PDF 막힘 고침·내보내기 하나로·리워드 사진 4장·모바일 리워드·번역·장 크기(#240~#244) |
 | 2026-10-21T07:03:27.658Z | macos | ota | 0.1.85+ota14 | - | ota-served-verified | src 31ca52097 · 모바일 청첩장 리워드 제출 |
+| 2026-10-21T07:11:52.038Z | windows | ota | 0.1.85+ota5 | - | ota-served-verified | src 82e51d909 · 모바일 리워드 제출 고침·모바일 핀으로 시작한 작업은 덱으로(#230 #245) |
