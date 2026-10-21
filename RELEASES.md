@@ -477,3 +477,4 @@
 | 2026-10-20T09:38:25.140Z | macos | ota | 0.1.85+ota2 | - | ota-served-verified | src 3565afbca · AI 제출 거절 시 앱이 다시 제출, 사진 장 정리, 리워드 덱 묶음 턴 |
 | 2026-10-20T10:50:55.205Z | macos | ota | 0.1.85+ota3 | - | ota-served-verified | src f23c67826 · 인쇄 판 계약 오류 자동 고침·제출 한 번으로 끝까지, 카드 쪽 번호 기본 숨김, 밝은 사진 기본, 제출 중 단계 표시 |
 | 2026-10-20T23:45:16.518Z | macos | ota | 0.1.85+ota4 | - | ota-served-verified | src 8ca9ff348 · 청첩장 인물 사진 대신 내 사진 자리, 리워드 브리프 보관 |
+| 2026-10-21T00:24:00.616Z | macos | ota | 0.1.85+ota5 | - | ota-served-verified | src 2d29a5858 · 계획만 말하고 멈춘 턴을 앱이 이어서, 짧은 승낙은 같은 등급으로 |
