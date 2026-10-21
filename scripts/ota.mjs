@@ -45,7 +45,7 @@ if (tsc.code !== 0) die(`tsc 실패 — OTA 안 함\n${(tsc.out || tsc.err).slic
 const hubDir = join(src, "..", "hub");
 if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
   must("pnpm", ["install", "--frozen-lockfile"], { cwd: hubDir });   // 빌드 사본의 허브 의존성을 잠금 파일대로(낡으면 sync-sim이 PGlite를 못 찾았다 — 2026-10-16 저녁)
-  const sim = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", "scripts/sync-sim.mts"], { cwd: hubDir, timeout: 900_000 });
+  const sim = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", "scripts/sync-sim.mts"], { cwd: hubDir, timeout: 1_800_000 })   /* 30분 — 시나리오가 늘어 Windows에서 16분(2026-10-21) */;
   const line = (sim.out.match(/sync-sim \d+\/\d+/) ?? [""])[0];
   if (sim.code !== 0) { const L = sim.out.split("\n"); die(`sync-sim 실패(${line}) — OTA 안 함\n${L.flatMap((l, i) => (/✗/.test(l) ? [l, ...L.slice(i + 1, i + 4).filter(x => /^ {4}/.test(x) && !/\[timing\]/.test(x))] : [])).slice(0, 24).join("\n")}`); }   // ✗ 아래 확인 줄까지(무엇이 틀렸는지)
   console.log(`  ✓ tsc · ${line}`);
