@@ -492,3 +492,4 @@
 | 2026-10-21T07:03:27.658Z | macos | ota | 0.1.85+ota14 | - | ota-served-verified | src 31ca52097 · 모바일 청첩장 리워드 제출 |
 | 2026-10-21T07:11:52.038Z | windows | ota | 0.1.85+ota5 | - | ota-served-verified | src 82e51d909 · 모바일 리워드 제출 고침·모바일 핀으로 시작한 작업은 덱으로(#230 #245) |
 | 2026-10-21T07:38:16.745Z | macos | ota | 0.1.85+ota15 | - | ota-served-verified | src 648b8ce71 · 청첩장 리워드 색이 회색으로 나오지 않아요 · 제출 때 색 토큰을 자동으로 넣어요 · 청첩장에 예시 브랜드 이름이 찍히지 않아요 |
+| 2026-10-21T08:08:03.786Z | macos | ota | 0.1.85+ota16 | - | ota-served-verified | src 115bc8637 · 리워드 초안부터 고른 색으로 보여요 |
