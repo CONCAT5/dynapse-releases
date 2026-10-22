@@ -1,11 +1,11 @@
 {
-  "version": "0.1.85",
-  "notes": "Gemini 로그인을 창 없이 — 브라우저에서 로그인하고 코드를 복사만 하면 앱이 넣어요 · Windows 리워드 제출 실패(명령줄 길이) 고침 · 홈 입력 하나·인쇄 리워드(#217 #220 #221)",
-  "pub_date": "2026-10-20T07:24:06Z",
+  "version": "0.1.86",
+  "notes": "흰 제목 띠 — 창 위 띠와 화면이 한 장으로(다크 모드 PC도 밝게) · 토큰 갱신 한 번에 하나 · 받아 둔 화면 묶음 바로 적용",
+  "pub_date": "2026-10-22T09:39:48Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.85/Dynapse_0.1.85_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjRCTmpVZzdjNjhzVXBoN3FwdjFuSHd3Mk9uc0VzVzBKaXJmeU9iNjJtZ3BkeWtPMXZSdFFtM3JoZFNudTJVMzA0RVdHd000ZTFMeDh6d3FFTnhsQVFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDgwOTYxCWZpbGU6RHluYXBzZV8wLjEuODVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS44NQp6WUNQeWZjcTJSak5XNWVyWWw0SXF4cDhhd0hOVHVlTnpQYjdEc243ZDdycGEzdkNXLy8rbmZlZjlYR3hCcWN4SDlITlVvRmREY0JHMzIwMm5ZYVJBQT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.86/Dynapse_0.1.86_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjFyaEhtaDFXZFI3bUZFemtUZ0ZiOHdrUXBSemhFRkJWbVczanVUODhzU3diYXNMdUhSaE5iZWpqdDQzNVN2d2dsQ3ZhRGRTZEJueXFGVWQxamFhN2dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjYxODgxCWZpbGU6RHluYXBzZV8wLjEuODZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS44NgpjaE5ORW55bmxEeDVJYjlBTFZFenl1NnljdXlRNWtJbW5QNXhPWFl2U290ZnhSa0MrTFlyNDFCV3RVa09oUXdUNVRlR0tyYjdaK0FVOFpTOUx4QklCZz09Cg=="
     }
   }
 }
