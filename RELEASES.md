@@ -507,3 +507,4 @@
 | 2026-10-22T09:09:01.614Z | windows | ota | 0.1.85+ota12 | - | ota-served-verified | src 1535dadca · 토큰 갱신 한 번에 하나(로그아웃 고침)·받아 둔 화면 묶음이 앱 재시작 없이 적용·리워드 예시 사진 표시·최신(#264 #267 #270 #271) |
 | 2026-10-22T09:18:36.128Z | macos | ota | 0.1.85+ota22 | - | ota-served-verified | src a929997b0 · 사진을 바꾸면 AI 예시 사진 표시가 사라져요 |
 | 2026-10-22T09:40:55.081Z | windows | beta | 0.1.86 | windows-v0.1.86 | beta-served-verified | src b18630731 · unsigned · 흰 제목 띠 — 창 위 띠와 화면이 한 장으로(다크 모드 PC도 밝게) · 토큰 갱신 한 번에 하나 · 받아 둔 화면 묶음 바로 적용 |
+| 2026-10-22T09:42:48.942Z | windows | stable | 0.1.86 | windows-v0.1.86 | stable-served-verified |  |
