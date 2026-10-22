@@ -516,3 +516,4 @@
 | 2026-10-22T15:46:42.000Z | macos | ota | 0.1.86+ota3 | - | ota-served-verified | 늦게 확인: 첫 Pages 빌드(73b9818)가 오류, 장부 커밋(f102329)의 다시 빌드로 ota.json·manifest·sig 서빙 확인 |
 | 2026-10-22T16:09:18.495Z | macos | ota | 0.1.86+ota4 | - | ota-served-verified | src 29cd44f64 · ChatGPT 세 갈래 · 칸만 고치기 · 한 장 글 고치기 |
 | 2026-10-22T17:22:44.292Z | macos | ota | 0.1.86+ota5 | - | ota-served-verified | src 345fe1c1e · 편집 패널 · 그림 틀 · 칸 글 계약 앱 길 |
+| 2026-10-22T18:43:03.971Z | macos | ota | 0.1.86+ota6 | - | ota-served-verified | src 7d4180950 · 리워드 덱 고침 · 색 잠금 |
