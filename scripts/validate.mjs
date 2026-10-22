@@ -14,7 +14,8 @@ const files = git(["ls-files"]).out.split("\n").filter(Boolean);
 // 1) 바이너리·대용량 거부 [사고 4]
 const BIN = /\.(dmg|exe|zip|tar\.gz|msi|app|sig|p8|key|pem|p12)$/i;
 for (const f of files) {
-  if (BIN.test(f)) bad(`바이너리/키 파일 커밋 금지: ${f} (Release asset에만)`);
+  // 화면 묶음 서명(OTA)은 예외 — ota.mjs가 Pages에서 manifest.json.sig가 서빙되는지 확인하고 앱이 그 서명으로 묶음을 검증한다(공개 서명 · 비밀 아님). 그 자리 하나만
+  if (BIN.test(f) && !/^ota\/(macos|windows)\/\d+\.\d+\.\d+\/\d+\/manifest\.json\.sig$/.test(f)) bad(`바이너리/키 파일 커밋 금지: ${f} (Release asset에만)`);
   else if (/(^|\/)\.env(\.|$)/.test(f)) bad(`환경값 파일 커밋 금지: ${f} — 공개 리포다`);
   else if (statSync(join(ROOT, f)).size > 1024 * 1024) bad(`1MB 초과 파일: ${f}`);
 }
@@ -27,7 +28,9 @@ for (const f of files.filter(f => f.endsWith(".json"))) {
   if (!PLATFORMS[dir] || f.split("/").length !== 2) continue;
   if (name === "latest.json" || name === "beta.json") manifestErrors(j, dir, c.owner ? c : null).forEach(m => bad(`${f}: ${m}`));
   else if (name === "download.json") downloadErrors(j, dir, c.owner ? c : null).forEach(m => bad(`${f}: ${m}`));
-  else bad(`${f}: 플랫폼 폴더에는 latest/beta/download.json만 둔다`);
+  // 자가 점검 결과(#141 §4) — publish가 쓰고 promote --selfcheck-ok가 읽는다(그 버전이 전부 통과해야 승격). 모양만 본다: pass·total 숫자, pass ≤ total
+  else if (/^selfcheck-\d+\.\d+\.\d+\.json$/.test(name)) { if (!Number.isInteger(j?.pass) || !Number.isInteger(j?.total) || j.pass > j.total) bad(`${f}: 자가 점검 결과는 {pass, total} 숫자여야 한다`); }
+  else bad(`${f}: 플랫폼 폴더에는 latest/beta/download.json과 selfcheck-<버전>.json만 둔다`);
 }
 
 // 8) 비밀 스캔 [사고 9] — 개인키 헤더, minisign 비밀키(평문/베이스64), 서명 env 대입
