@@ -514,3 +514,4 @@
 | 2026-10-22T14:05:36.147Z | macos | ota | 0.1.86+ota2 | - | ota-served-verified | src 68c51dfbe · 색은 앱이 정한 팔레트로 · 디자인 띠 · 종류 맞춤 추천 |
 | 2026-10-22T15:45:15.276Z | macos | ota | 0.1.86+ota3 | - | ota-SERVE-VERIFY-FAILED | src a87ad0629 · 빠른 첫 결과: AI는 글만, 앱이 장을 짓는다 |
 | 2026-10-22T15:46:42.000Z | macos | ota | 0.1.86+ota3 | - | ota-served-verified | 늦게 확인: 첫 Pages 빌드(73b9818)가 오류, 장부 커밋(f102329)의 다시 빌드로 ota.json·manifest·sig 서빙 확인 |
+| 2026-10-22T16:09:18.495Z | macos | ota | 0.1.86+ota4 | - | ota-served-verified | src 29cd44f64 · ChatGPT 세 갈래 · 칸만 고치기 · 한 장 글 고치기 |
