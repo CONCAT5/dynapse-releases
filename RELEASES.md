@@ -512,3 +512,4 @@
 | 2026-10-22T11:24:18.080Z | macos | stable | 0.1.86 | macos-v0.1.86 | stable-served-verified |  |
 | 2026-10-22T13:23:43.583Z | macos | ota | 0.1.86+ota1 | - | ota-served-verified | src 4c4615113 · 두 장을 연달아 고쳐도 턴이 얽히지 않게 |
 | 2026-10-22T14:05:36.147Z | macos | ota | 0.1.86+ota2 | - | ota-served-verified | src 68c51dfbe · 색은 앱이 정한 팔레트로 · 디자인 띠 · 종류 맞춤 추천 |
+| 2026-10-22T15:45:15.276Z | macos | ota | 0.1.86+ota3 | - | ota-SERVE-VERIFY-FAILED | src a87ad0629 · 빠른 첫 결과: AI는 글만, 앱이 장을 짓는다 |
