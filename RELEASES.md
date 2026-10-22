@@ -496,3 +496,4 @@
 | 2026-10-22T00:50:16.745Z | windows | ota | 0.1.85+ota6 | - | ota-served-verified | src 37c7dc800 · 모바일 청첩장 이어서·리워드 고침(Mac ota15~16과 같음) |
 | 2026-10-22T01:07:18.819Z | windows | ota | 0.1.85+ota7 | - | ota-served-verified | src 3e08d35ba · 제출 전 고칠 때 링크·버튼·사진·섹션을 지우지 않고 고치기 |
 | 2026-10-22T01:24:36.105Z | macos | ota | 0.1.85+ota17 | - | ota-served-verified | src 44c221ee4 · QR 자리에 사진이 들어가지 않아요 · QR 자리는 기본 dynapse.ai QR이고 대화로 주소를 바꿀 수 있어요 |
+| 2026-10-22T02:11:34.668Z | windows | ota | 0.1.85+ota8 | - | ota-served-verified | src c892f35a8 · QR 칸은 사진 칸이 아님(빈 QR은 dynapse.ai QR)·채팅 이미지 크게 보기·리워드 시작 AI 두 칸(#251 #252 #253) |
