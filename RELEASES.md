@@ -517,3 +517,4 @@
 | 2026-10-22T16:09:18.495Z | macos | ota | 0.1.86+ota4 | - | ota-served-verified | src 29cd44f64 · ChatGPT 세 갈래 · 칸만 고치기 · 한 장 글 고치기 |
 | 2026-10-22T17:22:44.292Z | macos | ota | 0.1.86+ota5 | - | ota-served-verified | src 345fe1c1e · 편집 패널 · 그림 틀 · 칸 글 계약 앱 길 |
 | 2026-10-22T18:43:03.971Z | macos | ota | 0.1.86+ota6 | - | ota-served-verified | src 7d4180950 · 리워드 덱 고침 · 색 잠금 |
+| 2026-10-22T22:06:02.470Z | windows | ota | 0.1.86+ota1 | - | ota-served-verified | src 70e7df7d9 · Mac 0.1.86 ota1~6과 같음 · 두 장 연달아 고쳐도 턴이 얽히지 않게 · 색은 앱이 정한 팔레트로 · 디자인 띠 · 빠른 첫 결과(AI는 글만, 앱이 장을 짓는다) · 편집 패널 · 리워드 덱 고침 · 대화 한 턴 한 카드(#272 #273 #274 #275 #276 #277 #278 #279) |
