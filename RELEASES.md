@@ -495,3 +495,4 @@
 | 2026-10-21T08:08:03.786Z | macos | ota | 0.1.85+ota16 | - | ota-served-verified | src 115bc8637 · 리워드 초안부터 고른 색으로 보여요 |
 | 2026-10-22T00:50:16.745Z | windows | ota | 0.1.85+ota6 | - | ota-served-verified | src 37c7dc800 · 모바일 청첩장 이어서·리워드 고침(Mac ota15~16과 같음) |
 | 2026-10-22T01:07:18.819Z | windows | ota | 0.1.85+ota7 | - | ota-served-verified | src 3e08d35ba · 제출 전 고칠 때 링크·버튼·사진·섹션을 지우지 않고 고치기 |
+| 2026-10-22T01:24:36.105Z | macos | ota | 0.1.85+ota17 | - | ota-served-verified | src 44c221ee4 · QR 자리에 사진이 들어가지 않아요 · QR 자리는 기본 dynapse.ai QR이고 대화로 주소를 바꿀 수 있어요 |
