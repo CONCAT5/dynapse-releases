@@ -511,3 +511,4 @@
 | 2026-10-22T11:22:21.303Z | macos | beta | 0.1.86 | macos-v0.1.86 | beta-served-verified | src be760f709 · 흰 제목 띠(맥·윈도우) · 사진이 다 들어온 뒤 리워드 제출 · 들어온 사진이 가려지지 않게 · 장 하나 수정은 새 대화로 |
 | 2026-10-22T11:24:18.080Z | macos | stable | 0.1.86 | macos-v0.1.86 | stable-served-verified |  |
 | 2026-10-22T13:23:43.583Z | macos | ota | 0.1.86+ota1 | - | ota-served-verified | src 4c4615113 · 두 장을 연달아 고쳐도 턴이 얽히지 않게 |
+| 2026-10-22T14:05:36.147Z | macos | ota | 0.1.86+ota2 | - | ota-served-verified | src 68c51dfbe · 색은 앱이 정한 팔레트로 · 디자인 띠 · 종류 맞춤 추천 |
