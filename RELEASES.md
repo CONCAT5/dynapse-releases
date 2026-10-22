@@ -497,3 +497,4 @@
 | 2026-10-22T01:07:18.819Z | windows | ota | 0.1.85+ota7 | - | ota-served-verified | src 3e08d35ba · 제출 전 고칠 때 링크·버튼·사진·섹션을 지우지 않고 고치기 |
 | 2026-10-22T01:24:36.105Z | macos | ota | 0.1.85+ota17 | - | ota-served-verified | src 44c221ee4 · QR 자리에 사진이 들어가지 않아요 · QR 자리는 기본 dynapse.ai QR이고 대화로 주소를 바꿀 수 있어요 |
 | 2026-10-22T02:11:34.668Z | windows | ota | 0.1.85+ota8 | - | ota-served-verified | src c892f35a8 · QR 칸은 사진 칸이 아님(빈 QR은 dynapse.ai QR)·채팅 이미지 크게 보기·리워드 시작 AI 두 칸(#251 #252 #253) |
+| 2026-10-22T03:54:47.511Z | macos | ota | 0.1.85+ota18 | - | ota-served-verified | src 0a52a3b7e · 공유가 멈추면 10분 뒤 저절로 다시 켜지고 멈춘 동안 팀원이 올린 것은 기다렸다 합쳐요 · 같은 장을 함께 고치면 주인 판으로 · 숨긴 장·순서는 서버 값 · 사진 하나를 못 받아도 나머지는 받아요 · 브라우저 계정으로 바꾸기 |
