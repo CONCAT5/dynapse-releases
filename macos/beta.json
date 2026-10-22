@@ -1,15 +1,15 @@
 {
-  "version": "0.1.85",
-  "notes": "0.1.85 — 내보내기 버튼이 작업 형식에 맞는 파일을 골라요 · 인쇄 작업은 인쇄소에 보낼 PDF로 · Gemini 로그인을 앱 안에서",
-  "pub_date": "2026-10-20T06:55:39Z",
+  "version": "0.1.86",
+  "notes": "흰 제목 띠(맥·윈도우) · 사진이 다 들어온 뒤 리워드 제출 · 들어온 사진이 가려지지 않게 · 장 하나 수정은 새 대화로",
+  "pub_date": "2026-10-22T11:21:16Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.85/Dynapse_0.1.85_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3ozL2tqajhHbVZYN3RMTG9JVHdqbVdwVElyQVcvR2N0dXpiZG96S0YwM1JJUElpTXlXTXZlVk9LL1JpZXJFbzJ6aHg1eUlEc2s3b0VRQWErREZ3N2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDc5MjE0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjg1CnlKSjk0NzFMbXpNbTlFMHFUSTJEK2ZINzl5ZnkvM2IrQWRiQXFCcXZjUzZZUDM0dEQ0N0d0K1VBTDJHNjhlRWhPZ0RzOE9oenp4bFhZK24zajRPNUNBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.86/Dynapse_0.1.86_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBxNG1kUG5GQ3lscmFRNlg1Z2Q0c3JQRWZ2Q2xNWHZJSllsSk0wV1U3QmdlcGdiWWdkbzNyamRhZVlQSXU4cGZ2L2RmNkhxV0dLWkNaNy9VZlVOV3cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjY3OTYzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjg2CklNdENtSjRCK1U5OHUxdlppVVFveTZiWTFoTFY1eGZFbGtFemZKOHhKbmNUaU5vRGlCVXBua2h2UDlpaWRmelBodTNWVlZsV0pEQk12Y21MWDRMOENRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.85/Dynapse_0.1.85_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3ozL2tqajhHbVZYN3RMTG9JVHdqbVdwVElyQVcvR2N0dXpiZG96S0YwM1JJUElpTXlXTXZlVk9LL1JpZXJFbzJ6aHg1eUlEc2s3b0VRQWErREZ3N2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDc5MjE0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjg1CnlKSjk0NzFMbXpNbTlFMHFUSTJEK2ZINzl5ZnkvM2IrQWRiQXFCcXZjUzZZUDM0dEQ0N0d0K1VBTDJHNjhlRWhPZ0RzOE9oenp4bFhZK24zajRPNUNBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.86/Dynapse_0.1.86_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBxNG1kUG5GQ3lscmFRNlg1Z2Q0c3JQRWZ2Q2xNWHZJSllsSk0wV1U3QmdlcGdiWWdkbzNyamRhZVlQSXU4cGZ2L2RmNkhxV0dLWkNaNy9VZlVOV3cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjY3OTYzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjg2CklNdENtSjRCK1U5OHUxdlppVVFveTZiWTFoTFY1eGZFbGtFemZKOHhKbmNUaU5vRGlCVXBua2h2UDlpaWRmelBodTNWVlZsV0pEQk12Y21MWDRMOENRPT0K"
     }
   }
 }
