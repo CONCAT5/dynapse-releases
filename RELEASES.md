@@ -521,3 +521,4 @@
 | 2026-10-22T22:58:54.916Z | macos | ota | 0.1.86+ota7 | - | ota-served-verified | src b229db3eb · 제출 올리기 빠르게 · 답 다듬기 |
 | 2026-10-22T23:54:30.683Z | macos | ota | 0.1.86+ota8 | - | ota-served-verified | src 36041378e · 사진 많은 청첩장 제출 고침 · 기본 블록 유지 |
 | 2026-10-23T00:48:44.342Z | windows | ota | 0.1.86+ota2 | - | ota-served-verified | src f4ffa730c · Mac 0.1.86 ota7~8과 같음 · 사진 많은 청첩장 제출 고침(2MB 넘는 묶음이 빈 채 올라가던 것) · 제출 올리기 8개씩 빠르게 · AI 답 짧고 쉽게 · 진행 줄 한 줄로(#279 #281) |
+| 2026-10-23T03:24:26.024Z | macos | ota | 0.1.86+ota9 | - | ota-served-verified | src 8c3687166 · AI 답 두 문장 · 청첩장 사진 10장 |
