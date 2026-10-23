@@ -525,3 +525,4 @@
 | 2026-10-23T04:32:26.805Z | macos | ota | 0.1.86+ota10 | - | ota-served-verified | src 90024a0b8 · 글꼴 경고는 한글·한자만 |
 | 2026-10-23T09:29:49.441Z | macos | ota | 0.1.86+ota11 | - | ota-served-verified | src ed79cd5ab · 공유를 꺼도 내 PC의 저장이 서버로 올라가요 |
 | 2026-10-23T13:16:25.170Z | macos | ota | 0.1.86+ota12 | - | ota-served-verified | src b50eda944 · 고칠 때 전체 색이 바뀌지 않아요 · 오류를 고치다 사진이 빠지지 않아요 · 리워드 전 다른 사이트 사진을 받아 둬요 |
+| 2026-10-23T16:24:05.255Z | macos | ota | 0.1.86+ota13 | - | ota-served-verified | src 72f67fb89 · 같은 사진·밀도 같은 취향 점은 내 장에 안 떠요 |
