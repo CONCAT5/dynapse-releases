@@ -523,3 +523,4 @@
 | 2026-10-23T00:48:44.342Z | windows | ota | 0.1.86+ota2 | - | ota-served-verified | src f4ffa730c · Mac 0.1.86 ota7~8과 같음 · 사진 많은 청첩장 제출 고침(2MB 넘는 묶음이 빈 채 올라가던 것) · 제출 올리기 8개씩 빠르게 · AI 답 짧고 쉽게 · 진행 줄 한 줄로(#279 #281) |
 | 2026-10-23T03:24:26.024Z | macos | ota | 0.1.86+ota9 | - | ota-served-verified | src 8c3687166 · AI 답 두 문장 · 청첩장 사진 10장 |
 | 2026-10-23T04:32:26.805Z | macos | ota | 0.1.86+ota10 | - | ota-served-verified | src 90024a0b8 · 글꼴 경고는 한글·한자만 |
+| 2026-10-23T09:29:49.441Z | macos | ota | 0.1.86+ota11 | - | ota-served-verified | src ed79cd5ab · 공유를 꺼도 내 PC의 저장이 서버로 올라가요 |
