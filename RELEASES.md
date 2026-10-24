@@ -528,3 +528,4 @@
 | 2026-10-23T16:24:05.255Z | macos | ota | 0.1.86+ota13 | - | ota-served-verified | src 72f67fb89 · 같은 사진·밀도 같은 취향 점은 내 장에 안 떠요 |
 | 2026-10-23T22:21:46.354Z | windows | ota | 0.1.86+ota3 | - | ota-served-verified | src 143af6b8d · Mac 0.1.86+ota13까지와 같은 화면 — AI 답 정리·글꼴·공유·고칠 범위·같은 요청 묶기 등 |
 | 2026-10-24T03:16:32.011Z | macos | ota | 0.1.86+ota14 | - | ota-served-verified | src f8dbc0193 · 검사에 걸린 첫 결과에도 글꼴·사진이 바로 들어가요 |
+| 2026-10-24T03:57:44.228Z | macos | ota | 0.1.86+ota15 | - | ota-served-verified | src 2e49f9fd8 · 짚은 글에 한 줄로·조금 크게·정렬은 AI 없이 바로 · 짚은 장에 없는 글이면 다시 짚기 |
