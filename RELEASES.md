@@ -535,3 +535,4 @@
 | 2026-10-24T11:46:54.422Z | macos | ota | 0.1.86+ota18 | - | ota-served-verified | src a8cd9c34b · 빈 사진 자리 · 사진 없는 모양으로 |
 | 2026-10-24T12:57:39.407Z | macos | ota | 0.1.86+ota19 | - | ota-served-verified | src 34e78fdd7 · 상세페이지 판형 |
 | 2026-10-24T18:12:27.985Z | macos | ota | 0.1.86+ota20 | - | ota-served-verified | src eaa0d97b4 · 상세페이지 다듬기 · 사진 안내 |
+| 2026-10-24T21:53:42.201Z | macos | ota | 0.1.86+ota21 | - | ota-served-verified | src a6570ca15 · 숫자 칸 · 사진 안내 점검 |
