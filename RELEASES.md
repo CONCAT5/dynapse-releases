@@ -533,3 +533,4 @@
 | 2026-10-24T09:30:10.803Z | windows | ota | 0.1.86+ota4 | - | ota-served-verified | src 0326f317b · 글 읽기(관계 먼저)·팔레트 추가·칸 수 맞추기·짚기는 가장 안쪽 글로(C3 #274 #299 #300) |
 | 2026-10-24T09:48:14.749Z | macos | ota | 0.1.86+ota17 | - | ota-served-verified | src f5cd42f80 · 빈 칸 없애기 · 단위 한 번 · 숫자 라벨 · 전체 배경 판 |
 | 2026-10-24T11:46:54.422Z | macos | ota | 0.1.86+ota18 | - | ota-served-verified | src a8cd9c34b · 빈 사진 자리 · 사진 없는 모양으로 |
+| 2026-10-24T12:57:39.407Z | macos | ota | 0.1.86+ota19 | - | ota-served-verified | src 34e78fdd7 · 상세페이지 판형 |
