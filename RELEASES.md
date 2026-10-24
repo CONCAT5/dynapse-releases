@@ -531,3 +531,4 @@
 | 2026-10-24T03:57:44.228Z | macos | ota | 0.1.86+ota15 | - | ota-served-verified | src 2e49f9fd8 · 짚은 글에 한 줄로·조금 크게·정렬은 AI 없이 바로 · 짚은 장에 없는 글이면 다시 짚기 |
 | 2026-10-24T08:06:05.054Z | macos | ota | 0.1.86+ota16 | - | ota-served-verified | src d72158735 · 내용에 맞는 모양 · 빈 줄 줄이기 · 사진 없는 칸 색 · 순위 강조 |
 | 2026-10-24T09:30:10.803Z | windows | ota | 0.1.86+ota4 | - | ota-served-verified | src 0326f317b · 글 읽기(관계 먼저)·팔레트 추가·칸 수 맞추기·짚기는 가장 안쪽 글로(C3 #274 #299 #300) |
+| 2026-10-24T09:48:14.749Z | macos | ota | 0.1.86+ota17 | - | ota-served-verified | src f5cd42f80 · 빈 칸 없애기 · 단위 한 번 · 숫자 라벨 · 전체 배경 판 |
