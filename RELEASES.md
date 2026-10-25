@@ -539,3 +539,4 @@
 | 2026-10-25T05:54:23.716Z | macos | ota | 0.1.86+ota22 | - | ota-served-verified | src c08d9f4a3 · 원고 그대로 · 구간 나누기 |
 | 2026-10-25T06:18:04.969Z | macos | ota | 0.1.86+ota23 | - | ota-served-verified | src efeab77c1 · 안내 줄 라벨 두 번 고침 |
 | 2026-10-25T07:04:00.523Z | macos | ota | 0.1.86+ota24 | - | ota-served-verified | src a3cb5fa3f · 장마다 요점 하나 크게 · 조건 낱말 |
+| 2026-10-25T07:42:38.056Z | macos | ota | 0.1.86+ota25 | - | ota-served-verified | src 05c30bd31 · 요점 줄 다듬기 · 혜택은 줄로 |
