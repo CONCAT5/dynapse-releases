@@ -548,3 +548,4 @@
 | 2026-10-25T12:24:06.464Z | windows | ota | 0.1.86+ota6 | - | ota-served-verified | src 7282d2b20 · Fluent 그림 자동 배치·Pixabay 사진 검색·C3 6차 검사(견본 글 남음·원고에 없는 숫자) |
 | 2026-10-25T12:36:08.163Z | macos | ota | 0.1.86+ota30 | - | ota-served-verified | src d4541a971 · 빈 사진 자리 가운데에 그림 |
 | 2026-10-25T13:05:28.531Z | windows | ota | 0.1.86+ota7 | - | ota-served-verified | src bb1553747 · 그림: 빈 사진칸 가운데에 배치, 사진이 들어오면 빠짐 |
+| 2026-10-25T20:58:05.483Z | macos | ota | 0.1.86+ota31 | - | ota-served-verified | src d225c8dbe · 음식·식물 그림은 원래 색 |
