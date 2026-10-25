@@ -540,3 +540,4 @@
 | 2026-10-25T06:18:04.969Z | macos | ota | 0.1.86+ota23 | - | ota-served-verified | src efeab77c1 · 안내 줄 라벨 두 번 고침 |
 | 2026-10-25T07:04:00.523Z | macos | ota | 0.1.86+ota24 | - | ota-served-verified | src a3cb5fa3f · 장마다 요점 하나 크게 · 조건 낱말 |
 | 2026-10-25T07:42:38.056Z | macos | ota | 0.1.86+ota25 | - | ota-served-verified | src 05c30bd31 · 요점 줄 다듬기 · 혜택은 줄로 |
+| 2026-10-25T09:12:45.535Z | macos | ota | 0.1.86+ota26 | - | ota-served-verified | src ff318c088 · 원고 글 자르지 않기 · 숫자 보존 검사 · 요점 칩 고침 |
