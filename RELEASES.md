@@ -544,3 +544,4 @@
 | 2026-10-25T10:20:05.785Z | macos | ota | 0.1.86+ota27 | - | ota-served-verified | src 6f80fcf32 · 안내 줄 라벨 한 번 더 고침 |
 | 2026-10-25T11:20:54.581Z | macos | ota | 0.1.86+ota28 | - | ota-served-verified | src 6c64c58b9 · 견본 날짜·할인 가격·사람 아이콘 고침, 첫 결과 빈 공간 자동 키움 |
 | 2026-10-25T11:35:13.162Z | windows | ota | 0.1.86+ota5 | - | ota-served-verified | src 6f80fcf32 · C3 5차·#294 보정 9~11·#300·#301 보정 1 (상세페이지 틀, 빈 사진칸 처리, 원고 숫자 보존) |
+| 2026-10-25T12:06:20.276Z | macos | ota | 0.1.86+ota29 | - | ota-served-verified | src 7282d2b20 · 사진 없는 빈 자리에 원고 낱말 사물 그림, Pixabay 사진 출처 |
