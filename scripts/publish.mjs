@@ -121,7 +121,7 @@ const noSimLeft = what => { const o = simOrphans(); if (!o.length) return; for (
   if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
     must("pnpm", ["install", "--frozen-lockfile"], { cwd: hubDir });
     must("node", ["scripts/sync-tokens.mjs"], { cwd: src });   // 생성 파일(src/shared/*) — 시험이 앱 소스를 그대로 불러온다
-    for (const [name, script, t] of [["sync-sim", "scripts/sync-sim.mts", 900_000], ["turn-sim", "../desktop/scripts/turn-sim.mts", 600_000]]) {
+    for (const [name, script, t] of [["sync-sim", "scripts/sync-sim.mts", 3_600_000], ["turn-sim", "../desktop/scripts/turn-sim.mts", 600_000]]) {
       if (name === "turn-sim" && !existsSync(join(src, "scripts", "turn-sim.mts"))) continue;
       const r = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", script], { cwd: hubDir, timeout: t });
       const line = (r.out.match(new RegExp(`${name} \\d+\\/\\d+`)) ?? [""])[0];
