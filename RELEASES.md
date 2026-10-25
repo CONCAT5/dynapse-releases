@@ -546,3 +546,4 @@
 | 2026-10-25T11:35:13.162Z | windows | ota | 0.1.86+ota5 | - | ota-served-verified | src 6f80fcf32 · C3 5차·#294 보정 9~11·#300·#301 보정 1 (상세페이지 틀, 빈 사진칸 처리, 원고 숫자 보존) |
 | 2026-10-25T12:06:20.276Z | macos | ota | 0.1.86+ota29 | - | ota-served-verified | src 7282d2b20 · 사진 없는 빈 자리에 원고 낱말 사물 그림, Pixabay 사진 출처 |
 | 2026-10-25T12:24:06.464Z | windows | ota | 0.1.86+ota6 | - | ota-served-verified | src 7282d2b20 · Fluent 그림 자동 배치·Pixabay 사진 검색·C3 6차 검사(견본 글 남음·원고에 없는 숫자) |
+| 2026-10-25T12:36:08.163Z | macos | ota | 0.1.86+ota30 | - | ota-served-verified | src d4541a971 · 빈 사진 자리 가운데에 그림 |
