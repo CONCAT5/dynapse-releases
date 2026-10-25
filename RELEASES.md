@@ -549,3 +549,4 @@
 | 2026-10-25T12:36:08.163Z | macos | ota | 0.1.86+ota30 | - | ota-served-verified | src d4541a971 · 빈 사진 자리 가운데에 그림 |
 | 2026-10-25T13:05:28.531Z | windows | ota | 0.1.86+ota7 | - | ota-served-verified | src bb1553747 · 그림: 빈 사진칸 가운데에 배치, 사진이 들어오면 빠짐 |
 | 2026-10-25T20:58:05.483Z | macos | ota | 0.1.86+ota31 | - | ota-served-verified | src d225c8dbe · 음식·식물 그림은 원래 색 |
+| 2026-10-25T21:27:29.479Z | macos | ota | 0.1.86+ota32 | - | ota-served-verified | src 72466164c · 원래 색 그림이 강조색으로 바뀌던 것 고침 |
