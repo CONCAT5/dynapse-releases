@@ -537,3 +537,4 @@
 | 2026-10-24T18:12:27.985Z | macos | ota | 0.1.86+ota20 | - | ota-served-verified | src eaa0d97b4 · 상세페이지 다듬기 · 사진 안내 |
 | 2026-10-24T21:53:42.201Z | macos | ota | 0.1.86+ota21 | - | ota-served-verified | src a6570ca15 · 숫자 칸 · 사진 안내 점검 |
 | 2026-10-25T05:54:23.716Z | macos | ota | 0.1.86+ota22 | - | ota-served-verified | src c08d9f4a3 · 원고 그대로 · 구간 나누기 |
+| 2026-10-25T06:18:04.969Z | macos | ota | 0.1.86+ota23 | - | ota-served-verified | src efeab77c1 · 안내 줄 라벨 두 번 고침 |
