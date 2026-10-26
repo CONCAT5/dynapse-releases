@@ -554,3 +554,4 @@
 | 2026-10-26T07:56:50.477Z | windows | ota | 0.1.86+ota8 | - | ota-served-verified | src 98160ee04 · C4 한 메시지 여러 요청·짚은 결함은 덱 전체 고침, PDF 내보내기 장 크기 다른 덱 잘림 수정, 카페·빵집 팔레트 |
 | 2026-10-26T07:58:47.111Z | macos | ota | 0.1.86+ota34 | - | ota-served-verified | src fc5006afd · 첫 결과의 빈 사진 칸이 채워지지 않던 것 고침 |
 | 2026-10-26T08:25:15.724Z | windows | ota | 0.1.86+ota9 | - | ota-served-verified | src 68488b3ba · 첫 결과 사진 칸이 비던 것 수정(그림·자동 늘리기 중간 커밋 제거) |
+| 2026-10-26T08:38:44.815Z | macos | ota | 0.1.86+ota35 | - | ota-served-verified | src 864b2380f · 빈 사진 칸 찾기가 영어 낱말로 · 한 글자 낱말도 |
