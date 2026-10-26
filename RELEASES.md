@@ -558,3 +558,4 @@
 | 2026-10-26T09:19:45.568Z | macos | ota | 0.1.86+ota36 | - | ota-served-verified | src 1d338984c · 빈칸 카드로 빠진 사실 받기 · [고쳐 줘]는 남은 검사만 · 사진 없을 때 Pixabay |
 | 2026-10-26T15:34:00.129Z | macos | ota | 0.1.86+ota37 | - | ota-served-verified | src 6b57de853 · 받은 사실 기억 · 한도 때 다른 AI로 이어서 · 남은 넘침은 앱이 맞춤 |
 | 2026-10-26T16:20:37.476Z | windows | ota | 0.1.86+ota10 | - | ota-served-verified | src 62bf1d4fa · #302 빠진 사실 카드(예시 칸·엔진 채움), C5 사실 장부·한도 안내 한국어·남은 잘림 앱이 마저, 사진 채우기 Pixabay |
+| 2026-10-26T22:23:19.397Z | macos | ota | 0.1.86+ota38 | - | ota-served-verified | src d90e990cf · 이어서 하기·한도 되돌리기·자동 키우기 고침 |
