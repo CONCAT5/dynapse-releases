@@ -551,3 +551,4 @@
 | 2026-10-25T20:58:05.483Z | macos | ota | 0.1.86+ota31 | - | ota-served-verified | src d225c8dbe · 음식·식물 그림은 원래 색 |
 | 2026-10-25T21:27:29.479Z | macos | ota | 0.1.86+ota32 | - | ota-served-verified | src 72466164c · 원래 색 그림이 강조색으로 바뀌던 것 고침 |
 | 2026-10-26T07:22:00.019Z | macos | ota | 0.1.86+ota33 | - | ota-served-verified | src 98160ee04 · PDF 잘림 고침 · 장 옮기기는 바로 · 할 일 목록 · 결함은 덱 전체 |
+| 2026-10-26T07:56:50.477Z | windows | ota | 0.1.86+ota8 | - | ota-served-verified | src 98160ee04 · C4 한 메시지 여러 요청·짚은 결함은 덱 전체 고침, PDF 내보내기 장 크기 다른 덱 잘림 수정, 카페·빵집 팔레트 |
