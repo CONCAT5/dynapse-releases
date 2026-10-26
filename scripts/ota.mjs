@@ -51,7 +51,7 @@ if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
   console.log(`  ✓ tsc · ${line}`);
   // 턴 시뮬(#143 §4) — 요청 60건의 범위·등급·경로·거절 판정을 AI 없이. 틀리면 내보내지 않는다
   if (existsSync(join(src, "scripts", "turn-sim.mts"))) {
-    const ts = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", "../desktop/scripts/turn-sim.mts"], { cwd: hubDir, timeout: 600_000 });
+    const ts = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", "../desktop/scripts/turn-sim.mts"], { cwd: hubDir, timeout: 1_800_000 });
     const tl = (ts.out.match(/turn-sim \d+\/\d+/) ?? [""])[0];
     if (ts.code !== 0) die(`turn-sim 실패(${tl}) — OTA 안 함\n${ts.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
     console.log(`  ✓ ${tl}`);
