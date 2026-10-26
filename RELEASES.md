@@ -556,3 +556,4 @@
 | 2026-10-26T08:25:15.724Z | windows | ota | 0.1.86+ota9 | - | ota-served-verified | src 68488b3ba · 첫 결과 사진 칸이 비던 것 수정(그림·자동 늘리기 중간 커밋 제거) |
 | 2026-10-26T08:38:44.815Z | macos | ota | 0.1.86+ota35 | - | ota-served-verified | src 864b2380f · 빈 사진 칸 찾기가 영어 낱말로 · 한 글자 낱말도 |
 | 2026-10-26T09:19:45.568Z | macos | ota | 0.1.86+ota36 | - | ota-served-verified | src 1d338984c · 빈칸 카드로 빠진 사실 받기 · [고쳐 줘]는 남은 검사만 · 사진 없을 때 Pixabay |
+| 2026-10-26T15:34:00.129Z | macos | ota | 0.1.86+ota37 | - | ota-served-verified | src 6b57de853 · 받은 사실 기억 · 한도 때 다른 AI로 이어서 · 남은 넘침은 앱이 맞춤 |
