@@ -559,3 +559,4 @@
 | 2026-10-26T15:34:00.129Z | macos | ota | 0.1.86+ota37 | - | ota-served-verified | src 6b57de853 · 받은 사실 기억 · 한도 때 다른 AI로 이어서 · 남은 넘침은 앱이 맞춤 |
 | 2026-10-26T16:20:37.476Z | windows | ota | 0.1.86+ota10 | - | ota-served-verified | src 62bf1d4fa · #302 빠진 사실 카드(예시 칸·엔진 채움), C5 사실 장부·한도 안내 한국어·남은 잘림 앱이 마저, 사진 채우기 Pixabay |
 | 2026-10-26T22:23:19.397Z | macos | ota | 0.1.86+ota38 | - | ota-served-verified | src d90e990cf · 이어서 하기·한도 되돌리기·자동 키우기 고침 |
+| 2026-10-26T22:48:39.032Z | windows | ota | 0.1.86+ota11 | - | ota-served-verified | src d90e990cf · C5 S1: 다른 AI로 이어서 하기 멈춤 수정, 한도 때 이번 턴 장만 되돌림, 자동 늘리기 한 단계, 정방형=1:1 |
