@@ -562,3 +562,4 @@
 | 2026-10-26T22:48:39.032Z | windows | ota | 0.1.86+ota11 | - | ota-served-verified | src d90e990cf · C5 S1: 다른 AI로 이어서 하기 멈춤 수정, 한도 때 이번 턴 장만 되돌림, 자동 늘리기 한 단계, 정방형=1:1 |
 | 2026-10-26T22:50:26.145Z | macos | ota | 0.1.86+ota39 | - | ota-served-verified | src 4d553a595 · 한도가 와도 되돌리지 않고 이어서 |
 | 2026-10-26T23:10:22.042Z | windows | ota | 0.1.86+ota12 | - | ota-served-verified | src 4d553a595 · 한도: 아무것도 되돌리지 않음 — AI가 남긴 장 그대로, 이어서 하는 AI에 이전 AI가 멈춘 것 알림 |
+| 2026-10-27T00:06:12.580Z | macos | ota | 0.1.86+ota40 | - | ota-served-verified | src 128b75013 · 작업량 한도 이어서·빈칸 그리기·진행 줄 정리 |
