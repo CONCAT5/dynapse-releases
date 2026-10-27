@@ -569,3 +569,4 @@
 | 2026-10-27T04:07:14.035Z | macos | ota | 0.1.86+ota42 | - | ota-served-verified | src f73cd782c · PDF는 본 장만·플립북 따로·덮어쓰지 않기 |
 | 2026-10-27T04:55:39.683Z | macos | ota | 0.1.86+ota43 | - | ota-served-verified | src 2f33f05ac · 분위기 사전·시리즈 틀·주인공 그림·스티커·표지 레터링 |
 | 2026-10-27T05:38:27.362Z | windows | ota | 0.1.86+ota15 | - | ota-served-verified | src db519f973 · #308 보정 1·2 핫픽스: [PDF]는 본 장만, 플립북은 따로, 덮어쓰지 않음 |
+| 2026-10-27T05:44:43.501Z | macos | ota | 0.1.86+ota44 | - | ota-served-verified | src 9c2bf3a1b · PDF 인쇄 설정 무시·PDF 기본 내보내기 |
