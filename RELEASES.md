@@ -571,3 +571,4 @@
 | 2026-10-27T05:38:27.362Z | windows | ota | 0.1.86+ota15 | - | ota-served-verified | src db519f973 · #308 보정 1·2 핫픽스: [PDF]는 본 장만, 플립북은 따로, 덮어쓰지 않음 |
 | 2026-10-27T05:44:43.501Z | macos | ota | 0.1.86+ota44 | - | ota-served-verified | src 9c2bf3a1b · PDF 인쇄 설정 무시·PDF 기본 내보내기 |
 | 2026-10-27T06:09:38.435Z | macos | ota | 0.1.86+ota45 | - | ota-served-verified | src 506e79ddc · 장마다·주인공 요청 보통 턴 |
+| 2026-10-27T06:35:24.352Z | macos | ota | 0.1.86+ota46 | - | ota-served-verified | src 32ec85f23 · 주인공 말하면 바로·약도 견본 검사 |
