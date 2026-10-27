@@ -574,3 +574,4 @@
 | 2026-10-27T06:35:24.352Z | macos | ota | 0.1.86+ota46 | - | ota-served-verified | src 32ec85f23 · 주인공 말하면 바로·약도 견본 검사 |
 | 2026-10-27T06:44:28.566Z | windows | ota | 0.1.86+ota16 | - | ota-served-verified | src fcdd76c8e · #308 보정 3 핫픽스: 내보내기가 AI가 쓴 인쇄 CSS를 걷어냄·넘김 PDF 본 장도 멈춤, 나눔명조 · #309 주인공 요청(hero.json)·장마다 요청은 보통 턴 |
 | 2026-10-27T07:38:08.471Z | macos | ota | 0.1.86+ota47 | - | ota-served-verified | src 937620187 · 중단은 멈춤·화면에 없는 장 내보내기 0·주인공 자리 |
+| 2026-10-27T13:40:29.943Z | macos | ota | 0.1.86+ota48 | - | ota-SERVE-VERIFY-FAILED | src c443420ff · 사용자 작업은 AI가 쓴 장을 그대로 두고 검사만 · 사진 출처는 내보낼 때 마지막 장 · 화면 밖 장은 내보내지 않음 |
