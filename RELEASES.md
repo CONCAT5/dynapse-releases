@@ -587,3 +587,4 @@
 | 2026-10-28T00:57:40.893Z | windows | ota | 0.1.86+ota21 | - | ota-served-verified | src 64cd2408d · 10시 묶음: 빈 아이콘 칸은 기본 아이콘, 사진 검색 낱말 개선 |
 | 2026-10-28T01:12:32.846Z | macos | ota | 0.1.86+ota53 | - | ota-served-verified | src c29b7e54c · 손글씨 제목 · 내 사진 자리 · 빈 아이콘 칸 기본 아이콘 · 사진 낱말은 주제 명사만 |
 | 2026-10-28T01:20:37.752Z | windows | ota | 0.1.86+ota22 | - | ota-served-verified | src 491f5d079 · 10시 묶음: 손글씨 제목, 사용자가 넣을 사진 자리는 보이게 |
+| 2026-10-28T01:48:11.764Z | macos | ota | 0.1.86+ota54 | - | ota-served-verified | src 3ecf32f5c · 사진 없는 키치 표지 채움 |
