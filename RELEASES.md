@@ -585,3 +585,4 @@
 | 2026-10-28T00:35:00.928Z | windows | ota | 0.1.86+ota20 | - | ota-served-verified | src c6fde0e40 · #312 보정 3 raw 작업에도 분위기 장식(앱 후처리), 앵커 2회차 고침(raw에서도 data-viz·아이콘), 빠진 사실 카드는 턴당 한 번, #315 블라인드 비교 페이지 |
 | 2026-10-28T00:33:35.716Z | macos | ota | 0.1.86+ota52 | - | ota-served-verified | src c6fde0e40 · 약도는 내 글대로 · 검사에 걸려도 한국어 답·사진 생성 · 빈칸 카드 한 번 · raw 분위기 장식 |
 | 2026-10-28T00:57:40.893Z | windows | ota | 0.1.86+ota21 | - | ota-served-verified | src 64cd2408d · 10시 묶음: 빈 아이콘 칸은 기본 아이콘, 사진 검색 낱말 개선 |
+| 2026-10-28T01:12:32.846Z | macos | ota | 0.1.86+ota53 | - | ota-served-verified | src c29b7e54c · 손글씨 제목 · 내 사진 자리 · 빈 아이콘 칸 기본 아이콘 · 사진 낱말은 주제 명사만 |
