@@ -597,3 +597,4 @@
 | 2026-10-28T11:52:58.202Z | macos | ota | 0.1.86+ota59 | - | ota-served-verified | src 4c0209994 · 덱 색 블록이 늘 레이아웃 색 뒤에 와요 |
 | 2026-10-28T12:01:28.232Z | windows | ota | 0.1.86+ota25 | - | ota-served-verified | src 1873945d2 · 핫픽스: 덱 색 블록 채우기(팔레트가 있는 작업의 tokens.css 색 변수) |
 | 2026-10-28T12:25:53.283Z | windows | ota | 0.1.86+ota26 | - | ota-served-verified | src 47621540b · 핫픽스 2: 덱 색 블록은 늘 <head>의 마지막 스타일(뒤 스타일이 색을 덮지 않게) |
+| 2026-10-28T12:38:00.957Z | macos | ota | 0.1.86+ota60 | - | ota-served-verified | src fd7dc0d00 · 빈 사진 칸은 두고 앱이 채워요 · 이름 댄 색으로 보조색도 · 3D·화면 비율은 숫자로 안 셈 |
