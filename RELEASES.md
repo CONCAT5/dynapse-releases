@@ -595,3 +595,4 @@
 | 2026-10-28T11:10:17.289Z | macos | ota | 0.1.86+ota58 | - | ota-served-verified | src 0f98cdd52 · 덱 색이 장에 꼭 들어가요(AI가 빠뜨려도 앱이 넣어요) |
 | 2026-10-28T11:26:26.483Z | windows | ota | 0.1.86+ota24 | - | ota-served-verified | src 994b10e5d · 18시 묶음: #322 편집 턴은 사진을 말할 때만 사진 채움·편집 범위 기록·여러 줄 메모는 슬라이드 글로, #321 후보 썸네일, #320 리워드 수량 경쟁, #319 리워드 목록 정리 |
 | 2026-10-28T11:52:58.202Z | macos | ota | 0.1.86+ota59 | - | ota-served-verified | src 4c0209994 · 덱 색 블록이 늘 레이아웃 색 뒤에 와요 |
+| 2026-10-28T12:01:28.232Z | windows | ota | 0.1.86+ota25 | - | ota-served-verified | src 1873945d2 · 핫픽스: 덱 색 블록 채우기(팔레트가 있는 작업의 tokens.css 색 변수) |
