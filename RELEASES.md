@@ -589,3 +589,4 @@
 | 2026-10-28T01:20:37.752Z | windows | ota | 0.1.86+ota22 | - | ota-served-verified | src 491f5d079 · 10시 묶음: 손글씨 제목, 사용자가 넣을 사진 자리는 보이게 |
 | 2026-10-28T01:48:11.764Z | macos | ota | 0.1.86+ota54 | - | ota-served-verified | src 3ecf32f5c · 사진 없는 키치 표지 채움 |
 | 2026-10-28T03:12:45.287Z | macos | ota | 0.1.86+ota55 | - | ota-served-verified | src f8190628b · 영어 답은 목록째 한국어로 · 일러스트 청하면 생성 · 고친 내용 한 줄 · 장 그림 다시 · 사실 목록은 사실로 |
+| 2026-10-28T05:49:53.205Z | macos | ota | 0.1.86+ota56 | - | ota-served-verified | src 8811c588e · 큰 PDF도 끝까지 · 그대로라고 할 때만 원문 고정 · 고침은 6장씩 · 장 그림은 마지막 판으로 |
