@@ -598,3 +598,4 @@
 | 2026-10-28T12:01:28.232Z | windows | ota | 0.1.86+ota25 | - | ota-served-verified | src 1873945d2 · 핫픽스: 덱 색 블록 채우기(팔레트가 있는 작업의 tokens.css 색 변수) |
 | 2026-10-28T12:25:53.283Z | windows | ota | 0.1.86+ota26 | - | ota-served-verified | src 47621540b · 핫픽스 2: 덱 색 블록은 늘 <head>의 마지막 스타일(뒤 스타일이 색을 덮지 않게) |
 | 2026-10-28T12:38:00.957Z | macos | ota | 0.1.86+ota60 | - | ota-served-verified | src fd7dc0d00 · 빈 사진 칸은 두고 앱이 채워요 · 이름 댄 색으로 보조색도 · 3D·화면 비율은 숫자로 안 셈 |
+| 2026-10-28T12:50:54.173Z | windows | ota | 0.1.86+ota27 | - | ota-served-verified | src fd7dc0d00 · 5회차 고침: 사용자가 색을 말하면 그 색 계열로만, 직접 넣을 사진 문구 일반화, 사진 고침 |
