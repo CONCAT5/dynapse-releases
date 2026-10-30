@@ -610,3 +610,4 @@
 | 2026-10-29T13:54:42.199Z | macos | ota | 0.1.86+ota67 | - | ota-served-verified | src 6a3d7546b · 검증 실패 대신 남은 것 한 줄 · 반복 안내 끔 · 공개는 사실·잘림·가림만 막음 |
 | 2026-10-29T21:53:34.182Z | windows | ota | 0.1.86+ota30 | - | ota-served-verified | src 579325a2e · 검증 실패 대신 남은 것 한 줄 · 반복 안내 끔 · 공개는 사실·잘림·가림만 막음 · 새 작업 첨부가 작업에 들어감 · 채팅으로 채운 값 뒤 예시 반복 없음 · 사진 끌면 캡션도 같이 (검사 carry304는 Windows에서만 틀려 대표 승인으로 건너뜀 — Mac ota67과 같은 코드) |
 | 2026-10-30T10:33:31.518Z | macos | ota | 0.1.86+ota68 | - | ota-served-verified | src 0b30edf74 · 가져온 덱 PDF 잘림·빠진 장 고침 · 완료 줄에 판 크기 |
+| 2026-10-30T12:19:10.235Z | macos | ota | 0.1.86+ota69 | - | ota-served-verified | src 03bd2962b · 견본 없이 새로 짜기 · 공유 권한 · 보고에 판 번호 |
