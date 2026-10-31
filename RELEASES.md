@@ -614,3 +614,4 @@
 | 2026-10-30T20:02:32.355Z | windows | ota | 0.1.86+ota31 | - | ota-served-verified | src 4fe33e6eb · 견본 없이 새로 짜기 · 공유 권한 · 보고에 판 번호 · 가져온 덱 PDF 잘림·두 장 빠짐 고침(#333) |
 | 2026-10-31T05:04:59.948Z | macos | ota | 0.1.86+ota70 | - | ota-served-verified | src d622fee65 · 바탕 다듬기 · 그림 먼저 계획 · 장식 빼 |
 | 2026-10-31T16:18:53.432Z | macos | ota | 0.1.86+ota71 | - | ota-served-verified | src eb940e961 · 무드 색 먼저 · 브랜드 색으로 · 한도 오판 고침 |
+| 2026-10-31T19:47:17.937Z | macos | ota | 0.1.86+ota72 | - | ota-served-verified | src f97b5be92 · 짧은 첫 지시 · 바탕 한 겹 · 1920×1080 |
