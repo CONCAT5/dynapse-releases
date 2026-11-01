@@ -621,3 +621,4 @@
 | 2026-11-01T07:11:36.068Z | macos | ota | 0.1.86+ota76 | - | ota-served-verified | src a7cb70ed5 · 미리보기 엔진 하나(S4-min) |
 | 2026-11-01T08:09:35.945Z | macos | ota | 0.1.86+ota77 | - | ota-served-verified | src ff38b2531 · G1 고침: 바탕·그림 글자·색 |
 | 2026-11-01T09:36:52.868Z | macos | ota | 0.1.86+ota78 | - | ota-served-verified | src d7b8ea620 · 주인공 자리·글래스 바탕·Gemini 모델 |
+| 2026-11-01T10:34:13.415Z | macos | ota | 0.1.86+ota79 | - | ota-served-verified | src 4e486b8c0 · 글래스 바탕 색 |
