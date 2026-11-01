@@ -619,3 +619,4 @@
 | 2026-11-01T00:56:32.124Z | macos | ota | 0.1.86+ota74 | - | ota-served-verified | src d0f147105 · 사진 AI 넘어가기 · 사진 요청·제목 크기 |
 | 2026-11-01T05:34:15.401Z | macos | ota | 0.1.86+ota75 | - | ota-served-verified | src 3d2c5ddf3 · Gemini 사진 고침 · 로그인 오판 고침 |
 | 2026-11-01T07:11:36.068Z | macos | ota | 0.1.86+ota76 | - | ota-served-verified | src a7cb70ed5 · 미리보기 엔진 하나(S4-min) |
+| 2026-11-01T08:09:35.945Z | macos | ota | 0.1.86+ota77 | - | ota-served-verified | src ff38b2531 · G1 고침: 바탕·그림 글자·색 |
