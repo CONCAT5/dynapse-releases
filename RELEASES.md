@@ -617,3 +617,4 @@
 | 2026-10-31T19:47:17.937Z | macos | ota | 0.1.86+ota72 | - | ota-served-verified | src f97b5be92 · 짧은 첫 지시 · 바탕 한 겹 · 1920×1080 |
 | 2026-10-31T21:32:02.447Z | macos | ota | 0.1.86+ota73 | - | ota-served-verified | src 95d19f6cb · 첫 결과 그림·바탕 고침 · 사진 자리 오경보 |
 | 2026-11-01T00:56:32.124Z | macos | ota | 0.1.86+ota74 | - | ota-served-verified | src d0f147105 · 사진 AI 넘어가기 · 사진 요청·제목 크기 |
+| 2026-11-01T05:34:15.401Z | macos | ota | 0.1.86+ota75 | - | ota-served-verified | src 3d2c5ddf3 · Gemini 사진 고침 · 로그인 오판 고침 |
