@@ -622,3 +622,4 @@
 | 2026-11-01T08:09:35.945Z | macos | ota | 0.1.86+ota77 | - | ota-served-verified | src ff38b2531 · G1 고침: 바탕·그림 글자·색 |
 | 2026-11-01T09:36:52.868Z | macos | ota | 0.1.86+ota78 | - | ota-served-verified | src d7b8ea620 · 주인공 자리·글래스 바탕·Gemini 모델 |
 | 2026-11-01T10:34:13.415Z | macos | ota | 0.1.86+ota79 | - | ota-served-verified | src 4e486b8c0 · 글래스 바탕 색 |
+| 2026-11-01T19:32:31.429Z | windows | ota | 0.1.86+ota32 | - | ota-served-verified | src 3f8862db5 · 바탕 다듬기·글래스 바탕 색 · 무드 색 먼저, 브랜드 색으로 · 짧은 첫 지시 · 사진 AI 넘어가기·Gemini 사진·로그인 오판 고침 · 제목 크기·그림 글자 검사 · 미리보기 엔진 하나 (Mac ota70~79와 같은 코드) |
