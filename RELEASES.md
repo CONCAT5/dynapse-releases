@@ -632,3 +632,4 @@
 | 2026-11-02T21:13:46.000Z | macos | ota | 0.1.86+ota85 | - | ota-served-verified | src b64310e4 · 덱을 끝까지 만들어요(없는 재료는 빈칸·그림 자리로) · 피드 올리기는 손으로(github.com DNS 실패 뒤 재시도) |
 | 2026-11-02T22:10:39.914Z | windows | ota | 0.1.86+ota34 | - | ota-served-verified | src 368e9c4f6 · 덱을 끝까지 · 디자인은 내 AI가 · 장 순서 기록 |
 | 2026-11-02T22:19:35.340Z | macos | ota | 0.1.86+ota86 | - | ota-served-verified | src bbea37c85 · 그림 요청이 칸 이름 때문에 빠지던 것 고침 · 덱 전체를 만들어요 |
+| 2026-11-02T23:37:44.835Z | macos | ota | 0.1.86+ota87 | - | ota-served-verified | src 4641a4749 · 바탕이 비어 보이는 장은 AI가 한 번 더 채워요 |
