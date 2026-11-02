@@ -626,3 +626,4 @@
 | 2026-11-01T19:52:46.324Z | macos | ota | 0.1.86+ota80 | - | ota-served-verified | src 8913ed6f1 · 빈칸은 꼭 필요한 곳만 |
 | 2026-11-02T03:06:27.626Z | macos | ota | 0.1.86+ota81 | - | ota-served-verified | src 1257530c2 · 사진 고르기 정리(S5) |
 | 2026-11-02T05:51:25.253Z | windows | ota | 0.1.86+ota33 | - | ota-served-verified | src bc8b12e7d · 사실 머리줄은 브리프 뜻대로(빈칸은 없는 값만) · 사진 AI 넘어갈 때 그 자리에서 알림 · 사진 지시 하나로 · 내보내기 여백·잘림 고침 · PDF 장 빠지면 스스로 다시(S2 b) |
+| 2026-11-02T06:10:43.292Z | macos | ota | 0.1.86+ota82 | - | ota-served-verified | src 65a953c58 · PDF 쪽수가 모자라면 한 번 더 내보냅니다 |
