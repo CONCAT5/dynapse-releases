@@ -628,3 +628,4 @@
 | 2026-11-02T05:51:25.253Z | windows | ota | 0.1.86+ota33 | - | ota-served-verified | src bc8b12e7d · 사실 머리줄은 브리프 뜻대로(빈칸은 없는 값만) · 사진 AI 넘어갈 때 그 자리에서 알림 · 사진 지시 하나로 · 내보내기 여백·잘림 고침 · PDF 장 빠지면 스스로 다시(S2 b) |
 | 2026-11-02T06:10:43.292Z | macos | ota | 0.1.86+ota82 | - | ota-served-verified | src 65a953c58 · PDF 쪽수가 모자라면 한 번 더 내보냅니다 |
 | 2026-11-02T09:48:11.462Z | macos | ota | 0.1.86+ota83 | - | ota-served-verified | src 3ca05c343 · 장 순서 기록(보이는 것은 그대로) |
+| 2026-11-02T17:51:27.083Z | macos | ota | 0.1.86+ota84 | - | ota-served-verified | src 614e8739e · 디자인은 내 AI가(앱이 정하던 무드·그림체·장식·밀도 보정 끔) |
