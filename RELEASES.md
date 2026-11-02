@@ -624,3 +624,4 @@
 | 2026-11-01T10:34:13.415Z | macos | ota | 0.1.86+ota79 | - | ota-served-verified | src 4e486b8c0 · 글래스 바탕 색 |
 | 2026-11-01T19:32:31.429Z | windows | ota | 0.1.86+ota32 | - | ota-served-verified | src 3f8862db5 · 바탕 다듬기·글래스 바탕 색 · 무드 색 먼저, 브랜드 색으로 · 짧은 첫 지시 · 사진 AI 넘어가기·Gemini 사진·로그인 오판 고침 · 제목 크기·그림 글자 검사 · 미리보기 엔진 하나 (Mac ota70~79와 같은 코드) |
 | 2026-11-01T19:52:46.324Z | macos | ota | 0.1.86+ota80 | - | ota-served-verified | src 8913ed6f1 · 빈칸은 꼭 필요한 곳만 |
+| 2026-11-02T03:06:27.626Z | macos | ota | 0.1.86+ota81 | - | ota-served-verified | src 1257530c2 · 사진 고르기 정리(S5) |
