@@ -625,3 +625,4 @@
 | 2026-11-01T19:32:31.429Z | windows | ota | 0.1.86+ota32 | - | ota-served-verified | src 3f8862db5 · 바탕 다듬기·글래스 바탕 색 · 무드 색 먼저, 브랜드 색으로 · 짧은 첫 지시 · 사진 AI 넘어가기·Gemini 사진·로그인 오판 고침 · 제목 크기·그림 글자 검사 · 미리보기 엔진 하나 (Mac ota70~79와 같은 코드) |
 | 2026-11-01T19:52:46.324Z | macos | ota | 0.1.86+ota80 | - | ota-served-verified | src 8913ed6f1 · 빈칸은 꼭 필요한 곳만 |
 | 2026-11-02T03:06:27.626Z | macos | ota | 0.1.86+ota81 | - | ota-served-verified | src 1257530c2 · 사진 고르기 정리(S5) |
+| 2026-11-02T05:51:25.253Z | windows | ota | 0.1.86+ota33 | - | ota-served-verified | src bc8b12e7d · 사실 머리줄은 브리프 뜻대로(빈칸은 없는 값만) · 사진 AI 넘어갈 때 그 자리에서 알림 · 사진 지시 하나로 · 내보내기 여백·잘림 고침 · PDF 장 빠지면 스스로 다시(S2 b) |
