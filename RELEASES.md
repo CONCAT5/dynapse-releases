@@ -630,3 +630,4 @@
 | 2026-11-02T09:48:11.462Z | macos | ota | 0.1.86+ota83 | - | ota-served-verified | src 3ca05c343 · 장 순서 기록(보이는 것은 그대로) |
 | 2026-11-02T17:51:27.083Z | macos | ota | 0.1.86+ota84 | - | ota-served-verified | src 614e8739e · 디자인은 내 AI가(앱이 정하던 무드·그림체·장식·밀도 보정 끔) |
 | 2026-11-02T21:13:46.000Z | macos | ota | 0.1.86+ota85 | - | ota-served-verified | src b64310e4 · 덱을 끝까지 만들어요(없는 재료는 빈칸·그림 자리로) · 피드 올리기는 손으로(github.com DNS 실패 뒤 재시도) |
+| 2026-11-02T22:10:39.914Z | windows | ota | 0.1.86+ota34 | - | ota-served-verified | src 368e9c4f6 · 덱을 끝까지 · 디자인은 내 AI가 · 장 순서 기록 |
