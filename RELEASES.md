@@ -650,3 +650,4 @@
 | 2026-11-03T15:35:56.990Z | macos | ota | 0.1.86+ota95 | - | ota-served-verified | src 5ef2eef74 · 오프라인 보기·발표에 옛 장 없음 · 장 순서를 읽는 곳을 하나로 |
 | 2026-11-03T15:38:09.946Z | windows | ota | 0.1.86+ota42 | - | ota-served-verified | = macos ota 95 · src 5ef2eef74 · 오프라인 보기·발표에 옛 장 없음 · 장 순서를 읽는 곳을 하나로 |
 | 2026-11-03T16:00:43.095Z | macos | ota | 0.1.86+ota96 | - | ota-served-verified | src e2a9cb2a1 · 아직 안 쓴 장을 계획 순서에 그대로 두기(만드는 중인 덱의 표지·다음 차례) |
+| 2026-11-03T16:03:26.361Z | windows | ota | 0.1.86+ota43 | - | ota-served-verified | = macos ota 96 · src e2a9cb2a1 · 아직 안 쓴 장을 계획 순서에 그대로 두기(만드는 중인 덱의 표지·다음 차례) |
