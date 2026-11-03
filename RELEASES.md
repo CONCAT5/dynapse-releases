@@ -647,3 +647,4 @@
 | 2026-11-03T13:49:02.193Z | windows | ota | 0.1.86+ota40 | - | ota-served-verified | = macos ota 93 · src 10077c0e6 · 지난 짚은 자리 실패 안내 반복 없음 · 여러 장 결과를 장마다 한 줄 · 다시 만든 장도 덱 글꼴 · 안 보이는 글자는 그 턴에 고침 · 규칙만 기억해 달라면 장은 그대로 |
 | 2026-11-03T14:50:19.276Z | macos | ota | 0.1.86+ota94 | - | ota-served-verified | src c2ddb40e4 · 장 띠로 순서를 바꿔도 옛 장이 되살아나지 않음 · 덱 순서 읽기 하나로 |
 | 2026-11-03T14:52:00.601Z | windows | ota | 0.1.86+ota41 | - | ota-served-verified | = macos ota 94 · src c2ddb40e4 · 장 띠로 순서를 바꿔도 옛 장이 되살아나지 않음 · 덱 순서 읽기 하나로 |
+| 2026-11-03T15:35:56.990Z | macos | ota | 0.1.86+ota95 | - | ota-served-verified | src 5ef2eef74 · 오프라인 보기·발표에 옛 장 없음 · 장 순서를 읽는 곳을 하나로 |
