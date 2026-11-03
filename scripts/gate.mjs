@@ -11,6 +11,10 @@ const ROOT = resolve(new URL("..", import.meta.url).pathname), repo = resolve(ar
 const run = (cmd, args, o = {}) => { const r = spawnSync(cmd, args, { encoding: "utf8", maxBuffer: 1 << 28, ...o }); return { code: r.status ?? 1, out: `${r.stdout ?? ""}${r.stderr ?? ""}` }; };
 const die = m => { console.error(`✗ ${m}`); process.exit(1); };
 const t0 = Date.now();
+// 겹치지 않기(#353 · 밤 전체 검사) — 같은 작업 트리(dynapse-gate)를 쓰는 관문은 하나만. 살아 있는 pid가 잠금을 쥐고 있으면 기다리지 않고 멈춘다
+{ const { readFileSync: rf, writeFileSync: wf, rmSync: rm, existsSync: ex } = await import("node:fs"), L = join(homedir(), "development", ".gate.lock");
+  if (ex(L)) { const pid = Number(rf(L, "utf8").trim()); let alive = false; try { process.kill(pid, 0); alive = pid > 0; } catch { alive = false; } if (alive) die(`다른 관문이 도는 중(pid ${pid}) — 끝난 뒤 다시`); }
+  wf(L, String(process.pid)); process.on("exit", () => { try { if (rf(L, "utf8").trim() === String(process.pid)) rm(L); } catch { /* */ } }); }
 run("git", ["fetch", "-q", "origin"], { cwd: repo });
 const sha = run("git", ["rev-parse", arg("sha") ?? "origin/main"], { cwd: repo }).out.trim(); if (!/^[0-9a-f]{40}$/.test(sha)) die(`커밋을 못 찾음: ${arg("sha") ?? "origin/main"}`);
 if (!existsSync(join(W, ".git"))) { const r = run("git", ["worktree", "add", "--detach", W, sha], { cwd: repo }); if (r.code) die(`작업 트리: ${r.out.slice(-400)}`); }

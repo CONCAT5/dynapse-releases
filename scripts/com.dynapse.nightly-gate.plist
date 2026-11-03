@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- 밤 전체 검사(#353) — 한 시간마다 깨어나 nightly.mjs가 한국 시간 03시대·그날 처음일 때만 돈다(놓친 시각을 몰아서 돌지 않는다). 설치: ~/Library/LaunchAgents에 복사 → launchctl bootstrap gui/$(id -u) … · 끄기: launchctl bootout gui/$(id -u)/com.dynapse.nightly-gate -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.dynapse.nightly-gate</string>
+  <key>ProgramArguments</key><array><string>/opt/homebrew/bin/node</string><string>/Users/taeminkwak/development/dynapse-releases/scripts/nightly.mjs</string></array>
+  <key>StartInterval</key><integer>3600</integer>
+  <key>RunAtLoad</key><false/>
+  <key>StandardOutPath</key><string>/Users/taeminkwak/development/nightly.out.log</string>
+  <key>StandardErrorPath</key><string>/Users/taeminkwak/development/nightly.out.log</string>
+  <key>WorkingDirectory</key><string>/Users/taeminkwak/development/dynapse-releases</string>
+</dict>
+</plist>
