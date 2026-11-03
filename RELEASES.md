@@ -642,3 +642,4 @@
 | 2026-11-03T11:21:08.915Z | macos | ota | 0.1.86+ota91 | - | ota-served-verified | src a84b87d47 · 처음 요청과 뒤에 바꾼 요청을 모두 AI에 · 낱말로 장을 떼어 고치지 않음 · 판형 바꾸기는 AI가 · 고른 색·글꼴·그림 톤은 그대로 (push retried by hand after a transient pull failure) |
 | 2026-11-03T11:25:34.456Z | windows | ota | 0.1.86+ota38 | - | ota-served-verified | = macos ota 91 · src a84b87d47 · push retried by hand (network) |
 | 2026-11-03T12:57:15.834Z | macos | ota | 0.1.86+ota92 | - | ota-served-verified | src 2441537a5 · 로그인이 풀리면 다시 연결한 뒤 그 요청을 이어서 · 그림 AI 로그인이 풀리면 다른 AI로 이어 그림 |
+| 2026-11-03T12:59:32.946Z | windows | ota | 0.1.86+ota39 | - | ota-served-verified | = macos ota 92 · src 2441537a5 · 로그인이 풀리면 다시 연결한 뒤 그 요청을 이어서 · 그림 AI 로그인이 풀리면 다른 AI로 이어 그림 |
