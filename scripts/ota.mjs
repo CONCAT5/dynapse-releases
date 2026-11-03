@@ -100,3 +100,9 @@ writeFileSync(join(ROOT, "RELEASES.md"), `${readFileSync(join(ROOT, "RELEASES.md
 gitCommitOnly(["RELEASES.md"], `ledger: ${platform} ota ${signed}`);
 if (!ok) die("서빙 확인 실패 — 원장에 기록됨");
 console.log(`\n✓ ${platform} ${signed} 화면 묶음 발행·서빙 확인. 켜져 있는 ${native} 앱은 SSE 알림(또는 30분 확인)으로 받아 한가할 때 새로고침`);
+// 같은 화면 묶음을 Windows 피드에도(2026-11-03 대표 결정 — Windows updater 키를 이 맥으로, 10-28 결정을 뒤집음) · --also windows
+// 맥에서 점검·빌드·서명·서빙 확인한 묶음을 바이트 그대로 복사해 Windows 키로 서명(scripts/ota-copy.mjs). 실패해도 macOS 발행은 그대로
+if (arg("also") === "windows" && platform === "macos") {
+  const r = run(process.execPath, [join(ROOT, "scripts", "ota-copy.mjs"), "--to", "windows", "--source", src], { inherit: true });
+  if (r.code !== 0) die("Windows 피드 복사 실패 — macOS는 발행됨 · node scripts/ota-copy.mjs --to windows --source … 로 다시");
+}

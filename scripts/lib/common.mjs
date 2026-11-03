@@ -205,12 +205,14 @@ export async function askHidden(prompt) {
   });
 }
 
+// Windows 키는 이 맥에(2026-11-03 대표 결정 — 10-28을 뒤집음): Windows는 자기 경로·비밀번호만(_WINDOWS) — 맥 덮어쓰기 변수가 Windows 서명에 새지 않게
 export async function signingEnv(platform) {
-  const path = process.env.TAURI_SIGNING_PRIVATE_KEY_PATH || keyPathOf(platform);
+  const win = platform === "windows";
+  const path = (win ? process.env.TAURI_SIGNING_PRIVATE_KEY_PATH_WINDOWS : process.env.TAURI_SIGNING_PRIVATE_KEY_PATH) || keyPathOf(platform);
   if (!existsSync(path)) die(`updater 개인키 없음: ${path} — pnpm tauri signer generate -w ${keyPathOf(platform)}`);
   if (process.platform !== "win32" && (statSync(path).mode & 0o077)) die(`개인키 권한이 너무 열려 있음 — chmod 600 ${path}`);
   const key = readFileSync(path, "utf8").trim();
-  const password = process.env.TAURI_SIGNING_PRIVATE_KEY_PASSWORD || await askHidden("updater 키 비밀번호: "); // 로컬 .env에 있으면 묻지 않는다
+  const password = (win ? process.env.TAURI_SIGNING_PRIVATE_KEY_PASSWORD_WINDOWS : process.env.TAURI_SIGNING_PRIVATE_KEY_PASSWORD) || await askHidden(`updater 키 비밀번호(${platform}): `); // 로컬 .env에 있으면 묻지 않는다
   if (!password) die("비밀번호가 비어 있음");
   return { TAURI_SIGNING_PRIVATE_KEY: key, TAURI_SIGNING_PRIVATE_KEY_PASSWORD: password };
 }
