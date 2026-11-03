@@ -635,3 +635,4 @@
 | 2026-11-02T23:37:44.835Z | macos | ota | 0.1.86+ota87 | - | ota-served-verified | src 4641a4749 · 바탕이 비어 보이는 장은 AI가 한 번 더 채워요 |
 | 2026-11-03T00:04:49.465Z | windows | ota | 0.1.86+ota35 | - | ota-served-verified | src 7aa4fa406 · 덱을 끝까지 · 디자인은 내 AI가 · 장 순서 기록 |
 | 2026-11-03T01:12:34.464Z | macos | ota | 0.1.86+ota88 | - | ota-served-verified | src 43e14860d · 읽히는 글자 · 검사에 걸린 첫 결과도 그림을 만들어요 |
+| 2026-11-03T03:22:47.757Z | macos | ota | 0.1.86+ota89 | - | ota-served-verified | src 4ef144cb9 · Gemini 한도 안내 · 바둑판 바탕 지우기 · 글자 크기 바르게 재기 |
