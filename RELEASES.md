@@ -638,3 +638,4 @@
 | 2026-11-03T03:22:47.757Z | macos | ota | 0.1.86+ota89 | - | ota-served-verified | src 4ef144cb9 · Gemini 한도 안내 · 바둑판 바탕 지우기 · 글자 크기 바르게 재기 |
 | 2026-11-03T05:15:25.232Z | windows | ota | 0.1.86+ota36 | - | ota-served-verified | src be18ad361 · 덱을 끝까지 · 디자인은 내 AI가 · 장 순서 기록 |
 | 2026-11-03T07:16:57.801Z | macos | ota | 0.1.86+ota90 | - | ota-served-verified | src 1a4bc9bf5 · 쓴 말 그대로 AI에 · 그림 AI에는 AI가 쓴 프롬프트만 · 다시 만들기는 처음 프롬프트 그대로 · 덱 그림은 ChatGPT 대화 하나에서 · 그림은 만든 그대로 |
+| 2026-11-03T07:19:51.572Z | windows | ota | 0.1.86+ota37 | - | ota-served-verified | = macos ota 90 · src 1a4bc9bf5 · 쓴 말 그대로 AI에 · 그림 AI에는 AI가 쓴 프롬프트만 · 다시 만들기는 처음 프롬프트 그대로 · 덱 그림은 ChatGPT 대화 하나에서 · 그림은 만든 그대로 |
