@@ -38,8 +38,13 @@ const prev = readJsonIfExists(feedPath);
 const n = prev?.native === native ? prev.ota + 1 : 1;
 
 // [0] 점검(#141 §5 a) — 화면 묶음을 만들기 전에: 형식 검사(tsc) + sync-sim(가상 기기가 새 main.ts·chat.ts를 READY까지 띄우고 동기화 시나리오 전부). 하나라도 실패면 내보내지 않는다
-console.log(`\n[0] 점검 · tsc + sync-sim + turn-sim`);
+// 관문 도장(#353 ③): gate.mjs가 같은 커밋·같은 플랫폼을 24시간 안에 깨끗한 트리에서 통과시켰으면 [0]을 다시 돌리지 않는다(소스 트리도 깨끗해야)
+const gateSha = run("git", ["rev-parse", "HEAD"], { cwd: src }).out?.trim() ?? "", srcDirty = (run("git", ["status", "--porcelain", "--untracked-files=no"], { cwd: src }).out ?? "").trim();
+const stampF = join(ROOT, ".gate", `${gateSha}-${platform}.json`), stamp = /^[0-9a-f]{40}$/.test(gateSha) && !srcDirty ? readJsonIfExists(stampF) : null;
+const stampOk = !!stamp && stamp.sha === gateSha && Date.now() - Date.parse(stamp.at) < 86_400_000;
+console.log(`\n[0] 점검 · tsc + sync-sim + turn-sim${stampOk ? ` — 도장 ${gateSha.slice(0, 8)} (${stamp.sync} · ${stamp.turn} · ${stamp.at}) · 다시 돌리지 않음` : ""}`);
 must("node", ["scripts/sync-tokens.mjs"], { cwd: src });   // 생성 파일(src/shared/*)을 먼저 — tsc·sync-sim이 읽는다(#142 추가 6 onb.ts)
+if (!stampOk) {
 const tsc = run("pnpm", ["exec", "tsc", "--noEmit", "-p", "."], { cwd: src })   /* npx 대신 pnpm exec — Windows의 새 npx.cmd는 심 풀기가 못 읽어 ENOENT였다 */;
 if (tsc.code !== 0) die(`tsc 실패 — OTA 안 함\n${(tsc.out || tsc.err).slice(-1500)}`);
 const hubDir = join(src, "..", "hub");
@@ -58,6 +63,7 @@ if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
   }
   noSimLeft("OTA");
 } else console.log("  ⚠ sync-sim 없음(옛 소스) — tsc만");
+}
 console.log(`\n[1] 화면 빌드 (${native} · 묶음 ${n})`);
 must("pnpm", ["run", "build:web"], { cwd: src });   // -s 없이(pnpm 12는 -s를 모른다 · Windows)
 const dist = join(src, "dist");

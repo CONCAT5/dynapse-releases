@@ -19,3 +19,4 @@ node_modules/
 
 # 화면 묶음(OTA) 서명은 서빙해야 한다(앱이 검증)
 !ota/**/manifest.json.sig
+.gate/
