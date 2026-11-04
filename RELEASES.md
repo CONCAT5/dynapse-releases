@@ -657,3 +657,4 @@
 | 2026-11-04T02:26:33.864Z | windows | ota | 0.1.86+ota45 | - | ota-served-verified | = macos ota 98 · src 438755cf7 · 검사는 읽힘만 · 요소 수·사진 반복·사진 쓰임새 지시 없음 · 사진이 글을 가리면 어디인지만 |
 | 2026-11-04T03:36:00.209Z | macos | ota | 0.1.86+ota99 | - | ota-served-verified | src 9cdd8d597 · 참고 그림을 그림마다 여러 장·쓰임과 함께 · 실제로 받았는지 확인해 남김 · 전달 안 되면 알림 |
 | 2026-11-04T03:38:49.145Z | windows | ota | 0.1.86+ota46 | - | ota-served-verified | = macos ota 99 · src 9cdd8d597 · 참고 그림을 그림마다 여러 장·쓰임과 함께 · 실제로 받았는지 확인해 남김 · 전달 안 되면 알림 |
+| 2026-11-04T04:11:35.890Z | macos | ota | 0.1.86+ota100 | - | ota-served-verified | src 4a6f1a869 · 핫픽스: 새 그림 프롬프트 기록 · 다시 그릴 때 참고 그림 다시 붙임 · 참고 파일 없으면 알림 |
