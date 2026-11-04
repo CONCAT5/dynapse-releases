@@ -665,3 +665,4 @@
 | 2026-11-04T07:18:22.863Z | windows | ota | 0.1.86+ota49 | - | ota-served-verified | = macos ota 102 · src 3479bddf6 · 고쳐 줘가 검사 오류와 그 장만 고쳐요 · 같은 글꼴 다른 표기를 바꿈으로 보지 않아요 · 고른 글꼴을 넣은 뒤 검사해요 · 고칠 것 수는 전체 개수로 |
 | 2026-11-04T08:41:20.845Z | macos | ota | 0.1.86+ota103 | - | ota-served-verified | src ceffebab3 · 실제로 바뀐 장만 세요 · 고쳐 줘가 오류 난 장만 고쳐요 · 고른 글꼴을 넣은 뒤 검사해요 |
 | 2026-11-04T08:43:50.467Z | windows | ota | 0.1.86+ota50 | - | ota-served-verified | = macos ota 103 · src ceffebab3 · 실제로 바뀐 장만 세요 · 고쳐 줘가 오류 난 장만 고쳐요 · 고른 글꼴을 넣은 뒤 검사해요 |
+| 2026-11-04T09:53:19.685Z | macos | ota | 0.1.86+ota104 | - | ota-served-verified | src 2eab19bf8 · 그림은 요청대로 계획해요 · 청하지 않은 재고는 넣지 않아요 · 밀도는 수치로만 알려요 |
