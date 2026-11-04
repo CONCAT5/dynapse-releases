@@ -655,3 +655,4 @@
 | 2026-11-04T01:51:12.572Z | windows | ota | 0.1.86+ota44 | - | ota-served-verified | = macos ota 97 · src 0b73c0d96 · 붙인 참고 그림도 그림 AI에 · 다시 그릴 때도 처음 요청과 덱 그림 전체 · 예전 첫 그림 톤 문장 없음 |
 | 2026-11-04T02:24:33.747Z | macos | ota | 0.1.86+ota98 | - | ota-served-verified | src 438755cf7 · 검사는 읽힘만 · 요소 수·사진 반복·사진 쓰임새 지시 없음 · 사진이 글을 가리면 어디인지만 |
 | 2026-11-04T02:26:33.864Z | windows | ota | 0.1.86+ota45 | - | ota-served-verified | = macos ota 98 · src 438755cf7 · 검사는 읽힘만 · 요소 수·사진 반복·사진 쓰임새 지시 없음 · 사진이 글을 가리면 어디인지만 |
+| 2026-11-04T03:36:00.209Z | macos | ota | 0.1.86+ota99 | - | ota-served-verified | src 9cdd8d597 · 참고 그림을 그림마다 여러 장·쓰임과 함께 · 실제로 받았는지 확인해 남김 · 전달 안 되면 알림 |
