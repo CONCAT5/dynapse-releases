@@ -653,3 +653,4 @@
 | 2026-11-03T16:03:26.361Z | windows | ota | 0.1.86+ota43 | - | ota-served-verified | = macos ota 96 · src e2a9cb2a1 · 아직 안 쓴 장을 계획 순서에 그대로 두기(만드는 중인 덱의 표지·다음 차례) |
 | 2026-11-04T01:49:14.182Z | macos | ota | 0.1.86+ota97 | - | ota-served-verified | src 0b73c0d96 · 붙인 참고 그림도 그림 AI에 · 다시 그릴 때도 처음 요청과 덱 그림 전체 · 예전 첫 그림 톤 문장 없음 |
 | 2026-11-04T01:51:12.572Z | windows | ota | 0.1.86+ota44 | - | ota-served-verified | = macos ota 97 · src 0b73c0d96 · 붙인 참고 그림도 그림 AI에 · 다시 그릴 때도 처음 요청과 덱 그림 전체 · 예전 첫 그림 톤 문장 없음 |
+| 2026-11-04T02:24:33.747Z | macos | ota | 0.1.86+ota98 | - | ota-served-verified | src 438755cf7 · 검사는 읽힘만 · 요소 수·사진 반복·사진 쓰임새 지시 없음 · 사진이 글을 가리면 어디인지만 |
