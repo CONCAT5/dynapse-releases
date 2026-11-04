@@ -668,3 +668,4 @@
 | 2026-11-04T09:53:19.685Z | macos | ota | 0.1.86+ota104 | - | ota-served-verified | src 2eab19bf8 · 그림은 요청대로 계획해요 · 청하지 않은 재고는 넣지 않아요 · 밀도는 수치로만 알려요 |
 | 2026-11-04T09:58:50.000Z | windows | ota | 0.1.86+ota51 | - | ota-served-verified | = macos ota 104 · src 2eab19bf8 · 그림은 요청대로 계획해요 · 청하지 않은 재고는 넣지 않아요 · 밀도는 수치로만 알려요 (copy push retried by hand — GitHub 500) |
 | 2026-11-04T12:14:45.183Z | macos | ota | 0.1.86+ota105 | - | ota-served-verified | src 1f3cd9ab9 · 첫 결과 뒤 AI가 검사 수치를 한 번 살펴봐요(안 바꿀 수도 있어요) |
+| 2026-11-04T12:17:36.333Z | windows | ota | 0.1.86+ota52 | - | ota-served-verified | = macos ota 105 · src 1f3cd9ab9 · 첫 결과 뒤 AI가 검사 수치를 한 번 살펴봐요(안 바꿀 수도 있어요) |
