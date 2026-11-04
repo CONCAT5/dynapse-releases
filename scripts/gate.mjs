@@ -26,6 +26,9 @@ let r = run("node", ["scripts/sync-tokens.mjs"], { cwd: src }); if (r.code) die(
 mkdirSync(join(src, "dist"), { recursive: true });
 r = run("pnpm", ["exec", "tsc", "--noEmit", "-p", "."], { cwd: src }); if (r.code) die(`tsc: ${r.out.slice(-1200)}`);
 console.log("  ✓ tsc");
+// 주석이 코드를 삼킨 줄(#353 — 줄 중간 // 사고 네 번째, 11-04 noteBrief): 있으면 도장 없음
+r = run("node", ["scripts/lint-comments.mjs"], { cwd: hub }); if (r.code) die(`lint-comments\n${r.out.slice(-1500)}`);
+console.log("  ✓ lint-comments");
 // 병렬(#353 ④): sync-sim을 SHARDS 조각(SIM_SHARD=k/n — 조각마다 자기 가짜 서버·기기, 포트는 무작위)으로 나누고 turn-sim과 함께 동시에. 하나라도 실패면 도장 없음
 const SHARDS = Math.max(1, Math.min(4, Number(arg("shards") ?? 2)));
 const go = (args, env, timeout) => new Promise(res => { const t = Date.now(); const p = spawn("pnpm", args, { cwd: hub, env: { ...process.env, ...env } }); let out = "";

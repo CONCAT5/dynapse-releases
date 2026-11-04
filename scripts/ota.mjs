@@ -47,6 +47,7 @@ must("node", ["scripts/sync-tokens.mjs"], { cwd: src });   // 생성 파일(src/
 if (!stampOk) {
 const tsc = run("pnpm", ["exec", "tsc", "--noEmit", "-p", "."], { cwd: src })   /* npx 대신 pnpm exec — Windows의 새 npx.cmd는 심 풀기가 못 읽어 ENOENT였다 */;
 if (tsc.code !== 0) die(`tsc 실패 — OTA 안 함\n${(tsc.out || tsc.err).slice(-1500)}`);
+{ const lc = join(src, "..", "hub", "scripts", "lint-comments.mjs"); if (existsSync(lc)) { const l = run("node", [lc], { cwd: join(src, "..", "hub") }); if (l.code !== 0) die(`주석이 코드를 삼킨 줄 — OTA 안 함\n${(l.out || l.err).slice(-1500)}`); } }   // #353 · 11-04 noteBrief
 const hubDir = join(src, "..", "hub");
 if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
   must("pnpm", ["install", "--frozen-lockfile"], { cwd: hubDir });   // 빌드 사본의 허브 의존성을 잠금 파일대로(낡으면 sync-sim이 PGlite를 못 찾았다 — 2026-10-16 저녁)
