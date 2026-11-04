@@ -660,3 +660,4 @@
 | 2026-11-04T04:11:35.890Z | macos | ota | 0.1.86+ota100 | - | ota-served-verified | src 4a6f1a869 · 핫픽스: 새 그림 프롬프트 기록 · 다시 그릴 때 참고 그림 다시 붙임 · 참고 파일 없으면 알림 |
 | 2026-11-04T04:13:34.236Z | windows | ota | 0.1.86+ota47 | - | ota-served-verified | = macos ota 100 · src 4a6f1a869 · 핫픽스: 새 그림 프롬프트 기록 · 다시 그릴 때 참고 그림 다시 붙임 · 참고 파일 없으면 알림 |
 | 2026-11-04T04:35:26.348Z | macos | ota | 0.1.86+ota101 | - | ota-served-verified | src 52f821fec · 내보내기 실패 안내 · 이 PC 그림 엔진 실패에도 멈추지 않음 |
+| 2026-11-04T04:37:24.654Z | windows | ota | 0.1.86+ota48 | - | ota-served-verified | = macos ota 101 · src 52f821fec · 내보내기 실패 안내 · 이 PC 그림 엔진 실패에도 멈추지 않음 |
