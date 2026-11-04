@@ -662,3 +662,4 @@
 | 2026-11-04T04:35:26.348Z | macos | ota | 0.1.86+ota101 | - | ota-served-verified | src 52f821fec · 내보내기 실패 안내 · 이 PC 그림 엔진 실패에도 멈추지 않음 |
 | 2026-11-04T04:37:24.654Z | windows | ota | 0.1.86+ota48 | - | ota-served-verified | = macos ota 101 · src 52f821fec · 내보내기 실패 안내 · 이 PC 그림 엔진 실패에도 멈추지 않음 |
 | 2026-11-04T07:16:06.279Z | macos | ota | 0.1.86+ota102 | - | ota-served-verified | src 3479bddf6 · 고쳐 줘가 검사 오류와 그 장만 고쳐요 · 같은 글꼴 다른 표기를 바꿈으로 보지 않아요 · 고른 글꼴을 넣은 뒤 검사해요 · 고칠 것 수는 전체 개수로 |
+| 2026-11-04T07:18:22.863Z | windows | ota | 0.1.86+ota49 | - | ota-served-verified | = macos ota 102 · src 3479bddf6 · 고쳐 줘가 검사 오류와 그 장만 고쳐요 · 같은 글꼴 다른 표기를 바꿈으로 보지 않아요 · 고른 글꼴을 넣은 뒤 검사해요 · 고칠 것 수는 전체 개수로 |
