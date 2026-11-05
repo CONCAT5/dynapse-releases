@@ -683,3 +683,4 @@
 | 2026-11-05T12:03:45.517Z | windows | ota | 0.1.86+ota58 | - | ota-served-verified | = macos ota 111 · src 40b1acfb7 · 묶음만 내보낸 뒤 다른 장이 숨어 있지 않아요 · 받기·내보내기의 숨김·순서·언어판을 덱 파일 하나로 |
 | 2026-11-05T19:50:33.453Z | macos | ota | 0.1.86+ota112 | - | ota-SERVE-VERIFY-FAILED | src fd0e1687f · 장 순서·잠금·부록 기록을 덱 하나로 씁니다 — 순서를 바꿔 달라는 요청만 그 턴에 순서를 바꾸고, 끝나면 새 순서로 다시 잠급니다 |
 | 2026-11-05T19:53:29.646Z | windows | ota | 0.1.86+ota59 | - | ota-served-verified | = macos ota 112 · src fd0e1687f · 장 순서·잠금·부록 기록을 덱 하나로 씁니다 — 순서를 바꿔 달라는 요청만 그 턴에 순서를 바꾸고, 끝나면 새 순서로 다시 잠급니다 |
+| 2026-11-05T20:38:10.000Z | macos | ota | 0.1.86+ota112 | - | ota-served-verified | Pages 재빌드(27d9b5c) 뒤 서빙 확인 · main.js·chat.js 해시 일치 · 첫 확인 실패는 GitHub Pages "Page build failed"(7bb80d1) |
