@@ -42,7 +42,9 @@ const jobs = [...Array.from({ length: SHARDS }, (_, i) => go([...tsx, "scripts/s
 const res = await Promise.all(jobs), syncs = res.slice(0, SHARDS), tr = res[SHARDS];
 const sum = syncs.map(x => (x.out.match(/sync-sim (\d+)\/(\d+)/) ?? [0, 0, 0]).slice(1).map(Number)).reduce((a, b) => [a[0] + b[0], a[1] + b[1]], [0, 0]);
 const sync = `sync-sim ${sum[0]}/${sum[1]}`, turn = (tr.out.match(/turn-sim \d+\/\d+/) ?? [""])[0];
-if (syncs.some(x => x.code)) die(`${sync}\n${syncs.flatMap(x => x.out.split("\n").filter(l => /✗/.test(l))).slice(0, 8).join("\n")}`);
+// 조각이 요약 없이 죽으면(✗ 줄도 없음 — 11-05 8d0df2e6 "80/80"인데 실패) 그 조각의 끝 15줄을 보인다
+const crashed = syncs.map((x, i) => ({ x, i })).filter(({ x }) => x.code && !/sync-sim \d+\/\d+/.test(x.out)).map(({ x, i }) => `[조각 ${i + 1}/${SHARDS} 요약 없이 끝남 · 코드 ${x.code}]\n${x.out.trim().split("\n").slice(-15).join("\n")}`);
+if (syncs.some(x => x.code)) die(`${sync}\n${[...syncs.flatMap(x => x.out.split("\n").filter(l => /✗/.test(l))).slice(0, 8), ...crashed].join("\n")}`);
 console.log(`  ✓ ${sync} (조각 ${SHARDS} · ${syncs.map(x => Math.round(x.ms / 1000) + "s").join(" · ")})`);
 if (tr.code) die(`turn-sim(${turn})\n${tr.out.split("\n").filter(l => /✗/.test(l)).slice(0, 6).join("\n")}`);
 console.log(`  ✓ ${turn} (${Math.round(tr.ms / 1000)}s)`);
