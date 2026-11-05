@@ -1,0 +1,16 @@
+/* 오프라인 보기(#146 대표 결정 — 앱에 든 최소 보기): 읽기 · 발표 · 글자·사진 직접 고치기. 사이트가 열리지 않을 때만 */
+:root{--bg:#F6F7F3;--ink:#172B3A;--soft:#55606A;--line:#DCE0DC;--btn:#172B3A;--btnink:#fff;--edit:#2F6FEB}
+@media (prefers-color-scheme:dark){:root{--bg:#14181b;--ink:#E8ECEA;--soft:#9AA5AC;--line:#2a3136;--btn:#E8ECEA;--btnink:#14181b}}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+.vbar{position:sticky;top:0;z-index:2;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+.vbar b{font-size:15px}.vbar__st{font-size:12px;color:var(--soft)}.vbar__acts{margin-left:auto;display:flex;gap:8px}
+button{font:inherit;font-size:13px;border-radius:999px;padding:6px 14px;cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--ink)}
+button.main{background:var(--btn);color:var(--btnink);border-color:var(--btn)}button[aria-pressed=true]{border-color:var(--edit);color:var(--edit)}
+.vpages{display:grid;gap:18px;padding:18px 16px 60px;max-width:1100px;margin:0 auto}
+.vpage{display:grid;gap:6px}.vpage small{font-size:12px;color:var(--soft)}
+.vframe{position:relative;width:100%;overflow:hidden;border:1px solid var(--line);border-radius:8px;background:#fff}
+.vframe iframe{position:absolute;top:0;left:0;border:0;transform-origin:0 0}
+.vempty{color:var(--soft);font-size:14px}
+.vpresent{position:fixed;inset:0;z-index:5;background:#000;display:flex;align-items:center;justify-content:center}
+.vpresent iframe{border:0;background:#fff;transform-origin:center center}
+.vpresent__n{position:fixed;right:16px;bottom:12px;color:#aaa;font-size:12px}
