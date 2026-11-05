@@ -673,3 +673,4 @@
 | 2026-11-05T06:01:37.147Z | windows | ota | 0.1.86+ota53 | - | ota-served-verified | = macos ota 106 · src 7b2ec44da · 만드는 중인 그림은 대기로 · 출처 모르는 그림은 미확인 · 남은 오류를 오류 없음으로 끝내지 않아요 |
 | 2026-11-05T06:34:18.791Z | macos | ota | 0.1.86+ota107 | - | ota-served-verified | src e2020f913 · 답을 기다리는 질문이 입력창 위에 · 적은 답은 같은 AI가 넣어요 |
 | 2026-11-05T06:36:38.294Z | windows | ota | 0.1.86+ota54 | - | ota-served-verified | = macos ota 107 · src e2020f913 · 답을 기다리는 질문이 입력창 위에 · 적은 답은 같은 AI가 넣어요 |
+| 2026-11-05T07:22:05.993Z | macos | ota | 0.1.86+ota108 | - | ota-served-verified | src 555821de8 · 글꼴 92종 더 · 나중으로 둔 질문에 다시 답하기 |
