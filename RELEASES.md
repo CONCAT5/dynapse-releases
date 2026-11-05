@@ -680,3 +680,4 @@
 | 2026-11-05T10:57:49.100Z | macos | ota | 0.1.86+ota110 | - | ota-served-verified | src 6c878591d · AI가 받는 글꼴 목록을 이름·태그로 짧게 · 자세한 모양·굵기는 따로 |
 | 2026-11-05T11:00:19.248Z | windows | ota | 0.1.86+ota57 | - | ota-served-verified | = macos ota 110 · src 6c878591d · AI가 받는 글꼴 목록을 이름·태그로 짧게 · 자세한 모양·굵기는 따로 |
 | 2026-11-05T12:01:06.409Z | macos | ota | 0.1.86+ota111 | - | ota-served-verified | src 40b1acfb7 · 묶음만 내보낸 뒤 다른 장이 숨어 있지 않아요 · 받기·내보내기의 숨김·순서·언어판을 덱 파일 하나로 |
+| 2026-11-05T12:03:45.517Z | windows | ota | 0.1.86+ota58 | - | ota-served-verified | = macos ota 111 · src 40b1acfb7 · 묶음만 내보낸 뒤 다른 장이 숨어 있지 않아요 · 받기·내보내기의 숨김·순서·언어판을 덱 파일 하나로 |
