@@ -676,3 +676,4 @@
 | 2026-11-05T07:22:05.993Z | macos | ota | 0.1.86+ota108 | - | ota-served-verified | src 555821de8 · 글꼴 92종 더 · 나중으로 둔 질문에 다시 답하기 |
 | 2026-11-05T07:24:14.791Z | windows | ota | 0.1.86+ota55 | - | ota-served-verified | = macos ota 108 · src 555821de8 · 글꼴 92종 더 · 나중으로 둔 질문에 다시 답하기 |
 | 2026-11-05T08:00:25.172Z | macos | ota | 0.1.86+ota109 | - | ota-served-verified | src 699fe3431 · 정해 둔 검사 처방을 더 빼고 수치만 · 고쳐 줘는 지난 디자인 오류를 안 보내요 |
+| 2026-11-05T08:02:24.126Z | windows | ota | 0.1.86+ota56 | - | ota-served-verified | = macos ota 109 · src 699fe3431 · 정해 둔 검사 처방을 더 빼고 수치만 · 고쳐 줘는 지난 디자인 오류를 안 보내요 |
