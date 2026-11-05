@@ -685,3 +685,4 @@
 | 2026-11-05T19:53:29.646Z | windows | ota | 0.1.86+ota59 | - | ota-served-verified | = macos ota 112 · src fd0e1687f · 장 순서·잠금·부록 기록을 덱 하나로 씁니다 — 순서를 바꿔 달라는 요청만 그 턴에 순서를 바꾸고, 끝나면 새 순서로 다시 잠급니다 |
 | 2026-11-05T20:38:10.000Z | macos | ota | 0.1.86+ota112 | - | ota-served-verified | Pages 재빌드(27d9b5c) 뒤 서빙 확인 · main.js·chat.js 해시 일치 · 첫 확인 실패는 GitHub Pages "Page build failed"(7bb80d1) |
 | 2026-11-05T21:08:31.707Z | macos | ota | 0.1.86+ota113 | - | ota-served-verified | src 8d0df2e66 · 동기화로 받은 작업도 지침 파일 하나만 읽어요(전체 규칙이 다시 들어가던 것 고침) · 기본 작업 검사에서 색·그림 취향 오류 셋을 내지 않고, 없는 굵기는 고칠 목록에 |
+| 2026-11-05T21:10:40.436Z | windows | ota | 0.1.86+ota60 | - | ota-served-verified | = macos ota 113 · src 8d0df2e66 · 동기화로 받은 작업도 지침 파일 하나만 읽어요(전체 규칙이 다시 들어가던 것 고침) · 기본 작업 검사에서 색·그림 취향 오류 셋을 내지 않고, 없는 굵기는 고칠 목록에 |
