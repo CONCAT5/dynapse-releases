@@ -671,3 +671,4 @@
 | 2026-11-04T12:17:36.333Z | windows | ota | 0.1.86+ota52 | - | ota-served-verified | = macos ota 105 · src 1f3cd9ab9 · 첫 결과 뒤 AI가 검사 수치를 한 번 살펴봐요(안 바꿀 수도 있어요) |
 | 2026-11-05T05:59:18.392Z | macos | ota | 0.1.86+ota106 | - | ota-served-verified | src 7b2ec44da · 만드는 중인 그림은 대기로 · 출처 모르는 그림은 미확인 · 남은 오류를 오류 없음으로 끝내지 않아요 |
 | 2026-11-05T06:01:37.147Z | windows | ota | 0.1.86+ota53 | - | ota-served-verified | = macos ota 106 · src 7b2ec44da · 만드는 중인 그림은 대기로 · 출처 모르는 그림은 미확인 · 남은 오류를 오류 없음으로 끝내지 않아요 |
+| 2026-11-05T06:34:18.791Z | macos | ota | 0.1.86+ota107 | - | ota-served-verified | src e2020f913 · 답을 기다리는 질문이 입력창 위에 · 적은 답은 같은 AI가 넣어요 |
