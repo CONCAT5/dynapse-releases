@@ -1,15 +1,15 @@
 {
-  "version": "0.1.87",
-  "notes": "브라우저 베타 시험판(연결 탭 실험실에서 켜기 · 기본 꺼짐) — 외부 페이지 열기·검색·이 페이지 묻기(출처 · 앱 확인됨)·참고 담기·입력 허락 카드 · 작업실은 그대로",
-  "pub_date": "2026-11-05T22:59:34Z",
+  "version": "0.1.88",
+  "notes": "브라우저 베타 시험판 2 — 채팅 한 줄로 읽기·만들기·올리기, 확인/자동 모드, ChatGPT(Codex)로도 · 연결 탭 실험실에서 켜기 · 작업실은 그대로",
+  "pub_date": "2026-11-06T04:29:53Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.87/Dynapse_0.1.87_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzJ5Nmw4NTZFUkVDazBnU3ZtdnhOZzd2c3NYbmJjRHVBSXJsYzE4STJEYjNEcW1lYU1WRUpLRzV0MXN3U2s5QTJ0L2hxYVl3QlgvbGhIK3llVzgxdmdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTE5NDYxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjg3CkNJLzNiOWtrV2x1QlRkTDIrKzJwVWZWTGI5WEFlVTFnL205c0RGRi9lTmlxWjB0ODhhR0lxdVRmL1JUUWlkc0I2dzBNbmF3YXN1ODE1MHRRdUxPQ0R3PT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.88/Dynapse_0.1.88_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzdJUWtnZlZ2V1FsZWc3MWlUV0VXY2JmZmcvN29xVysySUVtaGZ5Wll0MnBQVGlMelo1Q1duZS9YeTFUQ1hETUkrVjdFNHR0K2dUczdVNmtkQWJ3T0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTM5MjcxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjg4CnkzZ3ZnN2FNa2R0KzBTVnBkTHJwM2pEamFkRzVCUDNNN3NWbUVCR1EyZ01SYldIcmpvZVVLc3d0S0JhWUdnUlV4d0pEakV1bkdUYTMwQ0RwSUorTEJRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.87/Dynapse_0.1.87_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzJ5Nmw4NTZFUkVDazBnU3ZtdnhOZzd2c3NYbmJjRHVBSXJsYzE4STJEYjNEcW1lYU1WRUpLRzV0MXN3U2s5QTJ0L2hxYVl3QlgvbGhIK3llVzgxdmdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTE5NDYxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjg3CkNJLzNiOWtrV2x1QlRkTDIrKzJwVWZWTGI5WEFlVTFnL205c0RGRi9lTmlxWjB0ODhhR0lxdVRmL1JUUWlkc0I2dzBNbmF3YXN1ODE1MHRRdUxPQ0R3PT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.88/Dynapse_0.1.88_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzdJUWtnZlZ2V1FsZWc3MWlUV0VXY2JmZmcvN29xVysySUVtaGZ5Wll0MnBQVGlMelo1Q1duZS9YeTFUQ1hETUkrVjdFNHR0K2dUczdVNmtkQWJ3T0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTM5MjcxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjg4CnkzZ3ZnN2FNa2R0KzBTVnBkTHJwM2pEamFkRzVCUDNNN3NWbUVCR1EyZ01SYldIcmpvZVVLc3d0S0JhWUdnUlV4d0pEakV1bkdUYTMwQ0RwSUorTEJRPT0K"
     }
   }
 }
