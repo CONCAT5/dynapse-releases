@@ -693,3 +693,4 @@
 | 2026-11-06T00:06:52.173Z | windows | ota | 0.1.86+ota62 | - | ota-SERVE-VERIFY-FAILED | = macos ota 115 · src 98f10fdc5 · 작업실 안의 기능 호출을 한 창구로 모았어요(동작은 그대로) · 브라우저 베타 준비(파일 올리기 · 빠른 허용 누름 고침, 기본 꺼짐) |
 | 2026-11-06T03:53:50.415Z | macos | ota | 0.1.86+ota116 | - | ota-served-verified | src 4a51e51c4 · 브라우저 베타: 채팅 한 줄로 읽기·만들기·올리기, 확인/자동 모드(기본 꺼짐 · 맥 새 앱 판에서만) |
 | 2026-11-06T03:56:09.408Z | windows | ota | 0.1.86+ota63 | - | ota-served-verified | = macos ota 116 · src 4a51e51c4 · 브라우저 베타: 채팅 한 줄로 읽기·만들기·올리기, 확인/자동 모드(기본 꺼짐 · 맥 새 앱 판에서만) |
+| 2026-11-06T04:31:29.542Z | macos | beta | 0.1.88 | macos-v0.1.88 | beta-served-verified | src 835cfa3ed · 브라우저 베타 시험판 2 — 채팅 한 줄로 읽기·만들기·올리기, 확인/자동 모드, ChatGPT(Codex)로도 · 연결 탭 실험실에서 켜기 · 작업실은 그대로 |
