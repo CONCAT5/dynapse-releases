@@ -697,3 +697,4 @@
 | 2026-11-06T05:10:05.061Z | macos | ota | 0.1.86+ota117 | - | ota-served-verified | src 0431f2d81 · 시작 전에 편집 AI·모델·이미지 AI 고르기(홈·새 작업) — 고른 AI를 못 쓰면 다른 AI로 바꾸지 않고 먼저 알려요 · 글꼴 7종을 우리 서버에서 |
 | 2026-11-06T05:12:14.076Z | windows | ota | 0.1.86+ota64 | - | ota-served-verified | = macos ota 117 · src 0431f2d81 · 시작 전에 편집 AI·모델·이미지 AI 고르기(홈·새 작업) — 고른 AI를 못 쓰면 다른 AI로 바꾸지 않고 먼저 알려요 · 글꼴 7종을 우리 서버에서 |
 | 2026-11-06T06:04:40.979Z | macos | ota | 0.1.86+ota118 | - | ota-served-verified | src 5720f0c0e · 시작 전에 고른 이미지 AI만 써요 — 못 쓰면 다른 AI·이 PC·재고로 바꾸지 않고 까닭을 알려요 · ‘없음’이면 새 그림을 만들지 않아요 |
+| 2026-11-06T06:06:59.442Z | windows | ota | 0.1.86+ota65 | - | ota-served-verified | = macos ota 118 · src 5720f0c0e · 시작 전에 고른 이미지 AI만 써요 — 못 쓰면 다른 AI·이 PC·재고로 바꾸지 않고 까닭을 알려요 · ‘없음’이면 새 그림을 만들지 않아요 |
