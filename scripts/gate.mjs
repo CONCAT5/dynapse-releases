@@ -34,6 +34,8 @@ r = run("node", ["scripts/lint-comments.mjs"], { cwd: hub }); if (r.code) die(`l
 console.log("  ✓ lint-comments");
 // 코어 경계(M0 ④ · core-host-map.md) — 코어 모듈이 Tauri를 직접 부르면 도장 없음. 옛 커밋(스크립트 없음)은 건너뛴다
 if (existsSync(join(src, "scripts", "core-host-check.mjs"))) { r = run("node", ["scripts/core-host-check.mjs"], { cwd: src }); if (r.code) die(`core-host-check\n${r.out.slice(-1200)}`); console.log("  ✓ core-host-check"); }
+// 앱 명령 등록(#370 결과 2 — 11-06 browser_reveal·browser_e0_stop이 build.rs·권한 파일에 빠져 sync-sim 70에서야 잡힘): lib.rs 명령 = build.rs = 권한 파일, 어긋나면 시험 전에 멈춤
+if (existsSync(join(src, "scripts", "cmd-check.mjs"))) { r = run("node", ["scripts/cmd-check.mjs"], { cwd: src }); if (r.code) die(`cmd-check\n${r.out.slice(-1200)}`); console.log(`  ✓ ${r.out.trim().split("\n").pop()}`); }
 // 병렬(#353 ④): sync-sim을 SHARDS 조각(SIM_SHARD=k/n — 조각마다 자기 가짜 서버·기기, 포트는 무작위)으로 나누고 turn-sim과 함께 동시에. 하나라도 실패면 도장 없음
 const SHARDS = Math.max(1, Math.min(4, Number(arg("shards") ?? 2)));
 const go = (args, env, timeout) => new Promise(res => { const t = Date.now(); const p = spawn("pnpm", args, { cwd: hub, env: { ...process.env, ...env } }); let out = "";
