@@ -704,3 +704,4 @@
 | 2026-11-06T16:01:01.931Z | macos | ota | 0.1.86+ota120 | - | ota-served-verified | src 10ca3c706 · 브라우저 베타(맥·켠 사람만): 도구 묶음 정리(한 번에 여러 동작) · 자동 모드에서도 보낼 때마다 확인 카드 · [실행] 뒤 보낸 곳을 다시 읽고서 확인됨 — Windows에선 켜지지 않음 |
 | 2026-11-06T16:16:37.330Z | windows | ota | 0.1.86+ota67 | - | ota-SERVE-VERIFY-FAILED | = macos ota 120 · src 10ca3c706 · 브라우저 베타(맥·켠 사람만): 도구 묶음 정리(한 번에 여러 동작) · 자동 모드에서도 보낼 때마다 확인 카드 · [실행] 뒤 보낸 곳을 다시 읽고서 확인됨 — Windows에선 켜지지 않음 |
 | 2026-11-06T16:41:26.000Z | windows | ota | 0.1.86+ota67 | - | ota-served-verified | 늦은 확인 — GitHub Pages(legacy Jekyll) 빌드가 ota120 뒤 5번 연속 "Page build failed"(316ea92 … 314a0c9) → .nojekyll(f82811e)로 다시 빌드 뒤 서빙 · 70파일 sha256 일치 |
+| 2026-11-06T18:43:51.959Z | macos | ota | 0.1.86+ota121 | - | ota-served-verified | src 10e842a9c · 브라우저 베타: 사이트에 글을 넣거나 항목을 고를 때도 먼저 확인을 받아요 · 페이지에 보이는 글만으로 '확인됨'이라고 하지 않아요 |
