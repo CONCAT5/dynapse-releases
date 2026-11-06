@@ -69,7 +69,8 @@ console.log(`\n[1] 화면 빌드 (${native} · 묶음 ${n})`);
 must("pnpm", ["run", "build:web"], { cwd: src });   // -s 없이(pnpm 12는 -s를 모른다 · Windows)
 const dist = join(src, "dist");
 const files = {};
-const walk = (d) => { for (const f of readdirSync(d)) { const p = join(d, f); if (statSync(p).isDirectory()) walk(p); else if (/\.(js|css)$/.test(f) && f !== "loader.js") files[relative(dist, p).split("\\").join("/")] = p; } };
+// site-profiles.json = 브라우저 베타 사이트 프로필 켜짐 값(#369 보정 18 · -1b) — 네이티브가 서명·해시를 맞춘 뒤에만 읽는다(ota.rs verified_file). ai-task-mining의 prototypes/desktop/release-repo 사본과 같게
+const walk = (d) => { for (const f of readdirSync(d)) { const p = join(d, f); if (statSync(p).isDirectory()) walk(p); else if ((/\.(js|css)$/.test(f) && f !== "loader.js") || f === "site-profiles.json") files[relative(dist, p).split("\\").join("/")] = p; } };
 walk(dist);
 if (!files["main.js"] || !files["app.css"]) die("main.js·app.css가 없다");
 
