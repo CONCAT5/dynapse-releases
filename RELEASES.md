@@ -696,3 +696,4 @@
 | 2026-11-06T04:31:29.542Z | macos | beta | 0.1.88 | macos-v0.1.88 | beta-served-verified | src 835cfa3ed · 브라우저 베타 시험판 2 — 채팅 한 줄로 읽기·만들기·올리기, 확인/자동 모드, ChatGPT(Codex)로도 · 연결 탭 실험실에서 켜기 · 작업실은 그대로 |
 | 2026-11-06T05:10:05.061Z | macos | ota | 0.1.86+ota117 | - | ota-served-verified | src 0431f2d81 · 시작 전에 편집 AI·모델·이미지 AI 고르기(홈·새 작업) — 고른 AI를 못 쓰면 다른 AI로 바꾸지 않고 먼저 알려요 · 글꼴 7종을 우리 서버에서 |
 | 2026-11-06T05:12:14.076Z | windows | ota | 0.1.86+ota64 | - | ota-served-verified | = macos ota 117 · src 0431f2d81 · 시작 전에 편집 AI·모델·이미지 AI 고르기(홈·새 작업) — 고른 AI를 못 쓰면 다른 AI로 바꾸지 않고 먼저 알려요 · 글꼴 7종을 우리 서버에서 |
+| 2026-11-06T06:04:40.979Z | macos | ota | 0.1.86+ota118 | - | ota-served-verified | src 5720f0c0e · 시작 전에 고른 이미지 AI만 써요 — 못 쓰면 다른 AI·이 PC·재고로 바꾸지 않고 까닭을 알려요 · ‘없음’이면 새 그림을 만들지 않아요 |
