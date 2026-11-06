@@ -6,6 +6,8 @@ import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { join, resolve } from "node:path";
 import { spawn, spawnSync } from "node:child_process";
+// 잠들지 않기(#370 결과 6 — 11-06 맥이 잠든 사이 관문이 76분 돌고 렌더 검사 47·73이 실패): 이 프로세스가 사는 동안만 caffeinate -i -w <pid>(끝나면 저절로 풀림 · 재시작 없음)
+if (process.platform === "darwin" && existsSync("/usr/bin/caffeinate")) spawn("/usr/bin/caffeinate", ["-i", "-w", String(process.pid)], { stdio: "ignore", detached: true }).unref();
 // 고정 Chrome(#353 · 11-04): sim·render-sim의 실제 검사·렌더는 이 맥의 Chrome for Testing 157로(148은 sync-sim 105f를 못 지나간다 11-05)(시스템 Chrome은 자동 업데이트 중 새 창이 끊긴다) — 없으면 예전처럼 시스템 Chrome
 const PINNED_CHROME = `${process.env.HOME}/.cache/puppeteer/chrome/mac_arm-157.0.8103.38/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing`;
 if (!process.env.CHROME_PATH && (await import("node:fs")).existsSync(PINNED_CHROME)) process.env.CHROME_PATH = PINNED_CHROME;
