@@ -38,8 +38,10 @@ console.log("  ✓ lint-comments");
 if (existsSync(join(src, "scripts", "core-host-check.mjs"))) { r = run("node", ["scripts/core-host-check.mjs"], { cwd: src }); if (r.code) die(`core-host-check\n${r.out.slice(-1200)}`); console.log("  ✓ core-host-check"); }
 // 앱 명령 등록(#370 결과 2 — 11-06 browser_reveal·browser_e0_stop이 build.rs·권한 파일에 빠져 sync-sim 70에서야 잡힘): lib.rs 명령 = build.rs = 권한 파일, 어긋나면 시험 전에 멈춤
 if (existsSync(join(src, "scripts", "cmd-check.mjs"))) { r = run("node", ["scripts/cmd-check.mjs"], { cwd: src }); if (r.code) die(`cmd-check\n${r.out.slice(-1200)}`); console.log(`  ✓ ${r.out.trim().split("\n").pop()}`); }
+// cargo 위치(11-08 밤 검사 빨강 — launchd의 PATH엔 ~/.cargo/bin이 없어 cargo를 못 띄웠고 관문이 sync·turn 전에 멈췄다): ~/.cargo/bin/cargo가 있으면 그것, 없으면 PATH
+const CARGO = existsSync(join(homedir(), ".cargo", "bin", "cargo")) ? join(homedir(), ".cargo", "bin", "cargo") : "cargo";
 // 앱 단위 시험(#370 결과 8 — 전체 lib 시험이 관문 밖이라 Windows 전용 시험의 맥 실패를 몰랐다): cargo test --lib, 대상 폴더는 관문 사이에 남겨 둔다(처음만 오래 · 그다음 수십 초)
-if (existsSync(join(src, "src-tauri", "Cargo.toml"))) { const c0 = Date.now(); r = run("cargo", ["test", "--lib", "--quiet"], { cwd: join(src, "src-tauri"), env: { ...process.env, CARGO_TARGET_DIR: join(homedir(), "development", ".gate-cargo-target") }, timeout: 30 * 60_000 });
+if (existsSync(join(src, "src-tauri", "Cargo.toml"))) { const c0 = Date.now(); r = run(CARGO, ["test", "--lib", "--quiet"], { cwd: join(src, "src-tauri"), env: { ...process.env, PATH: `${join(homedir(), ".cargo", "bin")}:${process.env.PATH ?? ""}`, CARGO_TARGET_DIR: join(homedir(), "development", ".gate-cargo-target") }, timeout: 30 * 60_000 });
   const m = r.out.match(/test result: ok\. (\d+) passed; 0 failed; (\d+) ignored/); if (r.code || !m) die(`cargo test --lib\n${r.out.slice(-1500)}`); console.log(`  ✓ cargo test --lib ${m[1]} 통과 · ${m[2]} 건너뜀 (${Math.round((Date.now() - c0) / 1000)}s)`); }
 // 병렬(#353 ④): sync-sim을 SHARDS 조각(SIM_SHARD=k/n — 조각마다 자기 가짜 서버·기기, 포트는 무작위)으로 나누고 turn-sim과 함께 동시에. 하나라도 실패면 도장 없음
 const SHARDS = Math.max(1, Math.min(4, Number(arg("shards") ?? 2)));
