@@ -1,11 +1,11 @@
 {
-  "version": "0.1.86",
-  "notes": "흰 제목 띠 — 창 위 띠와 화면이 한 장으로(다크 모드 PC도 밝게) · 토큰 갱신 한 번에 하나 · 받아 둔 화면 묶음 바로 적용",
-  "pub_date": "2026-10-22T09:39:48Z",
+  "version": "0.1.90",
+  "notes": "브라우저 베타 시험판 0.1.90(Windows) — Windows에선 브라우저 베타가 아직 켜지지 않음",
+  "pub_date": "2026-11-07T11:49:30Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.86/Dynapse_0.1.86_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjFyaEhtaDFXZFI3bUZFemtUZ0ZiOHdrUXBSemhFRkJWbVczanVUODhzU3diYXNMdUhSaE5iZWpqdDQzNVN2d2dsQ3ZhRGRTZEJueXFGVWQxamFhN2dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjYxODgxCWZpbGU6RHluYXBzZV8wLjEuODZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS44NgpjaE5ORW55bmxEeDVJYjlBTFZFenl1NnljdXlRNWtJbW5QNXhPWFl2U290ZnhSa0MrTFlyNDFCV3RVa09oUXdUNVRlR0tyYjdaK0FVOFpTOUx4QklCZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.90/Dynapse_0.1.90_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjQ2cXUrWTVCZHBFVHdmeDkvb2pCanV3UlBhZzg1THV0MVE1VUxmYkROaThQQTZuRDdUQjBYcVB4cTdjWENCbjFQTmo5TU1mazdlWFQ3QlN2S0JyWUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDUyMTY0CWZpbGU6RHluYXBzZV8wLjEuOTBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS45MApqOVFCUGpTUlhVT210TVBleHBxeG5aQ0ExMm1zSFdTY0o0elYrR0duRWo3U3oxWUh5bVJkU2VhUUxQbEl4VmhDMHNrS1NzOXhNUHZaSjJwRkdNdFZCdz09Cg=="
     }
   }
 }
