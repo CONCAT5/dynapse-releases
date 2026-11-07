@@ -165,7 +165,22 @@ export function gitCommitOnly(paths, message) {
   if (!staged.length) die("커밋할 변경 없음");
   r(["commit", "-m", message]);
   r(["pull", "--rebase"]);
+  pagesIdle();
   r(["push"]);
+}
+
+// Pages 빌드가 도는 중이면 끝날 때까지 기다린 뒤 push(11-06·11-07 — 빌드 중에 들어온 push마다 "Page build failed", Windows ota67·ota69 서빙이 15분 넘게 늦음)
+// 루프: 10초 간격(GitHub Pages 빌드가 1~2분 — 5초보다 촘촘할 이유 없음) · 최대 60번(10분)이면 그냥 push · gh가 없거나 API 오류면 바로 push. 하루 호출 = OTA 수 × 최대 60(우리 서버 아님)
+export function pagesIdle() {
+  let slug = ""; try { slug = (execFileSync("git", ["remote", "get-url", "origin"], { cwd: ROOT, encoding: "utf8" }).match(/github\.com[:/](.+?)(?:\.git)?\s*$/) ?? [])[1] ?? ""; } catch { return; }
+  if (!slug) return;
+  for (let i = 0; i < 60; i++) {
+    let st = ""; try { st = execFileSync("gh", ["api", `repos/${slug}/pages/builds/latest`, "--jq", ".status"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim(); } catch { return; }
+    if (st !== "building" && st !== "queued") { if (i) console.log(`  · Pages 빌드 끝남(${st}) — push`); return; }
+    if (!i) console.log("  · Pages 빌드가 도는 중 — 끝나면 push(겹치면 빌드 실패)");
+    execFileSync("sleep", ["10"]);
+  }
+  console.log("  · Pages 빌드 10분 넘게 도는 중 — 그냥 push");
 }
 
 export function assertCleanTree(cwd, label) {
