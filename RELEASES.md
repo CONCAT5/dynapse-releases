@@ -715,3 +715,4 @@
 | 2026-11-07T10:33:20.000Z | - | batch | 18:00 KST | - | late | 18:00 KST 묶음 사전 관문이 위 실패·맥 부재로 돌지 않음 → 19:1x KST 관문 4d26b236 초록(9분) → OTA 123/70 · 허브 eb2cc19b(늦은 18:00 묶음) |
 | 2026-11-07T11:48:47.133Z | macos | beta | 0.1.90 | macos-v0.1.90 | beta-served-verified | src c5428c124 · 브라우저 베타 시험판 0.1.90 — 사이트가 작업실 안에 열려요(채팅·페이지·참고 한 창) · 받은 파일·PDF 읽기 · 결과를 확인할 수 없으면 보기만 하고 물어요 · 프로필 없는 사이트 글 넣기는 막음 · Windows에선 켜지지 않음 |
 | 2026-11-07T11:50:45.673Z | windows | beta | 0.1.90 | windows-v0.1.90 | beta-served-verified | src c5428c124 · unsigned · Windows PC 빌드 · 맥 서명 · 브라우저 베타 시험판 0.1.90(Windows) — Windows에선 브라우저 베타가 아직 켜지지 않음 |
+| 2026-11-07T14:12:50.261Z | macos | beta | 0.1.91 | macos-v0.1.91 | beta-SERVE-VERIFY-FAILED | src a85ed244c · 15분 안에 https://concat5.github.io/dynapse-releases/macos/beta.json 가 0.1.91 을 서빙하지 않음 — 서빙 중 version 0.1.90 (기다리는 값 0.1.91). Pages 빌드 상태: gh api repos/CONCAT5/dynapse-releases/pages/builds/latest |
