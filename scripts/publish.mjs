@@ -17,6 +17,11 @@ const platform = platformArg();
 const P = PLATFORMS[platform];
 const dryRun = arg("dry-run", false) === true;
 const c = loadConfig();
+// 관문 잠금(#370 결과 26 — 11-07 발행 점검의 turn-sim·자가 점검이 다른 세션 실행과 겹쳐 두 번 깨졌다): 발행 내내 ~/development/.gate.lock을 쥔다.
+// 이 발행이 띄운 점검(sync-sim·turn-sim)은 자식이라 그대로 돌고, 다른 세션의 시험·랩(gate-lock.mjs를 지키는 것)은 시작하지 않는다. 다른 관문·발행이 쥐고 있으면 멈춘다
+{ const L = join(process.env.HOME ?? process.env.USERPROFILE ?? "", "development", ".gate.lock");
+  if (existsSync(L)) { const pid = Number(readFileSync(L, "utf8").trim()); let alive = false; try { process.kill(pid, 0); alive = pid > 0; } catch { alive = false; } if (alive && pid !== process.pid) die(`관문·발행이 도는 중(pid ${pid}) — 끝난 뒤 다시`); }
+  writeFileSync(L, String(process.pid)); process.on("exit", () => { try { if (readFileSync(L, "utf8").trim() === String(process.pid)) rmSync(L); } catch { /* */ } }); }
 const slug = repoSlug(c);
 const src = resolve(arg("source", c.sourceDir ?? "") || die("--source <prototypes/desktop 경로> 필요"));
 // 소스 폴더의 release.env(서명·공증 식별자, 커밋됨)를 읽는다 — 셸에 이미 있는 값이 우선. 비밀값이 들어 있으면 거부
