@@ -70,7 +70,8 @@ must("pnpm", ["run", "build:web"], { cwd: src });   // -s 없이(pnpm 12는 -s�
 const dist = join(src, "dist");
 const files = {};
 // site-profiles.json = 브라우저 베타 사이트 프로필 켜짐 값(#369 보정 18 · -1b) — 네이티브가 서명·해시를 맞춘 뒤에만 읽는다(ota.rs verified_file). ai-task-mining의 prototypes/desktop/release-repo 사본과 같게
-const walk = (d) => { for (const f of readdirSync(d)) { const p = join(d, f); if (statSync(p).isDirectory()) walk(p); else if ((/\.(js|css)$/.test(f) && f !== "loader.js") || f === "site-profiles.json") files[relative(dist, p).split("\\").join("/")] = p; } };
+// sensitive-sites.json = 민감 사이트 더하기 목록(#370 D2) — 같은 방식(묶고 · 서명 · 해시 목록). 없으면 묶음에 없고 앱은 계약 목록만
+const walk = (d) => { for (const f of readdirSync(d)) { const p = join(d, f); if (statSync(p).isDirectory()) walk(p); else if ((/\.(js|css)$/.test(f) && f !== "loader.js") || f === "site-profiles.json" || f === "sensitive-sites.json") files[relative(dist, p).split("\\").join("/")] = p; } };
 walk(dist);
 if (!files["main.js"] || !files["app.css"]) die("main.js·app.css가 없다");
 
