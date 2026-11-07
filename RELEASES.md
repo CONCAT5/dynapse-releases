@@ -706,3 +706,4 @@
 | 2026-11-06T16:41:26.000Z | windows | ota | 0.1.86+ota67 | - | ota-served-verified | 늦은 확인 — GitHub Pages(legacy Jekyll) 빌드가 ota120 뒤 5번 연속 "Page build failed"(316ea92 … 314a0c9) → .nojekyll(f82811e)로 다시 빌드 뒤 서빙 · 70파일 sha256 일치 |
 | 2026-11-06T18:43:51.959Z | macos | ota | 0.1.86+ota121 | - | ota-served-verified | src 10e842a9c · 브라우저 베타: 사이트에 글을 넣거나 항목을 고를 때도 먼저 확인을 받아요 · 페이지에 보이는 글만으로 '확인됨'이라고 하지 않아요 |
 | 2026-11-06T18:45:01.548Z | windows | ota | 0.1.86+ota68 | - | ota-served-verified | = macos ota 121 · src 10e842a9c · 브라우저 베타: 사이트에 글을 넣거나 항목을 고를 때도 먼저 확인을 받아요 · 페이지에 보이는 글만으로 '확인됨'이라고 하지 않아요 |
+| 2026-11-07T02:04:48.390Z | macos | ota | 0.1.86+ota122 | - | ota-served-verified | src 1a7e1678e · 브라우저 베타(맥·켠 사람만): 사이트가 작업실 안에 열려요 · 채팅·페이지·참고를 한 창에서 · 읽을 때 같은 사이트 버튼은 알아서 — Windows에선 켜지지 않음 |
