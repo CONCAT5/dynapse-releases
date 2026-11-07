@@ -1,15 +1,15 @@
 {
-  "version": "0.1.90",
-  "notes": "브라우저 베타 시험판 0.1.90 — 사이트가 작업실 안에 열려요(채팅·페이지·참고 한 창) · 받은 파일·PDF 읽기 · 결과를 확인할 수 없으면 보기만 하고 물어요 · 프로필 없는 사이트 글 넣기는 막음 · Windows에선 켜지지 않음",
-  "pub_date": "2026-11-07T11:47:41Z",
+  "version": "0.1.91",
+  "notes": "브라우저 베타 시험판 0.1.91 — AI는 자기 탭에서만 사이트를 열어요(내 탭은 쓰지 않음) · [새 탭]·페이지 줄 · 보던 페이지를 칩으로 넘기기 · 은행·카드·관공서·병원 사이트는 AI가 열지 않음 · Windows에선 켜지지 않음",
+  "pub_date": "2026-11-07T13:57:45Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.90/Dynapse_0.1.90_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQyt4bTJ5Y2dKSlVQdndqTnBubytoM2pHOUQvNVVjclJvNy9JWVJ1N0RLdEN6bEpUVnBEdnlkaTNTNTMyd1VZQlZscnF1bVVCczR6UzlCMmd6c1RaU2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDUxOTQ0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjkwCnRTMXZ2b3pBOWdjVGhGQ1lEUkZLelVDOThoQ2FJVU5kS2pFSlRESDRycEZPYUo5WlJWbU1RRkJWU0dIaUNnOHhlSHhLLzh6VFBIZTBTaUNvVlN1NkN3PT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.91/Dynapse_0.1.91_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzA3NnRFZW5NeTVXdm83eHJYd2R1UmE4aW4yVUIyMVJRSFlqRjhvaWpvSXVKOWJNcHAxaVRwQVJWUkxGTC83NWNTWWpuUjk4VFdObmNlM3NmM3dhU3dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDU5NzQxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjkxCmI5ckd2RHpCZFIvZnNMWjVrbnhoWjRBNDhCeGtqY0lSL2dMNHU0bzlZaFlCOWRFNm5vcWVkQlUyZmR4dDQ5aTBld21wVkpkTUl4TFhvdlRJRFg0OUFRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.90/Dynapse_0.1.90_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQyt4bTJ5Y2dKSlVQdndqTnBubytoM2pHOUQvNVVjclJvNy9JWVJ1N0RLdEN6bEpUVnBEdnlkaTNTNTMyd1VZQlZscnF1bVVCczR6UzlCMmd6c1RaU2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDUxOTQ0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjkwCnRTMXZ2b3pBOWdjVGhGQ1lEUkZLelVDOThoQ2FJVU5kS2pFSlRESDRycEZPYUo5WlJWbU1RRkJWU0dIaUNnOHhlSHhLLzh6VFBIZTBTaUNvVlN1NkN3PT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.91/Dynapse_0.1.91_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzA3NnRFZW5NeTVXdm83eHJYd2R1UmE4aW4yVUIyMVJRSFlqRjhvaWpvSXVKOWJNcHAxaVRwQVJWUkxGTC83NWNTWWpuUjk4VFdObmNlM3NmM3dhU3dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDU5NzQxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjkxCmI5ckd2RHpCZFIvZnNMWjVrbnhoWjRBNDhCeGtqY0lSL2dMNHU0bzlZaFlCOWRFNm5vcWVkQlUyZmR4dDQ5aTBld21wVkpkTUl4TFhvdlRJRFg0OUFRPT0K"
     }
   }
 }
