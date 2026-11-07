@@ -193,10 +193,12 @@ const one = (dir, suffix) => {
 const assets = [];
 let updaterFile, installerName;
 if (platform === "macos") {
+  // stapler는 Apple CloudKit에 묻는다 — 연결이 끊기면(Error 68 · NSURLError -1005, 11-07 0.1.90: 공증은 Accepted였다) 30초 뒤 두 번 더, 그래도 안 되면 멈춤
+  const staple = a => { for (let i = 0; i < 2; i++) { const r = run("xcrun", ["stapler", ...a]); if (r.code === 0) return; console.log(`  · stapler ${a[0]} 실패(${r.code}) — 30초 뒤 다시(${i + 1}/2)`); execFileSync("sleep", ["30"]); } must("xcrun", ["stapler", ...a]); };
   const app = one("macos", ".app");
   must("codesign", ["--verify", "--deep", "--strict", "--verbose=2", app]);
   must("spctl", ["-a", "-vv", "-t", "exec", app]);
-  must("xcrun", ["stapler", "validate", app]);
+  staple(["validate", app]);
   const ent = run("codesign", ["-d", "--entitlements", ":-", app]).out;
   if (/get-task-allow<\/key>\s*<true\/>/.test(ent)) die("릴리즈 번들에 디버그 entitlement(get-task-allow) — 실행 차단 사고 (§5.2)");
   const tgz = one("macos", ".app.tar.gz");
@@ -206,8 +208,8 @@ if (platform === "macos") {
   const dmg = one("dmg", ".dmg");
   must("xcrun", ["notarytool", "submit", dmg, "--key", process.env.APPLE_API_KEY_PATH, "--key-id", process.env.APPLE_API_KEY,
     "--issuer", process.env.APPLE_API_ISSUER, "--wait"], { inherit: true });
-  must("xcrun", ["stapler", "staple", dmg]);
-  must("xcrun", ["stapler", "validate", dmg]);
+  staple(["staple", dmg]);
+  staple(["validate", dmg]);
   const dmgCheck = run("spctl", ["-a", "-t", "open", "--context", "context:primary-signature", "-vv", dmg]);
   if (dmgCheck.code !== 0 || !/Notarized Developer ID/.test(dmgCheck.err + dmgCheck.out)) die(`dmg Gatekeeper 판정 실패:\n${dmgCheck.err || dmgCheck.out}`);
   assets.push([tgz, updaterFile], [`${tgz}.sig`, `${updaterFile}.sig`], [dmg, installerName]);
