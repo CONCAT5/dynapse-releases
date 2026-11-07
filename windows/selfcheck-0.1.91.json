@@ -1,0 +1,71 @@
+{
+  "arch": "x86_64",
+  "at": 1794060227,
+  "checks": [
+    {
+      "ms": 750,
+      "name": "load",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 4758,
+      "name": "heartbeat",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 500,
+      "name": "reload",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 501,
+      "name": "hard_reload",
+      "note": "로그인 유지: 시험 계정 없음 — 건너뜀",
+      "ok": true
+    },
+    {
+      "ms": 29052,
+      "name": "watchdog_recover",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 24293,
+      "name": "hidden_close",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 3013,
+      "name": "offline_viewer",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 7,
+      "name": "reward_tokens",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 1322,
+      "name": "net_fix",
+      "note": "인증서 148 · 프록시 없음",
+      "ok": true
+    },
+    {
+      "ms": 512,
+      "name": "update_feed",
+      "note": "",
+      "ok": true
+    }
+  ],
+  "ms": 65113,
+  "os": "windows",
+  "pass": 10,
+  "total": 10,
+  "version": "0.1.91"
+}
