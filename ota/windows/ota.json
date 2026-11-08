@@ -1,8 +1,8 @@
 {
   "native": "0.1.86",
-  "ota": 73,
-  "base": "ota/windows/0.1.86/73/",
-  "notes": "브라우저 베타 한 화면: 보던 페이지를 대화에 붙이기 · 내 작업 목록 · 입력칸 고정 · 공유를 꺼도 내 다른 PC에선 받기 · Windows에서도 베타 켜기",
-  "pub_date": "2026-11-08T14:47:35.507Z",
-  "copied_from": "macos/0.1.86/126"
+  "ota": 74,
+  "base": "ota/windows/0.1.86/74/",
+  "notes": "batch 2: browser beta — edit a linked work from a conversation, results list, then/now versions (d7165a71)",
+  "pub_date": "2026-11-08T15:43:56.381Z",
+  "copied_from": "macos/0.1.86/127"
 }
