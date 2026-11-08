@@ -1,15 +1,15 @@
 {
-  "version": "0.1.92",
-  "notes": "브라우저 베타 시험판 0.1.92 — AI는 자기 탭에서만 · [새 탭]·보던 페이지 칩 · 은행·카드·관공서·병원은 AI가 열지 않음 · AI 브라우저 창이 포커스를 가져가지 않음 · Windows에선 켜지지 않음",
-  "pub_date": "2026-11-08T02:11:00Z",
+  "version": "0.1.93",
+  "notes": "브라우저 베타 시험판 0.1.93 — 한 화면(페이지 붙이기 · 내 작업 목록 · 입력칸 고정) · 창 숨김 고침 · Codex/Claude 조사 도구 · Windows도 베타 켜기 가능",
+  "pub_date": "2026-11-08T15:25:00Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.92/Dynapse_0.1.92_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzMrZGg4bXRiSWdxZDhYK2xCUHlMZ3lvMlFoS3ZPenNDMitzSXdzaG15R3A2blk5V2xzV1Jvd1AvZmdLTVhiYW94dVlUbSs4VVZUQTF3R2RaTEVyS2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTAzNzM1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjkyCmlOSWc2QkNJQUNWR2FUSUtQUlc2TVM0bDBubklGTEFPVHIrekRhR3pGZkVmWXppeXl4K3NjaG9mWHdCNGZqczRzcVU2SEFmalRxS1Q5cURCbUxnOUFBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.93/Dynapse_0.1.93_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzZqL0krUFFMNUN2TEhuK0owSGdtRmtLSzZHQklrZU01Ykp4NTZNYUJYelc1TjRodlpzOS9iSWlBdzBNeHF1RUY3UW5DeHdlUjJlODRNREVWUks3cUE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTUxMzgwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjkzClJRNXdkeHc3WGtJMTVQcU5wb1hvL0ovd1JRb09vcWlaQjBDc3A2aFFSTTU0OGxybEFmNVdrSUZ1aCtRWkxCUnVTN2dTQ0lEZkRtWEN3MS9tT3FUaEF3PT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.92/Dynapse_0.1.92_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzMrZGg4bXRiSWdxZDhYK2xCUHlMZ3lvMlFoS3ZPenNDMitzSXdzaG15R3A2blk5V2xzV1Jvd1AvZmdLTVhiYW94dVlUbSs4VVZUQTF3R2RaTEVyS2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTAzNzM1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjkyCmlOSWc2QkNJQUNWR2FUSUtQUlc2TVM0bDBubklGTEFPVHIrekRhR3pGZkVmWXppeXl4K3NjaG9mWHdCNGZqczRzcVU2SEFmalRxS1Q5cURCbUxnOUFBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.93/Dynapse_0.1.93_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzZqL0krUFFMNUN2TEhuK0owSGdtRmtLSzZHQklrZU01Ykp4NTZNYUJYelc1TjRodlpzOS9iSWlBdzBNeHF1RUY3UW5DeHdlUjJlODRNREVWUks3cUE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTUxMzgwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjkzClJRNXdkeHc3WGtJMTVQcU5wb1hvL0ovd1JRb09vcWlaQjBDc3A2aFFSTTU0OGxybEFmNVdrSUZ1aCtRWkxCUnVTN2dTQ0lEZkRtWEN3MS9tT3FUaEF3PT0K"
     }
   }
 }
