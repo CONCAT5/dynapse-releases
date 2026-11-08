@@ -729,3 +729,4 @@
 | 2026-11-08T15:28:03.000Z | macos | stable | 0.1.93 | macos-v0.1.93 | stable-served-verified |  |
 | 2026-11-08T15:29:44.649Z | macos | stable | 0.1.86 | rollback-from-0.1.93 | rollback-served-verified |  |
 | 2026-11-08T15:31:35.180Z | windows | beta | 0.1.93 | windows-v0.1.93 | beta-served-verified | src 95c25cb65 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.93 beta · src 95c25cb6 · Windows self-check attached |
+| 2026-11-08T15:43:52.795Z | macos | ota | 0.1.86+ota127 | - | ota-served-verified | src d7165a717 · batch 2: browser beta — edit a linked work from a conversation, results list, then/now versions (d7165a71) |
