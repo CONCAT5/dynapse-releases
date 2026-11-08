@@ -1,8 +1,8 @@
 {
   "native": "0.1.86",
-  "ota": 74,
-  "base": "ota/windows/0.1.86/74/",
-  "notes": "batch 2: browser beta — edit a linked work from a conversation, results list, then/now versions (d7165a71)",
-  "pub_date": "2026-11-08T15:43:56.381Z",
-  "copied_from": "macos/0.1.86/127"
+  "ota": 75,
+  "base": "ota/windows/0.1.86/75/",
+  "notes": "batch 3b: browser beta — conversation-only research, choose the work by name and keep editing in the same session, attached page, no overwrite (4bbdfbed)",
+  "pub_date": "2026-11-08T18:59:19.306Z",
+  "copied_from": "macos/0.1.86/128"
 }
