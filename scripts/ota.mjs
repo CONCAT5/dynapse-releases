@@ -4,7 +4,7 @@
 // 묶음은 **지금 stable 네이티브 버전**(= 소스 package.json 버전)에만 적용된다. 앱은 서명(updater와 같은 키)·해시를 맞춘 뒤, 도는 작업이 없을 때 화면만 새로고침
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync, copyFileSync } from "node:fs";
 import { join, resolve, relative } from "node:path";
-import { ROOT, platformArg, die, arg, run, must, loadConfig, readJson, readJsonIfExists, writeJson, sha256File, gitCommitOnly, assertCleanTree, ledgerLine, srcSha, signingEnv, sleep, pubkeyOf } from "./lib/common.mjs";
+import { ROOT, platformArg, die, arg, run, must, loadConfig, readJson, readJsonIfExists, writeJson, sha256File, gitCommitOnly, assertCleanTree, ledgerLine, srcSha, signingEnv, sleep, pubkeyOf, pagesHeal } from "./lib/common.mjs";
 import { verifyArtifact } from "./lib/minisign.mjs";
 
 const platform = platformArg();
@@ -95,7 +95,7 @@ gitCommitOnly([rel, `ota/${platform}/ota.json`], `${platform}: ota ${signed}`);
 
 console.log("[4] 서빙 확인 (최대 15분)");
 const url = `${c.pagesBase}/ota/${platform}/ota.json`;
-let ok = false;
+let ok = false; const heal = {};
 for (let k = 0; k < 90 && !ok; k++) {
   const j = await fetch(`${url}?t=${Date.now()}`, { cache: "no-store" }).then(r => (r.ok ? r.json() : null)).catch(() => null);
   if (j?.native === native && j?.ota === n) {
@@ -103,7 +103,7 @@ for (let k = 0; k < 90 && !ok; k++) {
     const sg = await fetch(`${c.pagesBase}/${rel}/manifest.json.sig?t=${Date.now()}`).then(r => r.ok).catch(() => false);   // 서명 파일도 서빙돼야 앱이 받는다
     ok = m !== null && JSON.parse(m).ota === n && sg;
   }
-  if (!ok) await sleep(10_000);
+  if (!ok) { pagesHeal(c, heal); await sleep(10_000); }
 }
 writeFileSync(join(ROOT, "RELEASES.md"), `${readFileSync(join(ROOT, "RELEASES.md"), "utf8").trimEnd()}\n${ledgerLine({ platform, channel: "ota", version: signed, tag: "-", result: ok ? "ota-served-verified" : "ota-SERVE-VERIFY-FAILED", note: `src ${srcSha(src)} · ${notes}` })}\n`);
 gitCommitOnly(["RELEASES.md"], `ledger: ${platform} ota ${signed}`);

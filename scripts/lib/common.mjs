@@ -171,6 +171,15 @@ export function gitCommitOnly(paths, message) {
 
 // Pages 빌드가 도는 중이면 끝날 때까지 기다린 뒤 push(11-06·11-07 — 빌드 중에 들어온 push마다 "Page build failed", Windows ota67·ota69 서빙이 15분 넘게 늦음)
 // 루프: 10초 간격(GitHub Pages 빌드가 1~2분 — 5초보다 촘촘할 이유 없음) · 최대 60번(10분)이면 그냥 push · gh가 없거나 API 오류면 바로 push. 하루 호출 = OTA 수 × 최대 60(우리 서버 아님)
+// Pages 빌드가 겹친 push 없이도 "errored"로 끝나면(GitHub 쪽 — 11-07 0.1.91 beta.json 7b1098a) 다시 빌드를 한 번만 요청한다. 서빙 기다림 루프가 부른다.
+// 호출: 최대 1분에 한 번 gh api(빌드 상태) · 요청은 발행마다 한 번(st.done) — 우리 서버 호출 없음
+export function pagesHeal(c, st) {
+  if (st.done || Date.now() - (st.at ?? 0) < 60_000) return; st.at = Date.now();
+  const slug = repoSlug(c); let s = "";
+  try { s = execFileSync("gh", ["api", `repos/${slug}/pages/builds/latest`, "--jq", ".status"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim(); } catch { return; }
+  if (s !== "errored") return;
+  try { execFileSync("gh", ["api", "-X", "POST", `repos/${slug}/pages/builds`], { stdio: "ignore" }); st.done = true; console.log("  · Pages 빌드가 실패한 채라 다시 빌드를 요청했어요(한 번)"); } catch { /* 요청 실패 — 기다림은 그대로 */ }
+}
 export function pagesIdle() {
   let slug = ""; try { slug = (execFileSync("git", ["remote", "get-url", "origin"], { cwd: ROOT, encoding: "utf8" }).match(/github\.com[:/](.+?)(?:\.git)?\s*$/) ?? [])[1] ?? ""; } catch { return; }
   if (!slug) return;

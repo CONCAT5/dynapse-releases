@@ -7,7 +7,7 @@
 import { copyFileSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, relative, resolve } from "node:path";
-import { ROOT, die, arg, run, must, loadConfig, readJson, readJsonIfExists, writeJson, sha256File, gitCommitOnly, assertCleanTree, ledgerLine, srcSha, signingEnv, sleep, pubkeyOf } from "./lib/common.mjs";
+import { ROOT, die, arg, run, must, loadConfig, readJson, readJsonIfExists, writeJson, sha256File, gitCommitOnly, assertCleanTree, ledgerLine, srcSha, signingEnv, sleep, pubkeyOf, pagesHeal } from "./lib/common.mjs";
 import { verifyArtifact } from "./lib/minisign.mjs";
 
 const from = arg("from") ?? "macos", to = arg("to");
@@ -53,7 +53,7 @@ writeJson(join(ROOT, "ota", to, "ota.json"), { native, ota: m, base: `${rel}/`, 
 gitCommitOnly([rel, `ota/${to}/ota.json`], `${to}: ota ${signed} (= ${from} ota ${nFrom}, signed on this Mac)`);
 console.log("[2] 서빙 확인 (최대 15분)");
 const url = `${c.pagesBase}/ota/${to}/ota.json`;
-let ok = false;
+let ok = false; const heal = {};
 for (let k = 0; k < 90 && !ok; k++) {
   const j = await fetch(`${url}?t=${Date.now()}`, { cache: "no-store" }).then(r => (r.ok ? r.json() : null)).catch(() => null);
   if (j?.native === native && j?.ota === m) {
@@ -61,7 +61,7 @@ for (let k = 0; k < 90 && !ok; k++) {
     const sgOk = await fetch(`${c.pagesBase}/${rel}/manifest.json.sig?t=${Date.now()}`).then(r => r.ok).catch(() => false);
     ok = mt !== null && JSON.parse(mt).ota === m && sgOk;
   }
-  if (!ok) await sleep(10_000);
+  if (!ok) { pagesHeal(c, heal); await sleep(10_000); }
 }
 writeFileSync(join(ROOT, "RELEASES.md"), `${readFileSync(join(ROOT, "RELEASES.md"), "utf8").trimEnd()}\n${ledgerLine({ platform: to, channel: "ota", version: signed, tag: "-", result: ok ? "ota-served-verified" : "ota-SERVE-VERIFY-FAILED", note: `= ${from} ota ${nFrom} · src ${srcSha(src)} · ${notes}` })}\n`);
 gitCommitOnly(["RELEASES.md"], `ledger: ${to} ota ${signed}`);

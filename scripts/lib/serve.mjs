@@ -1,5 +1,5 @@
 // 서빙 검증 — "올렸다"가 아니라 "Pages가 내보내는 것을 받아 서명까지 확인했다"가 완료 기준 (§0-4, §4-7)
-import { feedUrl, manifestErrors, sleep, pubkeyOf } from "./common.mjs";
+import { feedUrl, manifestErrors, sleep, pubkeyOf, pagesHeal } from "./common.mjs";
 import { verifyArtifact } from "./minisign.mjs";
 
 async function getJson(url) {
@@ -14,7 +14,7 @@ async function getJson(url) {
 export async function verifyServed(c, platform, channel, expectVersion, { timeoutMin = 15, log = console.log } = {}) {
   const url = feedUrl(c, platform, channel);
   const deadline = Date.now() + timeoutMin * 60_000;
-  let m = null, last = "";
+  let m = null, last = ""; const heal = {};
   for (;;) {
     try {
       m = await getJson(url);
@@ -23,6 +23,7 @@ export async function verifyServed(c, platform, channel, expectVersion, { timeou
     } catch (e) { last = e.message; }
     if (Date.now() > deadline) throw new Error(`${timeoutMin}분 안에 ${url} 가 ${expectVersion} 을 서빙하지 않음 — ${last}. Pages 빌드 상태: gh api repos/${c.owner}/${c.repo}/pages/builds/latest`);
     log(`  … ${last}`);
+    pagesHeal(c, heal);
     await sleep(30_000);
   }
   const errs = manifestErrors(m, platform, c);
