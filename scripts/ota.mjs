@@ -40,6 +40,13 @@ const n = prev?.native === native ? prev.ota + 1 : 1;
 // [0] 점검(#141 §5 a) — 화면 묶음을 만들기 전에: 형식 검사(tsc) + sync-sim(가상 기기가 새 main.ts·chat.ts를 READY까지 띄우고 동기화 시나리오 전부). 하나라도 실패면 내보내지 않는다
 // 관문 도장(#353 ③): gate.mjs가 같은 커밋·같은 플랫폼을 24시간 안에 깨끗한 트리에서 통과시켰으면 [0]을 다시 돌리지 않는다(소스 트리도 깨끗해야)
 const gateSha = run("git", ["rev-parse", "HEAD"], { cwd: src }).out?.trim() ?? "", srcDirty = (run("git", ["status", "--porcelain", "--untracked-files=no"], { cwd: src }).out ?? "").trim();
+// main 도달 확인(11-09 3b — && 앞 조건이 실패해 main push가 조용히 건너뛰어졌는데 OTA는 나갔다): 내보낼 커밋이 원격 main(또는 그 조상)에 있어야 한다
+// 다음 OTA가 main에서 지어지면 이번 앱 코드가 조용히 되돌아가기 때문. 예외는 OTA_ALLOW_OFF_MAIN=1(사람이 이유를 적고)
+if (process.env.OTA_ALLOW_OFF_MAIN !== "1") {
+  run("git", ["fetch", "-q", "origin", "main"], { cwd: src });
+  const onMain = run("git", ["merge-base", "--is-ancestor", gateSha, "FETCH_HEAD"], { cwd: src });
+  if (onMain.code !== 0) die(`내보낼 커밋 ${gateSha.slice(0, 8)}이 원격 main에 없어요 — main에 올리고 git ls-remote origin main으로 확인한 뒤 다시(예외: OTA_ALLOW_OFF_MAIN=1)`);
+}
 const stampF = join(ROOT, ".gate", `${gateSha}-${platform}.json`), stamp = /^[0-9a-f]{40}$/.test(gateSha) && !srcDirty ? readJsonIfExists(stampF) : null;
 const stampOk = !!stamp && stamp.sha === gateSha && Date.now() - Date.parse(stamp.at) < 86_400_000;
 console.log(`\n[0] 점검 · tsc + sync-sim + turn-sim${stampOk ? ` — 도장 ${gateSha.slice(0, 8)} (${stamp.sync} · ${stamp.turn} · ${stamp.at}) · 다시 돌리지 않음` : ""}`);
