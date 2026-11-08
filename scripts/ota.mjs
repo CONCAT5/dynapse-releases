@@ -32,7 +32,11 @@ must("git", ["pull", "--rebase"], { cwd: ROOT });
 
 const native = readJson(join(src, "package.json")).version;
 const stable = readJsonIfExists(join(ROOT, platform, "latest.json"));
-if (!stable || stable.version !== native) die(`소스 버전 ${native} ≠ stable ${stable?.version} — OTA는 stable 네이티브에만. 네이티브가 바뀌었으면 publish.mjs`);
+// 예외(11-09 대표 결정 23 보정): 승격 직전에 그 베타 네이티브용 묶음을 먼저 깔아 둘 때만 OTA_BETA_NATIVE=1 — 소스 버전이 지금 beta.json과 같아야 한다
+// (승격하면 그 판 사용자가 받자마자 최신 화면 묶음 · 이 묶음을 내면 옛 stable 판은 다음 OTA를 받지 않으니 곧바로 promote할 때만)
+const betaNow = process.env.OTA_BETA_NATIVE === "1" ? readJsonIfExists(join(ROOT, platform, "beta.json")) : null;
+if (!stable || (stable.version !== native && betaNow?.version !== native)) die(`소스 버전 ${native} ≠ stable ${stable?.version} — OTA는 stable 네이티브에만. 네이티브가 바뀌었으면 publish.mjs`);
+if (stable.version !== native) console.log(`  · OTA_BETA_NATIVE — beta ${native}용 묶음(stable ${stable.version}은 이 OTA를 받지 않음 · 곧바로 promote)`);
 const feedPath = join(ROOT, "ota", platform, "ota.json");
 const prev = readJsonIfExists(feedPath);
 const n = prev?.native === native ? prev.ota + 1 : 1;

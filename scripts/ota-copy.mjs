@@ -26,7 +26,9 @@ if (!dry) { assertCleanTree(ROOT, "배포 리포"); must("git", ["pull", "--reba
 const fromFeed = readJsonIfExists(join(ROOT, "ota", from, "ota.json")) ?? die(`ota/${from}/ota.json 없음`);
 const native = fromFeed.native, nFrom = fromFeed.ota;
 const stableTo = readJsonIfExists(join(ROOT, to, "latest.json"));
-if (!stableTo || stableTo.version !== native) die(`${to} stable ${stableTo?.version} ≠ 묶음 네이티브 ${native} — 그 플랫폼 앱이 받을 수 없다`);
+// OTA_BETA_NATIVE=1(ota.mjs와 같은 예외 · 승격 직전): 그 플랫폼 beta.json이 묶음 네이티브와 같으면 허용
+const betaTo = process.env.OTA_BETA_NATIVE === "1" ? readJsonIfExists(join(ROOT, to, "beta.json")) : null;
+if (!stableTo || (stableTo.version !== native && betaTo?.version !== native)) die(`${to} stable ${stableTo?.version} ≠ 묶음 네이티브 ${native} — 그 플랫폼 앱이 받을 수 없다`);
 const fromDir = join(ROOT, "ota", from, native, String(nFrom));
 const fromManifest = readJson(join(fromDir, "manifest.json"));
 // 원본 묶음이 그대로인지(서명된 해시와 파일이 같은지)
