@@ -1,11 +1,11 @@
 {
-  "version": "0.1.91",
-  "notes": "브라우저 베타 시험판 0.1.91(Windows) — Windows에선 브라우저 베타가 아직 켜지지 않음",
-  "pub_date": "2026-11-07T14:14:09Z",
+  "version": "0.1.93",
+  "notes": "0.1.93 beta · src 95c25cb6 · Windows self-check attached",
+  "pub_date": "2026-11-08T15:30:19Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.91/Dynapse_0.1.91_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MndvT2JBcDdNa2JPZDlZcWVHMGljcGRLcDhMK0g4ZEpEUFh5R0p0QkVlbFZWMXNvNDQvcUpabWhrRWtkU3plUWdPcml4OGloTWpNYS9UdGd6cDNubUE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDYwODQzCWZpbGU6RHluYXBzZV8wLjEuOTFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS45MQo3S2ZtTEtiMmpwdGN6dTJqU2FBOTVObzFGbU9qYW5mRzlIZ1ZwT1NybXpzYmpzZTJ0MC81bGc2REUwQTZJb2tLSjc0ektYbjVIa1dkNXJBNlMyNkRDQT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.93/Dynapse_0.1.93_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjNlWmNiLy8rWERLNEVWQVp1NmlVVGVySlRISi9FcVdPU3RLdEVCRDlicWVuOW51dUEvYW45Mm5EemVzbjR4TElPZkJwWS9Va0d1VEVuOG83K2JuL0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTUxODEzCWZpbGU6RHluYXBzZV8wLjEuOTNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS45MwovZ0tzUXpCV09NaU1ieWFsTHg2dFRVSXlOYWRNeko2SFJjUXJWNlN0dXlKU1E2bUxqTDZpYjZ3WFJ0WTZsK2E5SmVrQ3FwcHpHd0JZanhKdE9MaktEdz09Cg=="
     }
   }
 }
