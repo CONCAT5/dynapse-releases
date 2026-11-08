@@ -725,3 +725,4 @@
 | 2026-11-08T09:03:48.559Z | windows | ota | 0.1.86+ota72 | - | ota-served-verified | = macos ota 125 · src 81a2c1f6b · 브라우저 베타(맥·켠 사람만): 다시 켜도 보내던 일 이어서 확인 · 참고 [빼기] · 열어 둔 페이지는 지금 켠 앱 것만 · 민감 정보 표시 |
 | 2026-11-08T14:47:31.862Z | macos | ota | 0.1.86+ota126 | - | ota-served-verified | src 95a813983 · 브라우저 베타 한 화면: 보던 페이지를 대화에 붙이기 · 내 작업 목록 · 입력칸 고정 · 공유를 꺼도 내 다른 PC에선 받기 · Windows에서도 베타 켜기 |
 | 2026-11-08T14:49:11.790Z | windows | ota | 0.1.86+ota73 | - | ota-served-verified | = macos ota 126 · src 95a813983 · 브라우저 베타 한 화면: 보던 페이지를 대화에 붙이기 · 내 작업 목록 · 입력칸 고정 · 공유를 꺼도 내 다른 PC에선 받기 · Windows에서도 베타 켜기 |
+| 2026-11-08T15:26:07.805Z | macos | beta | 0.1.93 | macos-v0.1.93 | beta-served-verified | src 95c25cb65 · 브라우저 베타 시험판 0.1.93 — 한 화면(페이지 붙이기 · 내 작업 목록 · 입력칸 고정) · 창 숨김 고침 · Codex/Claude 조사 도구 · Windows도 베타 켜기 가능 |
