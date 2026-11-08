@@ -731,3 +731,4 @@
 | 2026-11-08T15:31:35.180Z | windows | beta | 0.1.93 | windows-v0.1.93 | beta-served-verified | src 95c25cb65 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.93 beta · src 95c25cb6 · Windows self-check attached |
 | 2026-11-08T15:43:52.795Z | macos | ota | 0.1.86+ota127 | - | ota-served-verified | src d7165a717 · batch 2: browser beta — edit a linked work from a conversation, results list, then/now versions (d7165a71) |
 | 2026-11-08T15:46:25.194Z | windows | ota | 0.1.86+ota74 | - | ota-served-verified | = macos ota 127 · src d7165a717 · batch 2: browser beta — edit a linked work from a conversation, results list, then/now versions (d7165a71) |
+| 2026-11-08T18:59:15.603Z | macos | ota | 0.1.86+ota128 | - | ota-served-verified | src 4bbdfbede · batch 3b: browser beta — conversation-only research, choose the work by name and keep editing in the same session, attached page, no overwrite (4bbdfbed) |
