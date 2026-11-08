@@ -59,6 +59,13 @@ if (syncs.some(x => x.code)) die(`${sync}\n${[...syncs.flatMap(x => x.out.split(
 console.log(`  ✓ ${sync} (조각 ${SHARDS} · ${syncs.map(x => Math.round(x.ms / 1000) + "s").join(" · ")})`);
 if (tr.code) die(`turn-sim(${turn})\n${tr.out.split("\n").filter(l => /✗/.test(l)).slice(0, 6).join("\n")}`);
 console.log(`  ✓ ${turn} (${Math.round(tr.ms / 1000)}s)`);
+// 작업 공간 저장·실행 시험(#377 BR17·18·21 · #379) — 그 커밋에 있는 것만(옛 커밋은 건너뜀). 큐·귀속 14건 등 · 모델 호출 0
+for (const [f, reg] of [["workspace-store-sim.mts", false], ["workspace-api-sim.mts", true], ["workspace-execution-sim.mts", true], ["workspace-artifacts-sim.mts", false], ["workspace-conversation-sim.mts", true]]) {
+  if (!existsSync(join(hub, "scripts", f))) continue;
+  const w = await go(reg ? [...tsx, `scripts/${f}`] : ["exec", "tsx", `scripts/${f}`], {}, 900_000);
+  if (w.code || /FAIL|AssertionError/.test(w.out)) die(`${f}\n${w.out.split("\n").filter(l => /FAIL|Error|✗/.test(l)).slice(0, 6).join("\n") || w.out.slice(-800)}`);
+  console.log(`  ✓ ${(w.out.match(/^[a-z-]+: [^\n]*/m) ?? [f])[0].slice(0, 70)} (${Math.round(w.ms / 1000)}s)`);
+}
 const dirty = run("git", ["status", "--porcelain", "--untracked-files=no"], { cwd: W }).out.trim();
 if (dirty) die(`관문 뒤 트리가 깨끗하지 않음 — 도장 안 찍음\n${dirty.slice(0, 400)}`);
 mkdirSync(join(ROOT, ".gate"), { recursive: true });
