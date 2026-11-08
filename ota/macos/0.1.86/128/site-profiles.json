@@ -1,0 +1,9 @@
+{
+  "$comment": "브라우저 베타 사이트 프로필 켜짐 값(#369 보정 18) — 서명된 OTA 묶음으로만 바뀐다(서버로 켜지 않음). 계약 browser-contract.json에 있는 프로필의 enabled · write_surfaces만. Papermark · Vercel은 대표 실제 계정 시험 뒤 켠다",
+  "version": 1,
+  "profiles": {
+    "loopback-test": { "enabled": true },
+    "vercel": { "enabled": false },
+    "papermark": { "enabled": false }
+  }
+}

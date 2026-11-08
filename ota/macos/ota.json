@@ -1,7 +1,7 @@
 {
   "native": "0.1.86",
-  "ota": 127,
-  "base": "ota/macos/0.1.86/127/",
-  "notes": "batch 2: browser beta — edit a linked work from a conversation, results list, then/now versions (d7165a71)",
-  "pub_date": "2026-11-08T15:42:57.755Z"
+  "ota": 128,
+  "base": "ota/macos/0.1.86/128/",
+  "notes": "batch 3b: browser beta — conversation-only research, choose the work by name and keep editing in the same session, attached page, no overwrite (4bbdfbed)",
+  "pub_date": "2026-11-08T18:58:21.086Z"
 }
