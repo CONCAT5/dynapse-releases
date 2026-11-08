@@ -718,3 +718,4 @@
 | 2026-11-07T14:12:50.261Z | macos | beta | 0.1.91 | macos-v0.1.91 | beta-SERVE-VERIFY-FAILED | src a85ed244c · 15분 안에 https://concat5.github.io/dynapse-releases/macos/beta.json 가 0.1.91 을 서빙하지 않음 — 서빙 중 version 0.1.90 (기다리는 값 0.1.91). Pages 빌드 상태: gh api repos/CONCAT5/dynapse-releases/pages/builds/latest |
 | 2026-11-07T14:15:14.160Z | windows | beta | 0.1.91 | windows-v0.1.91 | beta-served-verified | src a85ed244c · unsigned · Windows PC 빌드 · 맥 서명 · 브라우저 베타 시험판 0.1.91(Windows) — Windows에선 브라우저 베타가 아직 켜지지 않음 |
 | 2026-11-07T14:15:28.000Z | macos | beta | 0.1.91 | macos-v0.1.91 | beta-served-verified | 늦은 확인 — beta.json 커밋 7b1098a의 Pages 빌드가 앞 빌드와 겹치지 않았는데도 "Page build failed"(GitHub 쪽), 다음 커밋 31bfb2a 빌드 뒤 0.1.91 서빙 · 자가 점검 25/25 |
+| 2026-11-08T01:34:10.616Z | macos | ota | 0.1.86+ota124 | - | ota-served-verified | src be4c585b0 · 브라우저 베타(맥·켠 사람만): AI는 자기 탭에서만 · [새 탭]·보던 페이지 칩 · 은행·카드·관공서·병원은 AI가 열지 않음 · 새 탭 기능은 0.1.91 이상 앱에서 |
