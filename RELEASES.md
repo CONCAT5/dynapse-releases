@@ -744,3 +744,4 @@
 | 2026-11-09T03:38:18.692Z | macos | stable | 0.1.94 | macos-v0.1.94 | stable-served-verified |  |
 | 2026-11-09T03:40:26.736Z | windows | stable | 0.1.94 | windows-v0.1.94 | stable-served-verified |  |
 | 2026-11-09T05:02:25.246Z | macos | ota | 0.1.94+ota2 | - | ota-served-verified | src 27c0f88fa · 0.1.94+ota2: work detail entry (beta), #382 editing fixes (89fbb1ee) |
+| 2026-11-09T05:04:28.889Z | windows | ota | 0.1.94+ota2 | - | ota-served-verified | = macos ota 2 · src 27c0f88fa · 0.1.94+ota2: work detail entry (beta), #382 editing fixes (89fbb1ee) |
