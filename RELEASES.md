@@ -746,3 +746,4 @@
 | 2026-11-09T05:02:25.246Z | macos | ota | 0.1.94+ota2 | - | ota-served-verified | src 27c0f88fa · 0.1.94+ota2: work detail entry (beta), #382 editing fixes (89fbb1ee) |
 | 2026-11-09T05:04:28.889Z | windows | ota | 0.1.94+ota2 | - | ota-served-verified | = macos ota 2 · src 27c0f88fa · 0.1.94+ota2: work detail entry (beta), #382 editing fixes (89fbb1ee) |
 | 2026-11-09T05:06:20.474Z | macos | ota | 0.1.94+ota3 | - | ota-served-verified | src 89fbb1eea · 0.1.94+ota3: work detail entry (beta), #382 editing fixes (89fbb1ee) — ota2 was rebuilt from 27c0f88f by mistake |
+| 2026-11-09T05:09:12.134Z | windows | ota | 0.1.94+ota3 | - | ota-served-verified | = macos ota 3 · src 89fbb1eea · 0.1.94+ota3: work detail entry (beta), #382 editing fixes (89fbb1ee) — ota2 was rebuilt from 27c0f88f by mistake |
