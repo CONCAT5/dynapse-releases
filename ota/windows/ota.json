@@ -1,8 +1,8 @@
 {
-  "native": "0.1.86",
-  "ota": 75,
-  "base": "ota/windows/0.1.86/75/",
-  "notes": "batch 3b: browser beta — conversation-only research, choose the work by name and keep editing in the same session, attached page, no overwrite (4bbdfbed)",
-  "pub_date": "2026-11-08T18:59:19.306Z",
-  "copied_from": "macos/0.1.86/128"
+  "native": "0.1.93",
+  "ota": 1,
+  "base": "ota/windows/0.1.93/1/",
+  "notes": "0.1.93 track ota1: batches 2/3 + -1b SHA 6/7 for 0.1.93 apps (6f287da8)",
+  "pub_date": "2026-11-09T00:00:19.144Z",
+  "copied_from": "macos/0.1.93/1"
 }
