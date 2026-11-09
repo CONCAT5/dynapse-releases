@@ -737,3 +737,4 @@
 | 2026-11-09T00:02:10.859Z | windows | ota | 0.1.93+ota1 | - | ota-served-verified | = macos ota 1 · src 6f287da80 · 0.1.93 track ota1: batches 2/3 + -1b SHA 6/7 for 0.1.93 apps (6f287da8) |
 | 2026-11-09T00:04:16.971Z | macos | stable | 0.1.93 | macos-v0.1.93 | stable-served-verified |  |
 | 2026-11-09T00:06:23.898Z | windows | stable | 0.1.93 | windows-v0.1.93 | stable-served-verified |  |
+| 2026-11-09T03:23:15.433Z | macos | beta | 0.1.94 | macos-v0.1.94 | beta-served-verified | src 27c0f88fa · 0.1.94: layoutRect (web pane follows the hub's rect), #72-1 put notes; src 27c0f88f |
