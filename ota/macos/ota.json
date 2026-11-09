@@ -1,7 +1,7 @@
 {
   "native": "0.1.94",
-  "ota": 2,
-  "base": "ota/macos/0.1.94/2/",
-  "notes": "0.1.94+ota2: work detail entry (beta), #382 editing fixes (89fbb1ee)",
-  "pub_date": "2026-11-09T05:01:19.037Z"
+  "ota": 3,
+  "base": "ota/macos/0.1.94/3/",
+  "notes": "0.1.94+ota3: work detail entry (beta), #382 editing fixes (89fbb1ee) — ota2 was rebuilt from 27c0f88f by mistake",
+  "pub_date": "2026-11-09T05:04:53.427Z"
 }
