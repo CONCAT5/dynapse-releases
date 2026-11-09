@@ -752,3 +752,4 @@
 | 2026-11-09T06:39:31.883Z | macos | stable | 0.1.95 | macos-v0.1.95 | stable-served-verified |  |
 | 2026-11-09T08:49:20.188Z | windows | beta | 0.1.95 | windows-v0.1.95 | beta-served-verified | src 3cdd4296 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.95 · src 3cdd4296 · Windows self-check 10/10 |
 | 2026-11-09T08:51:21.775Z | windows | ota | 0.1.95+ota1 | - | ota-served-verified | = macos ota 1 · src 3cdd42968 · 0.1.95 track ota1 (3cdd4296) |
+| 2026-11-09T08:54:01.745Z | windows | stable | 0.1.95 | windows-v0.1.95 | stable-served-verified |  |
