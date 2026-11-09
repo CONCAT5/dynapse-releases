@@ -1,11 +1,11 @@
 {
-  "version": "0.1.93",
-  "notes": "0.1.93 beta · src 95c25cb6 · Windows self-check attached",
-  "pub_date": "2026-11-08T15:30:19Z",
+  "version": "0.1.94",
+  "notes": "0.1.94 · src 27c0f88f · Windows self-check 10/10",
+  "pub_date": "2026-11-09T03:30:31Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.93/Dynapse_0.1.93_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjNlWmNiLy8rWERLNEVWQVp1NmlVVGVySlRISi9FcVdPU3RLdEVCRDlicWVuOW51dUEvYW45Mm5EemVzbjR4TElPZkJwWS9Va0d1VEVuOG83K2JuL0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTUxODEzCWZpbGU6RHluYXBzZV8wLjEuOTNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS45MwovZ0tzUXpCV09NaU1ieWFsTHg2dFRVSXlOYWRNeko2SFJjUXJWNlN0dXlKU1E2bUxqTDZpYjZ3WFJ0WTZsK2E5SmVrQ3FwcHpHd0JZanhKdE9MaktEdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.94/Dynapse_0.1.94_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjNTTXJhUXdMQ0FGc25OT0JKYU45R0xwVjIycG1GZXFDN2tidHQzWGpzWVRITzQ3d3FHWGtKdnBUU1UvTVpkLzk2MHR5WjEvZDJLTG1wL2hqU2lURmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTk1MDI2CWZpbGU6RHluYXBzZV8wLjEuOTRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS45NApBWnB3Z2FxbzROMzNYS3B1NEhlb3dxYXNNK05kQSt2MUZLWVFqZldTYTU0Z01jRjhTL0xCV1NkVVorVzA1Zm5aYy9DMEVCcGhxODRMVW5qU0QvL2hCdz09Cg=="
     }
   }
 }
