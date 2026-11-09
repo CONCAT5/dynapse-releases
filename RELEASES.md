@@ -738,3 +738,4 @@
 | 2026-11-09T00:04:16.971Z | macos | stable | 0.1.93 | macos-v0.1.93 | stable-served-verified |  |
 | 2026-11-09T00:06:23.898Z | windows | stable | 0.1.93 | windows-v0.1.93 | stable-served-verified |  |
 | 2026-11-09T03:23:15.433Z | macos | beta | 0.1.94 | macos-v0.1.94 | beta-served-verified | src 27c0f88fa · 0.1.94: layoutRect (web pane follows the hub's rect), #72-1 put notes; src 27c0f88f |
+| 2026-11-09T03:31:36.398Z | windows | beta | 0.1.94 | windows-v0.1.94 | beta-served-verified | src 27c0f88fa · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.94 · src 27c0f88f · Windows self-check 10/10 |
