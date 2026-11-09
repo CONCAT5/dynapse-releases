@@ -736,3 +736,4 @@
 | 2026-11-09T00:00:13.272Z | macos | ota | 0.1.93+ota1 | - | ota-served-verified | src 6f287da80 · 0.1.93 track ota1: batches 2/3 + -1b SHA 6/7 for 0.1.93 apps (6f287da8) |
 | 2026-11-09T00:02:10.859Z | windows | ota | 0.1.93+ota1 | - | ota-served-verified | = macos ota 1 · src 6f287da80 · 0.1.93 track ota1: batches 2/3 + -1b SHA 6/7 for 0.1.93 apps (6f287da8) |
 | 2026-11-09T00:04:16.971Z | macos | stable | 0.1.93 | macos-v0.1.93 | stable-served-verified |  |
+| 2026-11-09T00:06:23.898Z | windows | stable | 0.1.93 | windows-v0.1.93 | stable-served-verified |  |
