@@ -740,3 +740,4 @@
 | 2026-11-09T03:23:15.433Z | macos | beta | 0.1.94 | macos-v0.1.94 | beta-served-verified | src 27c0f88fa · 0.1.94: layoutRect (web pane follows the hub's rect), #72-1 put notes; src 27c0f88f |
 | 2026-11-09T03:31:36.398Z | windows | beta | 0.1.94 | windows-v0.1.94 | beta-served-verified | src 27c0f88fa · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.94 · src 27c0f88f · Windows self-check 10/10 |
 | 2026-11-09T03:34:09.695Z | macos | ota | 0.1.94+ota1 | - | ota-served-verified | src 27c0f88fa · 0.1.94 track ota1 (27c0f88f) |
+| 2026-11-09T03:36:11.955Z | windows | ota | 0.1.94+ota1 | - | ota-served-verified | = macos ota 1 · src 27c0f88fa · 0.1.94 track ota1 (27c0f88f) |
