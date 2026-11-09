@@ -748,3 +748,4 @@
 | 2026-11-09T05:06:20.474Z | macos | ota | 0.1.94+ota3 | - | ota-served-verified | src 89fbb1eea · 0.1.94+ota3: work detail entry (beta), #382 editing fixes (89fbb1ee) — ota2 was rebuilt from 27c0f88f by mistake |
 | 2026-11-09T05:09:12.134Z | windows | ota | 0.1.94+ota3 | - | ota-served-verified | = macos ota 3 · src 89fbb1eea · 0.1.94+ota3: work detail entry (beta), #382 editing fixes (89fbb1ee) — ota2 was rebuilt from 27c0f88f by mistake |
 | 2026-11-09T05:45:59.173Z | macos | beta | 0.1.95 | macos-v0.1.95 | beta-served-verified | src 3cdd42968 · 0.1.95: ② 묻지 않기 native (browser_promote), ③ relay native half (off by contract), ④ hidden-host refresh; src 3cdd4296 |
+| 2026-11-09T06:37:23.312Z | macos | ota | 0.1.95+ota1 | - | ota-served-verified | src 3cdd42968 · 0.1.95 track ota1 (3cdd4296) |
