@@ -1,15 +1,15 @@
 {
-  "version": "0.1.97",
-  "notes": "0.1.97: decision 38 (inputs E1, account creation behind an approval card, no per-site grant question, logged-in reading on by default); src 915dcc71; journey AI off",
-  "pub_date": "2026-11-11T07:27:54Z",
+  "version": "0.1.98",
+  "notes": "0.1.98: #398 end-of-run approval (app side), questions only when blocked, captcha shown to the person with numbered clicks (Chromium mode), #397 L2/L3 behind flags (off); src 4fa9ba80; journey AI off",
+  "pub_date": "2026-11-11T08:34:29Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.97/Dynapse_0.1.97_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3h6TEw2UEhxZmUra1Z6elhFUzFrVVpLZkIzL2hBWHpWR1FIaWhGWHRrTXpVdmwwNHFIQ1NIVS9oQzRGR3d1S2NqcERSVXhqWjFDQWIvMytMVXFEc1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzgxOTEwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjk3CmkrY1NJdEZzRHhyaWNUVTF4V1E1K0lnZ3hmVU9YQTFURXNjVDl4UzJ3d0p4V1hXRW1FVXpaS0poR0x1RHEvSnpscTM3WWJQeVUvNFNOdnFoS1d2ekNRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.98/Dynapse_0.1.98_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hzbks4Q2RTUlpuQWE5YytFQkczbXdOeGFIMWsrS1laUmM1NTRFcGRIQ0h6cEpCZW1kNCswWkp5c3dQV0JDUEk0aUNNQlRTaHdieDZjbk5CTlMvaFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0Mzg1OTQwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjk4ClExZittTC9nOFUwOHl1V3ludDhYUW5vYXhpcnBGTkNNdmtOdlJYdCtGK2pQOU56MnBQRmg4UmhZL0dLREZjUGF3Y3hYbkxIcW5oYTgyTFVIdFQ0bUJBPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.97/Dynapse_0.1.97_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3h6TEw2UEhxZmUra1Z6elhFUzFrVVpLZkIzL2hBWHpWR1FIaWhGWHRrTXpVdmwwNHFIQ1NIVS9oQzRGR3d1S2NqcERSVXhqWjFDQWIvMytMVXFEc1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzgxOTEwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjk3CmkrY1NJdEZzRHhyaWNUVTF4V1E1K0lnZ3hmVU9YQTFURXNjVDl4UzJ3d0p4V1hXRW1FVXpaS0poR0x1RHEvSnpscTM3WWJQeVUvNFNOdnFoS1d2ekNRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.98/Dynapse_0.1.98_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hzbks4Q2RTUlpuQWE5YytFQkczbXdOeGFIMWsrS1laUmM1NTRFcGRIQ0h6cEpCZW1kNCswWkp5c3dQV0JDUEk0aUNNQlRTaHdieDZjbk5CTlMvaFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0Mzg1OTQwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjk4ClExZittTC9nOFUwOHl1V3ludDhYUW5vYXhpcnBGTkNNdmtOdlJYdCtGK2pQOU56MnBQRmg4UmhZL0dLREZjUGF3Y3hYbkxIcW5oYTgyTFVIdFQ0bUJBPT0K"
     }
   }
 }
