@@ -754,3 +754,4 @@
 | 2026-11-09T08:51:21.775Z | windows | ota | 0.1.95+ota1 | - | ota-served-verified | = macos ota 1 · src 3cdd42968 · 0.1.95 track ota1 (3cdd4296) |
 | 2026-11-09T08:54:01.745Z | windows | stable | 0.1.95 | windows-v0.1.95 | stable-served-verified |  |
 | 2026-11-11T03:29:03.121Z | macos | beta | 0.1.96 | macos-v0.1.96 | beta-served-verified | src 61995a9ef · 관문 생략(대표 지시 2026-11-11 12:3x '관문 검사 뛰어넘어' (Fable 전달) · 1b5141ce 관문 초록 뒤 #393·#394·누출 고침은 browser-sim·sim-394·cargo로만 확인) · 0.1.96: patches, CDP tab engine behind a setting (off), Vault (off), Chromium mode lab row (Mac), open-tab shots, first-run reports, routines, same-message fix, input value leak fix; src 61995a9e; journey AI off as in 0.1.90-0.1.95 |
+| 2026-11-11T05:12:59.472Z | windows | beta | 0.1.96 | windows-v0.1.96 | beta-served-verified | src 61995a9e · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.96(Windows) — 반복 업무 · 처음 켤 때 상태 · 같은 말 다른 장 고침 · 입력 칸 값 누출 고침; Chromium 모드 없음(맥 전용) |
