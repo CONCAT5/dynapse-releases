@@ -239,6 +239,18 @@ const localSha = Object.fromEntries(assets.map(([, n]) => [n, sha256File(join(st
 // ───────── 4. Release 업로드 (prerelease로 — promote 때 해제) ─────────
 // ───────── 3b. 자가 점검(#141 §4) — 만든 앱을 --selfcheck로 실제로 띄워 작업 창 로드·심장박동·⌘R·⇧⌘R·멈춘 화면 복구·숨긴 창 닫기·업데이트 확인. 하나라도 실패면 발행하지 않는다
 step("3b", "자가 점검");
+// 대표 앱 턴 보호(2026-11-11 Fable 승인) — ~/Dynapse/.children.json에 살아 있는 claude · codex · agy 자식이 있으면 자가 점검을 띄우지 않고 기다린다.
+// 간격 10초 · 최대 30분(180번) · 넘기면 발행을 멈추고 알린다(빌드 · 공증은 끝난 상태 — 다시 돌리면 된다). 서버 호출 없음(이 PC 파일과 kill -0만). macOS만
+if (platform === "macos") {
+  const busy = () => { try { const xs = JSON.parse(readFileSync(join(process.env.HOME ?? "", "Dynapse", ".children.json"), "utf8")); return (Array.isArray(xs) ? xs : []).filter(x => Array.isArray(x) && ["claude", "codex", "agy"].includes(String(x[1])) && (() => { try { process.kill(Number(x[0]), 0); return true; } catch { return false; } })()).length; } catch { return 0; } };
+  let n = 0;
+  while (busy() > 0) {
+    if (n === 0) console.log("  · 대표 앱에 AI 턴이 도는 중 — 끝날 때까지 자가 점검을 기다림(10초 간격 · 최대 30분)");
+    if (++n > 180) die("대표 앱 AI 턴이 30분 넘게 이어져 자가 점검을 시작하지 않음 — 턴이 끝난 뒤 다시 발행");
+    await new Promise(r => setTimeout(r, 10_000));
+  }
+  if (n) console.log(`  ✓ 대표 앱 턴 끝(${n * 10}초 기다림)`);
+}
 // 사용자 앱이 턴을 돌리는 중이면 자가 점검 앱을 띄우지 않는다(2026-10-17 — 점검 인스턴스의 시작 정리가 대표의 도는 claude를 SIGTERM으로 끊었다, exit 143).
 // 판정: ~/Dynapse/.children.json의 CLI(claude·codex·agy·node)가 살아 있고 부모(앱)도 살아 있으면 = 도는 턴. 30초마다 다시 보고 20분까지 기다린 뒤 그래도면 멈춘다
 {
