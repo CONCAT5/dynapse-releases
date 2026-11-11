@@ -122,8 +122,12 @@ const signEnv = { ...process.env, ...(await signingEnv(platform)) }; // 서명�
 const simOrphans = () => { if (process.platform === "win32") return []; const r = run("ps", ["-axo", "pid=,ppid=,command="]); return (r.out ?? "").split("\n").map(l => l.trim().match(/^(\d+)\s+(\d+)\s+(.*)$/)).filter(m => m && m[2] === "1" && /sync-sim[\/\\]device\.mts|render-sim-hub-/.test(m[3])); };
 const noSimLeft = what => { const o = simOrphans(); if (!o.length) return; for (const m of o) { try { process.kill(Number(m[1]), "SIGKILL"); } catch { /* 끝남 */ } } die(`시험 프로세스 ${o.length}개가 남았어요(정리함) — ${what} 안 함`); };
 // 앱 시험(#141 §5 · #143 §4) — OTA [0]과 같은 sync-sim + turn-sim. 빌드 전에(틀리면 빌드·서명하지 않는다). 옛 소스면 건너뜀
+// 관문 생략(대표 지시가 있을 때만 · 1회용): PUBLISH_SKIP_GATE=1 + PUBLISH_SKIP_GATE_REASON(낱말 10자 이상) — 이유를 로그와 원장 비고에 남긴다. 계약 시험 · 빌드 · 공증 · 자가 점검은 그대로
+const skipGate = process.env.PUBLISH_SKIP_GATE === "1" ? (process.env.PUBLISH_SKIP_GATE_REASON ?? "").trim() : "";
+if (process.env.PUBLISH_SKIP_GATE === "1" && skipGate.length < 10) die("PUBLISH_SKIP_GATE=1에는 PUBLISH_SKIP_GATE_REASON(10자 이상, 누가 왜)이 필요");
+if (skipGate) console.log(`  ⚠ 관문 sim(sync-sim · turn-sim) 생략 — ${skipGate}`);
 { const hubDir = join(src, "..", "hub");
-  if (existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
+  if (!skipGate && existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
     must("pnpm", ["install", "--frozen-lockfile"], { cwd: hubDir });
     must("node", ["scripts/sync-tokens.mjs"], { cwd: src });   // 생성 파일(src/shared/*) — 시험이 앱 소스를 그대로 불러온다
     for (const [name, script, t] of [["sync-sim", "scripts/sync-sim.mts", 3_600_000], ["turn-sim", "../desktop/scripts/turn-sim.mts", 1_800_000]]) {
@@ -304,7 +308,7 @@ catch (e) { result = "beta-SERVE-VERIFY-FAILED"; note = unsigned ? `unsigned · 
 
 // ───────── 10. 원장 ─────────
 step(10, "RELEASES.md 기록");
-writeFileSync(join(ROOT, "RELEASES.md"), `${readFileSync(join(ROOT, "RELEASES.md"), "utf8").trimEnd()}\n${ledgerLine({ platform, channel: "beta", version: v, tag, result, note: `src ${srcSha(src)} · ${note}` })}\n`);
+writeFileSync(join(ROOT, "RELEASES.md"), `${readFileSync(join(ROOT, "RELEASES.md"), "utf8").trimEnd()}\n${ledgerLine({ platform, channel: "beta", version: v, tag, result, note: `src ${srcSha(src)} · ${skipGate ? `관문 생략(${skipGate}) · ` : ""}${note}` })}\n`);
 gitCommitOnly(["RELEASES.md"], `ledger: ${platform} beta ${v} ${result}`);
 rmSync(work, { recursive: true, force: true });
 // 빌드 산출물 .app이 dynapse:// 처리 앱으로 등록되면 웹 링크가 업데이트 없는 로컬 빌드를 연다 — 등록 해제(설치본만 남긴다)
