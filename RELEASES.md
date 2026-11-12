@@ -770,3 +770,4 @@
 | 2026-11-12T11:19:25.411Z | windows | beta | 0.1.103 | windows-v0.1.103 | beta-served-verified | src ed1399db3 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.103(Windows) — 말로 세운 금지 규칙 · 승인 대행 · 하위 에이전트 · 북마크 · 탭 그림 30초 · 자체 웹 검색; Chromium 모드 없음(웹뷰 엔진) |
 | 2026-11-12T11:21:24.560Z | windows | stable | 0.1.103 | windows-v0.1.103 | stable-served-verified |  |
 | 2026-11-12T12:04:28.999Z | windows | stable | 0.1.102 | rollback-from-0.1.103 | rollback-served-verified |  |
+| 2026-11-12T12:07:18.787Z | windows | stable | 0.1.103 | windows-v0.1.103 | stable-served-verified |  |
