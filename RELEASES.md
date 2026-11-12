@@ -763,3 +763,4 @@
 | 2026-11-12T04:11:48.014Z | macos | beta | 0.1.102 | macos-v0.1.102 | beta-served-verified | src 3bf693ac1 · 0.1.102: opens always get a new tab and never reuse a person's incognito tab, one-tab close closes only that tab, the event stream never stops and wakes on hub actions (event wake, 10 min), run site from the newest tab; src 3bf693ac; journey AI off; rerun after a self-check timeout under load (load 18, 12:2x) |
 | 2026-11-12T04:29:56.944Z | macos | stable | 0.1.102 | macos-v0.1.102 | stable-served-verified |  |
 | 2026-11-12T05:31:44.598Z | windows | stable | 0.1.96 | windows-v0.1.96 | stable-served-verified |  |
+| 2026-11-12T06:51:24.821Z | windows | beta | 0.1.102 | windows-v0.1.102 | beta-served-verified | src 3bf693ac1 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.102(Windows) — 브라우저 베타 · 탭 하나 닫기 · 첨부 · 결정 44·47 동기화; Chromium 모드 없음(웹뷰 엔진, 비공개 창 없음) |
