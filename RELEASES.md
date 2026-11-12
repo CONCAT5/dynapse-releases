@@ -773,3 +773,4 @@
 | 2026-11-12T12:07:18.787Z | windows | stable | 0.1.103 | windows-v0.1.103 | stable-served-verified |  |
 | 2026-11-12T14:57:18.110Z | macos | beta | 0.1.104 | macos-v0.1.104 | beta-served-verified | src 92892d21a · 0.1.104 — 자가 점검 숨은 창 부하 재시도 · 업데이트 확인 실패 이유(상태 코드) · Chromium 받기 실패 이유 설정 줄 · 디자인 수치(렌더) 동기화 · 질문 언어로 검색 엔진(네이버 · 구글 · Bing · Yahoo JAPAN · Baidu) · 잠자기 · 오프라인 뒤 흰 화면 방지 |
 | 2026-11-12T14:59:26.563Z | macos | stable | 0.1.104 | macos-v0.1.104 | stable-served-verified |  |
+| 2026-11-12T15:01:47.908Z | windows | beta | 0.1.104 | windows-v0.1.104 | beta-served-verified | src 92892d21a · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.104(Windows) — 0.1.103 이후 고침 · 잠깨기·오프라인 때 빈 창 안 만듦 · 디자인 수치 기록; Chromium 모드 없음(웹뷰 엔진) |
