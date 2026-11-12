@@ -776,3 +776,4 @@
 | 2026-11-12T15:01:47.908Z | windows | beta | 0.1.104 | windows-v0.1.104 | beta-served-verified | src 92892d21a · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.104(Windows) — 0.1.103 이후 고침 · 잠깨기·오프라인 때 빈 창 안 만듦 · 디자인 수치 기록; Chromium 모드 없음(웹뷰 엔진) |
 | 2026-11-12T15:04:26.960Z | windows | stable | 0.1.104 | windows-v0.1.104 | stable-served-verified |  |
 | 2026-11-12T16:53:52.928Z | macos | beta | 0.1.105 | macos-v0.1.105 | beta-served-verified | src 0b5199bd5 · 0.1.105 — 프로젝트 열기 · dev 서버 · 그 채팅 탭 · ⌥클릭 요소 인용 · AI가 프로젝트 편집 · 끝 카드 push · PR · 미리보기 주소 · 화면 맥락 기억(동의 · 기기 안) · 작업 연결 채팅 실행 실패가 보임 |
+| 2026-11-12T16:56:00.760Z | macos | stable | 0.1.105 | macos-v0.1.105 | stable-served-verified |  |
