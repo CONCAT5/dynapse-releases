@@ -1,15 +1,15 @@
 {
-  "version": "0.1.105",
-  "notes": "0.1.105 — 프로젝트 열기 · dev 서버 · 그 채팅 탭 · ⌥클릭 요소 인용 · AI가 프로젝트 편집 · 끝 카드 push · PR · 미리보기 주소 · 화면 맥락 기억(동의 · 기기 안) · 작업 연결 채팅 실행 실패가 보임",
-  "pub_date": "2026-11-12T16:52:46Z",
+  "version": "0.1.106",
+  "notes": "0.1.106 — 작업 연결 채팅 실행이 브라우저 준비를 끝없이 기다리지 않아요(엔진까지만 · 20초 넘으면 이유 한 줄) · 준비 뒤 단계는 뒤에서",
+  "pub_date": "2026-11-12T18:02:05Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.105/Dynapse_0.1.105_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzR1MEwzOFJTTGcvMHNhOUxGQUtjbTJRUXdyTzFGZ0NOa1g2bE9hSFdpS1U0QlNuVjhrTXg5TTN5a09qaHJVZEZVSUtQa2IzOHpReVd1aXV6bkJTdGd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTAyMjQ0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwNQpOTjBIVEdyeW9nZzA0ZVd6cStsV2JsazBZNXQ0a0M0TE4xbnFrM0xCTzFRekVoQnA5dUVtcTllOUs0MDRsYThJRkFMdlZydmtGak1qNEFjeHdwVE9BUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.106/Dynapse_0.1.106_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3lUM1Y0VC96NTB3WElRYVpIV3JjKytzWmUzOVBTcklPZjFMRE5SZGFzNzdvSUpyb0wrZWttY3I2dWpXYkxLem5oNVNMRy80M1FrUTN2YjBQQXIxOFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTA2Mzg3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwNgpyOGh2VEhJWWZMMUdXMEtqMWRVR09wVkQ2ZlYyNkVodWNQbXZwRVM1aHU4dFlvbDRjYkQzQkQ3N0FlSWdBcFE0cWhFQkhxMU5GalV3RGxRbi9vR2JBdz09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.105/Dynapse_0.1.105_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzR1MEwzOFJTTGcvMHNhOUxGQUtjbTJRUXdyTzFGZ0NOa1g2bE9hSFdpS1U0QlNuVjhrTXg5TTN5a09qaHJVZEZVSUtQa2IzOHpReVd1aXV6bkJTdGd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTAyMjQ0CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwNQpOTjBIVEdyeW9nZzA0ZVd6cStsV2JsazBZNXQ0a0M0TE4xbnFrM0xCTzFRekVoQnA5dUVtcTllOUs0MDRsYThJRkFMdlZydmtGak1qNEFjeHdwVE9BUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.106/Dynapse_0.1.106_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3lUM1Y0VC96NTB3WElRYVpIV3JjKytzWmUzOVBTcklPZjFMRE5SZGFzNzdvSUpyb0wrZWttY3I2dWpXYkxLem5oNVNMRy80M1FrUTN2YjBQQXIxOFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTA2Mzg3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwNgpyOGh2VEhJWWZMMUdXMEtqMWRVR09wVkQ2ZlYyNkVodWNQbXZwRVM1aHU4dFlvbDRjYkQzQkQ3N0FlSWdBcFE0cWhFQkhxMU5GalV3RGxRbi9vR2JBdz09Cg=="
     }
   }
 }
