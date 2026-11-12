@@ -780,3 +780,4 @@
 | 2026-11-12T18:03:12.671Z | macos | beta | 0.1.106 | macos-v0.1.106 | beta-served-verified | src 0d9ef80fb · 0.1.106 — 작업 연결 채팅 실행이 브라우저 준비를 끝없이 기다리지 않아요(엔진까지만 · 20초 넘으면 이유 한 줄) · 준비 뒤 단계는 뒤에서 |
 | 2026-11-12T18:05:31.593Z | macos | stable | 0.1.106 | macos-v0.1.106 | stable-served-verified |  |
 | 2026-11-12T20:31:22.952Z | windows | beta | 0.1.106 | windows-v0.1.106 | beta-served-verified | src 0d9ef80fb · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.106(Windows) — 0.1.104 이후: 검색 엔진 설정 따름 · 브라우저 준비 지연 안내 · 멈춘 요청 보고 · 잠깨기·오프라인 빈 창 고침; Chromium 모드 없음(웹뷰 엔진) |
+| 2026-11-12T20:33:34.231Z | windows | stable | 0.1.106 | windows-v0.1.106 | stable-served-verified |  |
