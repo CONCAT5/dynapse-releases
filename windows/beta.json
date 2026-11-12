@@ -1,11 +1,11 @@
 {
-  "version": "0.1.96",
-  "notes": "0.1.96(Windows) — 반복 업무 · 처음 켤 때 상태 · 같은 말 다른 장 고침 · 입력 칸 값 누출 고침; Chromium 모드 없음(맥 전용)",
-  "pub_date": "2026-11-11T05:11:54Z",
+  "version": "0.1.102",
+  "notes": "0.1.102(Windows) — 브라우저 베타 · 탭 하나 닫기 · 첨부 · 결정 44·47 동기화; Chromium 모드 없음(웹뷰 엔진, 비공개 창 없음)",
+  "pub_date": "2026-11-12T06:50:20Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.96/Dynapse_0.1.96_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1Mi9NN05yaHB0SEw3NXNVSHRIVkplV290NXJ3Wlh3RkJSY25idlRQVXU2RjMxZmpCQjdvcFJZdFRZbTlsRGU3S3R1ZzZIVUFaSkkzZFZiZUJkN2h6aXdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzczOTA2CWZpbGU6RHluYXBzZV8wLjEuOTZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS45NgowcHJzZlhENTlpMzgrK0JsOXZLeGVsSGUreXUzTHdDQ0FiY0NjUmFYR3ErMEFmdFAzS25tNGJVOHI0QTF2QzFYSkRGQWpBaytHTUFNeW9IU09qcHRDdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.102/Dynapse_0.1.102_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjhWZU9IalFFRStBaTVLK21xVldCMVY4QlhzdGNudlM1WUtMU3lyVUlmN2VYS3VMaWNvMzBDTnJFdmxlL0RLYmpDaFFYOXQrMitIQTVIenByc2RpUEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDY2MjEwCWZpbGU6RHluYXBzZV8wLjEuMTAyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTAyCm9DVzJxVHBPYVJSNndoLzVrU1dDSzU5UXJpN0V3eUFDODB1YXFCUHpFbUx3b1d1d2lEUWFuRVkzalNKTWRIcFBISE1sZnRJeUs3UVN0ZytHR3NCbUJRPT0K"
     }
   }
 }
