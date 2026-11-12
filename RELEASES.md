@@ -765,3 +765,4 @@
 | 2026-11-12T05:31:44.598Z | windows | stable | 0.1.96 | windows-v0.1.96 | stable-served-verified |  |
 | 2026-11-12T06:51:24.821Z | windows | beta | 0.1.102 | windows-v0.1.102 | beta-served-verified | src 3bf693ac1 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.102(Windows) — 브라우저 베타 · 탭 하나 닫기 · 첨부 · 결정 44·47 동기화; Chromium 모드 없음(웹뷰 엔진, 비공개 창 없음) |
 | 2026-11-12T06:53:26.584Z | windows | stable | 0.1.102 | windows-v0.1.102 | stable-served-verified |  |
+| 2026-11-12T10:57:13.510Z | macos | beta | 0.1.103 | macos-v0.1.103 | beta-served-verified | src ed1399db3 · 0.1.103 — 말로 세운 금지 규칙을 앱도 지켜요 · 알아서 모드 승인 대행 · 하위 에이전트가 하는 일 · 가져온 북마크 · 탭 그림 30초 · 출처에서 검색 결과 페이지 뺌 · AI 자체 웹 검색 · 말로만 끝낸 일은 다시 시도 · 대화에서 만든 새 작업이 결과물로 · 고른 글 바로 묻기 · 네이티브 탭 단축키 |
