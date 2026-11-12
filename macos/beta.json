@@ -1,15 +1,15 @@
 {
-  "version": "0.1.100",
-  "notes": "0.1.100: Chromium is the default Mac beta browser engine (decision 41; 3 s checked start, falls back to the web view, CfT fetched once in the background), incognito tabs, composer AI/effort per chat, @ tab text, attachments, deep research, other AI connections (answer only), Chrome profiles, shortcut table, Dynapse로 처리; src b24289a5; journey AI off",
-  "pub_date": "2026-11-11T19:56:43Z",
+  "version": "0.1.101",
+  "notes": "0.1.101: steer (interject a queued message at the next step), conversation-run continue, incognito mark and badge flag, deep-research sources on run lines, dyn:engine-result, engine reports sent right away and on quit, Windows curl for providers and local models; src 2cac59d2; journey AI off",
+  "pub_date": "2026-11-12T01:25:22Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.100/Dynapse_0.1.100_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy9xRjVXb1pkK2RoQmRkZ25WSE5RSnN0ME1uK0F5TWtoTCtjU1RwOWxVeWdjSmIxN01hN0VLTUtaaUZsUTZxL0x5aTR5S1dnV2hiQzF1V29VMnhwV2dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDI2ODY4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwMAp6cXJ5VVNVd24wZWFVMzF5UzR0dnRJZDhDQlNhbTFUZHBHZFRUcmlCcVBUYWcyeW1ibmd3d0NKZ1ZycG5ZelV1QUNqd0dEMVdUNUJFd2tienowUFVEdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.101/Dynapse_0.1.101_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzZVbjE5cHVNZGx0OWJaZDZrSnMwQmxEbm4xM3RSenJJZ2RLYzVzSFB3MUo4dVFISkpvTVM5azk5QU4zN0dpODlRaTRlN2lwUHcwZEhyU0Z0UXdoN2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDQ2NjAzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwMQpQU096M0drcGVoemJ1cU1NWnZ6RFhnS0tOS3RyUGpUSXpGM0t3SUVjVE9wMEtuaWlIazdSR0hxUEltYVY4UkpteGh0aFloOWM1ekJnUDg0d2tDS3ZDUT09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.100/Dynapse_0.1.100_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy9xRjVXb1pkK2RoQmRkZ25WSE5RSnN0ME1uK0F5TWtoTCtjU1RwOWxVeWdjSmIxN01hN0VLTUtaaUZsUTZxL0x5aTR5S1dnV2hiQzF1V29VMnhwV2dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDI2ODY4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwMAp6cXJ5VVNVd24wZWFVMzF5UzR0dnRJZDhDQlNhbTFUZHBHZFRUcmlCcVBUYWcyeW1ibmd3d0NKZ1ZycG5ZelV1QUNqd0dEMVdUNUJFd2tienowUFVEdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.101/Dynapse_0.1.101_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzZVbjE5cHVNZGx0OWJaZDZrSnMwQmxEbm4xM3RSenJJZ2RLYzVzSFB3MUo4dVFISkpvTVM5azk5QU4zN0dpODlRaTRlN2lwUHcwZEhyU0Z0UXdoN2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDQ2NjAzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwMQpQU096M0drcGVoemJ1cU1NWnZ6RFhnS0tOS3RyUGpUSXpGM0t3SUVjVE9wMEtuaWlIazdSR0hxUEltYVY4UkpteGh0aFloOWM1ekJnUDg0d2tDS3ZDUT09Cg=="
     }
   }
 }
