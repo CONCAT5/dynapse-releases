@@ -1,11 +1,11 @@
 {
-  "version": "0.1.103",
-  "notes": "0.1.103(Windows) — 말로 세운 금지 규칙 · 승인 대행 · 하위 에이전트 · 북마크 · 탭 그림 30초 · 자체 웹 검색; Chromium 모드 없음(웹뷰 엔진)",
-  "pub_date": "2026-11-12T11:18:20Z",
+  "version": "0.1.104",
+  "notes": "0.1.104(Windows) — 0.1.103 이후 고침 · 잠깨기·오프라인 때 빈 창 안 만듦 · 디자인 수치 기록; Chromium 모드 없음(웹뷰 엔진)",
+  "pub_date": "2026-11-12T15:00:42Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.103/Dynapse_0.1.103_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnlNU2lDMUIwQ04zNEJjMTh5NjMvMU5YU0w4YXNMZTVzdVBaNWx6Wm1GTzc5eVo2cG9acXpwRXllT1EzcjBKbGJyQ1cvS2xhVFl5Qlc3bCszampKUVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDgyMjkzCWZpbGU6RHluYXBzZV8wLjEuMTAzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTAzCmlPWnNsVGZPRHROV09CRTd2V2U1SHFRN1hIZGd1ZUszeklRc3ZYUmdrOU9aMjBsV28vVEhaenk1ZnNjMkFiZ21ibnZMTGorWVFqR2FGbTA3SVRUc0J3PT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.104/Dynapse_0.1.104_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MndScU1aMjR2ai93clNDSFFraVNwSXlsL3kybW1BTVlXWmhEZzA1K1Fnd1pnZEJ5R2EvU1N5SkhvZyszelVZR2xaZGxwcVN0aU9vNjdLS2dhWXNrbVE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDk1NjM1CWZpbGU6RHluYXBzZV8wLjEuMTA0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTA0ClZaNDBUSVlHSXhvWVI0KzRrY2hxNWtaRnNtbm5wYmdjMHJLN05JWkhDWVAyTVRvTnVmaEdlbUtkUUVDd0Y3UjZvS0ZnRlpjOElmSUZxbmFYQWFnL0JBPT0K"
     }
   }
 }
