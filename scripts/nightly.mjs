@@ -60,6 +60,10 @@ if (existsSync(join(GATE_WT, "prototypes", "hub"))) {
   rsLine = (rs.out.match(/render-sim \d+\/\d+/) ?? [`render-sim 실패(${rs.code})`])[0];
 }
 const fails = [...g.out.split("\n"), ...rs.out.split("\n")].filter(l => /✗/.test(l)).slice(0, 4).map(l => l.trim().slice(0, 60));
+// 실패 자세히(11-13 — 요약 줄만 남아 P421 원인을 못 봤다): ✗ 줄과 그 아래 들여쓴 이유 줄 2개씩, 40줄까지 nightly.log에 그대로
+{ const ls = [...g.out.split("\n"), ...rs.out.split("\n")], det = [];
+  ls.forEach((l, i) => { if (/✗/.test(l)) { det.push(l.trim().slice(0, 300)); for (const n of ls.slice(i + 1, i + 3)) if (/^\s{5,}\S/.test(n)) det.push(`    ${n.trim().slice(0, 300)}`); } });
+  for (const l of det.slice(0, 40)) log(`  detail ${l}`); }
 const min = Math.round((Date.now() - t0) / 60000), ok = gateOk && rs.code === 0;
 const row = `| ${day} | ${sha} | ${ok ? "초록" : "**빨강**"} · ${sync} · ${turn} · ${rsLine}${fails.length ? ` · ${fails.join(" / ").replace(/\|/g, "/")}` : ""} | ${min}분 |`;
 log(`done ${row}`);
