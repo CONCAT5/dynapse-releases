@@ -1,11 +1,11 @@
 {
-  "version": "0.1.104",
-  "notes": "0.1.104(Windows) — 0.1.103 이후 고침 · 잠깨기·오프라인 때 빈 창 안 만듦 · 디자인 수치 기록; Chromium 모드 없음(웹뷰 엔진)",
-  "pub_date": "2026-11-12T15:00:42Z",
+  "version": "0.1.106",
+  "notes": "0.1.106(Windows) — 0.1.104 이후: 검색 엔진 설정 따름 · 브라우저 준비 지연 안내 · 멈춘 요청 보고 · 잠깨기·오프라인 빈 창 고침; Chromium 모드 없음(웹뷰 엔진)",
+  "pub_date": "2026-11-12T20:29:17Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.104/Dynapse_0.1.104_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MndScU1aMjR2ai93clNDSFFraVNwSXlsL3kybW1BTVlXWmhEZzA1K1Fnd1pnZEJ5R2EvU1N5SkhvZyszelVZR2xaZGxwcVN0aU9vNjdLS2dhWXNrbVE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDk1NjM1CWZpbGU6RHluYXBzZV8wLjEuMTA0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTA0ClZaNDBUSVlHSXhvWVI0KzRrY2hxNWtaRnNtbm5wYmdjMHJLN05JWkhDWVAyTVRvTnVmaEdlbUtkUUVDd0Y3UjZvS0ZnRlpjOElmSUZxbmFYQWFnL0JBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.106/Dynapse_0.1.106_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1Mnk0U055bW5ZRE1jSGJCZW82QzN2UUNudU5SaUxYV0pyaDJwQndJV1BYdm0rL2ZTZk5QellQSHpTdEVqZTNpQ0ZObk9RbWd1MzhxUjVTVjNkamhIbndZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTE1MzUwCWZpbGU6RHluYXBzZV8wLjEuMTA2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTA2CldxT243K2xvWEx0b0dQMGtUekxNSnRNWStwZmZlemZJdExoV0cyc0RRNDMwVnF3b1VJY3R5eU5Tbjg5UHVOcW5GSmNvNlRIbWxuaFlxTzZZNUpja0FnPT0K"
     }
   }
 }
