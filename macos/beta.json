@@ -1,15 +1,15 @@
 {
-  "version": "0.1.101",
-  "notes": "0.1.101: steer (interject a queued message at the next step), conversation-run continue, incognito mark and badge flag, deep-research sources on run lines, dyn:engine-result, engine reports sent right away and on quit, Windows curl for providers and local models; src 2cac59d2; journey AI off",
-  "pub_date": "2026-11-12T01:25:22Z",
+  "version": "0.1.102",
+  "notes": "0.1.102: opens always get a new tab and never reuse a person's incognito tab, one-tab close closes only that tab, the event stream never stops and wakes on hub actions (event wake, 10 min), run site from the newest tab; src 3bf693ac; journey AI off; rerun after a self-check timeout under load (load 18, 12:2x)",
+  "pub_date": "2026-11-12T04:10:42Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.101/Dynapse_0.1.101_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzZVbjE5cHVNZGx0OWJaZDZrSnMwQmxEbm4xM3RSenJJZ2RLYzVzSFB3MUo4dVFISkpvTVM5azk5QU4zN0dpODlRaTRlN2lwUHcwZEhyU0Z0UXdoN2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDQ2NjAzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwMQpQU096M0drcGVoemJ1cU1NWnZ6RFhnS0tOS3RyUGpUSXpGM0t3SUVjVE9wMEtuaWlIazdSR0hxUEltYVY4UkpteGh0aFloOWM1ekJnUDg0d2tDS3ZDUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.102/Dynapse_0.1.102_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytRRUhQZFBhQ3FSMzd5SnJhL3lvcFYzeUdYYWx4VEJCbHlrd2ZLQnRyVTNrVm1sWEp6bGxBby95NnozaVdNQ1hEbjNvRnBDYkxDREhWVWU1MzZ5dlE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDU2MjAxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwMgplQms4SWd3eHE3QTV1QkpQUGQrdmVwekpMbk45Ri9PN0RNdVhDeEJtZUdJL2ZzUktoY1E5Q3hKeEdIU1h2Tko1akN5MFVjZmxvZFZoMDBEelN1dTZBdz09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.101/Dynapse_0.1.101_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzZVbjE5cHVNZGx0OWJaZDZrSnMwQmxEbm4xM3RSenJJZ2RLYzVzSFB3MUo4dVFISkpvTVM5azk5QU4zN0dpODlRaTRlN2lwUHcwZEhyU0Z0UXdoN2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDQ2NjAzCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwMQpQU096M0drcGVoemJ1cU1NWnZ6RFhnS0tOS3RyUGpUSXpGM0t3SUVjVE9wMEtuaWlIazdSR0hxUEltYVY4UkpteGh0aFloOWM1ekJnUDg0d2tDS3ZDUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.102/Dynapse_0.1.102_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytRRUhQZFBhQ3FSMzd5SnJhL3lvcFYzeUdYYWx4VEJCbHlrd2ZLQnRyVTNrVm1sWEp6bGxBby95NnozaVdNQ1hEbjNvRnBDYkxDREhWVWU1MzZ5dlE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDU2MjAxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwMgplQms4SWd3eHE3QTV1QkpQUGQrdmVwekpMbk45Ri9PN0RNdVhDeEJtZUdJL2ZzUktoY1E5Q3hKeEdIU1h2Tko1akN5MFVjZmxvZFZoMDBEelN1dTZBdz09Cg=="
     }
   }
 }
