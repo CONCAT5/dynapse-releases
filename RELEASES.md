@@ -777,3 +777,4 @@
 | 2026-11-12T15:04:26.960Z | windows | stable | 0.1.104 | windows-v0.1.104 | stable-served-verified |  |
 | 2026-11-12T16:53:52.928Z | macos | beta | 0.1.105 | macos-v0.1.105 | beta-served-verified | src 0b5199bd5 · 0.1.105 — 프로젝트 열기 · dev 서버 · 그 채팅 탭 · ⌥클릭 요소 인용 · AI가 프로젝트 편집 · 끝 카드 push · PR · 미리보기 주소 · 화면 맥락 기억(동의 · 기기 안) · 작업 연결 채팅 실행 실패가 보임 |
 | 2026-11-12T16:56:00.760Z | macos | stable | 0.1.105 | macos-v0.1.105 | stable-served-verified |  |
+| 2026-11-12T18:03:12.671Z | macos | beta | 0.1.106 | macos-v0.1.106 | beta-served-verified | src 0d9ef80fb · 0.1.106 — 작업 연결 채팅 실행이 브라우저 준비를 끝없이 기다리지 않아요(엔진까지만 · 20초 넘으면 이유 한 줄) · 준비 뒤 단계는 뒤에서 |
