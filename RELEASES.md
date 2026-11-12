@@ -764,3 +764,4 @@
 | 2026-11-12T04:29:56.944Z | macos | stable | 0.1.102 | macos-v0.1.102 | stable-served-verified |  |
 | 2026-11-12T05:31:44.598Z | windows | stable | 0.1.96 | windows-v0.1.96 | stable-served-verified |  |
 | 2026-11-12T06:51:24.821Z | windows | beta | 0.1.102 | windows-v0.1.102 | beta-served-verified | src 3bf693ac1 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.102(Windows) — 브라우저 베타 · 탭 하나 닫기 · 첨부 · 결정 44·47 동기화; Chromium 모드 없음(웹뷰 엔진, 비공개 창 없음) |
+| 2026-11-12T06:53:26.584Z | windows | stable | 0.1.102 | windows-v0.1.102 | stable-served-verified |  |
