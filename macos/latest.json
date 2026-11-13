@@ -1,15 +1,15 @@
 {
-  "version": "0.1.106",
-  "notes": "0.1.106 — 작업 연결 채팅 실행이 브라우저 준비를 끝없이 기다리지 않아요(엔진까지만 · 20초 넘으면 이유 한 줄) · 준비 뒤 단계는 뒤에서",
-  "pub_date": "2026-11-12T18:02:05Z",
+  "version": "0.1.107",
+  "notes": "0.1.107 — 실행 중에 보낸 말을 받아요(지금 반영 · 다음 차례) · 되물으면 입력을 기다려요 · 실행 중 AI · 권한 바꾸기 · 확인 없이 보인 답은 성공으로",
+  "pub_date": "2026-11-13T00:02:40Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.106/Dynapse_0.1.106_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3lUM1Y0VC96NTB3WElRYVpIV3JjKytzWmUzOVBTcklPZjFMRE5SZGFzNzdvSUpyb0wrZWttY3I2dWpXYkxLem5oNVNMRy80M1FrUTN2YjBQQXIxOFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTA2Mzg3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwNgpyOGh2VEhJWWZMMUdXMEtqMWRVR09wVkQ2ZlYyNkVodWNQbXZwRVM1aHU4dFlvbDRjYkQzQkQ3N0FlSWdBcFE0cWhFQkhxMU5GalV3RGxRbi9vR2JBdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.107/Dynapse_0.1.107_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytCQUZCZlA0S2JnaU9DYTN3RlVZQnpJRXB0aCtwbnhGcUxmZHhZNW5FaW52Y0JZbHNiS0JVbUFYRlB5QWgrZklkbldnMWhVeW1WWktpSEtJRDAvWHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTI4MDA5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwNwo0bUxGK2ZaTnBXcS9jZzQrZlVMblA1UFBkV1A1blN3ZUp4aHJkMEZXU2N2KzdwS0FPMjVMdC9ITS9LZDAreFlxMU9VT3dRRHRBMmxWRk81UWxQMzlEdz09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.106/Dynapse_0.1.106_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3lUM1Y0VC96NTB3WElRYVpIV3JjKytzWmUzOVBTcklPZjFMRE5SZGFzNzdvSUpyb0wrZWttY3I2dWpXYkxLem5oNVNMRy80M1FrUTN2YjBQQXIxOFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTA2Mzg3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwNgpyOGh2VEhJWWZMMUdXMEtqMWRVR09wVkQ2ZlYyNkVodWNQbXZwRVM1aHU4dFlvbDRjYkQzQkQ3N0FlSWdBcFE0cWhFQkhxMU5GalV3RGxRbi9vR2JBdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.107/Dynapse_0.1.107_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQytCQUZCZlA0S2JnaU9DYTN3RlVZQnpJRXB0aCtwbnhGcUxmZHhZNW5FaW52Y0JZbHNiS0JVbUFYRlB5QWgrZklkbldnMWhVeW1WWktpSEtJRDAvWHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTI4MDA5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwNwo0bUxGK2ZaTnBXcS9jZzQrZlVMblA1UFBkV1A1blN3ZUp4aHJkMEZXU2N2KzdwS0FPMjVMdC9ITS9LZDAreFlxMU9VT3dRRHRBMmxWRk81UWxQMzlEdz09Cg=="
     }
   }
 }
