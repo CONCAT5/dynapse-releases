@@ -781,3 +781,4 @@
 | 2026-11-12T18:05:31.593Z | macos | stable | 0.1.106 | macos-v0.1.106 | stable-served-verified |  |
 | 2026-11-12T20:31:22.952Z | windows | beta | 0.1.106 | windows-v0.1.106 | beta-served-verified | src 0d9ef80fb · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.106(Windows) — 0.1.104 이후: 검색 엔진 설정 따름 · 브라우저 준비 지연 안내 · 멈춘 요청 보고 · 잠깨기·오프라인 빈 창 고침; Chromium 모드 없음(웹뷰 엔진) |
 | 2026-11-12T20:33:34.231Z | windows | stable | 0.1.106 | windows-v0.1.106 | stable-served-verified |  |
+| 2026-11-13T00:03:45.782Z | macos | beta | 0.1.107 | macos-v0.1.107 | beta-served-verified | src 47bba4b4e · 0.1.107 — 실행 중에 보낸 말을 받아요(지금 반영 · 다음 차례) · 되물으면 입력을 기다려요 · 실행 중 AI · 권한 바꾸기 · 확인 없이 보인 답은 성공으로 |
