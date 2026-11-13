@@ -787,3 +787,4 @@
 | 2026-11-13T01:18:19.754Z | windows | stable | 0.1.107 | windows-v0.1.107 | stable-served-verified |  |
 | 2026-11-13T01:51:23.277Z | macos | beta | 0.1.108 | macos-v0.1.108 | beta-served-verified | src c0718e170 · 올가미 영역 캡처(⌘⇧2) · Safari 책갈피·Chrome 방문 기록 가져오기 · 실행 끝 샌드박스 줄 · 차트 블록 지시 · 작업 연결 채팅 중복 차지 막기와 추적 보고 · 루틴 다음 시각 깨우기 |
 | 2026-11-13T01:53:25.873Z | macos | stable | 0.1.108 | macos-v0.1.108 | stable-served-verified |  |
+| 2026-11-13T02:22:45.363Z | windows | beta | 0.1.108 | windows-v0.1.108 | beta-served-verified | src c0718e170 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.108(Windows) — 0.1.107 이후 고침·보고 · 반복 업무 제때 시작(next_due_at) · 끼어들기·되묻기 이어 가기; Chromium 모드 없음(웹뷰 엔진) |
