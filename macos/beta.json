@@ -1,15 +1,15 @@
 {
-  "version": "0.1.111",
-  "notes": "금고 helper 껍데기(서명된 XPC) · Edge·Arc·열려 있던 탭 가져오기 · 비밀번호 CSV 미리 보기 · 외부 에이전트 브라우저 MCP(읽기 전용)",
-  "pub_date": "2026-11-13T16:36:44Z",
+  "version": "0.1.112",
+  "notes": "금고 주키(키체인 · Touch ID · 실험실) · 자가 점검에 키체인 길",
+  "pub_date": "2026-11-13T17:55:41Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.111/Dynapse_0.1.111_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzdPZlRYaWFXenB3WEROSGJZd0tkMDJSMmZNMzN2QnhNMlF2TmFkbGNpc0pFZ09LcUlYemxmdnBOTWpqOEZhajRPZFY3NWRDNXJxSjltYkNJOGtzVkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTg3NjczCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMQowY04wM1poL0hmeDJzYlRBc09pWUY1Ly9XWHgyeEZUNjFOTnVaQ2RSTjZMWGN1Uk5lRXc2N3REWjVHV0dOTVlDMDdHZFB4MU4wbjhsaDZqc1RZYi9EQT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.112/Dynapse_0.1.112_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzRlTVNuOWpBT2NYOEFKRkFXdEUwa1N6UXVzbGwyMXFXZ29lMXNyMFZkZFYxZGdIR1FMZ2NTa1BDK0VKSHFrVm11U1JPd1Bnc0JtQnhTc1l4SW5hRGc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTkyNDEwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMgpNaE05UkplOE5EYlNoZTNhQVR0WjIrVDRvT3B3cXhKTHFZd3VSSG9jZzFHTkt3cWVTK1hNbUJNL2ZmeFFhRWthUzhwZ3ludThjeUpOY0wyaHNqOXZEdz09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.111/Dynapse_0.1.111_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzdPZlRYaWFXenB3WEROSGJZd0tkMDJSMmZNMzN2QnhNMlF2TmFkbGNpc0pFZ09LcUlYemxmdnBOTWpqOEZhajRPZFY3NWRDNXJxSjltYkNJOGtzVkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTg3NjczCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMQowY04wM1poL0hmeDJzYlRBc09pWUY1Ly9XWHgyeEZUNjFOTnVaQ2RSTjZMWGN1Uk5lRXc2N3REWjVHV0dOTVlDMDdHZFB4MU4wbjhsaDZqc1RZYi9EQT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.112/Dynapse_0.1.112_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzRlTVNuOWpBT2NYOEFKRkFXdEUwa1N6UXVzbGwyMXFXZ29lMXNyMFZkZFYxZGdIR1FMZ2NTa1BDK0VKSHFrVm11U1JPd1Bnc0JtQnhTc1l4SW5hRGc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTkyNDEwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMgpNaE05UkplOE5EYlNoZTNhQVR0WjIrVDRvT3B3cXhKTHFZd3VSSG9jZzFHTkt3cWVTK1hNbUJNL2ZmeFFhRWthUzhwZ3ludThjeUpOY0wyaHNqOXZEdz09Cg=="
     }
   }
 }
