@@ -789,3 +789,4 @@
 | 2026-11-13T01:53:25.873Z | macos | stable | 0.1.108 | macos-v0.1.108 | stable-served-verified |  |
 | 2026-11-13T02:22:45.363Z | windows | beta | 0.1.108 | windows-v0.1.108 | beta-served-verified | src c0718e170 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.108(Windows) — 0.1.107 이후 고침·보고 · 반복 업무 제때 시작(next_due_at) · 끼어들기·되묻기 이어 가기; Chromium 모드 없음(웹뷰 엔진) |
 | 2026-11-13T02:39:28.660Z | windows | stable | 0.1.108 | windows-v0.1.108 | stable-served-verified |  |
+| 2026-11-13T13:49:26.914Z | macos | beta | 0.1.109 | macos-v0.1.109 | beta-served-verified | src 1f035d466 · 도구별 허용·묻기·막기 집행 · 웹 탭 나란히 · 고정 탭·책갈피 기기 간 · 페이지 바뀌면 반복 업무 · 금고 사용 기록 · 방문 기록 AI/사람 구분 · Chrome 창 보기 · 푸시·PR 승인 카드 고침 |
