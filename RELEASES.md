@@ -794,3 +794,4 @@
 | 2026-11-13T15:41:55.600Z | macos | beta | 0.1.110 | macos-v0.1.110 | beta-served-verified | src 736636950 · AI가 만든 파일을 결과물로(처리 실행도 실행 폴더에 쓰기 · Codex workspace-write) · 결과물 폴더에서 보기 · 프로필 ⌘⌥1~9 · Chrome 확장 0.0.6 |
 | 2026-11-13T15:44:13.276Z | macos | stable | 0.1.110 | macos-v0.1.110 | stable-served-verified |  |
 | 2026-11-13T16:37:52.704Z | macos | beta | 0.1.111 | macos-v0.1.111 | beta-served-verified | src 59ac47f56 · 금고 helper 껍데기(서명된 XPC) · Edge·Arc·열려 있던 탭 가져오기 · 비밀번호 CSV 미리 보기 · 외부 에이전트 브라우저 MCP(읽기 전용) |
+| 2026-11-13T16:40:03.517Z | macos | stable | 0.1.111 | macos-v0.1.111 | stable-served-verified |  |
