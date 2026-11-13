@@ -1,15 +1,15 @@
 {
-  "version": "0.1.109",
-  "notes": "도구별 허용·묻기·막기 집행 · 웹 탭 나란히 · 고정 탭·책갈피 기기 간 · 페이지 바뀌면 반복 업무 · 금고 사용 기록 · 방문 기록 AI/사람 구분 · Chrome 창 보기 · 푸시·PR 승인 카드 고침",
-  "pub_date": "2026-11-13T13:48:19Z",
+  "version": "0.1.110",
+  "notes": "AI가 만든 파일을 결과물로(처리 실행도 실행 폴더에 쓰기 · Codex workspace-write) · 결과물 폴더에서 보기 · 프로필 ⌘⌥1~9 · Chrome 확장 0.0.6",
+  "pub_date": "2026-11-13T15:40:48Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.109/Dynapse_0.1.109_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzVpSGpCWUk4aWJOcXp0RjRUQnFsU3NZZXJYQmNGQU9kTTJFWkN2S0lGTUpMdVdFcTdORGpjU00vYmhscGIxWXJkNzNXaUJ4WW5xK3B4UmFJb0N2a1FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTc3NTY2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwOQpWZjN4dEtmZmFxS3kyNmpzV2VPb2licTg3SGZvY2NxdjhaMUkzUnRJYWJ1b3hVQ29KcWRXc0JvM2ZJdE9qQWFPanpudUluM3NzazVTY1NYWTRHNldDZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.110/Dynapse_0.1.110_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hWdlJ0VWJFMlVQR0hzK2JiMGxwQlRZdVlMZW91cUhVeWUrOEc4V1ozTnoybGxYMVEzTGNOYlptaFpUMUJoQytKWDJzYi80Z2l3c1BHaFpyVW9rckFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTg0MzE3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMApZc1Z5WlB0QTRraW4yQ3IvV0p1bW9LUkUrb3dQWGRSU3JrKzQ4K2FsSnRHOTY3Q0RJL3Vwa2xlbHRaMmFvRXlLSzRJdzRDNDR0SWFGYXk0OFZxMURBdz09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.109/Dynapse_0.1.109_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzVpSGpCWUk4aWJOcXp0RjRUQnFsU3NZZXJYQmNGQU9kTTJFWkN2S0lGTUpMdVdFcTdORGpjU00vYmhscGIxWXJkNzNXaUJ4WW5xK3B4UmFJb0N2a1FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTc3NTY2CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEwOQpWZjN4dEtmZmFxS3kyNmpzV2VPb2licTg3SGZvY2NxdjhaMUkzUnRJYWJ1b3hVQ29KcWRXc0JvM2ZJdE9qQWFPanpudUluM3NzazVTY1NYWTRHNldDZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.110/Dynapse_0.1.110_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hWdlJ0VWJFMlVQR0hzK2JiMGxwQlRZdVlMZW91cUhVeWUrOEc4V1ozTnoybGxYMVEzTGNOYlptaFpUMUJoQytKWDJzYi80Z2l3c1BHaFpyVW9rckFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTg0MzE3CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMApZc1Z5WlB0QTRraW4yQ3IvV0p1bW9LUkUrb3dQWGRSU3JrKzQ4K2FsSnRHOTY3Q0RJL3Vwa2xlbHRaMmFvRXlLSzRJdzRDNDR0SWFGYXk0OFZxMURBdz09Cg=="
     }
   }
 }
