@@ -1,11 +1,11 @@
 {
-  "version": "0.1.106",
-  "notes": "0.1.106(Windows) — 0.1.104 이후: 검색 엔진 설정 따름 · 브라우저 준비 지연 안내 · 멈춘 요청 보고 · 잠깨기·오프라인 빈 창 고침; Chromium 모드 없음(웹뷰 엔진)",
-  "pub_date": "2026-11-12T20:29:17Z",
+  "version": "0.1.107",
+  "notes": "0.1.107(Windows) — 실행 중 끼어들기·줄 세우기 · 되물으면 기다렸다 이어 감 · 실행 중 AI·권한 바꾸기 · 확인 없이 보인 답을 실패로 남기지 않음; Chromium 모드 없음(웹뷰 엔진)",
+  "pub_date": "2026-11-13T01:15:21Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.106/Dynapse_0.1.106_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1Mnk0U055bW5ZRE1jSGJCZW82QzN2UUNudU5SaUxYV0pyaDJwQndJV1BYdm0rL2ZTZk5QellQSHpTdEVqZTNpQ0ZObk9RbWd1MzhxUjVTVjNkamhIbndZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTE1MzUwCWZpbGU6RHluYXBzZV8wLjEuMTA2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTA2CldxT243K2xvWEx0b0dQMGtUekxNSnRNWStwZmZlemZJdExoV0cyc0RRNDMwVnF3b1VJY3R5eU5Tbjg5UHVOcW5GSmNvNlRIbWxuaFlxTzZZNUpja0FnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.107/Dynapse_0.1.107_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjFpVWZ0bll2ZnFsc3grMCtRNGx2b3hFT2Y5b1JYQmNQbUwyR2ZnUWpGc204NnRLM0dPRHJPRldkZlpmR2JXWkptcDk5eVlTTHZMekNhekxTTGR0SXdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTMyNTE1CWZpbGU6RHluYXBzZV8wLjEuMTA3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTA3CjlzcWxTK0pSYXp2QzJwbWdtM0JZWDlWZE1kMW5mME05SFh0S0YzdHNEK1l0NGFDQzhYMDg0TGhDa0NIWGtRSUdFY0xBMTRlSTYvNWFESHBjanFrR0FBPT0K"
     }
   }
 }
