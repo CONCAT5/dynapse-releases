@@ -791,3 +791,4 @@
 | 2026-11-13T02:39:28.660Z | windows | stable | 0.1.108 | windows-v0.1.108 | stable-served-verified |  |
 | 2026-11-13T13:49:26.914Z | macos | beta | 0.1.109 | macos-v0.1.109 | beta-served-verified | src 1f035d466 · 도구별 허용·묻기·막기 집행 · 웹 탭 나란히 · 고정 탭·책갈피 기기 간 · 페이지 바뀌면 반복 업무 · 금고 사용 기록 · 방문 기록 AI/사람 구분 · Chrome 창 보기 · 푸시·PR 승인 카드 고침 |
 | 2026-11-13T13:51:33.769Z | macos | stable | 0.1.109 | macos-v0.1.109 | stable-served-verified |  |
+| 2026-11-13T15:41:55.600Z | macos | beta | 0.1.110 | macos-v0.1.110 | beta-served-verified | src 736636950 · AI가 만든 파일을 결과물로(처리 실행도 실행 폴더에 쓰기 · Codex workspace-write) · 결과물 폴더에서 보기 · 프로필 ⌘⌥1~9 · Chrome 확장 0.0.6 |
