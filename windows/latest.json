@@ -1,11 +1,11 @@
 {
-  "version": "0.1.107",
-  "notes": "0.1.107(Windows) — 실행 중 끼어들기·줄 세우기 · 되물으면 기다렸다 이어 감 · 실행 중 AI·권한 바꾸기 · 확인 없이 보인 답을 실패로 남기지 않음; Chromium 모드 없음(웹뷰 엔진)",
-  "pub_date": "2026-11-13T01:15:21Z",
+  "version": "0.1.108",
+  "notes": "0.1.108(Windows) — 0.1.107 이후 고침·보고 · 반복 업무 제때 시작(next_due_at) · 끼어들기·되묻기 이어 가기; Chromium 모드 없음(웹뷰 엔진)",
+  "pub_date": "2026-11-13T02:19:18Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.107/Dynapse_0.1.107_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjFpVWZ0bll2ZnFsc3grMCtRNGx2b3hFT2Y5b1JYQmNQbUwyR2ZnUWpGc204NnRLM0dPRHJPRldkZlpmR2JXWkptcDk5eVlTTHZMekNhekxTTGR0SXdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTMyNTE1CWZpbGU6RHluYXBzZV8wLjEuMTA3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTA3CjlzcWxTK0pSYXp2QzJwbWdtM0JZWDlWZE1kMW5mME05SFh0S0YzdHNEK1l0NGFDQzhYMDg0TGhDa0NIWGtRSUdFY0xBMTRlSTYvNWFESHBjanFrR0FBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.108/Dynapse_0.1.108_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjhHWHNwNlAzbXVRWFFSV1lDSmhqUXgxcCt6cE9WYkl1bVJ6eUwvS3ZBY3RNZFRZdzRYWnN3YVpKK1FUbmU5cFlKYWk4NmVQMldLUHpjeUp2Tm15ZndjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTM2MzUyCWZpbGU6RHluYXBzZV8wLjEuMTA4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTA4CjRRclFIbE40Nlc5WUZxUDJkanZWell5QmV6ZlB5OEx3aFdvTVVQZzJWWUZla3hNQTIzYm9iL1hQV1hUUHJub2lrNDBsMzZpelJvaytoV29vUG1vQ0J3PT0K"
     }
   }
 }
