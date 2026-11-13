@@ -784,3 +784,4 @@
 | 2026-11-13T00:03:45.782Z | macos | beta | 0.1.107 | macos-v0.1.107 | beta-served-verified | src 47bba4b4e · 0.1.107 — 실행 중에 보낸 말을 받아요(지금 반영 · 다음 차례) · 되물으면 입력을 기다려요 · 실행 중 AI · 권한 바꾸기 · 확인 없이 보인 답은 성공으로 |
 | 2026-11-13T00:05:50.282Z | macos | stable | 0.1.107 | macos-v0.1.107 | stable-served-verified |  |
 | 2026-11-13T01:16:26.393Z | windows | beta | 0.1.107 | windows-v0.1.107 | beta-served-verified | src 47bba4b4e · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.107(Windows) — 실행 중 끼어들기·줄 세우기 · 되물으면 기다렸다 이어 감 · 실행 중 AI·권한 바꾸기 · 확인 없이 보인 답을 실패로 남기지 않음; Chromium 모드 없음(웹뷰 엔진) |
+| 2026-11-13T01:18:19.754Z | windows | stable | 0.1.107 | windows-v0.1.107 | stable-served-verified |  |
