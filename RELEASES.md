@@ -799,3 +799,4 @@
 | 2026-11-13T17:59:30.137Z | macos | stable | 0.1.112 | macos-v0.1.112 | stable-served-verified |  |
 | 2026-11-14T01:48:34.179Z | macos | beta | 0.1.113 | macos-v0.1.113 | beta-served-verified | src 4bb968e67 · 0.1.113: 파일 이름은 사이트가 아님 · 만든 파일 판정이 다른 결과를 덮지 않음 · 질문 도구 · 실행 id로 사건 나누기 · AI 연결 없음 안내 |
 | 2026-11-14T01:50:41.981Z | macos | stable | 0.1.113 | macos-v0.1.113 | stable-served-verified |  |
+| 2026-11-14T05:01:03.541Z | macos | beta | 0.1.114 | macos-v0.1.114 | beta-served-verified | src 8b8d48b7f · 0.1.114: 끌 때 브라우저 엔진 닫기 · 내 탭에서 파일 받기 · 직접 한 뒤 [이어서] 받은 말 그대로 · 맥 브라우저 기본 켬 |
