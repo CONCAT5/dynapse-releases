@@ -1,15 +1,15 @@
 {
-  "version": "0.1.112",
-  "notes": "금고 주키(키체인 · Touch ID · 실험실) · 자가 점검에 키체인 길",
-  "pub_date": "2026-11-13T17:55:41Z",
+  "version": "0.1.113",
+  "notes": "0.1.113: 파일 이름은 사이트가 아님 · 만든 파일 판정이 다른 결과를 덮지 않음 · 질문 도구 · 실행 id로 사건 나누기 · AI 연결 없음 안내",
+  "pub_date": "2026-11-14T01:47:26Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.112/Dynapse_0.1.112_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzRlTVNuOWpBT2NYOEFKRkFXdEUwa1N6UXVzbGwyMXFXZ29lMXNyMFZkZFYxZGdIR1FMZ2NTa1BDK0VKSHFrVm11U1JPd1Bnc0JtQnhTc1l4SW5hRGc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTkyNDEwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMgpNaE05UkplOE5EYlNoZTNhQVR0WjIrVDRvT3B3cXhKTHFZd3VSSG9jZzFHTkt3cWVTK1hNbUJNL2ZmeFFhRWthUzhwZ3ludThjeUpOY0wyaHNqOXZEdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.113/Dynapse_0.1.113_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3pMOUY1U1VyK2l0dEFnRUw2WklZZlV4dVBrV29id1N5Y0Zjcm5XOFhRSU45cUJVSFh2anR3Mi9hb2g5LzVuN09xN0RVajZUMVRubEYxdHlNbG1GRndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjIwNzE1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMwoxOVlkUVE0U2ZjKzNDbHhSWldlbkE0UUQ2NWNjNEk0Zjd3MTVIT05mZW5mVGZMR1FKcHMzTElmUnRZeEVwclN6cFNzcnAzWWxKcHJFT21ZaEpFUGhEdz09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.112/Dynapse_0.1.112_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzRlTVNuOWpBT2NYOEFKRkFXdEUwa1N6UXVzbGwyMXFXZ29lMXNyMFZkZFYxZGdIR1FMZ2NTa1BDK0VKSHFrVm11U1JPd1Bnc0JtQnhTc1l4SW5hRGc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTkyNDEwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMgpNaE05UkplOE5EYlNoZTNhQVR0WjIrVDRvT3B3cXhKTHFZd3VSSG9jZzFHTkt3cWVTK1hNbUJNL2ZmeFFhRWthUzhwZ3ludThjeUpOY0wyaHNqOXZEdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.113/Dynapse_0.1.113_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3pMOUY1U1VyK2l0dEFnRUw2WklZZlV4dVBrV29id1N5Y0Zjcm5XOFhRSU45cUJVSFh2anR3Mi9hb2g5LzVuN09xN0RVajZUMVRubEYxdHlNbG1GRndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjIwNzE1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMwoxOVlkUVE0U2ZjKzNDbHhSWldlbkE0UUQ2NWNjNEk0Zjd3MTVIT05mZW5mVGZMR1FKcHMzTElmUnRZeEVwclN6cFNzcnAzWWxKcHJFT21ZaEpFUGhEdz09Cg=="
     }
   }
 }
