@@ -801,3 +801,4 @@
 | 2026-11-14T01:50:41.981Z | macos | stable | 0.1.113 | macos-v0.1.113 | stable-served-verified |  |
 | 2026-11-14T05:01:03.541Z | macos | beta | 0.1.114 | macos-v0.1.114 | beta-served-verified | src 8b8d48b7f · 0.1.114: 끌 때 브라우저 엔진 닫기 · 내 탭에서 파일 받기 · 직접 한 뒤 [이어서] 받은 말 그대로 · 맥 브라우저 기본 켬 |
 | 2026-11-14T05:03:02.237Z | macos | stable | 0.1.114 | macos-v0.1.114 | stable-served-verified |  |
+| 2026-11-14T10:44:06.039Z | macos | beta | 0.1.115 | macos-v0.1.115 | beta-served-verified | src 606e69018 · 0.1.115: 앱 끌 때 엔진 Chrome 남김 없음 · ChatGPT 런타임 도구 승인 · 파일 만든 실행 성공 · 받은 파일 폴더 보기 |
