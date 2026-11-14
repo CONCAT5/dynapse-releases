@@ -798,3 +798,4 @@
 | 2026-11-13T17:57:20.105Z | macos | beta | 0.1.112 | macos-v0.1.112 | beta-served-verified | src d8e3f515d · 금고 주키(키체인 · Touch ID · 실험실) · 자가 점검에 키체인 길 |
 | 2026-11-13T17:59:30.137Z | macos | stable | 0.1.112 | macos-v0.1.112 | stable-served-verified |  |
 | 2026-11-14T01:48:34.179Z | macos | beta | 0.1.113 | macos-v0.1.113 | beta-served-verified | src 4bb968e67 · 0.1.113: 파일 이름은 사이트가 아님 · 만든 파일 판정이 다른 결과를 덮지 않음 · 질문 도구 · 실행 id로 사건 나누기 · AI 연결 없음 안내 |
+| 2026-11-14T01:50:41.981Z | macos | stable | 0.1.113 | macos-v0.1.113 | stable-served-verified |  |
