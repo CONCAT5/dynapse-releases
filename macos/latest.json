@@ -1,15 +1,15 @@
 {
-  "version": "0.1.113",
-  "notes": "0.1.113: 파일 이름은 사이트가 아님 · 만든 파일 판정이 다른 결과를 덮지 않음 · 질문 도구 · 실행 id로 사건 나누기 · AI 연결 없음 안내",
-  "pub_date": "2026-11-14T01:47:26Z",
+  "version": "0.1.114",
+  "notes": "0.1.114: 끌 때 브라우저 엔진 닫기 · 내 탭에서 파일 받기 · 직접 한 뒤 [이어서] 받은 말 그대로 · 맥 브라우저 기본 켬",
+  "pub_date": "2026-11-14T04:59:55Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.113/Dynapse_0.1.113_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3pMOUY1U1VyK2l0dEFnRUw2WklZZlV4dVBrV29id1N5Y0Zjcm5XOFhRSU45cUJVSFh2anR3Mi9hb2g5LzVuN09xN0RVajZUMVRubEYxdHlNbG1GRndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjIwNzE1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMwoxOVlkUVE0U2ZjKzNDbHhSWldlbkE0UUQ2NWNjNEk0Zjd3MTVIT05mZW5mVGZMR1FKcHMzTElmUnRZeEVwclN6cFNzcnAzWWxKcHJFT21ZaEpFUGhEdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.114/Dynapse_0.1.114_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzRYZEZ2SFQvUWJ3Rm4zNDBDNlZuazlsM3RSLzBnWDZ6RUxRcmVtWnJnQVZlRWZ4WERpTnhkUmZXTzZ4R3JqR05IY2JTMEM2SS94eDUvZ3hRQW0xWFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjI3NjU1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExNAp6MDdRY3oraXd2OTVaQWYvRmV0MFZUZzVURE50MHlENXFuRDVRdU9XdXdxYXBlUDRuMVFETFF5NXF1UnF4Yy93bkkxMC90ZENhR3pkSmE3bHJiRUhCUT09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.113/Dynapse_0.1.113_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3pMOUY1U1VyK2l0dEFnRUw2WklZZlV4dVBrV29id1N5Y0Zjcm5XOFhRSU45cUJVSFh2anR3Mi9hb2g5LzVuN09xN0RVajZUMVRubEYxdHlNbG1GRndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjIwNzE1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExMwoxOVlkUVE0U2ZjKzNDbHhSWldlbkE0UUQ2NWNjNEk0Zjd3MTVIT05mZW5mVGZMR1FKcHMzTElmUnRZeEVwclN6cFNzcnAzWWxKcHJFT21ZaEpFUGhEdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.114/Dynapse_0.1.114_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzRYZEZ2SFQvUWJ3Rm4zNDBDNlZuazlsM3RSLzBnWDZ6RUxRcmVtWnJnQVZlRWZ4WERpTnhkUmZXTzZ4R3JqR05IY2JTMEM2SS94eDUvZ3hRQW0xWFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjI3NjU1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExNAp6MDdRY3oraXd2OTVaQWYvRmV0MFZUZzVURE50MHlENXFuRDVRdU9XdXdxYXBlUDRuMVFETFF5NXF1UnF4Yy93bkkxMC90ZENhR3pkSmE3bHJiRUhCUT09Cg=="
     }
   }
 }
