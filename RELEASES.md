@@ -822,3 +822,4 @@
 | 2026-11-15T12:43:48.855Z | windows | beta | 0.1.120 | windows-v0.1.120 | beta-served-verified | src 797ee9113 · unsigned · Windows PC 빌드 · 맥 서명 · src 797ee9113 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.120(Windows) — 0.1.119 이후: 쓸 때 묻기 도구 · 확장 연결 뒤 사이드 채팅 · 올가미 그림 다시 붙기 · 새 덱 저장 바로 확인 · 앱이 연 탭 알림 |
 | 2026-11-15T12:45:54.695Z | windows | stable | 0.1.120 | windows-v0.1.120 | stable-served-verified |  |
 | 2026-11-15T15:39:22.000Z | macos | beta | 0.1.121 | macos-v0.1.121 | beta-served-verified | src fc63afc6d · 0.1.121: 파일 쓰기 도구 묻기 무리 집행 · 새 덱 저장 확인 · 실행 진단 줄 |
+| 2026-11-15T15:41:49.368Z | macos | stable | 0.1.121 | macos-v0.1.121 | stable-served-verified |  |
