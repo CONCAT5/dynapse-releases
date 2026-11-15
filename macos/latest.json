@@ -1,15 +1,15 @@
 {
-  "version": "0.1.117",
-  "notes": "0.1.117: 직접 하기 인계 · 반복 업무 바로 확인 · 저장 판 · 화면 감시 · Codex 무응답 · 페이지 추가 · 시험 가져오기",
-  "pub_date": "2026-11-15T03:19:41Z",
+  "version": "0.1.118",
+  "notes": "0.1.118: AI가 더한 장이 허브 장 목록에도 바로",
+  "pub_date": "2026-11-15T04:25:07Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.117/Dynapse_0.1.117_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hlZWlaYU14aTZ5c0g1a05ndmt6ZnVjRmhVam9iTm1PQlB6ZTlDZlZKN1lpc3N5NVNDMXJVS1VxemlCOEdTWTJkNmxONStXUmN4anJvQkNteE5mdndRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzEyNjQxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExNwpaLzYxSEgxZGlGWm1hc1FveFBaMzBEV09vQWt2Mnd0VnpMS3dLMEI2cEJZT3p0eTVhbFBIMjNHMys0bDNYME1McEVPRUY5MzNqd2dUaU1kL09PbktEZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.118/Dynapse_0.1.118_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBwb1ZSc3QvZ0V6TmlrZVV3MldaZEwyNmxWcXVrbTdHejRkTlRxSW9VSUtLN2c1TkczNEJuaFNKU1V4ZG41RVpCeWtJMHpDQm5nU2ZIOFZKYnRFd1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzE2NTgxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExOApMNWtIckd0ck9peVRWQmhlMVk5MVFCYm1UajlzTDhyTkJjYVY3NS9HQllpOE5vSWRaWXdadDczSWpSVGFPZVZHK2NDRXNleHpocHI1M25yS0ZMc2ZCUT09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.117/Dynapse_0.1.117_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQ3hlZWlaYU14aTZ5c0g1a05ndmt6ZnVjRmhVam9iTm1PQlB6ZTlDZlZKN1lpc3N5NVNDMXJVS1VxemlCOEdTWTJkNmxONStXUmN4anJvQkNteE5mdndRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzEyNjQxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExNwpaLzYxSEgxZGlGWm1hc1FveFBaMzBEV09vQWt2Mnd0VnpMS3dLMEI2cEJZT3p0eTVhbFBIMjNHMys0bDNYME1McEVPRUY5MzNqd2dUaU1kL09PbktEZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.118/Dynapse_0.1.118_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBwb1ZSc3QvZ0V6TmlrZVV3MldaZEwyNmxWcXVrbTdHejRkTlRxSW9VSUtLN2c1TkczNEJuaFNKU1V4ZG41RVpCeWtJMHpDQm5nU2ZIOFZKYnRFd1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzE2NTgxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExOApMNWtIckd0ck9peVRWQmhlMVk5MVFCYm1UajlzTDhyTkJjYVY3NS9HQllpOE5vSWRaWXdadDczSWpSVGFPZVZHK2NDRXNleHpocHI1M25yS0ZMc2ZCUT09Cg=="
     }
   }
 }
