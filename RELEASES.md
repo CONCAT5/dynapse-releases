@@ -803,3 +803,4 @@
 | 2026-11-14T05:03:02.237Z | macos | stable | 0.1.114 | macos-v0.1.114 | stable-served-verified |  |
 | 2026-11-14T10:44:06.039Z | macos | beta | 0.1.115 | macos-v0.1.115 | beta-served-verified | src 606e69018 · 0.1.115: 앱 끌 때 엔진 Chrome 남김 없음 · ChatGPT 런타임 도구 승인 · 파일 만든 실행 성공 · 받은 파일 폴더 보기 |
 | 2026-11-14T10:46:07.272Z | macos | stable | 0.1.115 | macos-v0.1.115 | stable-served-verified |  |
+| 2026-11-15T01:02:43.570Z | macos | beta | 0.1.116 | macos-v0.1.116 | beta-served-verified | src 69a895eb8 · 0.1.116: Computer Use 스위치 연결 · 시험 앱 가져오기 닫힘 · 앱 막 켠 뒤 새 탭 · ChatGPT 질문 카드 · 도구 표 보고 |
