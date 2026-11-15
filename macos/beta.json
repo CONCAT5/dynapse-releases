@@ -1,15 +1,15 @@
 {
-  "version": "0.1.118",
-  "notes": "0.1.118: AI가 더한 장이 허브 장 목록에도 바로",
-  "pub_date": "2026-11-15T04:25:07Z",
+  "version": "0.1.119",
+  "notes": "0.1.119: 올가미 영역 칩 · 새 장 목록 · 인계 이어가기 · 일부만 만든 결과 · 표 답 성공 · Codex 무응답 감시",
+  "pub_date": "2026-11-15T09:48:58Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.118/Dynapse_0.1.118_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBwb1ZSc3QvZ0V6TmlrZVV3MldaZEwyNmxWcXVrbTdHejRkTlRxSW9VSUtLN2c1TkczNEJuaFNKU1V4ZG41RVpCeWtJMHpDQm5nU2ZIOFZKYnRFd1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzE2NTgxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExOApMNWtIckd0ck9peVRWQmhlMVk5MVFCYm1UajlzTDhyTkJjYVY3NS9HQllpOE5vSWRaWXdadDczSWpSVGFPZVZHK2NDRXNleHpocHI1M25yS0ZMc2ZCUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.119/Dynapse_0.1.119_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzQvaWJFRHY5L1d4Z1RUcXZiNWFYZjBRL3dhVFB2UVBkcmN6RW9lb2dReU1ldzFWUzdTK2YwUWl5TGZGbmkyNk92UjlVUkdmcDhtTnN3SXZFMTUybkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzM2MDEyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExOQpQZVdzTTZ3WG9WMmR1TmkrUFF2KytMS3VVckJPcmVrRVhYTVJzbHF4cjRQZXpUQ2pmYzVrd2lzY2pxVCtrU3B5c3RlbVYrV3dCK0FRTkdpYjAxTm9EQT09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.118/Dynapse_0.1.118_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzBwb1ZSc3QvZ0V6TmlrZVV3MldaZEwyNmxWcXVrbTdHejRkTlRxSW9VSUtLN2c1TkczNEJuaFNKU1V4ZG41RVpCeWtJMHpDQm5nU2ZIOFZKYnRFd1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzE2NTgxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExOApMNWtIckd0ck9peVRWQmhlMVk5MVFCYm1UajlzTDhyTkJjYVY3NS9HQllpOE5vSWRaWXdadDczSWpSVGFPZVZHK2NDRXNleHpocHI1M25yS0ZMc2ZCUT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.119/Dynapse_0.1.119_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzQvaWJFRHY5L1d4Z1RUcXZiNWFYZjBRL3dhVFB2UVBkcmN6RW9lb2dReU1ldzFWUzdTK2YwUWl5TGZGbmkyNk92UjlVUkdmcDhtTnN3SXZFMTUybkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzM2MDEyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjExOQpQZVdzTTZ3WG9WMmR1TmkrUFF2KytMS3VVckJPcmVrRVhYTVJzbHF4cjRQZXpUQ2pmYzVrd2lzY2pxVCtrU3B5c3RlbVYrV3dCK0FRTkdpYjAxTm9EQT09Cg=="
     }
   }
 }
