@@ -805,3 +805,4 @@
 | 2026-11-14T10:46:07.272Z | macos | stable | 0.1.115 | macos-v0.1.115 | stable-served-verified |  |
 | 2026-11-15T01:02:43.570Z | macos | beta | 0.1.116 | macos-v0.1.116 | beta-served-verified | src 69a895eb8 · 0.1.116: Computer Use 스위치 연결 · 시험 앱 가져오기 닫힘 · 앱 막 켠 뒤 새 탭 · ChatGPT 질문 카드 · 도구 표 보고 |
 | 2026-11-15T01:04:54.321Z | macos | stable | 0.1.116 | macos-v0.1.116 | stable-served-verified |  |
+| 2026-11-15T02:54:08.666Z | windows | beta | 0.1.116 | windows-v0.1.116 | beta-served-verified | src 69a895eb8 · unsigned · Windows PC 빌드 · 맥 서명 · src 69a895eb8 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.116(Windows) — 0.1.108 이후: Computer Use 스위치 · ChatGPT 질문 카드 · 도구 표 보고 · 앱 막 켠 뒤 새 탭 · 시험 앱 가져오기 닫힘 |
