@@ -808,3 +808,4 @@
 | 2026-11-15T02:54:08.666Z | windows | beta | 0.1.116 | windows-v0.1.116 | beta-served-verified | src 69a895eb8 · unsigned · Windows PC 빌드 · 맥 서명 · src 69a895eb8 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.116(Windows) — 0.1.108 이후: Computer Use 스위치 · ChatGPT 질문 카드 · 도구 표 보고 · 앱 막 켠 뒤 새 탭 · 시험 앱 가져오기 닫힘 |
 | 2026-11-15T02:56:03.464Z | windows | stable | 0.1.116 | windows-v0.1.116 | stable-served-verified |  |
 | 2026-11-15T03:20:48.620Z | macos | beta | 0.1.117 | macos-v0.1.117 | beta-served-verified | src 186428bea · 0.1.117: 직접 하기 인계 · 반복 업무 바로 확인 · 저장 판 · 화면 감시 · Codex 무응답 · 페이지 추가 · 시험 가져오기 |
+| 2026-11-15T03:22:56.046Z | macos | stable | 0.1.117 | macos-v0.1.117 | stable-served-verified |  |
