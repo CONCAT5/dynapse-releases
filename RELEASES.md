@@ -810,3 +810,4 @@
 | 2026-11-15T03:20:48.620Z | macos | beta | 0.1.117 | macos-v0.1.117 | beta-served-verified | src 186428bea · 0.1.117: 직접 하기 인계 · 반복 업무 바로 확인 · 저장 판 · 화면 감시 · Codex 무응답 · 페이지 추가 · 시험 가져오기 |
 | 2026-11-15T03:22:56.046Z | macos | stable | 0.1.117 | macos-v0.1.117 | stable-served-verified |  |
 | 2026-11-15T04:26:14.543Z | macos | beta | 0.1.118 | macos-v0.1.118 | beta-served-verified | src 21edf8b90 · 0.1.118: AI가 더한 장이 허브 장 목록에도 바로 |
+| 2026-11-15T04:28:21.973Z | macos | stable | 0.1.118 | macos-v0.1.118 | stable-served-verified |  |
