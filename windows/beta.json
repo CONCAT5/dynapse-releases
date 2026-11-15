@@ -1,11 +1,11 @@
 {
-  "version": "0.1.120",
-  "notes": "src 797ee9113 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.120(Windows) — 0.1.119 이후: 쓸 때 묻기 도구 · 확장 연결 뒤 사이드 채팅 · 올가미 그림 다시 붙기 · 새 덱 저장 바로 확인 · 앱이 연 탭 알림",
-  "pub_date": "2026-11-15T12:42:43Z",
+  "version": "0.1.121",
+  "notes": "src fc63afc6d · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.121(Windows) — 0.1.120 이후: 파일 쓰기 도구 권한 한 묶음 · 실행 받기 진단 기록 · 고정 탭 id 확인",
+  "pub_date": "2026-11-15T16:51:32Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.120/Dynapse_0.1.120_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjVQVWRNdUczVDJ6c1p4aFB3TzI4dFJiRFF3bjFkL3RBT2RtZjE2aU96dFhuaCtvNTVXSGlLL1I1YUNZQjJBZVN5UHBSb0xxWjBUdFdqTnBYR2FGdVFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzQ2NTU1CWZpbGU6RHluYXBzZV8wLjEuMTIwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTIwCjNwa3RoMlVJdWtpcTRuK0dLQ3RzUXdJWGJsTm5kMmhORDVzaHRNNW1adkx1YXZtQmY4QW9wOTMrbzBCVzhZc2ZyZlY1SFQ2czJHMHlxeTJGWUROM0FRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.121/Dynapse_0.1.121_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MngwV1VhRFB0SE9vam1SRTRQUStGYzdSckdyNDJzKzNsQVZXSnFkOEJxcVlSeUJQbUtJUTlkRkVMMm4ralZiVFozSEdhSldUS0ZrTWk3N2V1b2s1YlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzYxNDg1CWZpbGU6RHluYXBzZV8wLjEuMTIxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTIxClZKZ0l4MmhHSURTbHpEYTRUNy8vSjk2cmxYTldHamRwMTRMaUhLRjNPUThsMmRPK0ZYN0xVcHlGYVdpMFFFajdrTWFPK3NJcjRHQXpZZ0FybytJd0JRPT0K"
     }
   }
 }
