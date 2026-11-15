@@ -813,3 +813,4 @@
 | 2026-11-15T04:28:21.973Z | macos | stable | 0.1.118 | macos-v0.1.118 | stable-served-verified |  |
 | 2026-11-15T05:05:39.391Z | windows | beta | 0.1.118 | windows-v0.1.118 | beta-served-verified | src 21edf8b90 · unsigned · Windows PC 빌드 · 맥 서명 · src 21edf8b90 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.118(Windows) — 0.1.116 이후: 내가 할게요 인계 · 장 추가 판정 · 멈춘 실행 끝내기 · 가려진 창 오탐 고침 · 받은 장 목록 바로 올리기 |
 | 2026-11-15T05:07:44.104Z | windows | stable | 0.1.118 | windows-v0.1.118 | stable-served-verified |  |
+| 2026-11-15T09:50:05.077Z | macos | beta | 0.1.119 | macos-v0.1.119 | beta-served-verified | src 54bed9692 · 0.1.119: 올가미 영역 칩 · 새 장 목록 · 인계 이어가기 · 일부만 만든 결과 · 표 답 성공 · Codex 무응답 감시 |
