@@ -820,3 +820,4 @@
 | 2026-11-15T12:08:45.144Z | macos | beta | 0.1.120 | macos-v0.1.120 | beta-served-verified | src 797ee9113 · 0.1.120: 묻기 도구 집행 · 확장 패널 연결 · 새 덱 저장 확인 · 올가미 재연결 · 연 탭 알림 |
 | 2026-11-15T12:10:49.185Z | macos | stable | 0.1.120 | macos-v0.1.120 | stable-served-verified |  |
 | 2026-11-15T12:43:48.855Z | windows | beta | 0.1.120 | windows-v0.1.120 | beta-served-verified | src 797ee9113 · unsigned · Windows PC 빌드 · 맥 서명 · src 797ee9113 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.120(Windows) — 0.1.119 이후: 쓸 때 묻기 도구 · 확장 연결 뒤 사이드 채팅 · 올가미 그림 다시 붙기 · 새 덱 저장 바로 확인 · 앱이 연 탭 알림 |
+| 2026-11-15T12:45:54.695Z | windows | stable | 0.1.120 | windows-v0.1.120 | stable-served-verified |  |
