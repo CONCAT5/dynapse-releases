@@ -1,11 +1,11 @@
 {
-  "version": "0.1.116",
-  "notes": "src 69a895eb8 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.116(Windows) — 0.1.108 이후: Computer Use 스위치 · ChatGPT 질문 카드 · 도구 표 보고 · 앱 막 켠 뒤 새 탭 · 시험 앱 가져오기 닫힘",
-  "pub_date": "2026-11-15T02:53:03Z",
+  "version": "0.1.118",
+  "notes": "src 21edf8b90 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.118(Windows) — 0.1.116 이후: 내가 할게요 인계 · 장 추가 판정 · 멈춘 실행 끝내기 · 가려진 창 오탐 고침 · 받은 장 목록 바로 올리기",
+  "pub_date": "2026-11-15T05:04:34Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.116/Dynapse_0.1.116_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjdEd2pBSUlzbUNoTG9NV1EzbTk0MW53MFkyNEk1MEJXaTR2dkxnVG9XallXNVc4QzJaOTdZbjdzOGV6NWpvWUg0Z1h2MHpNSmJPQ2I5dzdZTVp4elFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzExMTc2CWZpbGU6RHluYXBzZV8wLjEuMTE2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTE2CjlDd3JMNTNyTzNvVWZUaUJielY3SVZjbGxkT3k0ZW1aK092VlN2QlRvTUNLVGZsV0ZicVlJRVozRkt2OEtvZVk2bjhUdU9JVlViazh3WmZiWVpXSEJnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.118/Dynapse_0.1.118_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjZrTDlPQncwQ2xMVG4wLzNSeGoybmNndnR4QTNVRUFLYlg5dmMydGl5a1ZELzJsVEJjVi95d1VaNFh3aXU3TFNPQmdmK0NYWGN1cUhtajBGUitnWmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzE5MDY3CWZpbGU6RHluYXBzZV8wLjEuMTE4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTE4CkxwL0tXeWppc3RTU2gzdk5saFdSaE54L3dpd0hkaGZWMkVTUHFZbjlpcUtpS0V5a0d4VDV2U2xKQ2U1OTB3bDhuK3U3VDlkSGVSV09GRlg3QlZxeERBPT0K"
     }
   }
 }
