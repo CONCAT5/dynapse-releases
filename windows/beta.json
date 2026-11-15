@@ -1,11 +1,11 @@
 {
-  "version": "0.1.118",
-  "notes": "src 21edf8b90 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.118(Windows) — 0.1.116 이후: 내가 할게요 인계 · 장 추가 판정 · 멈춘 실행 끝내기 · 가려진 창 오탐 고침 · 받은 장 목록 바로 올리기",
-  "pub_date": "2026-11-15T05:04:34Z",
+  "version": "0.1.119",
+  "notes": "src 54bed9692 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.119(Windows) — 0.1.118 이후: 올가미 영역 칩 · 내가 할게요 뒤 같은 대화 · 일부만 만든 결과 알림 · 표로 답한 채팅 성공 · 멈춘 ChatGPT 끝내기",
+  "pub_date": "2026-11-15T11:55:40Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.118/Dynapse_0.1.118_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjZrTDlPQncwQ2xMVG4wLzNSeGoybmNndnR4QTNVRUFLYlg5dmMydGl5a1ZELzJsVEJjVi95d1VaNFh3aXU3TFNPQmdmK0NYWGN1cUhtajBGUitnWmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzE5MDY3CWZpbGU6RHluYXBzZV8wLjEuMTE4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTE4CkxwL0tXeWppc3RTU2gzdk5saFdSaE54L3dpd0hkaGZWMkVTUHFZbjlpcUtpS0V5a0d4VDV2U2xKQ2U1OTB3bDhuK3U3VDlkSGVSV09GRlg3QlZxeERBPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.119/Dynapse_0.1.119_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1Mis4WGl5ZjlyUEVKc2hvRkx6VldQMWIrSHFsQkl0ZXlxUFpKUit4Zk4wa1k2SFVTM0lpMGNBVkZ6eUY4QkhGdFpqNSsvUDQ4QUNwZldXWVN3QmZ5Y2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzQzNzM0CWZpbGU6RHluYXBzZV8wLjEuMTE5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTE5CklnNWc2ejZHM0d3RG02WkVyT21pZExDN0dVWnVVekFDUngrTTM5bmdZTkQzZE15VzBTcjJIMnZPMWZzV3B6cnQ3TTQ1TXdadTJHTklXeGdiYUdHeERRPT0K"
     }
   }
 }
