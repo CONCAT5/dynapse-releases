@@ -818,3 +818,4 @@
 | 2026-11-15T11:56:46.024Z | windows | beta | 0.1.119 | windows-v0.1.119 | beta-served-verified | src 54bed9692 · unsigned · Windows PC 빌드 · 맥 서명 · src 54bed9692 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.119(Windows) — 0.1.118 이후: 올가미 영역 칩 · 내가 할게요 뒤 같은 대화 · 일부만 만든 결과 알림 · 표로 답한 채팅 성공 · 멈춘 ChatGPT 끝내기 |
 | 2026-11-15T11:58:51.792Z | windows | stable | 0.1.119 | windows-v0.1.119 | stable-served-verified |  |
 | 2026-11-15T12:08:45.144Z | macos | beta | 0.1.120 | macos-v0.1.120 | beta-served-verified | src 797ee9113 · 0.1.120: 묻기 도구 집행 · 확장 패널 연결 · 새 덱 저장 확인 · 올가미 재연결 · 연 탭 알림 |
+| 2026-11-15T12:10:49.185Z | macos | stable | 0.1.120 | macos-v0.1.120 | stable-served-verified |  |
