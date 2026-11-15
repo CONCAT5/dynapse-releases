@@ -812,3 +812,4 @@
 | 2026-11-15T04:26:14.543Z | macos | beta | 0.1.118 | macos-v0.1.118 | beta-served-verified | src 21edf8b90 · 0.1.118: AI가 더한 장이 허브 장 목록에도 바로 |
 | 2026-11-15T04:28:21.973Z | macos | stable | 0.1.118 | macos-v0.1.118 | stable-served-verified |  |
 | 2026-11-15T05:05:39.391Z | windows | beta | 0.1.118 | windows-v0.1.118 | beta-served-verified | src 21edf8b90 · unsigned · Windows PC 빌드 · 맥 서명 · src 21edf8b90 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.118(Windows) — 0.1.116 이후: 내가 할게요 인계 · 장 추가 판정 · 멈춘 실행 끝내기 · 가려진 창 오탐 고침 · 받은 장 목록 바로 올리기 |
+| 2026-11-15T05:07:44.104Z | windows | stable | 0.1.118 | windows-v0.1.118 | stable-served-verified |  |
