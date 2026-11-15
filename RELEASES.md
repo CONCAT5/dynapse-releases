@@ -815,3 +815,4 @@
 | 2026-11-15T05:07:44.104Z | windows | stable | 0.1.118 | windows-v0.1.118 | stable-served-verified |  |
 | 2026-11-15T09:50:05.077Z | macos | beta | 0.1.119 | macos-v0.1.119 | beta-served-verified | src 54bed9692 · 0.1.119: 올가미 영역 칩 · 새 장 목록 · 인계 이어가기 · 일부만 만든 결과 · 표 답 성공 · Codex 무응답 감시 |
 | 2026-11-15T09:52:03.184Z | macos | stable | 0.1.119 | macos-v0.1.119 | stable-served-verified |  |
+| 2026-11-15T11:56:46.024Z | windows | beta | 0.1.119 | windows-v0.1.119 | beta-served-verified | src 54bed9692 · unsigned · Windows PC 빌드 · 맥 서명 · src 54bed9692 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.119(Windows) — 0.1.118 이후: 올가미 영역 칩 · 내가 할게요 뒤 같은 대화 · 일부만 만든 결과 알림 · 표로 답한 채팅 성공 · 멈춘 ChatGPT 끝내기 |
