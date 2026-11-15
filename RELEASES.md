@@ -823,3 +823,4 @@
 | 2026-11-15T12:45:54.695Z | windows | stable | 0.1.120 | windows-v0.1.120 | stable-served-verified |  |
 | 2026-11-15T15:39:22.000Z | macos | beta | 0.1.121 | macos-v0.1.121 | beta-served-verified | src fc63afc6d · 0.1.121: 파일 쓰기 도구 묻기 무리 집행 · 새 덱 저장 확인 · 실행 진단 줄 |
 | 2026-11-15T15:41:49.368Z | macos | stable | 0.1.121 | macos-v0.1.121 | stable-served-verified |  |
+| 2026-11-15T16:52:38.020Z | windows | beta | 0.1.121 | windows-v0.1.121 | beta-served-verified | src fc63afc6d · unsigned · Windows PC 빌드 · 맥 서명 · src fc63afc6d · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.121(Windows) — 0.1.120 이후: 파일 쓰기 도구 권한 한 묶음 · 실행 받기 진단 기록 · 고정 탭 id 확인 |
