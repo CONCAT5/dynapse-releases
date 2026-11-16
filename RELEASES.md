@@ -833,3 +833,4 @@
 | 2026-11-16T10:39:28.110Z | macos | stable | 0.1.123 | macos-v0.1.123 | stable-served-verified |  |
 | 2026-11-16T11:25:05.690Z | windows | beta | 0.1.123 | windows-v0.1.123 | beta-served-verified | src 54bdb50ab · unsigned · Windows PC 빌드 · 맥 서명 · src 54bdb50ab · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.123(Windows) — 0.1.122 이후: 허락한 도구로 그 단계 다시 · 넘겨받은 뒤 같은 대화 · 쉬는 연결 감시 330초 |
 | 2026-11-16T11:27:10.920Z | windows | stable | 0.1.123 | windows-v0.1.123 | stable-served-verified |  |
+| 2026-11-16T16:41:30.311Z | macos | beta | 0.1.124 | macos-v0.1.124 | beta-served-verified | src 862ca26d1 · 0.1.124: 덱 받기 전체 · 판정 뒤집힘 고침 · 허브 탭 열림 빠른 연결 · 승인 결과 닫기 · 확장 워커 다시 붙기 |
