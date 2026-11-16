@@ -1,11 +1,11 @@
 {
-  "version": "0.1.124",
-  "notes": "동기화 받기 처리 개선 · 진단 기록 보강",
-  "pub_date": "2026-11-16T17:46:58Z",
+  "version": "0.1.125",
+  "notes": "AI 탭 확장 연결 안정화 · 진단 기록 보강",
+  "pub_date": "2026-11-16T21:04:30Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.124/Dynapse_0.1.124_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjVhdExOeGk5YXRYL0FQbEZPaXVpd29RWVhlYnc0amZWRGFNeDFkSlRpVzhMd3Q5akxSeG1KRDEyNStFNG85K1RjenZWSitPR1loZXhsTGVHYmNadEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0ODUxMjExCWZpbGU6RHluYXBzZV8wLjEuMTI0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTI0CktyN091a0czV1BLbFllYXBycExCZDYzUXMrRU1oeUZXMlBrYnRWN2pQY1F6Y1BIUGtIeE9zenZMcU1ZbTQvM0RnaENoV21jOXJKS1l4a1hVMXhBb0FRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.125/Dynapse_0.1.125_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MnkrUlBiLy9BWXJ2V2UrUGNVaVpjK2lZZDZ5YURIUVV4cjRjdWxZeThRYXBlT3JhSWtoZXlTNzFnL09RNnJvOE9PR01lQ1JGOUJtanpFQkQ5M3Y4UVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0ODYzMDYzCWZpbGU6RHluYXBzZV8wLjEuMTI1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTI1CkdCSFdtTU12aGZFQnVqUXNKQ25XL3VGc1c4ZStXYUtrck1ScmJaMFQwdGpsTkhKQWQwQ3JRSGlQSENnaVpxYnJvVmZ2N0VzZHNhd0tpWi9LZnUwdENnPT0K"
     }
   }
 }
