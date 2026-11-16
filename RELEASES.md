@@ -839,3 +839,4 @@
 | 2026-11-16T17:50:10.552Z | windows | stable | 0.1.124 | windows-v0.1.124 | stable-served-verified |  |
 | 2026-11-16T20:28:54.542Z | macos | beta | 0.1.125 | macos-v0.1.125 | beta-served-verified | src b83390b6a · 패널 질문 읽기 전용 · 확장 워커 새로 읽기 · 묶음 판정 정리 |
 | 2026-11-16T20:30:56.350Z | macos | stable | 0.1.125 | macos-v0.1.125 | stable-served-verified |  |
+| 2026-11-16T21:06:06.177Z | windows | beta | 0.1.125 | windows-v0.1.125 | beta-served-verified | src b83390b6a · unsigned · Windows PC 빌드 · 맥 서명 · AI 탭 확장 연결 안정화 · 진단 기록 보강 |
