@@ -836,3 +836,4 @@
 | 2026-11-16T16:41:30.311Z | macos | beta | 0.1.124 | macos-v0.1.124 | beta-served-verified | src 862ca26d1 · 0.1.124: 덱 받기 전체 · 판정 뒤집힘 고침 · 허브 탭 열림 빠른 연결 · 승인 결과 닫기 · 확장 워커 다시 붙기 |
 | 2026-11-16T16:44:17.410Z | macos | stable | 0.1.124 | macos-v0.1.124 | stable-served-verified |  |
 | 2026-11-16T17:48:02.969Z | windows | beta | 0.1.124 | windows-v0.1.124 | beta-served-verified | src 862ca26d1 · unsigned · Windows PC 빌드 · 맥 서명 · 동기화 받기 처리 개선 · 진단 기록 보강 |
+| 2026-11-16T17:50:10.552Z | windows | stable | 0.1.124 | windows-v0.1.124 | stable-served-verified |  |
