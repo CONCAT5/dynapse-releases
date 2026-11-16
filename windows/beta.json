@@ -1,11 +1,11 @@
 {
-  "version": "0.1.122",
-  "notes": "src 352f2d966 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.122(Windows) — 0.1.121 이후: 직접 하는 동안 같은 실행 유지 · 이벤트 연결 재시작 늦춤 · 승인 뒤 같은 실행에서 다시 · 탭 목록 기록",
-  "pub_date": "2026-11-16T02:09:44Z",
+  "version": "0.1.123",
+  "notes": "src 54bdb50ab · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.123(Windows) — 0.1.122 이후: 허락한 도구로 그 단계 다시 · 넘겨받은 뒤 같은 대화 · 쉬는 연결 감시 330초",
+  "pub_date": "2026-11-16T11:23:30Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.122/Dynapse_0.1.122_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjNJaG54M3Rkc0tKT1MrMENlZjA3eXU3K2x5aGdpQUt4UG5RbFAybVVuaGhCNjJERE1WTUZkMUppc2RMMzVqeG5vN0R3b1JxRmZOVWwyY0JJUld1M3dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0Nzk0OTc4CWZpbGU6RHluYXBzZV8wLjEuMTIyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTIyCmx0cmpWRVU4OVJ3c3FibmxZa05odEFDQmJJSHJLZExyR1poa3dXSlhLOWhJdzJNVzBPUjNZazlpQVBLRXFuS0NxRDdhejMrL08wNlpWYXFlbGhKL0J3PT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.123/Dynapse_0.1.123_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1Mnc3WDNOVjR0dFV2NU1iYmloeWtCN3hXeTIrd2U5bmEyamhvNTlHM2xBSnpxczZOZE1UUjZnekt4dkdZMG1uTy93SjVUSXViMzUxQzdYQloyVU5YNlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0ODI4MjA0CWZpbGU6RHluYXBzZV8wLjEuMTIzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTIzCjVmVm9aVGtLYnVYcnlsYXgzT3IzR1F4a2xYbFBZRmxldmdNWlRlaXZuWkhIeW9PK081RjFPcVNjVDVweVNpak9VS05Gb2FZeG1QK0lyaFozeDNiakNBPT0K"
     }
   }
 }
