@@ -826,3 +826,4 @@
 | 2026-11-15T16:52:38.020Z | windows | beta | 0.1.121 | windows-v0.1.121 | beta-served-verified | src fc63afc6d · unsigned · Windows PC 빌드 · 맥 서명 · src fc63afc6d · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.121(Windows) — 0.1.120 이후: 파일 쓰기 도구 권한 한 묶음 · 실행 받기 진단 기록 · 고정 탭 id 확인 |
 | 2026-11-15T16:55:13.917Z | windows | stable | 0.1.121 | windows-v0.1.121 | stable-served-verified |  |
 | 2026-11-16T01:33:51.976Z | macos | beta | 0.1.122 | macos-v0.1.122 | beta-served-verified | src 352f2d966 · 0.1.122: 도구 허락 뒤 이어서 · 인계 뒤 같은 실행 · 쉬던 앱 요청 받기 · 올가미 연결 |
+| 2026-11-16T01:35:56.333Z | macos | stable | 0.1.122 | macos-v0.1.122 | stable-served-verified |  |
