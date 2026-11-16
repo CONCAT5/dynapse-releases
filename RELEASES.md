@@ -838,3 +838,4 @@
 | 2026-11-16T17:48:02.969Z | windows | beta | 0.1.124 | windows-v0.1.124 | beta-served-verified | src 862ca26d1 · unsigned · Windows PC 빌드 · 맥 서명 · 동기화 받기 처리 개선 · 진단 기록 보강 |
 | 2026-11-16T17:50:10.552Z | windows | stable | 0.1.124 | windows-v0.1.124 | stable-served-verified |  |
 | 2026-11-16T20:28:54.542Z | macos | beta | 0.1.125 | macos-v0.1.125 | beta-served-verified | src b83390b6a · 패널 질문 읽기 전용 · 확장 워커 새로 읽기 · 묶음 판정 정리 |
+| 2026-11-16T20:30:56.350Z | macos | stable | 0.1.125 | macos-v0.1.125 | stable-served-verified |  |
