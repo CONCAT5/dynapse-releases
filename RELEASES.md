@@ -832,3 +832,4 @@
 | 2026-11-16T10:37:20.503Z | macos | beta | 0.1.123 | macos-v0.1.123 | beta-served-verified | src 54bdb50ab · 0.1.123: 도구 허락 재실행 · 인계 같은 세션 · 큰 작업 읽기 · 올가미 진단 |
 | 2026-11-16T10:39:28.110Z | macos | stable | 0.1.123 | macos-v0.1.123 | stable-served-verified |  |
 | 2026-11-16T11:25:05.690Z | windows | beta | 0.1.123 | windows-v0.1.123 | beta-served-verified | src 54bdb50ab · unsigned · Windows PC 빌드 · 맥 서명 · src 54bdb50ab · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.123(Windows) — 0.1.122 이후: 허락한 도구로 그 단계 다시 · 넘겨받은 뒤 같은 대화 · 쉬는 연결 감시 330초 |
+| 2026-11-16T11:27:10.920Z | windows | stable | 0.1.123 | windows-v0.1.123 | stable-served-verified |  |
