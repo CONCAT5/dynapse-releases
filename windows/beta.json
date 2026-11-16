@@ -1,11 +1,11 @@
 {
-  "version": "0.1.121",
-  "notes": "src fc63afc6d · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.121(Windows) — 0.1.120 이후: 파일 쓰기 도구 권한 한 묶음 · 실행 받기 진단 기록 · 고정 탭 id 확인",
-  "pub_date": "2026-11-15T16:51:32Z",
+  "version": "0.1.122",
+  "notes": "src 352f2d966 · unsigned · Windows PC 빌드 · 맥 서명 · 0.1.122(Windows) — 0.1.121 이후: 직접 하는 동안 같은 실행 유지 · 이벤트 연결 재시작 늦춤 · 승인 뒤 같은 실행에서 다시 · 탭 목록 기록",
+  "pub_date": "2026-11-16T02:09:44Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.121/Dynapse_0.1.121_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MngwV1VhRFB0SE9vam1SRTRQUStGYzdSckdyNDJzKzNsQVZXSnFkOEJxcVlSeUJQbUtJUTlkRkVMMm4ralZiVFozSEdhSldUS0ZrTWk3N2V1b2s1YlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzYxNDg1CWZpbGU6RHluYXBzZV8wLjEuMTIxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTIxClZKZ0l4MmhHSURTbHpEYTRUNy8vSjk2cmxYTldHamRwMTRMaUhLRjNPUThsMmRPK0ZYN0xVcHlGYVdpMFFFajdrTWFPK3NJcjRHQXpZZ0FybytJd0JRPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.122/Dynapse_0.1.122_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjNJaG54M3Rkc0tKT1MrMENlZjA3eXU3K2x5aGdpQUt4UG5RbFAybVVuaGhCNjJERE1WTUZkMUppc2RMMzVqeG5vN0R3b1JxRmZOVWwyY0JJUld1M3dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0Nzk0OTc4CWZpbGU6RHluYXBzZV8wLjEuMTIyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTIyCmx0cmpWRVU4OVJ3c3FibmxZa05odEFDQmJJSHJLZExyR1poa3dXSlhLOWhJdzJNVzBPUjNZazlpQVBLRXFuS0NxRDdhejMrL08wNlpWYXFlbGhKL0J3PT0K"
     }
   }
 }
