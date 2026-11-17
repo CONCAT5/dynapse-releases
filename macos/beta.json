@@ -1,15 +1,15 @@
 {
-  "version": "0.1.126",
-  "notes": "AI 검사 빠져도 앱이 확인 · 외부 사진 · 폴더 밖 읽기 · Codex 이미지·웹 · 제한 해제",
-  "pub_date": "2026-11-17T08:08:35Z",
+  "version": "0.1.127",
+  "notes": "저장 턴 완료 · 외부 사진 받기 · 재시작에 끊긴 실행 정리 · 업데이트는 실행 뒤 · 자동 승인 완화 · 앱 로그",
+  "pub_date": "2026-11-17T15:46:22Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.126/Dynapse_0.1.126_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzVJcTQrYWlIM05oWFVuSnkvbjFYc2wyRHpISllSKzhobFRvU1oyNFZYRVg2ME9LWG5ycTEvZFNSM2o4bC9XaDlyMDJuNEowcjlpZk9XUzY1ZlI1bWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTAyNzgxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEyNgpZV1FwOGZMeHhldEZybDdkRlhzZGNadTBobmJycmVSaTJndXR5a1dGS2ZwV0V3RFJoQW5xeHZ4WkRrSEgxMThHVC9ScHROK1k5c3loWlRNYVk0ajJCdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.127/Dynapse_0.1.127_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQys5Z1cyNHViUmd6Q3FoQU9XN2poaHdFYktGMU92enExM2MzblR6U3U1RTVIdXVCNWVWankwZFY1NkEvWU9MOFE5bUhkY1E2aDgrS2VaeVBFbXZORndRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTMwMjQ1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEyNwpIU1JUd0F5VVkwZ3RTUDFjNlJJMzU1b3pMdkdMQWluWFdiLzd5TkFWa1R2QXdTMC85ajRJL3hTZG9xQjVaQ3U0aGYwSGpIU3hJOVpSLzJtR2llOU5DUT09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.126/Dynapse_0.1.126_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzVJcTQrYWlIM05oWFVuSnkvbjFYc2wyRHpISllSKzhobFRvU1oyNFZYRVg2ME9LWG5ycTEvZFNSM2o4bC9XaDlyMDJuNEowcjlpZk9XUzY1ZlI1bWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTAyNzgxCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEyNgpZV1FwOGZMeHhldEZybDdkRlhzZGNadTBobmJycmVSaTJndXR5a1dGS2ZwV0V3RFJoQW5xeHZ4WkRrSEgxMThHVC9ScHROK1k5c3loWlRNYVk0ajJCdz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.127/Dynapse_0.1.127_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQys5Z1cyNHViUmd6Q3FoQU9XN2poaHdFYktGMU92enExM2MzblR6U3U1RTVIdXVCNWVWankwZFY1NkEvWU9MOFE5bUhkY1E2aDgrS2VaeVBFbXZORndRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTMwMjQ1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEyNwpIU1JUd0F5VVkwZ3RTUDFjNlJJMzU1b3pMdkdMQWluWFdiLzd5TkFWa1R2QXdTMC85ajRJL3hTZG9xQjVaQ3U0aGYwSGpIU3hJOVpSLzJtR2llOU5DUT09Cg=="
     }
   }
 }
