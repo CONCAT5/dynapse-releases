@@ -55,7 +55,8 @@ const sum = syncs.map(x => (x.out.match(/sync-sim (\d+)\/(\d+)/) ?? [0, 0, 0]).s
 const sync = `sync-sim ${sum[0]}/${sum[1]}`, turn = (tr.out.match(/turn-sim \d+\/\d+/) ?? [""])[0];
 // 조각이 요약 없이 죽으면(✗ 줄도 없음 — 11-05 8d0df2e6 "80/80"인데 실패) 그 조각의 끝 15줄을 보인다
 const crashed = syncs.map((x, i) => ({ x, i })).filter(({ x }) => x.code && !/sync-sim \d+\/\d+/.test(x.out)).map(({ x, i }) => `[조각 ${i + 1}/${SHARDS} 요약 없이 끝남 · 코드 ${x.code}]\n${x.out.trim().split("\n").slice(-15).join("\n")}`);
-if (syncs.some(x => x.code)) die(`${sync}\n${[...syncs.flatMap(x => x.out.split("\n").filter(l => /✗/.test(l))).slice(0, 8), ...crashed].join("\n")}`);
+// sync 실패로 멈출 때도 병렬로 끝난 turn-sim 결과를 같이(11-18 밤 관문 — BOARD에 "turn-sim ?"로 남았다)
+if (syncs.some(x => x.code)) die(`${sync} · ${turn || "turn-sim ?"}${tr.code ? " ✗" : ""}\n${[...syncs.flatMap(x => x.out.split("\n").filter(l => /✗/.test(l))).slice(0, 8), ...crashed, ...(tr.code ? tr.out.split("\n").filter(l => /✗/.test(l)).slice(0, 4) : [])].join("\n")}`);
 console.log(`  ✓ ${sync} (조각 ${SHARDS} · ${syncs.map(x => Math.round(x.ms / 1000) + "s").join(" · ")})`);
 if (tr.code) die(`turn-sim(${turn})\n${tr.out.split("\n").filter(l => /✗/.test(l)).slice(0, 6).join("\n")}`);
 console.log(`  ✓ ${turn} (${Math.round(tr.ms / 1000)}s)`);
