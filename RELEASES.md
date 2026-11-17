@@ -843,3 +843,4 @@
 | 2026-11-16T21:08:10.979Z | windows | stable | 0.1.125 | windows-v0.1.125 | stable-served-verified |  |
 | 2026-11-17T08:09:40.089Z | macos | beta | 0.1.126 | macos-v0.1.126 | beta-served-verified | src ceab94623 · AI 검사 빠져도 앱이 확인 · 외부 사진 · 폴더 밖 읽기 · Codex 이미지·웹 · 제한 해제 |
 | 2026-11-17T08:11:42.066Z | macos | stable | 0.1.126 | macos-v0.1.126 | stable-served-verified |  |
+| 2026-11-17T08:54:34.091Z | windows | beta | 0.1.126 | windows-v0.1.126 | beta-served-verified | src ceab94623 · unsigned · Windows PC 빌드 · 맥 서명 · Codex 기능 설정 · 바깥 사진 · 안정화 |
