@@ -1,15 +1,15 @@
 {
-  "version": "0.1.128",
-  "notes": "0.1.128 — 저장·검사 중 진행 줄, 사진 저장 판정, 검사 도구 정리",
-  "pub_date": "2026-11-18T07:51:21Z",
+  "version": "0.1.129",
+  "notes": "0.1.129 — 사진 저장 직후 옮기기, 검사 결과 줄, 재시작 기록 정리",
+  "pub_date": "2026-11-18T11:41:12Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.128/Dynapse_0.1.128_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzlGeGdXVHVxNnNpaEVGdnZINTVGZ0R2Q0VWeTdvR0d2dUNwN01XMjNmYmVxZ3lVeFJaNWFlVnBhU081V2FENGlsVXZmTXBrZmxKcDhCV0I4c3c5OGdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTg4MTUyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEyOAowSUZPQnVIQ1VGTmNKNlFsTEJiTTEzSWJDUTNTM3B2SDkxbWhnNWxvYzlaSGxTUzF0cGRNWHNoaDN0VWFpQ0Jlc0lVbEs5NnpzSDFDaUp0V3c2WEFEZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.129/Dynapse_0.1.129_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzllQ013Mi9RRTBhNVNWWlJ2Qnc4U0Irc3luOVdNVC9RR01haDNQeDNYOXBaeWl1QnlnV0l6ME5TQVk4TEdHSVdJVk0xOGlvbDRqZ2RrRU5qT2F5TFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDAxOTM1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEyOQpsczdTNS9aVjVDVEpMTE82Y0pYYUtHN0lYNE1vaTk0U3E4Z2NPOTgrYjE3WW5MQzM1cG5HRjc5bEUvdVNVdHAxenhyZ1VZNzZQY2hISVJnWTlPRm5BUT09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.128/Dynapse_0.1.128_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzlGeGdXVHVxNnNpaEVGdnZINTVGZ0R2Q0VWeTdvR0d2dUNwN01XMjNmYmVxZ3lVeFJaNWFlVnBhU081V2FENGlsVXZmTXBrZmxKcDhCV0I4c3c5OGdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTg4MTUyCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEyOAowSUZPQnVIQ1VGTmNKNlFsTEJiTTEzSWJDUTNTM3B2SDkxbWhnNWxvYzlaSGxTUzF0cGRNWHNoaDN0VWFpQ0Jlc0lVbEs5NnpzSDFDaUp0V3c2WEFEZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.129/Dynapse_0.1.129_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzllQ013Mi9RRTBhNVNWWlJ2Qnc4U0Irc3luOVdNVC9RR01haDNQeDNYOXBaeWl1QnlnV0l6ME5TQVk4TEdHSVdJVk0xOGlvbDRqZ2RrRU5qT2F5TFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDAxOTM1CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEyOQpsczdTNS9aVjVDVEpMTE82Y0pYYUtHN0lYNE1vaTk0U3E4Z2NPOTgrYjE3WW5MQzM1cG5HRjc5bEUvdVNVdHAxenhyZ1VZNzZQY2hISVJnWTlPRm5BUT09Cg=="
     }
   }
 }

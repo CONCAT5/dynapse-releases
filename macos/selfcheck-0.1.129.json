@@ -1,0 +1,179 @@
+{
+  "arch": "aarch64",
+  "at": 1795002060,
+  "checks": [
+    {
+      "ms": 1544,
+      "name": "load",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 4605,
+      "name": "heartbeat",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 778,
+      "name": "reload",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 770,
+      "name": "hard_reload",
+      "note": "로그인 유지: 시험 계정 없음 — 건너뜀",
+      "ok": true
+    },
+    {
+      "ms": 32424,
+      "name": "watchdog_recover",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 23383,
+      "name": "hidden_close",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 3057,
+      "name": "offline_viewer",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 1,
+      "name": "reward_tokens",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 355,
+      "name": "journey_account",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 2848,
+      "name": "journey_instant",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 9369,
+      "name": "journey_pull",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 7453,
+      "name": "journey_app_check",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 3370,
+      "name": "journey_band",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 8974,
+      "name": "journey_apply_undo",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 1,
+      "name": "journey_photo_hint",
+      "note": "skip: 첫 장 레이아웃에 nophoto 변형 없음",
+      "ok": true
+    },
+    {
+      "ms": 31,
+      "name": "journey_photo",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 0,
+      "name": "journey_ai_turn",
+      "note": "skip: 이 실행은 AI 턴 없음",
+      "ok": true
+    },
+    {
+      "ms": 0,
+      "name": "journey_pin_turn",
+      "note": "skip: 이 실행은 AI 턴 없음",
+      "ok": true
+    },
+    {
+      "ms": 0,
+      "name": "journey_lanes",
+      "note": "skip: 이 실행은 AI 턴 없음",
+      "ok": true
+    },
+    {
+      "ms": 2667,
+      "name": "journey_pptx",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 2442,
+      "name": "journey_pdf",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 11272,
+      "name": "journey_reimport",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 6038,
+      "name": "journey_reward_l0",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 1520,
+      "name": "journey_cleanup",
+      "note": "",
+      "ok": true
+    },
+    {
+      "ms": 37,
+      "name": "net_fix",
+      "note": "인증서 170 · 프록시 없음",
+      "ok": true
+    },
+    {
+      "ms": 114,
+      "name": "browser_engine_quit",
+      "note": "남은 엔진 0개 · 끌 때 닫기 연결됨",
+      "ok": true
+    },
+    {
+      "ms": 25,
+      "name": "vault_helper",
+      "note": "proto 2 · 0.1.129 · 서명 확인 · keychain legacy (dp -34018)",
+      "ok": true
+    },
+    {
+      "ms": 436,
+      "name": "update_feed",
+      "note": "",
+      "ok": true
+    }
+  ],
+  "ms": 67171,
+  "os": "macos",
+  "pass": 28,
+  "total": 28,
+  "version": "0.1.129"
+}
