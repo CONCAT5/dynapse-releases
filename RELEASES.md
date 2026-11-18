@@ -846,3 +846,4 @@
 | 2026-11-17T08:54:34.091Z | windows | beta | 0.1.126 | windows-v0.1.126 | beta-served-verified | src ceab94623 · unsigned · Windows PC 빌드 · 맥 서명 · Codex 기능 설정 · 바깥 사진 · 안정화 |
 | 2026-11-17T08:56:28.603Z | windows | stable | 0.1.126 | windows-v0.1.126 | stable-served-verified |  |
 | 2026-11-17T15:47:27.876Z | macos | beta | 0.1.127 | macos-v0.1.127 | beta-served-verified | src 8528d8fc5 · 저장 턴 완료 · 외부 사진 받기 · 재시작에 끊긴 실행 정리 · 업데이트는 실행 뒤 · 자동 승인 완화 · 앱 로그 |
+| 2026-11-18T07:52:26.861Z | macos | beta | 0.1.128 | macos-v0.1.128 | beta-served-verified | src 2b3f7d489 · 0.1.128 — 저장·검사 중 진행 줄, 사진 저장 판정, 검사 도구 정리 |
