@@ -194,12 +194,16 @@ if (b.code !== 0) die(`빌드 실패 (exit ${b.code})`);
     } catch (e) { console.log(`  ⚠ 심볼 백업 실패(로컬 사본은 있음): ${String(e?.message ?? e).split("\n")[0].slice(0, 120)}`); }
   }
   else console.log("  심볼 없음(이번 빌드 설정에 디버그 정보가 없다)");
-  // 보관 규칙(11-19 · 안정 + 최근 8): 이 PC 사본은 그 플랫폼의 지금 안정판 + 판 번호가 큰 8개만 남긴다. 지우는 것은 이 PC 사본뿐(비공개 저장소 dynapse-symbols 백업은 그대로)
+  // 보관 규칙(11-19 · 안정 + 최근 8 + 최근 30일 기기 보고에 보인 판): 이 PC 사본은 그 플랫폼의 지금 안정판 + 판 번호가 큰 8개 + symbols-keep.json의 판만 남긴다.
+  // symbols-keep.json {"macos":["0.1.95",…],"windows":[…],"at":"…"} = 최근 30일 기기 보고에 보인 판(-b1이 결정 47 보고 때 갱신). 파일이 없거나 7일 넘게 묵었으면 아무것도 지우지 않는다(그 기기 크래시를 못 풀게 되지 않게).
+  // 지우는 것은 이 PC 사본뿐(비공개 저장소 dynapse-symbols 백업은 그대로)
   try {
     const root = join(home, "development", "dynapse-symbols"), num = x => x.split(".").map(Number), cmp = (a, b) => { const [p, q] = [num(a), num(b)]; for (let i = 0; i < 3; i++) if ((p[i] ?? 0) !== (q[i] ?? 0)) return (p[i] ?? 0) - (q[i] ?? 0); return 0; };
     const stable = (() => { try { return JSON.parse(readFileSync(join(platform, "latest.json"), "utf8")).version; } catch { return null; } })();
     const vs = readdirSync(root).filter(n => n.startsWith(`${platform}-`) && /^\d+\.\d+\.\d+$/.test(n.slice(platform.length + 1))).map(n => n.slice(platform.length + 1)).sort(cmp);
-    const keepV = new Set([...vs.slice(-8), ...(stable ? [stable] : []), v]);
+    const kf = (() => { try { return JSON.parse(readFileSync("symbols-keep.json", "utf8")); } catch { return null; } })(), fresh = kf && Date.now() - Date.parse(kf.at ?? "") < 7 * 86_400_000 && Array.isArray(kf[platform]);
+    if (!fresh) throw new Error("symbols-keep.json 없음 또는 7일 넘음 — 지우지 않음");
+    const keepV = new Set([...vs.slice(-8), ...(stable ? [stable] : []), v, ...kf[platform].map(String)]);
     const drop = vs.filter(x => !keepV.has(x));
     for (const x of drop) rmSync(join(root, `${platform}-${x}`), { recursive: true, force: true });
     if (drop.length) console.log(`  심볼 이 PC 사본 정리(안정 ${stable ?? "-"} + 최근 8): ${drop.join(", ")}`);
