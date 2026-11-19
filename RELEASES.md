@@ -848,3 +848,4 @@
 | 2026-11-17T15:47:27.876Z | macos | beta | 0.1.127 | macos-v0.1.127 | beta-served-verified | src 8528d8fc5 · 저장 턴 완료 · 외부 사진 받기 · 재시작에 끊긴 실행 정리 · 업데이트는 실행 뒤 · 자동 승인 완화 · 앱 로그 |
 | 2026-11-18T07:52:26.861Z | macos | beta | 0.1.128 | macos-v0.1.128 | beta-served-verified | src 2b3f7d489 · 0.1.128 — 저장·검사 중 진행 줄, 사진 저장 판정, 검사 도구 정리 |
 | 2026-11-18T11:42:49.327Z | macos | beta | 0.1.129 | macos-v0.1.129 | beta-served-verified | src a3998aa1d · 0.1.129 — 사진 저장 직후 옮기기, 검사 결과 줄, 재시작 기록 정리 |
+| 2026-11-19T00:23:36.254Z | macos | stable | 0.1.129 | macos-v0.1.129 | stable-served-verified |  |
