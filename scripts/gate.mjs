@@ -60,6 +60,12 @@ if (syncs.some(x => x.code)) die(`${sync} · ${turn || "turn-sim ?"}${tr.code ? 
 console.log(`  ✓ ${sync} (조각 ${SHARDS} · ${syncs.map(x => Math.round(x.ms / 1000) + "s").join(" · ")})`);
 if (tr.code) die(`turn-sim(${turn})\n${tr.out.split("\n").filter(l => /✗/.test(l)).slice(0, 6).join("\n")}`);
 console.log(`  ✓ ${turn} (${Math.round(tr.ms / 1000)}s)`);
+// browser-sim(결정 93 · 11-19 — 브라우저 실행 · 저장 · 검사 길이 관문 어디에서도 안 돌았다): sync · turn 뒤 혼자(가짜 허브 · 저장소를 겹쳐 쓰지 않게) · 약 10~15분 · 그 커밋에 있을 때만
+if (existsSync(join(hub, "..", "desktop", "scripts", "browser-sim.mts"))) {
+  const b = await go([...tsx, "../desktop/scripts/browser-sim.mts"], {}, 1_800_000), bl = (b.out.match(/browser-sim [^\n]+/) ?? ["browser-sim ?"])[0];
+  if (b.code) die(`${bl}\n${b.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
+  console.log(`  ✓ ${bl} (${Math.round(b.ms / 1000)}s)`);
+}
 // 작업 공간 저장·실행 시험(#377 BR17·18·21 · #379) — 그 커밋에 있는 것만(옛 커밋은 건너뜀). 큐·귀속 14건 등 · 모델 호출 0
 for (const [f, reg] of [["workspace-store-sim.mts", false], ["workspace-api-sim.mts", true], ["workspace-execution-sim.mts", true], ["workspace-artifacts-sim.mts", false], ["workspace-conversation-sim.mts", true], ["workspace-resolve-sim.mts", true], ["workspace-legacy-sim.mts", true], ["workspace-c2-artifacts-sim.mts", false], ["workspace-shell-sim.mts", false], ["workspace-chat-create-sim.mts", true], ["workspace-markdown-sim.mts", true]]) {
   if (!existsSync(join(hub, "scripts", f))) continue;

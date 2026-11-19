@@ -126,14 +126,21 @@ const noSimLeft = what => { const o = simOrphans(); if (!o.length) return; for (
 const skipGate = process.env.PUBLISH_SKIP_GATE === "1" ? (process.env.PUBLISH_SKIP_GATE_REASON ?? "").trim() : "";
 if (process.env.PUBLISH_SKIP_GATE === "1" && skipGate.length < 10) die("PUBLISH_SKIP_GATE=1에는 PUBLISH_SKIP_GATE_REASON(10자 이상, 누가 왜)이 필요");
 if (skipGate) console.log(`  ⚠ 관문 sim(sync-sim · turn-sim) 생략 — ${skipGate}`);
+// browser-sim(결정 93 · 11-19 — 브라우저 실행 · 저장 · 검사 길이 손 실행으로만 돌았다): sync-sim · turn-sim 뒤에 한 번(약 10~15분). 생략은 관문 생략과 같은 규칙(대표 지시 · 1회용)
+// PUBLISH_SKIP_BROWSER_SIM=1 + PUBLISH_SKIP_BROWSER_SIM_REASON(10자 이상) — 이유는 로그에. 관문 전체 생략(PUBLISH_SKIP_GATE)이면 이것도 생략
+const skipBsim = skipGate || (process.env.PUBLISH_SKIP_BROWSER_SIM === "1" ? (process.env.PUBLISH_SKIP_BROWSER_SIM_REASON ?? "").trim() : "");
+if (process.env.PUBLISH_SKIP_BROWSER_SIM === "1" && !skipGate && skipBsim.length < 10) die("PUBLISH_SKIP_BROWSER_SIM=1에는 PUBLISH_SKIP_BROWSER_SIM_REASON(10자 이상, 누가 왜)이 필요");
+if (skipBsim && !skipGate) console.log(`  ⚠ browser-sim 생략 — ${skipBsim}`);
 { const hubDir = join(src, "..", "hub");
   if (!skipGate && existsSync(join(hubDir, "scripts", "sync-sim.mts"))) {
     must("pnpm", ["install", "--frozen-lockfile"], { cwd: hubDir });
     must("node", ["scripts/sync-tokens.mjs"], { cwd: src });   // 생성 파일(src/shared/*) — 시험이 앱 소스를 그대로 불러온다
-    for (const [name, script, t] of [["sync-sim", "scripts/sync-sim.mts", 3_600_000], ["turn-sim", "../desktop/scripts/turn-sim.mts", 1_800_000]]) {
+    for (const [name, script, t] of [["sync-sim", "scripts/sync-sim.mts", 3_600_000], ["turn-sim", "../desktop/scripts/turn-sim.mts", 1_800_000], ["browser-sim", "../desktop/scripts/browser-sim.mts", 1_800_000]]) {
       if (name === "turn-sim" && !existsSync(join(src, "scripts", "turn-sim.mts"))) continue;
+      if (name === "browser-sim" && (skipBsim || !existsSync(join(src, "scripts", "browser-sim.mts")))) continue;   // 옛 소스(파일 없음)는 건너뜀
       const r = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", script], { cwd: hubDir, timeout: t });
-      const line = (r.out.match(new RegExp(`${name} \\d+\\/\\d+`)) ?? [""])[0];
+      // browser-sim 요약 줄은 "browser-sim ✓ 전부 통과" · "browser-sim ✗ N건" 모양
+      const line = (r.out.match(new RegExp(name === "browser-sim" ? "browser-sim [^\\n]+" : `${name} \\d+\\/\\d+`)) ?? [""])[0];
       if (r.code !== 0) { const L = r.out.split("\n"); die(`${name} 실패(${line}) — 발행 안 함\n${L.flatMap((l, i) => (/✗/.test(l) ? [l, ...L.slice(i + 1, i + 4).filter(x => /^ {4}/.test(x) && !/\[timing\]/.test(x))] : [])).slice(0, 24).join("\n")}`); }   // ✗ 아래 확인 줄까지
       console.log(`  ✓ ${line}`);
     }
