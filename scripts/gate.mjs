@@ -62,7 +62,7 @@ if (tr.code) die(`turn-sim(${turn})\n${tr.out.split("\n").filter(l => /✗/.test
 console.log(`  ✓ ${turn} (${Math.round(tr.ms / 1000)}s)`);
 // browser-sim(결정 93 · 11-19 — 브라우저 실행 · 저장 · 검사 길이 관문 어디에서도 안 돌았다): sync · turn 뒤 혼자(가짜 허브 · 저장소를 겹쳐 쓰지 않게) · 약 10~15분 · 그 커밋에 있을 때만
 if (existsSync(join(hub, "..", "desktop", "scripts", "browser-sim.mts"))) {
-  const b = await go([...tsx, "../desktop/scripts/browser-sim.mts"], {}, 1_800_000), bl = (b.out.match(/browser-sim [^\n]+/) ?? ["browser-sim ?"])[0];
+  const b = await go([...tsx, "../desktop/scripts/browser-sim.mts"], {}, 1_800_000), bl = (b.out.match(/browser-sim (?:✓ 전부 통과|✗ \d+건)/) ?? ["browser-sim ?"])[0];
   if (b.code) die(`${bl}\n${b.out.split("\n").filter(l => /✗/.test(l)).slice(0, 8).join("\n")}`);
   console.log(`  ✓ ${bl} (${Math.round(b.ms / 1000)}s)`);
 }

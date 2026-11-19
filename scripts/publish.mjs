@@ -140,7 +140,7 @@ if (skipBsim && !skipGate) console.log(`  ⚠ browser-sim 생략 — ${skipBsim}
       if (name === "browser-sim" && (skipBsim || !existsSync(join(src, "scripts", "browser-sim.mts")))) continue;   // 옛 소스(파일 없음)는 건너뜀
       const r = run("pnpm", ["exec", "tsx", "--import", "./scripts/sync-sim/register.mjs", script], { cwd: hubDir, timeout: t });
       // browser-sim 요약 줄은 "browser-sim ✓ 전부 통과" · "browser-sim ✗ N건" 모양
-      const line = (r.out.match(new RegExp(name === "browser-sim" ? "browser-sim [^\\n]+" : `${name} \\d+\\/\\d+`)) ?? [""])[0];
+      const line = (r.out.match(new RegExp(name === "browser-sim" ? "browser-sim (?:✓ 전부 통과|✗ \\d+건)" : `${name} \\d+\\/\\d+`)) ?? [""])[0];
       if (r.code !== 0) { const L = r.out.split("\n"); die(`${name} 실패(${line}) — 발행 안 함\n${L.flatMap((l, i) => (/✗/.test(l) ? [l, ...L.slice(i + 1, i + 4).filter(x => /^ {4}/.test(x) && !/\[timing\]/.test(x))] : [])).slice(0, 24).join("\n")}`); }   // ✗ 아래 확인 줄까지
       console.log(`  ✓ ${line}`);
     }
