@@ -1,11 +1,11 @@
 {
-  "version": "0.1.130",
-  "notes": "src 6a079efe3 · unsigned · Windows PC 빌드 · 맥 서명 · 빠진 사진 되살리기 · 같은 칸 고르기 · 동기화 서버 우선",
-  "pub_date": "2026-11-19T08:43:10Z",
+  "version": "0.1.131",
+  "notes": "src f6fec58fa · unsigned · Windows PC 빌드 · 맥 서명 · 작업 폴더 안 명령 · 깨어나면 다시 연결",
+  "pub_date": "2026-11-19T11:51:49Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.130/Dynapse_0.1.130_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjNKdllEQ0k4RmJ3SHlYdVY5blVack5YbE9nQm1DaUhhZGtJMGVUelRHYlVCVS9WRENqZHRldTZUTFU3MWtTUmV2THBZeG96LzkzVndBeEwrbTdzUVEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDc3Nzg0CWZpbGU6RHluYXBzZV8wLjEuMTMwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTMwCnpCY0d3MTIySnROSndHYVlOTktQb2Q5a3BTa3VxczdSbnZFcUh4QS9LMlcvNEVmVnErYjR5djQ3Z0lUdVFId2t0VkZEVHhyZngyU0Z0SGNZdjdGL0F3PT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.131/Dynapse_0.1.131_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjNmWXBCTytoMWdpUnlWM09FVHZmRmNNZzlmbmJtVUc0NjFzaU8rUytoYTlURWZsdVZMN1QxOGY2YTRKVWl3ZkRSMGhybHMrQ2s4aHdWVXAwM3pqeVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDg5MTAzCWZpbGU6RHluYXBzZV8wLjEuMTMxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTMxCmpST2Y5cUd6OEt6QVZYdm4zdW5VSDJUakxidk5TdlZyVmc5Um9nRXc0cjhJbklmcWRMWXdFODZSZ0lJTzU0TEM2WnRlUXhzYXFwNHBPdmpob0dFUkNRPT0K"
     }
   }
 }
