@@ -850,3 +850,4 @@
 | 2026-11-18T11:42:49.327Z | macos | beta | 0.1.129 | macos-v0.1.129 | beta-served-verified | src a3998aa1d · 0.1.129 — 사진 저장 직후 옮기기, 검사 결과 줄, 재시작 기록 정리 |
 | 2026-11-19T00:23:36.254Z | macos | stable | 0.1.129 | macos-v0.1.129 | stable-served-verified |  |
 | 2026-11-19T08:03:21.020Z | macos | beta | 0.1.130 | macos-v0.1.130 | beta-served-verified | src 6a079efe3 · 0.1.130 — 뺀 장 되살림 고침, 빠진 사진 되살리기, 이어 말한 수정 저장, 기본 Opus·높음, 도구 넓힘, 같은 칸 고르기 |
+| 2026-11-19T08:05:58.007Z | macos | stable | 0.1.130 | macos-v0.1.130 | stable-served-verified |  |
