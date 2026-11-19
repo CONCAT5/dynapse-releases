@@ -1,11 +1,11 @@
 {
-  "version": "0.1.126",
-  "notes": "Codex 기능 설정 · 바깥 사진 · 안정화",
-  "pub_date": "2026-11-17T08:53:29Z",
+  "version": "0.1.130",
+  "notes": "src 6a079efe3 · unsigned · Windows PC 빌드 · 맥 서명 · 빠진 사진 되살리기 · 같은 칸 고르기 · 동기화 서버 우선",
+  "pub_date": "2026-11-19T08:43:10Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.126/Dynapse_0.1.126_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjlyRk4yWUVJbnl2UzNRd2Y2WlBTdXl2UURqWVN0MDJkTmFtQUFJS3c5UC9MamhNOGZ5WnkrRFB0YWNuOFJPM2xvZnZzZFQ3U3ZJSnlWMzFTSkE1alFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTA1NjAzCWZpbGU6RHluYXBzZV8wLjEuMTI2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTI2CmM2bGk2VnVja3N1OG9ya1lkN3NiYkFhWUJFV3RVcTk1S2RraWFSNnZHdFF1YmpkcVhRL1IzZzkzTlV1MUVvemZzcWRzbUQxd3pMcmpHZ1NKUTV1dkNnPT0K"
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/windows-v0.1.130/Dynapse_0.1.130_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTaytGd2JNKzQ1MjNKdllEQ0k4RmJ3SHlYdVY5blVack5YbE9nQm1DaUhhZGtJMGVUelRHYlVCVS9WRENqZHRldTZUTFU3MWtTUmV2THBZeG96LzkzVndBeEwrbTdzUVEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDc3Nzg0CWZpbGU6RHluYXBzZV8wLjEuMTMwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMTMwCnpCY0d3MTIySnROSndHYVlOTktQb2Q5a3BTa3VxczdSbnZFcUh4QS9LMlcvNEVmVnErYjR5djQ3Z0lUdVFId2t0VkZEVHhyZngyU0Z0SGNZdjdGL0F3PT0K"
     }
   }
 }
