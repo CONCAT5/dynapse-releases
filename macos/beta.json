@@ -1,15 +1,15 @@
 {
-  "version": "0.1.130",
-  "notes": "0.1.130 — 뺀 장 되살림 고침, 빠진 사진 되살리기, 이어 말한 수정 저장, 기본 Opus·높음, 도구 넓힘, 같은 칸 고르기",
-  "pub_date": "2026-11-19T08:01:40Z",
+  "version": "0.1.131",
+  "notes": "0.1.131 — 샌드박스 셸, 깨어날 때 바로 다시 연결",
+  "pub_date": "2026-11-19T11:05:54Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.130/Dynapse_0.1.130_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzZhc1k4SC9JMUt4RXQxWWxqU29yeTFWYzNIbmpMY3FuNWxQQzl3aWR0K0hDYUZvbUNlODdHMUZRUTg0KzJtcTdCRVY2ZzJzSzFBSmd0Ti9kejZpcEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDc1MTYwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEzMAo0Wk5tbWZ3Q0lUVHgzcmxkdlcwUnd5Z2h4cGVTdkVYemt6b3FKVk5kV0JtbU1kcVc2djY1Nnd3dFhFRWlvQUxwYjBuMnhSUlJWV2R0SVFnOTF1Yk9BQT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.131/Dynapse_0.1.131_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy9LVVFjTVBmQ1YyMGhvQ2M0eVpET0xROTBnL2JOVnlPZUdmczRsS3kvTGxXMCtUNVZHZWdGbjhsUGFyZVhpV1ljdVRrSk82L1k2U3BGRmYyQnY4SWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDg2MjA4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEzMQplOE9oV2VuTUFzUVJJdUlmcXZESnR1RlR5YnlJL1RtbG1abjB6ekRud2ozN1R1c0JBb2JrRWFpMXQ3RCswVTBsN0U4N0g4VXkvQU9BN1d1R0lDc2NBZz09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.130/Dynapse_0.1.130_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzZhc1k4SC9JMUt4RXQxWWxqU29yeTFWYzNIbmpMY3FuNWxQQzl3aWR0K0hDYUZvbUNlODdHMUZRUTg0KzJtcTdCRVY2ZzJzSzFBSmd0Ti9kejZpcEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDc1MTYwCWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEzMAo0Wk5tbWZ3Q0lUVHgzcmxkdlcwUnd5Z2h4cGVTdkVYemt6b3FKVk5kV0JtbU1kcVc2djY1Nnd3dFhFRWlvQUxwYjBuMnhSUlJWV2R0SVFnOTF1Yk9BQT09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.131/Dynapse_0.1.131_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy9LVVFjTVBmQ1YyMGhvQ2M0eVpET0xROTBnL2JOVnlPZUdmczRsS3kvTGxXMCtUNVZHZWdGbjhsUGFyZVhpV1ljdVRrSk82L1k2U3BGRmYyQnY4SWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDg2MjA4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEzMQplOE9oV2VuTUFzUVJJdUlmcXZESnR1RlR5YnlJL1RtbG1abjB6ekRud2ozN1R1c0JBb2JrRWFpMXQ3RCswVTBsN0U4N0g4VXkvQU9BN1d1R0lDc2NBZz09Cg=="
     }
   }
 }
