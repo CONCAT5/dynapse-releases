@@ -3,7 +3,7 @@
 // 맥이 자고 있어 03시대를 놓치면 그날은 건너뛴다(깨어난 뒤 몰아서 돌지 않는다). 배포는 하지 않는다 — 관문(tsc · sync-sim 전 조각 · turn-sim) + render-sim 전부, 결과 한 줄을 BOARD에.
 // 겹치지 않기: 관문 잠금(~/development/.gate.lock)을 다른 관문이 쥐고 있으면 그날은 건너뛴다. 기록: ~/development/nightly.log
 // 끄기: launchctl bootout gui/$(id -u)/com.dynapse.nightly-gate (다시 켜기 = 같은 plist로 bootstrap) · 안내는 requests/windows-ota-runbook-2026-10-28.md 아래
-import { appendFileSync, existsSync, readFileSync, writeFileSync } from "node:fs";
+import { appendFileSync, existsSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";
 import { spawnSync } from "node:child_process";
@@ -40,7 +40,7 @@ const isGatePid = pid => { if (!(pid > 0)) return false; try { process.kill(pid,
     if (!after.some(l => / (done|stopped|stall) /.test(l)) && !isGatePid(pid)) { const at = lines[si].slice(0, 16).replace("T", " "); log(`stall ${d} — ${at}Z에 시작해 기록 없이 멈춤`); board(`| ${d} | - | **중단** · ${at}Z에 시작해 끝 기록 없이 멈춤(다음 깸에 발견) | - |`, `BOARD: nightly full gate ${d} STALLED`); } } }
 if (kst.getUTCHours() !== 3 && !process.argv.includes("--now")) process.exit(0);
 if (existsSync(LAST) && readFileSync(LAST, "utf8").trim() === day && !process.argv.includes("--now")) process.exit(0);
-const lockAlive = () => { if (!existsSync(LOCK)) return false; const pid = Number(readFileSync(LOCK, "utf8").trim()); if (isGatePid(pid)) return true; try { writeFileSync(LOCK, ""); } catch { /* */ } return false; };
+const lockAlive = () => { if (!existsSync(LOCK)) return false; const pid = Number(readFileSync(LOCK, "utf8").trim()); if (isGatePid(pid)) return true; try { rmSync(LOCK, { force: true }); } catch { /* */ } return false; };   // 죽은 잠금은 지운다(빈 파일을 남기면 레인이 "누가 쥠"으로 읽었다 · 11-20)
 if (lockAlive()) { log(`skip ${day} — 다른 관문이 도는 중`); process.exit(0); }
 writeFileSync(LAST, day);
 const t0 = Date.now();
@@ -56,7 +56,7 @@ let rs = { code: 1, out: "", ms: 0 }, rsLine = "render-sim 안 돎";
 if (existsSync(join(GATE_WT, "prototypes", "hub"))) {
   if (!lockAlive()) { writeFileSync(LOCK, String(process.pid)); }
   rs = run("npx", ["tsx", "--import", "./scripts/sync-sim/register.mjs", "scripts/render-sim.mts"], join(GATE_WT, "prototypes", "hub"), 3_600_000);
-  try { if (readFileSync(LOCK, "utf8").trim() === String(process.pid)) writeFileSync(LOCK, ""); } catch { /* */ }
+  try { if (readFileSync(LOCK, "utf8").trim() === String(process.pid)) rmSync(LOCK, { force: true }); } catch { /* */ }   // 끝나면 지운다(빈 파일 남김 금지 · 11-20 04:10 빈 잠금이 아침까지 남음)
   rsLine = (rs.out.match(/render-sim \d+\/\d+/) ?? [`render-sim 실패(${rs.code})`])[0];
 }
 const fails = [...g.out.split("\n"), ...rs.out.split("\n")].filter(l => /✗/.test(l)).slice(0, 4).map(l => l.trim().slice(0, 60));
