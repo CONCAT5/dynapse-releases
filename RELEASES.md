@@ -852,3 +852,4 @@
 | 2026-11-19T08:03:21.020Z | macos | beta | 0.1.130 | macos-v0.1.130 | beta-served-verified | src 6a079efe3 · 0.1.130 — 뺀 장 되살림 고침, 빠진 사진 되살리기, 이어 말한 수정 저장, 기본 Opus·높음, 도구 넓힘, 같은 칸 고르기 |
 | 2026-11-19T08:05:58.007Z | macos | stable | 0.1.130 | macos-v0.1.130 | stable-served-verified |  |
 | 2026-11-19T08:44:15.557Z | windows | beta | 0.1.130 | windows-v0.1.130 | beta-served-verified | src 6a079efe3 · unsigned · Windows PC 빌드 · 맥 서명 · src 6a079efe3 · unsigned · Windows PC 빌드 · 맥 서명 · 빠진 사진 되살리기 · 같은 칸 고르기 · 동기화 서버 우선 |
+| 2026-11-19T08:46:16.089Z | windows | stable | 0.1.130 | windows-v0.1.130 | stable-served-verified |  |
