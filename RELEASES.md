@@ -855,3 +855,4 @@
 | 2026-11-19T08:46:16.089Z | windows | stable | 0.1.130 | windows-v0.1.130 | stable-served-verified |  |
 | 2026-11-19T11:06:59.684Z | macos | beta | 0.1.131 | macos-v0.1.131 | beta-served-verified | src f6fec58fa · 0.1.131 — 샌드박스 셸, 깨어날 때 바로 다시 연결 |
 | 2026-11-19T11:09:46.171Z | macos | stable | 0.1.131 | macos-v0.1.131 | stable-served-verified |  |
+| 2026-11-19T11:52:54.767Z | windows | beta | 0.1.131 | windows-v0.1.131 | beta-served-verified | src f6fec58fa · unsigned · Windows PC 빌드 · 맥 서명 · src f6fec58fa · unsigned · Windows PC 빌드 · 맥 서명 · 작업 폴더 안 명령 · 깨어나면 다시 연결 |
