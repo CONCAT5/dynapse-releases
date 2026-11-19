@@ -194,6 +194,16 @@ if (b.code !== 0) die(`빌드 실패 (exit ${b.code})`);
     } catch (e) { console.log(`  ⚠ 심볼 백업 실패(로컬 사본은 있음): ${String(e?.message ?? e).split("\n")[0].slice(0, 120)}`); }
   }
   else console.log("  심볼 없음(이번 빌드 설정에 디버그 정보가 없다)");
+  // 보관 규칙(11-19 · 안정 + 최근 8): 이 PC 사본은 그 플랫폼의 지금 안정판 + 판 번호가 큰 8개만 남긴다. 지우는 것은 이 PC 사본뿐(비공개 저장소 dynapse-symbols 백업은 그대로)
+  try {
+    const root = join(home, "development", "dynapse-symbols"), num = x => x.split(".").map(Number), cmp = (a, b) => { const [p, q] = [num(a), num(b)]; for (let i = 0; i < 3; i++) if ((p[i] ?? 0) !== (q[i] ?? 0)) return (p[i] ?? 0) - (q[i] ?? 0); return 0; };
+    const stable = (() => { try { return JSON.parse(readFileSync(join(platform, "latest.json"), "utf8")).version; } catch { return null; } })();
+    const vs = readdirSync(root).filter(n => n.startsWith(`${platform}-`) && /^\d+\.\d+\.\d+$/.test(n.slice(platform.length + 1))).map(n => n.slice(platform.length + 1)).sort(cmp);
+    const keepV = new Set([...vs.slice(-8), ...(stable ? [stable] : []), v]);
+    const drop = vs.filter(x => !keepV.has(x));
+    for (const x of drop) rmSync(join(root, `${platform}-${x}`), { recursive: true, force: true });
+    if (drop.length) console.log(`  심볼 이 PC 사본 정리(안정 ${stable ?? "-"} + 최근 8): ${drop.join(", ")}`);
+  } catch (e) { console.log(`  ⚠ 심볼 정리 건너뜀: ${String(e?.message ?? e).slice(0, 80)}`); }
 }
 if (must("git", ["rev-parse", "HEAD"], { cwd: src }) !== srcHead) die("빌드 도중 소스 HEAD가 바뀜 — 산출물 폐기");
 assertCleanTree(src, "빌드 후 소스 리포");
