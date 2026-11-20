@@ -1,15 +1,15 @@
 {
-  "version": "0.1.131",
-  "notes": "0.1.131 — 샌드박스 셸, 깨어날 때 바로 다시 연결",
-  "pub_date": "2026-11-19T11:05:54Z",
+  "version": "0.1.132",
+  "notes": "0.1.132 — 셸 인터넷 열기, 답 없는 차례 다시 하기, 확인 못 한 답도 보여 주기",
+  "pub_date": "2026-11-20T02:26:13Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.131/Dynapse_0.1.131_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy9LVVFjTVBmQ1YyMGhvQ2M0eVpET0xROTBnL2JOVnlPZUdmczRsS3kvTGxXMCtUNVZHZWdGbjhsUGFyZVhpV1ljdVRrSk82L1k2U3BGRmYyQnY4SWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDg2MjA4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEzMQplOE9oV2VuTUFzUVJJdUlmcXZESnR1RlR5YnlJL1RtbG1abjB6ekRud2ozN1R1c0JBb2JrRWFpMXQ3RCswVTBsN0U4N0g4VXkvQU9BN1d1R0lDc2NBZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.132/Dynapse_0.1.132_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzFLYWh2ZklYT0F3UFQxRWpTaWlSRDA0R0FLbHlaRURjdjZMczBIcEtaYzF6dXNUS2V0Y2tSUU1WM202aTFoNGVRcEtqVCtJQnVtYmxRVzRaeTdIL1E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTQxMzk5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEzMgpRUE5Yc3oveWJRT2U1QWNnUWRIZS9VamM0V1hhSmNrUXRuVlIySU9reDRCTWhHRXU0KzJOZS8waTNlanpnenpiL0dtcy9kVytja3lwTE95M2pEeTRDUT09Cg=="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.131/Dynapse_0.1.131_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQy9LVVFjTVBmQ1YyMGhvQ2M0eVpET0xROTBnL2JOVnlPZUdmczRsS3kvTGxXMCtUNVZHZWdGbjhsUGFyZVhpV1ljdVRrSk82L1k2U3BGRmYyQnY4SWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDg2MjA4CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEzMQplOE9oV2VuTUFzUVJJdUlmcXZESnR1RlR5YnlJL1RtbG1abjB6ekRud2ozN1R1c0JBb2JrRWFpMXQ3RCswVTBsN0U4N0g4VXkvQU9BN1d1R0lDc2NBZz09Cg=="
+      "url": "https://github.com/CONCAT5/dynapse-releases/releases/download/macos-v0.1.132/Dynapse_0.1.132_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUngxYm5QYkppQzFLYWh2ZklYT0F3UFQxRWpTaWlSRDA0R0FLbHlaRURjdjZMczBIcEtaYzF6dXNUS2V0Y2tSUU1WM202aTFoNGVRcEtqVCtJQnVtYmxRVzRaeTdIL1E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTQxMzk5CWZpbGU6RHluYXBzZS5hcHAudGFyLmd6CXZlcnNpb246MC4xLjEzMgpRUE5Yc3oveWJRT2U1QWNnUWRIZS9VamM0V1hhSmNrUXRuVlIySU9reDRCTWhHRXU0KzJOZS8waTNlanpnenpiL0dtcy9kVytja3lwTE95M2pEeTRDUT09Cg=="
     }
   }
 }
