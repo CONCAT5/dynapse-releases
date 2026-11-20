@@ -858,3 +858,4 @@
 | 2026-11-19T11:52:54.767Z | windows | beta | 0.1.131 | windows-v0.1.131 | beta-served-verified | src f6fec58fa · unsigned · Windows PC 빌드 · 맥 서명 · src f6fec58fa · unsigned · Windows PC 빌드 · 맥 서명 · 작업 폴더 안 명령 · 깨어나면 다시 연결 |
 | 2026-11-19T11:55:03.758Z | windows | stable | 0.1.131 | windows-v0.1.131 | stable-served-verified |  |
 | 2026-11-20T02:27:21.280Z | macos | beta | 0.1.132 | macos-v0.1.132 | beta-served-verified | src 8610edbbd · 0.1.132 — 셸 인터넷 열기, 답 없는 차례 다시 하기, 확인 못 한 답도 보여 주기 |
+| 2026-11-20T02:29:37.296Z | macos | stable | 0.1.132 | macos-v0.1.132 | stable-served-verified |  |
